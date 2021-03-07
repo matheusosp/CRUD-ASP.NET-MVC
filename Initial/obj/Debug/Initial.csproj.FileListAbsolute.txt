@@ -71,8 +71,11 @@ C:\Users\Mathe\OneDrive\Área de Trabalho\Projects\new\Initial\Initial\bin\pt-br
 C:\Users\Mathe\OneDrive\Área de Trabalho\Projects\new\Initial\Initial\bin\pt-br\System.Web.Webpages.Razor.resources.dll
 C:\Users\Mathe\OneDrive\Área de Trabalho\Projects\new\Initial\Initial\bin\pt-br\System.Web.Helpers.resources.dll
 C:\Users\Mathe\OneDrive\Área de Trabalho\Projects\new\Initial\Initial\bin\pt-br\System.Web.Mvc.resources.dll
-C:\Users\Mathe\OneDrive\Área de Trabalho\Projects\new\Initial\Initial\obj\Debug\Initial.csprojAssemblyReference.cache
 C:\Users\Mathe\OneDrive\Área de Trabalho\Projects\new\Initial\Initial\obj\Debug\Initial.csproj.CoreCompileInputs.cache
 C:\Users\Mathe\OneDrive\Área de Trabalho\Projects\new\Initial\Initial\obj\Debug\Initial.csproj.CopyComplete
 C:\Users\Mathe\OneDrive\Área de Trabalho\Projects\new\Initial\Initial\obj\Debug\Initial.dll
 C:\Users\Mathe\OneDrive\Área de Trabalho\Projects\new\Initial\Initial\obj\Debug\Initial.pdb
+C:\Users\Mathe\OneDrive\Área de Trabalho\Projects\new\Initial\Initial\bin\EntityFramework.dll
+C:\Users\Mathe\OneDrive\Área de Trabalho\Projects\new\Initial\Initial\bin\EntityFramework.SqlServer.dll
+C:\Users\Mathe\OneDrive\Área de Trabalho\Projects\new\Initial\Initial\bin\EntityFramework.xml
+C:\Users\Mathe\OneDrive\Área de Trabalho\Projects\new\Initial\Initial\bin\EntityFramework.SqlServer.xml
