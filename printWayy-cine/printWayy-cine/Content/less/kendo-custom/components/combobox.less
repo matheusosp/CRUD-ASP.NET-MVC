@@ -1,0 +1,219 @@
+@import "../../shared/shared-module.less";
+
+@nodatatemplatecolor:  #808080;
+
+.k-combobox,
+.k-dropdown {
+    .border(3px, solid, @alto, left);
+}
+
+// Combobox e dropdown da tela "Detalhes de impressora", em função da borda lateral esquerda é necessário reduzir a largura destes componetes.
+.mainDropDownListCompanyPlace .k-dropdown,
+.mainDropDownListPlaceDepartment .k-combobox {
+    width: 99% !important;
+}
+
+// Geralmente são os dropdowns em inline-block no topo da página
+/*
+.content>form .k-dropdown {
+    //width: 160px !important;
+}
+*/
+
+// dropdown impressões e cópias por impressora - Relatórios
+#report-form-counters-by-printer .mvvm-container .k-dropdown {
+    width: 422px !important;
+}
+
+.cmbCustomers .k-select {
+    width: @k-select-width !important;
+}
+
+.cmbCustomers .k-select,
+.k-dropdown-wrap.k-state-focused {
+    background-color: @indigo;
+    background-image: none !important;
+}
+
+.dark-drop-down-list {
+    background-color: @transparent !important;
+
+    &.k-state-border-down,
+    &.k-state-focused,
+    &.k-state-hover {
+        color: @white;
+        background-color: @indigo !important;
+    }
+
+    &:not(.k-state-disabled):hover {
+        & > .k-select {
+            color: @white;
+            background-color: @indigo;
+        }
+    }
+}
+
+.default .k-dropdown-wrap.k-state-hover,
+.default .k-dropdown-wrap.k-state-focused {
+    background-color: @indigo;
+    background-image: none !important;
+    color: @white !important;
+}
+
+// Manter drop-button azuzinho em estado de hover, focused e afins. 
+input:hover:not(:disabled) ~ .k-select,
+.k-state-border-down ~ .k-select,
+.k-select:hover {
+    background-color: @indigo;
+    background-image: none !important;
+    color: @white !important;
+}
+
+.k-picker-wrap.k-state-focused {
+    color: @blue-whale !important;
+}
+
+.k-list > .k-state-focused {
+    box-shadow: none !important;
+}
+
+.k-list > .k-state-selected {
+    background-color: @indigo !important;
+    box-shadow: none !important;
+    background-image: none !important;
+}
+
+.k-list > .k-state-hover,
+.k-list > .k-state-hover:hover {
+    background-color: @link-water !important;
+    color: @tundora !important;
+}
+
+.cmbCustomers .k-select {
+    background-color: @white;
+}
+
+.cmbCustomers.k-state-border-down,
+.cmbCustomers.k-state-border-down .k-select {
+    background-color: @indigo;
+    border-color: @indigo !important;
+    border-left-color: @alto !important;
+    border-right-color: @alto !important;
+}
+
+.cmbCustomers.k-state-border-down .k-select {
+    border-left-color: @indigo !important;
+}
+
+.cmbCustomers > span.k-state-hover > .k-select,
+.cmbCustomers > span.k-state-hover > .k-select > .k-icon {
+    color: @white !important;
+    background-color: @indigo !important;
+    border-color: @indigo !important;
+}
+
+.cmbCustomers .k-state-focused .k-select {
+    color: @tundora !important;
+}
+
+.cmbCustomers .k-dropdown-wrap {
+    width: @combobox-width - 20px;
+}
+
+// Quando combobox estiver ativo e seu drop-button estiver azul mudar cor da seta para branco
+.cmbCustomers.k-state-border-down .k-icon {
+    color: @white !important;
+}
+
+.k-dropdown-wrap.k-state-hover,
+.k-state-focused,
+.k-dropdown .k-input:hover::before,
+.k-dropdown .k-input:hover {
+    background-image: none !important;
+    background-color: @indigo;
+    color: @white;
+}
+
+.k-list-container .k-state-selected,
+.k-list-container .k-state-hover {
+    background-color: @indigo;
+    border-color: @indigo;
+    background-image: none !important;
+}
+
+.k-list-optionlabel {
+    color: @tundora;
+}
+
+.k-state-disabled .k-input:hover,
+.k-state-disabled .k-select:hover {
+    background-color: @transparent !important;
+    color: @alto !important;
+}
+
+// -----------------------------------------------------
+// Itens derivados de dropdown estruturados como tabela 
+// -----------------------------------------------------
+// fundo azul claro, fonte padrão
+.k-item.k-state-hover .multicolumn-dropdown-item{
+     color: @tundora !important;
+}
+// fundo azul medio, fonte branca
+.k-item.k-state-selected .multicolumn-dropdown-item{
+    color: @white;
+}
+// fundo normal, fonte padrão
+.k-item .multicolumn-dropdown-item {
+    color: @tundora;
+}
+
+// Combobox dentro da linha da grid novas impressoras
+.drop-down-list-selected {
+    color: @tundora;
+    background-color: @indigo !important;
+
+    .k-input, span.k-icon {
+        color: #fff !important;
+    }
+}
+
+// --------------------------------------
+// ------------ Multiselect -------------
+// --------------------------------------
+.k-multiselect {
+    .border(3px, solid, @alto, left);
+
+    &:hover {
+        border-color: @alto;
+    }
+}
+
+// Tela: Configurações de suprimentos e estoque
+#suppliesAndPartsTypesWithExchangesControlDiv .k-multiselect {
+    .border(1px, solid, @alto);
+    .border(3px, solid, @alto, left) !important;
+}
+
+.k-multiselect .k-button {
+    .border(1px, solid, @wild-sand);
+    background-color: @wild-sand;
+    color: @tundora;
+
+    &:hover,
+    & > .k-select:hover {
+        color: @tundora !important;
+        background-color: @link-water !important;
+        border-color: @link-water !important;
+    }
+}
+.k-nodata {
+    display: inline;
+    font-size: .81em;
+    font-family: "Segoe UI", "WeblySleek UI Semibold", Verdana, Helvetica, Sans-Serif;
+    font-weight: bold;
+    color: @nodatatemplatecolor;
+}
+
+
+
+

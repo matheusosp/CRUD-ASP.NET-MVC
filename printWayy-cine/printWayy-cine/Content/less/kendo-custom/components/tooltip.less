@@ -1,0 +1,91 @@
+﻿// :not(.excel-tooltip) = Com a nova regra do hover do tooltip ter opacidade .9 isso afeta também o botão de export do excel.
+// Esta regra será aplicada em todos os tooltips, exeto o excel-tooltip. Solucionado na maciota
+.k-animation-container .k-widget.k-tooltip:not(.excel-tooltip) {
+    border-color: @indigo;
+    background-color: @indigo;
+    opacity: 0.9 !important;
+    color: @white;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 8 .25rem);
+}
+
+.k-callout-e{
+    border-left-color: @indigo;
+}
+
+.deadline-contract-tooltip {
+    color: @buttercup;
+    margin-left: 3px;
+}
+
+.yellow-tooltip-container {
+	min-width: 230px;
+	.text-align(left);
+}
+
+.yellow-tooltip {
+    background-color: @buttercup  !important;
+    &>.k-callout-w {
+        border-right-color: @buttercup;
+    }
+}
+
+// Na tela de criação de chamados este seletor irá buscar pela mensagem de validação do combobox de tipo de chamado
+// <trecho-dramático>SE E SOMENTE SE</trecho-dramático> esta mensagem de validação for adjacente a mensagem de validação do combobox de cliente
+// Se a mensagem de validação do combobox não estiver visível então a margin deve ser maior
+.k-tooltip-validation[data-for="TicketCompanyId"]~.k-tooltip-validation[data-for="TicketTypeId"] {
+    margin-left: 542px;
+}
+
+// Caso a mensagem de validação do combobox esteja visível, então a margin deve ser menor pois a mensagem de validação do cliente já 
+// irá "empurrar" a mensagem de validação do tipo de chamado.
+.k-tooltip-validation[data-for="TicketCompanyId"]:not([style*='display']):not([style*='none'])~.k-tooltip-validation[data-for="TicketTypeId"] {
+    margin-left: 239px;
+}
+
+// Mesma ̶g̶a̶m̶b̶i̶a̶r̶r̶a solução alternativa de cima, porém para os campo de fim de atendimento
+.k-tooltip-validation[data-for="AttendanceStartTime"]~.k-tooltip-validation[data-for="AttendanceEndTime"] {
+    margin-left: 305px;
+}
+
+// Caso a mensagem de validação de inicio de atendimento esteja visível:
+.k-tooltip-validation[data-for="AttendanceStartTime"]:not([style*='display']):not([style*='none'])~.k-tooltip-validation[data-for="AttendanceEndTime"] {
+    margin-left: 10px;
+}
+
+// Mesma ̶g̶a̶m̶b̶i̶a̶r̶r̶a solução alternativa de ↑, porém para os campo de fim de data da tela de Digitalizações por impressora
+.k-tooltip-validation[data-for="ScansStartDate"]~.k-tooltip-validation[data-for="ScansEndDate"] {
+    margin-left: 238px;
+}
+
+.k-tooltip-validation[data-for="ScansStartDate"]:not([style*='display']):not([style*='none'])~.k-tooltip-validation[data-for="ScansEndDate"] {
+    margin-left: 0;
+}
+
+// Mesma ̶g̶a̶m̶b̶i̶a̶r̶r̶a solução alternativa de ↑, porém para os campo de fim de data da tela de Totais por cliente e Impressões e cópias por impressora
+.k-tooltip-validation[data-for="CountersByCompanyStartDate"]~.k-tooltip-validation[data-for="CountersByCompanyEndDate"],
+.k-tooltip-validation[data-for="StartDate"]~.k-tooltip-validation[data-for="EndDate"] {
+    margin-left: 225px;
+}
+
+.k-tooltip-validation[data-for="CountersByCompanyStartDate"]:not([style*='display']):not([style*='none'])~.k-tooltip-validation[data-for="CountersByCompanyEndDate"],
+.k-tooltip-validation[data-for="StartDate"]:not([style*='display']):not([style*='none'])~.k-tooltip-validation[data-for="EndDate"] {
+    margin-left: 0;
+}
+
+// Mensagem de validação para o campo "Tolerância para falha de comunicação" no detalhes de contrato
+.k-tooltip-validation[data-for="daysOfToleranceForCommunicationFailure"] {
+    margin-left: 168px;
+}
+
+#StartTime_validationMessage~#EndTime_validationMessage {
+    margin-left: 257px;
+}
+
+#StartTime_validationMessage:not([style*='display']):not([style*='none'])~#EndTime_validationMessage {
+    margin-left: 5px;
+}
+
+#contract-endmonth-validation-container > .k-tooltip-validation[data-for="EndMonth"]{
+    margin-left: 228px;
+}

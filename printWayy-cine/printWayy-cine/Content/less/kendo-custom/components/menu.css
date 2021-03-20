@@ -1,0 +1,16 @@
+﻿#genericReportFilterMenu {
+  margin: 5px 10px;
+}
+.genericReportFilterMenuOptions {
+  width: 140px;
+}
+.genericReportFilterMenuOptions .k-link,
+.genericReportFilterMenuItem {
+  text-align: center;
+}
+.genericReportFilterMenuOptions .k-link {
+  padding: 2.5px 0;
+}
+.genericReportFilterMenuItem {
+  width: 150px;
+}

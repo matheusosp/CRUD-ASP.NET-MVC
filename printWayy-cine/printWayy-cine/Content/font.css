@@ -1,0 +1,1081 @@
+﻿@font-face {
+    font-family: 'IconicFill';
+    src: url('fonts/iconic_fill.eot');
+    src: url('fonts/iconic_fill.eot?#iefix') format('embedded-opentype'), url('fonts/iconic_fill.ttf') format('truetype'), url('fonts/iconic_fill.svg#iconic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.iconic {
+    display: inline-block;
+    font-family: 'IconicFill';
+}
+
+.lightbulb:before {
+    content: '\e063';
+}
+
+.equalizer:before {
+    content: '\e052';
+}
+
+.brush_alt:before {
+    content: '\e01c';
+}
+
+.move:before {
+    content: '\e03e';
+}
+
+.tag_fill:before {
+    content: '\e02b';
+}
+
+.book_alt2:before {
+    content: '\e06a';
+}
+
+.layers:before {
+    content: '\e01f';
+}
+
+.chat_alt_fill:before {
+    content: '\e007';
+}
+
+.layers_alt:before {
+    content: '\e020';
+}
+
+.cloud_upload:before {
+    content: '\e045';
+}
+
+.chart_alt:before {
+    content: '\e029';
+}
+
+.fullscreen_exit_alt:before {
+    content: '\e051';
+}
+
+.cloud_download:before {
+    content: '\e044';
+}
+
+.paperclip:before {
+    content: '\e08a';
+}
+
+.heart_fill:before {
+    content: '\2764';
+}
+
+.mail:before {
+    content: '\2709';
+}
+
+.pen_alt_fill:before {
+    content: '\e005';
+}
+
+.check_alt:before {
+    content: '\2718';
+}
+
+.battery_charging:before {
+    content: '\e05d';
+}
+
+.lock_fill:before {
+    content: '\e075';
+}
+
+.stop:before {
+    content: '\e04a';
+}
+
+.arrow_up:before {
+    content: '\2191';
+}
+
+.move_horizontal:before {
+    content: '\e038';
+}
+
+.compass:before {
+    content: '\e021';
+}
+
+.minus_alt:before {
+    content: '\e009';
+}
+
+.battery_empty:before {
+    content: '\e05c';
+}
+
+.comment_fill:before {
+    content: '\e06d';
+}
+
+.map_pin_alt:before {
+    content: '\e002';
+}
+
+.question_mark:before {
+    content: '\003f';
+}
+
+.list:before {
+    content: '\e055';
+}
+
+.upload:before {
+    content: '\e043';
+}
+
+.reload:before {
+    content: '\e030';
+}
+
+.loop_alt4:before {
+    content: '\e035';
+}
+
+.loop_alt3:before {
+    content: '\e034';
+}
+
+.loop_alt2:before {
+    content: '\e033';
+}
+
+.loop_alt1:before {
+    content: '\e032';
+}
+
+.left_quote:before {
+    content: '\275d';
+}
+
+.x:before {
+    content: '\2713';
+}
+
+.last:before {
+    content: '\e04d';
+}
+
+.bars:before {
+    content: '\e06f';
+}
+
+.arrow_left:before {
+    content: '\2190';
+}
+
+.arrow_down:before {
+    content: '\2193';
+}
+
+.download:before {
+    content: '\e042';
+}
+
+.home:before {
+    content: '\2302';
+}
+
+.calendar:before {
+    content: '\e001';
+}
+
+.right_quote_alt:before {
+    content: '\e012';
+}
+
+.unlock_fill:before {
+    content: '\e076';
+}
+
+.fullscreen:before {
+    content: '\e04e';
+}
+
+.dial:before {
+    content: '\e058';
+}
+
+.plus_alt:before {
+    content: '\e008';
+}
+
+.clock:before {
+    content: '\e079';
+}
+
+.movie:before {
+    content: '\e060';
+}
+
+.steering_wheel:before {
+    content: '\e024';
+}
+
+.pen:before {
+    content: '\270e';
+}
+
+.pin:before {
+    content: '\e067';
+}
+
+.denied:before {
+    content: '\26d4';
+}
+
+.left_quote_alt:before {
+    content: '\e011';
+}
+
+.volume_mute:before {
+    content: '\e071';
+}
+
+.umbrella:before {
+    content: '\2602';
+}
+
+.list_nested:before {
+    content: '\e056';
+}
+
+.arrow_up_alt1:before {
+    content: '\e014';
+}
+
+.undo:before {
+    content: '\e02f';
+}
+
+.pause:before {
+    content: '\e049';
+}
+
+.bolt:before {
+    content: '\26a1';
+}
+
+.article:before {
+    content: '\e053';
+}
+
+.read_more:before {
+    content: '\e054';
+}
+
+.beaker:before {
+    content: '\e023';
+}
+
+.beaker_alt:before {
+    content: '\e010';
+}
+
+.battery_full:before {
+    content: '\e073';
+}
+
+.arrow_right:before {
+    content: '\2192';
+}
+
+.iphone:before {
+    content: '\e06e';
+}
+
+.arrow_up_alt2:before {
+    content: '\e018';
+}
+
+.cog:before {
+    content: '\2699';
+}
+
+.award_fill:before {
+    content: '\e022';
+}
+
+.first:before {
+    content: '\e04c';
+}
+
+.trash_fill:before {
+    content: '\e05a';
+}
+
+.image:before {
+    content: '\e027';
+}
+
+.comment_alt1_fill:before {
+    content: '\e003';
+}
+
+.cd:before {
+    content: '\e064';
+}
+
+.right_quote:before {
+    content: '\275e';
+}
+
+.brush:before {
+    content: '\e01b';
+}
+
+.cloud:before {
+    content: '\2601';
+}
+
+.eye:before {
+    content: '\e025';
+}
+
+.play_alt:before {
+    content: '\e048';
+}
+
+.transfer:before {
+    content: '\e041';
+}
+
+.pen_alt2:before {
+    content: '\e006';
+}
+
+.camera:before {
+    content: '\e070';
+}
+
+.move_horizontal_alt2:before {
+    content: '\e03a';
+}
+
+.curved_arrow:before {
+    content: '\2935';
+}
+
+.move_horizontal_alt1:before {
+    content: '\e039';
+}
+
+.aperture:before {
+    content: '\e026';
+}
+
+.reload_alt:before {
+    content: '\e031';
+}
+
+.magnifying_glass:before {
+    content: '\e074';
+}
+
+.calendar_alt_fill:before {
+    content: '\e06c';
+}
+
+.fork:before {
+    content: '\e046';
+}
+
+.iconic.box:before {
+    content: '\e06b';
+}
+
+.map_pin_fill:before {
+    content: '\e068';
+}
+
+.bars_alt:before {
+    content: '\e00a';
+}
+
+.volume:before {
+    content: '\e072';
+}
+
+.x_alt:before {
+    content: '\2714';
+}
+
+.link:before {
+    content: '\e077';
+}
+
+.move_vertical:before {
+    content: '\e03b';
+}
+
+.eyedropper:before {
+    content: '\e01e';
+}
+
+.spin:before {
+    content: '\e036';
+}
+
+.rss:before {
+    content: '\e02c';
+}
+
+.info:before {
+    content: '\2139';
+}
+
+.target:before {
+    content: '\e02a';
+}
+
+.cursor:before {
+    content: '\e057';
+}
+
+.key_fill:before {
+    content: '\26bf';
+}
+
+.minus:before {
+    content: '\2796';
+}
+
+.book_alt:before {
+    content: '\e00b';
+}
+
+.headphones:before {
+    content: '\e061';
+}
+
+.hash:before {
+    content: '\0023';
+}
+
+.arrow_left_alt1:before {
+    content: '\e013';
+}
+
+.arrow_left_alt2:before {
+    content: '\e017';
+}
+
+.fullscreen_exit:before {
+    content: '\e050';
+}
+
+.share:before {
+    content: '\e02e';
+}
+
+.fullscreen_alt:before {
+    content: '\e04f';
+}
+
+.comment_alt2_fill:before {
+    content: '\e004';
+}
+
+.moon_fill:before {
+    content: '\263e';
+}
+
+.at:before {
+    content: '\0040';
+}
+
+.chat:before {
+    content: '\e05e';
+}
+
+.move_vertical_alt2:before {
+    content: '\e03d';
+}
+
+.move_vertical_alt1:before {
+    content: '\e03c';
+}
+
+.check:before {
+    content: '\2717';
+}
+
+.mic:before {
+    content: '\e05f';
+}
+
+.book:before {
+    content: '\e069';
+}
+
+.move_alt1:before {
+    content: '\e03f';
+}
+
+.move_alt2:before {
+    content: '\e040';
+}
+
+.document_fill:before {
+    content: '\e066';
+}
+
+.plus:before {
+    content: '\2795';
+}
+
+.wrench:before {
+    content: '\e078';
+}
+
+.play:before {
+    content: '\e047';
+}
+
+.star:before {
+    content: '\2605';
+}
+
+.document_alt_fill:before {
+    content: '\e000';
+}
+
+.chart:before {
+    content: '\e028';
+}
+
+.rain:before {
+    content: '\26c6';
+}
+
+.folder_fill:before {
+    content: '\e065';
+}
+
+.new_window:before {
+    content: '\e059';
+}
+
+.user:before {
+    content: '\e062';
+}
+
+.battery_half:before {
+    content: '\e05b';
+}
+
+.aperture_alt:before {
+    content: '\e00c';
+}
+
+.eject:before {
+    content: '\e04b';
+}
+
+.arrow_down_alt1:before {
+    content: '\e016';
+}
+
+.pilcrow:before {
+    content: '\00b6';
+}
+
+.arrow_down_alt2:before {
+    content: '\e01a';
+}
+
+.arrow_right_alt1:before {
+    content: '\e015';
+}
+
+.arrow_right_alt2:before {
+    content: '\e019';
+}
+
+.rss_alt:before {
+    content: '\e02d';
+}
+
+.spin_alt:before {
+    content: '\e037';
+}
+
+.sun_fill:before {
+    content: '\2600';
+}
+
+
+/*****************************************************************************************************************************/
+
+@font-face {
+    font-family: 'Entypo';
+    src: url('fonts/entypo.eot');
+    src: url('fonts/entypo.eot?#iefix') format('embedded-opentype'), url('fonts/entypo.woff') format('woff'), url('fonts/entypo.ttf') format('truetype'), url('fonts/entypo.svg#EntypoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.entypo {
+    display: inline-block;
+    font-family: 'Entypo';
+}
+
+    .entypo.alert:before {
+        content: '\26a0';
+    }
+
+    .entypo.document:before {
+        content: '\e731';
+    }
+
+    .entypo.printer:before {
+        content: '\e716';
+    }
+
+    .entypo.squares:before {
+        content: '\268f';
+    }
+
+    .entypo.xfill:before {
+        content: '\274e';
+    }
+
+    .entypo.copy:before {
+        content: '\e74c';
+        vertical-align: +60%;
+    }
+
+    
+
+/*****************************************************************************************************************************/
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('fonts/fontawesome.eot?v=4.7.0');
+    src: url('fonts/fontawesome.eot?#iefix&v=4.7.0') format('embedded-opentype'),url('fonts/fontawesome.woff?v=4.7.0') format('woff'),url('fonts/fontawesome.ttf?v=4.7.0') format('truetype'),url('fonts/fontawesome.svg#fontawesomeregular?v=4.7.0') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fontawesome {
+    display: inline-block;
+    font-family: 'Fontawesome';
+}
+
+    .fontawesome.alert:before {
+        content: '\f071';
+    }
+
+    .fontawesome.arrows:before {
+        content: '\f0ec';
+    }
+
+    .fontawesome.bell:before {
+        content: '\f0f3';
+    }
+
+    .fontawesome.box:before {
+        content: '\f187';
+    }
+
+    .fontawesome.bars:before {
+        content: '\f0c9';
+    }
+
+    .fontawesome.calc:before {
+        content: '\f1ec';
+    }
+
+    .fontawesome.check:before {
+        content: '\f00c';
+    }
+
+    .fontawesome.checkcircle:before {
+        content: '\f058';
+    }
+
+    .fontawesome.checkcircle2:before {
+        content: '\f05d';
+    }
+
+    .fontawesome.clock:before {
+        content: '\f017';
+    }
+
+    .fontawesome.company:before {
+        content: '\f0f7';
+    }
+
+    .fontawesome.computer:before {
+        content: '\f108';
+    }
+
+    .fontawesome.detailwindow:before {
+        content: '\f022';
+    }
+
+    .fontawesome.download:before {
+        content: '\f019';
+    }
+
+    .fontawesome.exclamation:before {
+        content: '\f06a';
+    }
+
+    .fontawesome.eye:before {
+        content: '\f06e';
+    }
+
+    .fontawesome.forbidden:before {
+        content: '\f05e';
+    }
+
+    .fontawesome.gears:before {
+        content: '\f085';
+    }
+
+    .fontawesome.gt:before {
+        content: '\f054';
+    }
+
+    .fontawesome.info:before {
+        content: '\f05a';
+    }
+
+    .fontawesome.key:before {
+        content: '\f084';
+    }
+
+    .fontawesome.levels:before {
+        content: '\f0ae';
+    }
+
+    .fontawesome.minuscircle:before {
+        content: '\f056';
+    }
+
+    .fontawesome.mail:before {
+        content: '\f0e0';
+    }
+
+    .fontawesome.pencil:before {
+        content: '\f040';
+    }
+
+    .fontawesome.play:before {
+        content: '\f04b';
+    }
+
+    .fontawesome.plus:before {
+        content: '\f067';
+    }
+
+    .fontawesome.questioncircle:before {
+        content: '\f059';
+    }
+
+    .fontawesome.refresh:before {
+        content: '\f01e';
+    }
+
+    .fontawesome.snowflake:before {
+        content: '\f2dc';
+    }
+
+    .fontawesome.turnon:before {
+        content: '\f011';
+    }
+
+    .fontawesome.users:before {
+        content: '\f0c0';
+    }
+
+    .fontawesome.x:before {
+        content: '\f00d';
+    }
+
+    .fontawesome.xcircle:before {
+        content: '\f057';
+    }
+
+    .fontawesome.windowpencil:before {
+        content: '\f044';
+    }
+
+    .fontawesome.excel:before {
+        content: "\f1c3";
+    }
+
+    .fontawesome.fa-refresh:before {
+        content: "\f021";
+    }
+
+    .fontawesome.fa-wrench:before {
+      content: "\f0ad";
+    }
+
+    .fontawesome.fa-life-ring:before {
+      content: "\f1cd";
+    }
+
+    .fontawesome.fa-fire-extinguisher:before {
+      content: "\f134";
+    }
+
+    .fontawesome.fa-lock:before {
+        content: "\f023";
+    }
+
+    .fontawesome.fa-clock-o:before {
+        content: "\f017";
+    }
+
+    .fontawesome.money:before {
+        content: "\f0d6";
+    }
+
+    .fontawesome.history:before {
+        content: "\F1DA";
+    }
+
+    .fontawesome.fa-lg {
+      font-size: 1.33333333em;
+      line-height: 0.75em;
+      vertical-align: -15%;
+    }
+
+    .fontawesome.fa-sm {
+      font-size: 0.6em;
+      line-height: 0.75em;
+      vertical-align: -15%;
+    }
+
+    .fontawesome.fa-2x {
+      font-size: 1.5em;
+    }
+
+
+    .fa-reply:before {
+      content: "\f112";
+    }
+
+.fontawesome.external-link:before {
+        content: "\f08e";
+    }
+
+.fontawesome.plus-square:before {
+        content: "\F0FE";
+    }
+
+.fontawesome.save:before {
+        content: "\F0C7";
+    }
+
+.fontawesome.file:before {
+        content: "\F15C";
+    }
+
+.fontawesome.trash:before {
+        content: "\F014";
+    }
+
+.fontawesome.calculator:before {
+        content: "\F014";
+    }
+
+.fontawesome.chart-bar:before {
+        content: "\F080";
+    }
+
+    .fontawesome.page:before{
+        content: "\F016";
+    }
+
+    .fontawesome.signal:before{
+        content: "\F012";
+    }
+
+.fontawesome.slideDown:before {
+    content: "\F078";
+}
+
+.fontawesome.slideUp:before {
+    content: "\F077";
+}
+
+.fontawesome.slideRigth:before {
+    content: "\F054";
+}
+
+.fontawesome.triangledecrease:before{
+    content: "\F0D7";
+}
+
+.fontawesome.triangleincrease:before{
+    content: "\F0D8";
+}
+
+.fontawesome.triangletoright:before{
+    content: "\F0DA";
+}
+
+.fontawesome.fixedItemIcon:before{
+    content: "\F08D";
+}
+
+.fontawesome.filterIcon:before{
+     content: "\F0B0";
+}
+
+.fontawesome.view:before{
+    content: "\F06E";
+}
+
+.fontawesome.icon-cloud-download:before{
+    content: "\F0ED";
+}
+
+.fontawesome.report:before{
+    content: "\F0F6";
+}
+
+.fontawesome.configurationIcon:before {
+    content: "\F013";
+}
+
+.fontawesome.gb:before{
+    content: "\F053";
+}
+.fontawesome.fa-box:before {
+    content: "\f466";
+}
+
+.fontawesome.drop:before {
+    content: "\F043";
+}
+
+.fontawesome.fa-ellipsis-h {
+    content: '\f141';
+}
+/*****************************************************************************************************************************/
+
+@font-face {
+    font-family: 'Raphael';
+    src: url('fonts/raphael.eot');
+    src: url('fonts/raphael.eot?#iefix') format('embedded-opentype'), url('fonts/raphael.ttf') format('truetype'), url('fonts/raphael.svg#iconic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.raphael {
+    display: inline-block;
+    font-family: 'Raphael';
+}
+
+    .raphael.cloud:before {
+        content: '\006b';
+    }
+
+    .raphael.cloud_empty:before {
+        content: '\006c';
+    }
+
+    .raphael.cloud_download:before {
+        content: '\006d';
+    }
+
+    .raphael.question:before {
+        content: '\0021';
+    }
+
+     .raphael.exclamation:before {
+        content: '\0022';
+    }
+
+    .raphael.user:before {
+        content: '\004c';
+    }
+
+    .raphael.users:before {
+        content: '\004b';
+    }
+
+
+/*****************************************************************************************************************************/
+
+@font-face {
+    font-family: 'Modernpics';
+    src: url('fonts/modernpics.eot');
+    src: url('fonts/modernpics.eot?#iefix') format('embedded-opentype'), url('fonts/modernpics.ttf') format('truetype'), url('fonts/modernpics.svg#iconic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.modernpics {
+    display: inline-block;
+    font-family: 'Modernpics';
+}
+
+    .modernpics.eye:before {
+        content: '\0045';
+    }
+
+    .modernpics.printer:before {
+        content: '\0064';
+    }
+
+    .modernpics.pencil:before {
+        content: '\0072';
+    }
+
+    .modernpics.squares12:before {
+        content: '\005c';
+    }
+
+    .modernpics.tools:before {
+        content: '\0028';
+    }
+
+/*****************************************************************************************************************************/
+
+@font-face {
+    font-family: 'Icomoon';
+    src: url('fonts/icomoon-custom.eot');
+    src: url('fonts/icomoon-custom.eot?#iefix') format('embedded-opentype'), url('fonts/icomoon-custom.ttf') format('truetype'), url('fonts/icomoon-custom.svg#iconic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icomoon {
+    display: inline-block;
+    font-family: 'Icomoon';
+}
+
+    .icomoon.building:before {
+        content: '\e600';
+    }
+
+    .icomoon.chart:before {
+        content: '\e601';
+    }
+
+/*****************************************************************************************************************************/
+
+@font-face {
+    font-family: "WeblySleek UI Semibold";
+    src: url("fonts/weblysleekuisb.eot");
+    src: url("fonts/weblysleekuisb.eot?") format("eot"), url("fonts/weblysleekuisb.woff") format("woff"), url("fonts/weblysleekuisb.ttf") format("truetype"), url("fonts/weblysleekuisb.svg#WeblySleekUISemibold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,1261 @@
+/*Estilo comum*/
+
+
+.bigger-Font {
+    font-size: 28px;
+}
+
+.big-Font {
+    font-size: 18px;
+}
+
+.medium-Font {
+    font-size: 16px;
+}
+
+.normal-Font {
+    font-size: 12px;
+}
+
+.small-Font {
+    font-size: 10px;
+}
+
+.block-breakline {
+    white-space: nowrap;
+}
+
+/*######################################################################*/
+
+/*Estilo da janela do relatório*/
+
+.reportWindow {
+    min-width: 850px;
+}
+
+/*######################################################################*/
+
+/*Estilo do conteúdo da janela de diálogo*/
+
+#exportReportAction .k-link .k-icon {
+    margin-left: 2.5px;
+}
+
+.report-header {
+    font-size: 14px;
+}
+
+    .report-header .report-header-options .report-total {
+        margin: 0;
+    }
+
+    .report-header .report-header-informations {
+        float: left;
+        max-width: 400px;
+    }
+
+        .report-header .report-header-informations .dealer-information-report {
+            margin: 2px;
+        }
+
+#reportTabs {
+    margin-top: 10px;
+}
+
+    #reportTabs .k-content {
+        border: none;
+        padding: 0;
+    }
+
+#exportPDF, #exportExcel, #exportERP, #exportWord {
+    text-align: left;
+}
+
+    #exportPDF .k-link, #exportERP .k-link, #exportExcel .k-link, #exportWord .k-link {
+        padding: 7.5px;
+    }
+
+/*######################################################################*/
+
+/*Estilo da aba do relatório de impressoras*/
+
+
+#txt-filter-grid-report {
+    background-color: white;
+}
+
+.report-filters-settings .report-settings .txt-filter .k-icon {
+    background-position: -32px -240px;
+}
+
+.printersTotal {
+    margin-top: 0;
+    border: 1px solid rgb(211,211,211);
+    text-align: right;
+    min-width: 735px;
+}
+
+    .printersTotal p {
+        margin: 0;
+        padding: 5px 25px;
+    }
+
+#reportPrintersGrid table tbody tr:first-child td {
+    border-top: none !important;
+}
+
+.report-content {
+    max-height: 600px;
+    overflow: auto;
+    border: 1px solid rgb(211,211,211);
+    border-left: none;
+}
+
+.grid-printer-title, .grid-report-header, .printer-details-grid, .grid-report-content {
+    display: flex;
+}
+
+.printer-details-grid {
+    width: 765px;
+}
+
+.grid-report-header {
+    min-width: 1121px;
+}
+
+.grid-report-content {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.report-settings {
+    display: inline-block;
+    margin: 0 5px;
+    margin-right: 0;
+}
+
+.paragraph-grid-style {
+    margin: 0;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    white-space: nowrap;
+}
+
+.statusDescription {
+    margin: 0;
+    -ms-word-break: keep-all;
+    word-break: keep-all;
+    white-space: normal;
+}
+
+.cell-grid-report {
+    margin-left: 10px;
+}
+
+.grid-printer-main-info {
+    margin-right: 5px;
+    max-width: 350px !important;
+    width: 350px;
+}
+
+.grid-printer-breakline {
+    white-space: normal;
+    -ms-word-break: normal !important;
+    word-break: normal;
+}
+
+.costs-content {
+    width: 95px;
+    display: inline-block;
+}
+
+.configuration-costs {
+    color: green;
+    max-width: 175px;
+    font-style: italic;
+}
+
+.hrStyle {
+    width: 100%;
+    border: 0.5px solid #d3d3d3;
+    margin: 0;
+}
+
+.report-grid-align {
+    padding: .4em .6em;
+}
+
+#tableCounters {
+    min-width: 800px;
+    max-width: 1060px;
+}
+
+    #tableCounters tr td {
+        border: none;
+        text-align: center;
+        padding: 0 2.5px !important;
+        vertical-align: baseline;
+    }
+
+    #tableCounters tr th, .rowType {
+        white-space: nowrap;
+    }
+
+    #tableCounters .align-costs {
+        width: 220px;
+        text-align: left !important;
+    }
+
+    #tableCounters .numeric-align {
+        text-align: right !important;
+    }
+
+    #tableCounters .initialCountersColumn, #tableCounters .endCountersColumn,
+    #tableCounters .totalCountersColumn {
+        width: 50px;
+    }
+
+    #tableCounters .descriptionColumn {
+        width: 25px;
+    }
+
+    #tableCounters .startDateColumn, #tableCounters .endDateColumn {
+        width: 75px;
+    }
+
+    #tableCounters .costColumn {
+        width: 75px;
+    }
+
+#reportTabs .k-tabstrip-items {
+    margin-left: 5px;
+    padding: .3em .3em 0;
+}
+
+/*Cabeçalho do relatório que irá aparecer apenas na impressão*/
+
+.reportHeaderLogoDiv img {
+    max-height: 150px;
+    margin: auto;
+}
+
+.reportHeaderMargin {
+    margin-left: 5px;
+}
+
+.ReportHeader-OnlyToPrint .closingTitle {
+    border: 1px solid rgb(211,211,211);
+    width: auto;
+    text-align: center;
+}
+
+    .ReportHeader-OnlyToPrint .closingTitle p {
+        font-size: 21px;
+        margin: 10px 5px;
+    }
+
+.ReportHeader-OnlyToPrint .closingInformations {
+    border: 1px solid rgb(211,211,211);
+    margin: 5px 0;
+}
+
+    .ReportHeader-OnlyToPrint .closingInformations .closingInformationsDetails {
+        display: flex;
+        margin: 5px 0;
+    }
+
+.ReportHeader-OnlyToPrint .reportHeaderContent {
+    display: none;
+    margin-bottom: 10px;
+}
+
+    .ReportHeader-OnlyToPrint .reportHeaderContent .report-header-informations, #customer-report-pdf-information, #contract-report-pdf-information-container {
+        padding-left: 0; /* coluna do bootstrap por padrão adiciona padding de 15px, não queremos este espaçamento neste caso */
+    }
+
+#invoice-report-pdf-header-container-right {
+    padding-right: 0;
+}
+
+.ReportHeader-OnlyToPrint .reportHeaderContent .reportHeaderLogoDiv {
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    position: relative;
+}
+
+    .ReportHeader-OnlyToPrint .reportHeaderContent .reportHeaderLogoDiv #logo-img {
+        max-width: 100%;
+        max-height: 100% !important;
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+.dealerGeneralInformations {
+    border-left: 1px solid black;
+    font-size: 14px;
+}
+
+    .dealerGeneralInformations p {
+        margin: 5px 0 5px 10px;
+    }
+
+.customerInformations {
+    margin-left: 15px;
+    max-width: 1000px;
+}
+
+    .customerInformations p {
+        margin: 0 0 2.5px 0 !important;
+    }
+
+#divImgContent {
+    margin: auto 0;
+    max-width: 300px;
+    max-height: 200px;
+    margin-right: 10px;
+}
+
+#divImgFile {
+    width: unset;
+    height: unset;
+}
+
+/*Tabelas dos custos adicionais e custos compartilhados que vão aparecer apenas na impressão*/
+
+#ReportContentToPrint {
+    font-family: "Segoe UI", "WeblySleek UI Semibold", Verdana, Helvetica, Sans-Serif;
+    color: black;
+}
+
+    #ReportContentToPrint .ReportSharedCosts-OnlyToPrint {
+        display: none;
+    }
+
+    #ReportContentToPrint .ReportAdditionalCosts-OnlyToPrint {
+        display: none;
+    }
+
+    #ReportContentToPrint .IncreaseAndDiscounts-OnlyToPrint {
+        display: none;
+    }
+
+.Total-OnlyToPrint {
+    display: none;
+    text-align: right;
+}
+
+    .Total-OnlyToPrint p {
+        padding: 5px 10px;
+    }
+
+#ReportContentToPrint .CustomReportFooter-OnlyToPrint {
+    display: none;
+}
+
+.CustomReportFooter-OnlyToPrint p {
+    color: rgb(126,126,126);
+}
+
+.ReportFooter-OnlyToPrint {
+    display: none;
+    color: rgb(126,126,126);
+}
+
+    .ReportFooter-OnlyToPrint .reportFooterMainInfo {
+        display: flex;
+    }
+
+    .ReportFooter-OnlyToPrint .reportFooterElements {
+        width: 50%;
+        color: rgb(126,126,126);
+    }
+
+    .ReportFooter-OnlyToPrint .documentNumberFooter {
+        margin: 5px 0;
+    }
+
+/*######################################################################*/
+
+/*Layout da aba de custos adicionais*/
+.tabline-report-additionalCosts {
+    margin-bottom: 10px !important;
+    border: 0.5px solid #d3d3d3;
+    margin: 0;
+}
+
+.fixedCostsContent {
+    margin-top: 10px;
+}
+
+#fixedCostTable {
+    width: 100%;
+    min-width: 828px;
+    border-collapse: collapse;
+    border: 1px solid rgb(211,211,211);
+}
+
+@media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    #fixedCostTable {
+        max-width: 726px;
+    }
+}
+
+#fixedCostTable tr td {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+#fixedCostTable tr:nth-child(odd) td {
+    background-color: white;
+}
+
+#fixedCostTable tr:nth-child(even) td {
+    background-color: rgb(245,245,245);
+}
+
+.fixedCostsTotal {
+    margin-top: 0;
+    border: 1px solid rgb(211,211,211);
+    border-top: none;
+    text-align: right;
+}
+
+    .fixedCostsTotal p {
+        margin: 0;
+        padding: 5px 10px;
+    }
+
+/*######################################################################*/
+
+/*Layout dos custos compartilhados*/
+
+.sharedCostLineStyle {
+    margin: 0;
+    font-size: 12px;
+}
+
+.sharedCostTitle {
+    width: 100px;
+    max-width: 100px;
+}
+
+.sharedCostDescription {
+    max-width: 875px;
+    width: 875px;
+}
+
+.sharedCostValue {
+    max-width: 100px;
+    width: 100px;
+}
+
+.tabline-report-SharedCosts {
+    margin-bottom: 10px !important;
+    border: 0.5px solid #d3d3d3;
+    margin: 0;
+}
+
+.sharedCostsContent {
+    margin-top: 10px;
+    border-top: 0.5px solid #d3d3d3;
+}
+
+    .sharedCostsContent .sharedCostMargin {
+        border: 0.5px solid #d3d3d3;
+        border-left: none;
+    }
+
+        .sharedCostsContent .sharedCostMargin .sharedCostInfo {
+            display: flex;
+            padding: 5px 10px;
+            border: 0.5px solid #d3d3d3;
+            border-bottom: none;
+            border-top: none;
+        }
+
+.sharedCostsTotal {
+    margin-top: 0;
+    border: 1px solid rgb(211,211,211);
+    text-align: right;
+}
+
+    .sharedCostsTotal p {
+        margin: 0;
+        padding: 5px 10px;
+    }
+
+.invoicePendenciesDivStyle {
+    height: auto;
+    border: 1px solid #a94442;
+}
+
+.infoRed {
+    color: #a94442;
+}
+
+/*######################################################################*/
+
+/*Estilo da aba de acréscimos e descontos*/
+
+.tabline-report-IncreasesAndDiscounts {
+    margin-bottom: 10px !important;
+    border: 0.5px solid #d3d3d3;
+    margin: 0;
+}
+
+.increasesAndDiscountsContent {
+    margin-top: 10px;
+    border: 1px solid #d3d3d3;
+}
+
+.increasesAndDiscountsTotal {
+    margin-top: 0;
+    border: 1px solid rgb(211,211,211);
+    border-top: none;
+    text-align: right;
+}
+
+    .increasesAndDiscountsTotal p {
+        margin: 0;
+        padding: 5px 10px;
+    }
+
+#addIncreaseOrDiscountBtn {
+    width: 100%;
+    padding: 10px;
+    color: #264d81;
+}
+
+    #addIncreaseOrDiscountBtn:hover, #addIncreaseOrDiscountBtn:focus {
+        color: white;
+        background-color: #264E82;
+        border-color: #264E82;
+    }
+
+    #addIncreaseOrDiscountBtn:active {
+        background-color: #264E82;
+        border-color: #264E82;
+    }
+
+.buttonIncreaseAndDiscountsDiv {
+    width: 60px;
+    text-align: center;
+}
+
+.buttonIncreaseAndDiscounts {
+    border: none !important;
+    min-width: unset !important;
+    background-image: none !important;
+    padding: 0 !important;
+}
+
+.buttonRemoveIncreaseOrDiscount {
+    color: #a9a9a9 !important;
+}
+
+    .buttonRemoveIncreaseOrDiscount:hover {
+        color: #264d81 !important;
+    }
+
+#cancelInvoiceIncreaseOrDiscount {
+    color: #3770bc;
+    background-color: white;
+}
+
+    #cancelInvoiceIncreaseOrDiscount:hover {
+        color: white;
+    }
+
+#saveNewIncreaseOrInvoice {
+    background-color: white;
+}
+
+    #saveNewIncreaseOrInvoice.button-icon:active:not(.saveNewIncreaseOrInvoiceHover),
+    #saveNewIncreaseOrInvoice.button-icon:focus:not(.saveNewIncreaseOrInvoiceHover) {
+        color: #a9a9a9 !important;
+        background-color: white !important;
+    }
+
+.saveNewIncreaseOrInvoiceHover:hover {
+    color: white !important;
+    cursor: pointer;
+}
+
+#increaseAndDiscountGrid thead tr th, #increaseAndDiscountsToExportGrid thead tr th {
+    text-align: left !important;
+    background-color: white;
+    padding: 5px 10px;
+    border-right: none;
+    border-left: none;
+}
+
+#increaseAndDiscountGrid tbody tr td, #increaseAndDiscountsToExportGrid tbody tr td {
+    padding: 5px 10px !important;
+    border-width: unset;
+    border-style: unset;
+    vertical-align: baseline;
+}
+
+#increaseAndDiscountGrid tbody tr td {
+    padding: 2px !important;
+}
+
+.backgroundRowAlt {
+    background-color: #f5f5f5;
+}
+
+.inputStyleInvoiceIncreaseOrDiscount {
+    width: 100% !important;
+    height: 30px !important;
+}
+
+#increaseOrDiscountDescription {
+    box-shadow: unset;
+}
+
+/*######################################################################*/
+/*Estilo do detalhamento do total de fechamentos*/
+
+.totalDetailing {
+    background-color: white;
+}
+
+    .totalDetailing .totalDetailingTitle {
+        margin: 10px 4px 0 4px;
+        padding: 5px 0;
+        text-align: center;
+    }
+
+.totalDetailingContent {
+    display: none;
+    font-size: 14px;
+    margin: 0 4px 0 4px;
+    padding: 0 0 5px 0;
+}
+
+    .totalDetailingContent .comparatorTotals p {
+        color: #a9a9a9;
+        margin: 0;
+    }
+
+        .totalDetailingContent .comparatorTotals p .comparatorTotalsValue {
+            margin-right: 5px;
+        }
+
+    .totalDetailingContent .totalDetailingCharts {
+        display: flex;
+        margin-top: 10px;
+    }
+
+.totalDealingIcon {
+    color: rgb(148,148,148);
+}
+
+.increaseStyle {
+    color: green;
+}
+
+.decreaseStyle {
+    color: red;
+}
+
+.sameValueStyle {
+    color: #a9a9a9;
+}
+
+.compositionOfInvoiceTotalChart {
+    float: left;
+    width: calc(100% - 360px);
+}
+
+.totalPagesInvoiceChart {
+    width: 360px;
+    float: right;
+}
+
+.centerChartClass {
+    margin: auto;
+}
+
+.percentageDivs {
+    height: 15px;
+    width: 0;
+    max-width: 450px;
+}
+
+.compositionOfCosts {
+    background-color: #47c559;
+}
+
+.compositionOfDiscounts {
+    background-color: red;
+}
+
+.costsChartTableDescription {
+    width: 180px;
+}
+
+.costsChartTableValue {
+    width: 125px;
+}
+
+.comparatorStyle {
+    white-space: nowrap;
+    margin: 0 0 0 2.5px;
+}
+
+
+.k-ff #fixedCostTable, .k-edge #fixedCostTable, .k-ie #fixedCostTable {
+    width: 99%;
+}
+
+.k-ff .report-content, .k-edge .report-content, .k-ie .report-content {
+    width: 1155px;
+}
+
+.headerType {
+    width: 100px !important;
+}
+
+.headerDescription {
+    width: 400px !important;
+}
+
+.headerValue {
+    width: 175px;
+    text-align: right !important;
+}
+
+
+/*######################################################################*/
+/*Layout da Impressão*/
+@media print {
+    @page {
+        size: A4;
+        margin: 0.3cm;
+    }
+
+    body {
+        height: 0 !important;
+        min-height: unset !important;
+    }
+
+    #ReportContentToPrint .k-grid-header .k-header, #ReportContentToPrint .printer-grid-report {
+        border-bottom: 1px solid rgb(211,211,211) !important;
+    }
+
+    .k-window {
+        top: 0 !important;
+        max-width: unset;
+        padding-top: 0 !important;
+    }
+
+    #ReportContentToPrint {
+        top: 0 !important;
+    }
+
+    #ReportContentToPrint, .k-window {
+        left: auto !important;
+    }
+
+    body, #ReportContentToPrint {
+        background-color: white;
+    }
+
+        #ReportContentToPrint .k-alt {
+            background-color: #f5f5f5 !important;
+        }
+
+        #ReportContentToPrint .white-grid .k-alt {
+            background-color: transparent !important;
+        }
+
+    #reportPrintersGrid .k-alt {
+        background-color: #f5f5f5 !important;
+    }
+
+    html {
+        overflow: auto;
+    }
+
+    body * {
+        visibility: hidden;
+    }
+
+    #ReportContentToPrint, #ReportContentToPrint * {
+        visibility: visible;
+    }
+
+        #ReportContentToPrint, #ReportContentToPrint .hidden-visibility * {
+            visibility: hidden;
+        }
+
+    #reportPrintersGrid {
+        margin-top: 1px;
+    }
+
+    .report-content {
+        max-height: unset !important;
+        height: auto !important;
+        border: none !important;
+    }
+
+    .printersTotal p {
+        padding: 5px 10px;
+    }
+
+    .numeric-align a {
+        color: unset;
+        text-decoration: none;
+    }
+
+    #ReportContentToPrint .ReportHeader-OnlyToPrint, #ReportContentToPrint .ReportSharedCosts-OnlyToPrint, #ReportContentToPrint .IncreaseAndDiscounts-OnlyToPrint,
+    #ReportContentToPrint .ReportAdditionalCosts-OnlyToPrint, .Total-OnlyToPrint, #ReportContentToPrint .CustomReportFooter-OnlyToPrint {
+        display: block;
+    }
+
+    .tabline-report-printers, .report-filters-settings, .k-tabstrip-items, .report-header, #content, .report-icon-alert, #header, #footer,
+    .tabline-report-SharedCosts, .tabline-report-additionalCosts, .tabline-report-IncreasesAndDiscounts {
+        display: none;
+    }
+
+    #reportTabs {
+        margin: 0;
+    }
+
+    #reportTabs-1 {
+        display: block !important;
+        height: auto !important;
+        overflow: auto !important;
+        opacity: 1 !important;
+    }
+
+    .sharedCostMargin .sharedCostInfo:first-child {
+        border-top: 1px solid #d3d3d3;
+    }
+
+    .printer-grid-report {
+        border-bottom: none;
+    }
+
+    .printersTotal {
+        margin-top: 0;
+        min-width: unset;
+    }
+
+    .sharedCostsContent {
+        border-top: none;
+    }
+
+    .fixedCostsTotal, #Total-OnlyToPrintDiv, .fixedCostsContent, .sharedCostsContent, .printersTotal, .sharedCostsTotal {
+        max-width: 1119px;
+    }
+
+    .fixedCostsContent, .sharedCostsContent {
+        max-width: 1121px;
+    }
+
+    .sharedCostsTotal {
+        border: 1px solid rgb(211,211,211);
+    }
+
+    .sharedCostDescription {
+        max-width: 900px;
+        width: 900px;
+    }
+
+    .grid-report-content {
+        width: 1115px;
+        max-width: 1115px;
+    }
+
+    .grid-report-header {
+        min-width: unset !important;
+    }
+
+    #fixedCostTable {
+        max-width: none;
+    }
+
+    #reportPrintersGrid table tbody tr td {
+        border: none;
+        border-bottom: 1px solid rgb(211,211,211);
+    }
+
+    #reportPrintersGrid table {
+        border: 1px solid rgb(211,211,211);
+    }
+
+        #reportPrintersGrid table.hidden-visibility {
+            border: 0;
+        }
+
+    .printer-details-grid {
+        width: 745px;
+    }
+
+    #tableCounters {
+        width: 1015px;
+        max-width: 1015px;
+        margin-right: 10px;
+        border: none !important;
+    }
+
+        #tableCounters tbody tr td {
+            border-bottom: none !important;
+            border: none !important;
+        }
+
+    .tabline-report-printers {
+        display: none !important;
+    }
+
+    .blockPrint {
+        display: none !important;
+    }
+
+    .ReportFooter-OnlyToPrint {
+        display: block;
+        color: rgb(126,126,126);
+    }
+
+        .ReportFooter-OnlyToPrint .reportFooterElements {
+            color: rgb(126,126,126);
+        }
+
+    .sharedCostsContent .sharedCostMargin {
+        border: none;
+    }
+
+    .k-ff #fixedCostTable, .k-edge #fixedCostTable, .k-ie #fixedCostTable {
+        width: 100%;
+    }
+
+    .k-ff .report-content, .k-edge .report-content, .k-ie .report-content {
+        width: unset;
+    }
+
+    .k-ff .fixedCostsTotal, #Total-OnlyToPrintDiv, .k-ff .fixedCostsContent, .k-ff .sharedCostsContent, .k-ff .printersTotal, .k-ff .sharedCostsTotal {
+        max-width: 1122px;
+    }
+
+    .k-ff #reportPrintersGrid table {
+        max-width: 1122px;
+    }
+
+    .k-ff .sharedCostsContent {
+        max-width: 1124px;
+    }
+
+    .k-ff .fixedCostsContent {
+        max-width: 1123px;
+    }
+
+    .reportHeaderContent {
+        display: flex !important;
+    }
+
+    /* Consgrado Firefox */
+    @-moz-document url-prefix() {
+        .grid-report-content {
+            width: 1120px;
+            max-width: 1120px;
+        }
+    }
+
+
+    /* Edge */
+    @supports (-ms-ime-align: auto) {
+
+        .grid-printer-main-info {
+            max-width: 350px !important;
+            width: 350px !important;
+            -ms-word-break: break-all;
+            word-break: break-all;
+        }
+
+        .printer-details-grid {
+            width: 30px;
+        }
+
+
+        #tableCounters, .printersTotal {
+            min-width: 0;
+            max-width: 980px;
+        }
+
+        .printersTotal, .sharedCostsTotal, .sharedCostInfo, .sharedCostMargin, #Total-OnlyToPrintDiv, #ReportFooter-OnlyToPrintDiv, .reportHeaderContent {
+            min-width: 0;
+            max-width: 1063px;
+        }
+
+        .sharedCostDescription {
+            width: 850px;
+        }
+
+        .sharedCostInfo > .right-align {
+            text-align: right;
+        }
+        /*Remove scroll horizontal da tabela #Gambi's power*/
+        table {
+            width: 1058px !important;
+        }
+
+        .report-content {
+            width: 880px;
+        }
+
+        .printer-grid-report {
+            width: 1058px !important;
+        }
+
+        .grid-report-content {
+            width: 980px !important;
+        }
+
+        #tableCounters > tbody > tr > td {
+            width: 100px !important;
+        }
+    }
+}
+
+
+
+/* IE é dengoso, precisa de uma media print só pra ele */
+@media print and (-ms-high-contrast: none) {
+    /*Remove scroll horizontal da tabela #Gambi's power*/
+    table {
+        width: 100px !important;
+    }
+
+    .grid-printer-main-info {
+        max-width: 138px !important;
+        width: 138px !important;
+        -ms-word-break: break-all;
+        word-break: break-all;
+        margin-right: 2px !important;
+    }
+
+    .grid-report-header {
+        width: 100px;
+    }
+
+    .reportHeaderContent {
+        width: 838px;
+    }
+
+    .printer-grid-report {
+        width: 834px;
+    }
+
+    .printer-details-grid {
+        width: 700px;
+    }
+
+    .align-costs {
+        width: 100px;
+    }
+
+    .descriptionColumn, .initialCountersColumn, .endCountersColumn, .totalCountersColumn, .startDateColumn, .endDateColumn, .costColumn, .costColumn {
+        width: 150px !important;
+    }
+
+    #tableCounters {
+        min-width: 750px;
+        width: 790px;
+    }
+
+    .fixedCostsTotal, #Total-OnlyToPrintDiv, .fixedCostsContent, .sharedCostsContent, .printersTotal, .sharedCostsTotal {
+        width: 836px !important;
+    }
+
+    .paragraph-grid-style {
+        white-space: normal;
+        -ms-word-break: break-all;
+        word-break: break-all;
+    }
+
+    .printer-details-grid > .cell-grid-report:last-child > .paragraph-grid-style {
+        white-space: normal !important;
+        -ms-word-break: normal !important;
+        word-break: normal !important;
+    }
+
+    .cell-grid-report {
+        margin-left: 2px !important;
+        font-size: 11px !important;
+    }
+
+    .grid-printer-title > .paragraph-grid-style {
+        font-size: 14px !important;
+    }
+
+    .report-content {
+        /*Shame on me*/
+        max-height: 99999999999999999999999999999999px !important;
+        max-width: 838px !important;
+    }
+}
+
+/*######################################################################*/
+/*Layout da Exportação PDF*/
+kendo-pdf-document #ReportContentToPrint {
+    -moz-transform: scale(0.50);
+    -ms-transform: scale(0.50);
+    -o-transform: scale(0.50);
+    -webkit-transform: scale(0.50);
+    transform: scale(0.50);
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+
+kendo-pdf-document .reportHeaderContent {
+    display: flex !important;
+}
+
+
+kendo-pdf-document #ReportContentToPrint .ReportHeader-OnlyToPrint, kendo-pdf-document #ReportContentToPrint .ReportSharedCosts-OnlyToPrint,
+kendo-pdf-document #ReportContentToPrint .ReportAdditionalCosts-OnlyToPrint, kendo-pdf-document #ReportContentToPrint .Total-OnlyToPrint,
+kendo-pdf-document #ReportContentToPrint .CustomReportFooter-OnlyToPrint, kendo-pdf-document #ReportContentToPrint .report-content,
+kendo-pdf-document #ReportContentToPrint .IncreaseAndDiscounts-OnlyToPrint {
+    display: block !important;
+    max-width: 1133px !important;
+}
+
+kendo-pdf-document #ReportContentToPrint .ReportFooter-OnlyToPrint {
+    display: block;
+    color: rgb(126,126,126);
+}
+
+    kendo-pdf-document #ReportContentToPrint .ReportFooter-OnlyToPrint .reportFooterElements {
+        color: rgb(126,126,126);
+    }
+
+kendo-pdf-document #ReportContentToPrint .report-content {
+    max-height: unset;
+}
+
+kendo-pdf-document .numeric-align a {
+    color: unset;
+    text-decoration: none;
+}
+
+kendo-pdf-document .sharedCostsContent .sharedCostMargin, kendo-pdf-document .fixedCostMargin,
+kendo-pdf-document .fixedCostsTotal, kendo-pdf-document .grid-report-header, kendo-pdf-document .sharedCostsTotal,
+kendo-pdf-document .printersTotal {
+    border: 1px solid #d3d3d3 !important;
+}
+
+kendo-pdf-document .right-margin {
+    border-right: 1px solid #d3d3d3 !important;
+}
+
+kendo-pdf-document .printer-grid-report {
+    border-bottom: 1px solid rgb(211,211,211) !important;
+}
+
+kendo-pdf-document .sharedCostsTotal, kendo-pdf-document .printersTotal {
+    border-bottom: none;
+}
+
+kendo-pdf-document .page-break {
+    margin-top: 0;
+}
+
+kendo-pdf-document .printersTotal p {
+    padding: 5px 10px;
+}
+
+kendo-pdf-document .sharedCostDescription {
+    max-width: 910px;
+    width: 910px;
+}
+
+kendo-pdf-document .report-icon-alert {
+    display: none;
+}
+
+kendo-pdf-document .tabline-report-additionalCosts, kendo-pdf-document .tabline-report-SharedCosts, kendo-pdf-document .tabline-report-IncreasesAndDiscounts {
+    display: none !important;
+}
+
+kendo-pdf-document #tableCounters {
+    width: 1015px;
+    max-width: 1015px;
+    margin-right: 20px;
+}
+
+kendo-pdf-document .grid-report-content {
+    width: 1115px;
+    max-width: 1115px;
+}
+
+kendo-pdf-document .grid-report-header {
+    min-width: unset !important;
+}
+
+kendo-pdf-document .report-content {
+    max-width: 1122px;
+    height: auto !important;
+}
+
+kendo-pdf-document .costColumn a {
+    text-decoration: none;
+    color: #143345;
+}
+
+kendo-pdf-document #fixedCostTable {
+    max-width: none;
+    width: 100% !important;
+}
+
+kendo-pdf-document .printersTotal {
+    min-width: unset;
+}
+
+kendo-pdf-document #tableCounters .initialCountersColumn, kendo-pdf-document #tableCounters .endCountersColumn,
+kendo-pdf-document #tableCounters .totalCountersColumn {
+    width: 75px;
+}
+
+kendo-pdf-document #tableCounters .descriptionColumn {
+    width: 50px;
+}
+
+kendo-pdf-document #tableCounters .startDateColumn, kendo-pdf-document #tableCounters .endDateColumn,
+kendo-pdf-document #tableCounters .costColumn {
+    width: 100px;
+}
+
+kendo-pdf-document .headerType {
+    width: 300px !important;
+}
+
+kendo-pdf-document .headerDescription {
+    width: 595px !important;
+}
+
+@-moz-document url-prefix() {
+    kendo-pdf-document #fixedCostTable {
+        border: none;
+    }
+}
+
+@media (-ms-high-contrast: none) {
+    kendo-pdf-document .report-content {
+        /* Tão feio quanto programar em PHP - IE não é para amadores */
+        max-height: 99999999999999999999999999999999px !important;
+        max-width: 838px !important;
+    }
+}

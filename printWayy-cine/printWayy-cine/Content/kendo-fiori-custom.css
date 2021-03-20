@@ -1,0 +1,2326 @@
+﻿/*
+    Arquivo adicionado com finalidade de aplicar o estilo Fiori do Kendo em determinadas partes do PrintWayy
+
+    Orientação de uso: coloque o elemento que deseja aplicar tema Fiori em uma div da classe 'fiori'
+*/
+
+.fiori .k-theme-test-class, .fiori .ktb-theme-id-fiori {
+    opacity: 0;
+}
+
+.fiori .ktb-var-accent {
+    color: #007cc0;
+}
+
+.fiori .ktb-var-base {
+    color: #f2f2f2;
+}
+
+.fiori .ktb-var-background {
+    color: #fff;
+}
+
+.fiori .ktb-var-border-radius {
+    border-radius: 0;
+}
+
+.fiori .ktb-var-normal-background {
+    color: #fff;
+}
+
+.fiori .ktb-var-normal-gradient {
+    background-image: none;
+}
+
+.fiori .ktb-var-normal-text-color {
+    color: #333;
+}
+
+.fiori .ktb-var-hover-background {
+    color: #eaeaea;
+}
+
+.fiori .ktb-var-hover-gradient {
+    background-image: none;
+}
+
+.fiori .ktb-var-hover-text-color {
+    color: #333;
+}
+
+.fiori .ktb-var-selected-background {
+    color: #007cc0;
+}
+
+.fiori .ktb-var-selected-gradient {
+    background-image: none;
+}
+
+.fiori .ktb-var-selected-text-color {
+    color: #fff;
+}
+
+.fiori .ktb-var-error {
+    color: #ffd7d7;
+}
+
+.fiori .ktb-var-warning {
+    color: #fef1d0;
+}
+
+.fiori .ktb-var-success {
+    color: #cce8d8;
+}
+
+.fiori .ktb-var-info {
+    color: #d1eaff;
+}
+
+.fiori .ktb-var-series-a {
+    color: #008fd3;
+}
+
+.fiori .ktb-var-series-b {
+    color: #99d101;
+}
+
+.fiori .ktb-var-series-c {
+    color: #f39b02;
+}
+
+.fiori .ktb-var-series-d {
+    color: #f05662;
+}
+
+.fiori .ktb-var-series-e {
+    color: #c03c53;
+}
+
+.fiori .ktb-var-series-f {
+    color: #acacac;
+}
+
+.fiori .k-grid-norecords-template {
+    background-color: #fff;
+    border: 1px solid #bfbfbf;
+}
+
+.fiori .k-in, .fiori .k-item, .fiori .k-window-action {
+    border-color: transparent;
+}
+
+.fiori .k-block, .fiori .k-widget {
+    background-color: #fff;
+}
+
+    .fiori .k-calendar th, .fiori .k-dropzone-hovered, .fiori .k-footer-template td, .fiori .k-grid-footer, .fiori .k-group, .fiori .k-group-footer td, .fiori .k-grouping-header, .fiori .k-pager-wrap, .fiori .k-toolbar, .fiori .k-widget .k-status, .fiori .k-widget.k-popup {
+        background-color: #fff;
+    }
+
+.fiori .k-grouping-row td, .fiori .k-resize-handle-inner, .fiori td.k-group-cell {
+    background-color: #f2f2f2;
+}
+
+.fiori .k-list-container {
+    border-color: rgba(0,0,0,.2);
+    background-color: #fff;
+}
+
+.fiori .k-content, .fiori .k-editable-area, .fiori .k-panel > li.k-item, .fiori .k-panelbar > li.k-item, .fiori .k-tiles {
+    background-color: #fff;
+}
+
+.fiori .k-alt, .fiori .k-pivot-layout > tbody > tr:first-child > td:first-child, .fiori .k-resource.k-alt, .fiori .k-separator {
+    background-color: transparent;
+}
+
+.fiori .k-header.k-alt, .fiori .k-pivot-rowheaders .k-alt .k-alt {
+    background-color: rgba(0,0,0,0);
+}
+
+.fiori .k-textbox > input, .fiori input.k-textbox, .fiori input.k-textbox:hover, .fiori textarea.k-textbox, .fiori textarea.k-textbox:hover {
+    background: 0 0;
+}
+
+.fiori .k-input[readonly] {
+    background-color: #fff;
+    color: #333;
+}
+
+.fiori .k-inverse {
+    color: #fff;
+}
+
+.fiori .k-block {
+    color: #333;
+}
+
+.fiori .k-link:link, .fiori .k-link:visited, .fiori .k-nav-current.k-state-hover .k-link {
+    color: #007cc0;
+}
+
+.fiori .k-panelbar > li > .k-link, .fiori .k-tabstrip-items .k-link {
+    color: #333;
+}
+
+.fiori .k-grid-header .k-header > .k-link, .fiori .k-header, .fiori .k-treemap-title {
+    color: #333;
+}
+
+.fiori .k-widget.k-tooltip {
+    background-image: none;
+}
+
+.fiori .k-column-menu .k-state-active .k-sprite, .fiori .k-column-menu .k-state-hover .k-sprite, .fiori .k-icon:hover, .fiori .k-pager-numbers .k-current-page .k-link:hover:after, .fiori .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view.k-state-hover > .k-link:after, .fiori .k-state-focused .k-icon, .fiori .k-state-hover .k-icon, .fiori .k-state-selected .k-icon {
+    opacity: 1;
+}
+
+.fiori .k-mobile-list .k-check:checked, .fiori .k-mobile-list .k-edit-field [type=checkbox]:checked, .fiori .k-mobile-list .k-edit-field [type=radio]:checked {
+    opacity: .5;
+}
+
+.fiori .k-tool {
+    border-color: transparent;
+}
+
+.fiori .k-mobile-list .k-check:checked, .fiori .k-mobile-list .k-edit-field [type=checkbox]:checked, .fiori .k-mobile-list .k-edit-field [type=radio]:checked {
+    background-image: url(Fiori/sprite.png);
+    border-color: transparent;
+}
+
+.fiori .k-loading, .fiori .k-state-hover .k-loading {
+    background-position: 50% 50%;
+}
+
+.fiori .k-loading-color {
+    background-color: #fff;
+}
+
+.fiori .k-button {   
+    border-color: #bfbfbf;
+    background-color: #f2f2f2;
+}
+
+.fiori .k-draghandle {
+    border-color: #707070;
+    background-color: #f2f2f2;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+    .fiori .k-draghandle:hover {
+        border-color: #707070;
+        background-color: #787878;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+.fiori .k-scheduler {
+    color: #fff;
+    background-color: #f2f2f2;
+}
+
+.fiori .k-scheduler-layout {
+    color: #333;
+}
+
+.fiori .k-scheduler-datecolumn, .fiori .k-scheduler-groupcolumn {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.fiori .k-scheduler-header th, .fiori .k-scheduler-header-wrap, .fiori .k-scheduler-table td, .fiori .k-scheduler-times, .fiori .k-scheduler-times th, .fiori .k-scheduler-times tr {
+    border-color: #c9c9c9;
+}
+
+.fiori .k-nonwork-hour {
+    background-color: #e5e5e5;
+}
+
+.fiori .k-gantt .k-nonwork-hour {
+    background-color: rgba(0,0,0,.02);
+}
+
+.fiori .k-gantt .k-header.k-nonwork-hour {
+    background-color: rgba(0,0,0,.2);
+}
+
+.fiori .k-scheduler-table .k-today, .fiori .k-today > .k-scheduler-datecolumn, .fiori .k-today > .k-scheduler-groupcolumn {
+    background-color: #e5e5e5;
+}
+
+.fiori .k-scheduler-now-arrow {
+    border-left-color: #666;
+}
+
+.fiori .k-scheduler-now-line {
+    background-color: #666;
+}
+
+.fiori .k-event, .fiori .k-task-complete {
+    border-color: #007cc0;
+    background: #007cc0 0 -257px none repeat-x;
+    color: #fff;
+}
+
+.fiori .k-event-inverse {
+    color: #333;
+}
+
+.fiori .k-event.k-state-selected {
+    background-position: 0 0;
+    -webkit-box-shadow: 0 0 0 2px #333;
+    box-shadow: 0 0 0 2px #333;
+}
+
+.fiori .k-event .k-resize-handle:after, .fiori .k-task-single .k-resize-handle:after {
+    background-color: #fff;
+}
+
+.fiori .k-scheduler-marquee:after, .fiori .k-scheduler-marquee:before {
+    border-color: #007cc0;
+}
+
+.fiori .k-panelbar .k-content, .fiori .k-panelbar .k-item, .fiori .k-panelbar .k-panel {
+    background-color: #fff;
+    color: #333;
+    border-color: #c9c9c9;
+}
+
+.fiori .k-panelbar > li > .k-link {
+    color: #333;
+}
+
+.fiori .k-panelbar > .k-item > .k-link {
+    border-color: #c9c9c9;
+}
+
+.fiori .k-panel > li.k-item {
+    background-color: #fff;
+}
+
+.fiori .k-active-filter, .fiori .k-state-active, .fiori .k-state-active:hover, .fiori .k-tabstrip .k-state-active {
+    border-color: #c9c9c9;
+    color: #333;
+}
+
+.fiori .k-fieldselector .k-list-container {
+    background-color: #fff;
+}
+
+.fiori .k-button.k-state-focused, .fiori .k-button:focus {
+    border-color: #007cc0;
+}
+
+.fiori .k-button.k-state-active, .fiori .k-button:active {
+    color: #fff;
+}
+
+    .fiori .k-button.k-state-active:hover, .fiori .k-button:active:hover {
+        color: #fff;
+    }
+
+.fiori .k-button.k-state-disabled, .fiori .k-button.k-state-disabled:active, .fiori .k-button.k-state-disabled:hover, .fiori .k-button[disabled], .fiori .k-state-disabled .k-button, .fiori .k-state-disabled .k-button:active, .fiori .k-state-disabled .k-button:hover {
+    color: #7d7d7d;
+    border-color: #f2f2f2;
+    background-color: #f2f2f2;
+    background-image: none;
+}
+
+.fiori .k-button:focus:not(.k-state-disabled):not([disabled]) {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.fiori .k-button:focus:active:not(.k-state-disabled):not([disabled]) {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.fiori .k-menu .k-state-hover > .k-state-active {
+    background-color: transparent;
+}
+
+.fiori .k-state-highlight {
+    background: #fff;
+    color: #333;
+}
+
+.fiori .k-grouping-row .k-state-focused, .fiori .k-state-focused {
+    border-color: #eaeaea;
+}
+
+.fiori .k-calendar .k-link {
+    color: #333;
+}
+
+.fiori .k-calendar .k-footer {
+    padding: 0;
+}
+
+    .fiori .k-calendar .k-footer .k-nav-today {
+        color: #333;
+        text-decoration: none;
+        background-color: #fff;
+    }
+
+        .fiori .k-calendar .k-footer .k-nav-today.k-state-hover, .fiori .k-calendar .k-footer .k-nav-today:hover {
+            background-color: #fff;
+            text-decoration: underline;
+        }
+
+        .fiori .k-calendar .k-footer .k-nav-today:active {
+            background-color: #fff;
+        }
+
+.fiori .k-calendar .k-link.k-nav-fast {
+    color: #333;
+}
+
+.fiori .k-calendar .k-nav-fast.k-state-hover {
+    text-decoration: none;
+    background-color: #eaeaea;
+    color: #333;
+}
+
+.fiori .k-calendar .k-link.k-state-hover, .fiori .k-window-titlebar .k-link {
+    border-radius: 0;
+}
+
+.fiori .k-calendar .k-footer .k-link {
+    border-radius: 0;
+}
+
+.fiori .k-calendar th {
+    background-color: #fff;
+}
+
+.fiori .k-calendar-container.k-group {
+    border-color: rgba(0,0,0,.2);
+}
+
+.fiori .k-draghandle.k-state-selected:hover, .fiori .k-ghost-splitbar-horizontal, .fiori .k-ghost-splitbar-vertical, .fiori .k-list > .k-state-highlight, .fiori .k-list > .k-state-selected, .fiori .k-marquee-color, .fiori .k-panel > .k-state-selected, .fiori .k-scheduler .k-scheduler-toolbar .k-state-selected, .fiori .k-scheduler .k-today.k-state-selected, .fiori .k-state-selected, .fiori .k-state-selected:link, .fiori .k-state-selected:visited {
+    color: #fff;
+    background-color: #007cc0;
+    border-color: #007cc0;
+}
+
+.fiori .k-group-header + .k-list > .k-item.k-first, .fiori .k-static-header + .k-list > .k-item.k-first, .fiori .k-virtual-item.k-first {
+    border-top-color: #eaeaea;
+}
+
+.fiori .k-popup > .k-group-header, .fiori .k-popup > .k-virtual-wrap > .k-group-header {
+    background: #eaeaea;
+    color: #fff;
+}
+
+.fiori .k-popup .k-list .k-item > .k-group {
+    background: #eaeaea;
+    color: #fff;
+    border-bottom-left-radius: 0;
+}
+
+.fiori .k-marquee-text {
+    color: #fff;
+}
+
+.fiori .k-button.k-state-focused, .fiori .k-grid-header th.k-state-focused, .fiori .k-list > .k-state-focused, .fiori .k-state-focused, .fiori td.k-state-focused {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.fiori .k-listview > .k-state-focused, .fiori .k-listview > .k-state-focused.k-state-selected {
+    -webkit-box-shadow: inset 0 0 0 1px #007cc0;
+    box-shadow: inset 0 0 0 1px #007cc0;
+}
+
+.fiori .k-listview > .k-state-selected {
+    color: #333;
+    background-color: #e6f3fe;
+}
+
+.fiori .k-list > .k-state-focused.k-state-selected, .fiori .k-state-focused.k-state-selected, .fiori td.k-state-focused.k-state-selected {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.fiori .k-ie8 .k-button.k-state-focused, .fiori .k-ie8 .k-button:focus, .fiori .k-ie8 .k-grid-header th.k-state-focused, .fiori .k-ie8 .k-listview > .k-state-focused, .fiori .k-ie8 .k-menu li.k-state-focused, .fiori .k-ie8 .k-panelbar span.k-state-focused, .fiori .k-ie8 .k-tool.k-state-hover, .fiori .k-ie8 td.k-state-focused, .fiori .k-list-optionlabel.k-state-selected.k-state-focused, .fiori .k-list > .k-state-selected.k-state-focused {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.fiori .k-panelbar > li.k-state-default > .k-link.k-state-selected, .fiori .k-panelbar > li > .k-state-selected, .fiori .k-state-selected > .k-link {
+    color: #fff;
+}
+
+.fiori .k-dropdown .k-state-focused, .fiori .k-filebrowser-dropzone, .fiori .k-list > .k-state-hover, .fiori .k-mobile-list .k-edit-label.k-check:active, .fiori .k-mobile-list .k-item > .k-label:active, .fiori .k-mobile-list .k-item > .k-link:active, .fiori .k-mobile-list .k-recur-view .k-check:active, .fiori .k-pager-wrap .k-link:hover, .fiori .k-scheduler .k-scheduler-toolbar ul li.k-state-hover, .fiori .k-splitbar-horizontal-hover:hover, .fiori .k-splitbar-vertical-hover:hover, .fiori .k-state-hover, .fiori .k-state-hover:hover {
+    border-color: #eaeaea;
+}
+
+.fiori .k-mobile-list .k-scheduler-timezones .k-edit-field:nth-child(2):active {
+    color: #333;
+    background-color: #eaeaea;
+    border-color: #eaeaea;
+}
+
+.fiori .k-ie8 .k-window-titlebar .k-state-hover {
+    border-color: #eaeaea;
+}
+
+.fiori .k-state-focused > .k-select, .fiori .k-state-hover > .k-select {
+    border-color: #eaeaea;
+}
+
+.fiori .k-pager-wrap {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.fiori .k-autocomplete.k-state-active, .fiori .k-button:active, .fiori .k-dropdown-wrap.k-state-active, .fiori .k-numeric-wrap.k-state-active, .fiori .k-panelbar > .k-item > .k-state-focused, .fiori .k-picker-wrap.k-state-active, .fiori .k-state-active, .fiori .k-state-active:hover, .fiori .k-state-active > .k-link {
+    background-image: none;
+}
+
+.fiori .k-button.k-state-active, .fiori .k-button:active, .fiori .k-draghandle.k-state-selected:hover, .fiori .k-state-selected {
+    background-image: none;
+}
+
+.fiori .k-button.k-state-active, .fiori .k-button:active, .fiori .k-draghandle.k-state-selected:hover {
+    background-position: 50% 50%;
+}
+
+.fiori .k-tool-icon {
+    background-image: url(Fiori/sprite.png);
+}
+
+.fiori .k-other-month.k-state-hover .k-link, .fiori .k-state-hover > .k-link, .fiori div.k-filebrowser-dropzone em {
+    color: #333;
+}
+
+.fiori .k-state-error {
+    border-color: #666;
+    background-color: #ffd7d7;
+    color: #666;
+}
+
+.fiori .k-state-disabled {
+    opacity: .7;
+}
+
+.fiori .k-ie8 .k-state-disabled {
+    filter: alpha(opacity=70);
+}
+
+.fiori .k-loading-mask.k-state-selected, .fiori .k-tile-empty.k-state-selected {
+    border-width: 0;
+    background-image: none;
+    background-color: transparent;
+}
+
+.fiori .k-dropzone .k-upload-status, .fiori .k-dropzone em, .fiori .k-other-month, .fiori .k-other-month .k-link, .fiori .k-slider .k-draghandle, .fiori .k-state-disabled, .fiori .k-state-disabled .k-button, .fiori .k-state-disabled .k-link, .fiori .k-tile-empty strong {
+    color: #7d7d7d;
+}
+
+.fiori .k-progressbar-indeterminate {
+    background: url(Fiori/indeterminate.gif);
+}
+
+    .fiori .k-progressbar-indeterminate .k-progress-status-wrap, .fiori .k-progressbar-indeterminate .k-state-selected {
+        display: none;
+    }
+
+.fiori .k-slider-track {
+    background-color: #bfbfbf;
+}
+
+.fiori .k-slider-selection {
+    background-color: #007cc0;
+}
+
+.fiori .k-slider-horizontal .k-tick {
+    background-image: url(Fiori/slider-h.gif);
+}
+
+.fiori .k-slider-vertical .k-tick {
+    background-image: url(Fiori/slider-v.gif);
+}
+
+.fiori .k-widget.k-tooltip {
+    border-color: #bfbfbf;
+    background-color: #fff;
+    color: #333;
+}
+
+.fiori .k-widget.k-tooltip-validation {
+    border-color: #fef1d0;
+    background-color: #fef1d0;
+    color: #996e03;
+}
+
+.fiori .input-append .k-tooltip-validation, .fiori .input-prepend .k-tooltip-validation {
+    font-size: 12px;
+    position: relative;
+    top: 3px;
+}
+
+.fiori .k-callout-n {
+    border-bottom-color: #bfbfbf;
+}
+
+.fiori .k-callout-w {
+    border-right-color: #bfbfbf;
+}
+
+.fiori .k-callout-s {
+    border-top-color: #bfbfbf;
+}
+
+.fiori .k-callout-e {
+    border-left-color: #bfbfbf;
+}
+
+.fiori .k-tooltip-validation .k-callout-n {
+    border-bottom-color: #fef1d0;
+}
+
+.fiori .k-tooltip-validation .k-callout-w {
+    border-right-color: #fef1d0;
+}
+
+.fiori .k-tooltip-validation .k-callout-s {
+    border-top-color: #fef1d0;
+}
+
+.fiori .k-tooltip-validation .k-callout-e {
+    border-left-color: #fef1d0;
+}
+
+.fiori .k-splitbar {
+    background-color: #f2f2f2;
+}
+
+.fiori .k-restricted-size-horizontal, .fiori .k-restricted-size-vertical {
+    background-color: #666;
+}
+
+.fiori .k-file {
+    background-color: #fff;
+    border-color: #c9c9c9;
+}
+
+.fiori .k-file-progress {
+    color: #0072d1;
+}
+
+    .fiori .k-file-progress .k-progress {
+        background-color: #d1eaff;
+    }
+
+.fiori .k-file-success {
+    color: #387d56;
+}
+
+    .fiori .k-file-success .k-progress {
+        background-color: #cce8d8;
+    }
+
+.fiori .k-file-error {
+    color: #d70000;
+}
+
+    .fiori .k-file-error .k-progress {
+        background-color: #ffd7d7;
+    }
+
+.fiori .k-tile {
+    border-color: #fff;
+}
+
+.fiori .k-tiles li.k-state-selected {
+    border-color: #007cc0;
+}
+
+.fiori .k-filebrowser .k-tile .k-file, .fiori .k-filebrowser .k-tile .k-folder {
+    background-image: url(Fiori/imagebrowser.png);
+    -webkit-background-size: auto auto;
+    background-size: auto auto;
+}
+
+.fiori .k-leaf, .fiori .k-leaf.k-state-hover:hover {
+    color: #fff;
+}
+
+    .fiori .k-leaf.k-inverse, .fiori .k-leaf.k-inverse.k-state-hover:hover {
+        color: #000;
+    }
+
+.fiori .k-button, .fiori .k-widget {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.fiori .k-slider, .fiori .k-treeview, .fiori .k-upload {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.fiori .k-state-hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.fiori .k-autocomplete.k-state-focused, .fiori .k-dropdown-wrap.k-state-focused, .fiori .k-numeric-wrap.k-state-focused, .fiori .k-picker-wrap.k-state-focused, .fiori .k-textbox:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.fiori .k-state-selected {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.fiori .k-state-active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.fiori .k-autocomplete.k-state-border-down, .fiori .k-autocomplete.k-state-border-up, .fiori .k-datepicker-calendar, .fiori .k-dropdown-wrap.k-state-active, .fiori .k-filebrowser .k-image, .fiori .k-grid .k-filter-options, .fiori .k-menu .k-menu-group, .fiori .k-multiselect.k-state-focused, .fiori .k-picker-wrap.k-state-active, .fiori .k-popup, .fiori .k-time-popup, .fiori .k-tooltip {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+}
+
+.fiori .k-treemap-tile.k-state-hover {
+    -webkit-box-shadow: inset 0 0 0 3px #bfbfbf;
+    box-shadow: inset 0 0 0 3px #bfbfbf;
+}
+
+.fiori .k-window {
+    border-color: rgba(0,0,0,.2);
+    -webkit-box-shadow: 1px 1px 13px 1px rgba(128,128,128,.2);
+    box-shadow: 1px 1px 13px 1px rgba(128,128,128,.2);
+    background-color: #fff;
+}
+
+    .fiori .k-window.k-state-focused {
+        border-color: rgba(0,0,0,.2);
+        -webkit-box-shadow: 1px 1px 13px 1px rgba(0,0,0,.2);
+        box-shadow: 1px 1px 13px 1px rgba(0,0,0,.2);
+    }
+
+    .fiori .k-window-maximized .k-window-content, .fiori .k-window-maximized .k-window-titlebar, .fiori .k-window.k-window-maximized {
+        border-radius: 0;
+    }
+
+.fiori .k-shadow {
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+}
+
+.fiori .k-inset {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.2);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.2);
+}
+
+.fiori .k-editor-inline ::-moz-selection {
+    background-color: #007cc0;
+    text-shadow: none;
+    color: #fff;
+}
+
+.fiori .k-editor-inline ::selection {
+    background-color: #007cc0;
+    text-shadow: none;
+    color: #fff;
+}
+
+.fiori .k-editor-inline ::-moz-selection {
+    background-color: #007cc0;
+    text-shadow: none;
+    color: #fff;
+}
+
+.fiori .k-widget.k-notification.k-notification-info {
+    background-color: #d1eaff;
+    color: #333;
+    border-color: #007cc0;
+}
+
+.fiori .k-widget.k-notification.k-notification-success {
+    background-color: #cce8d8;
+    color: #333;
+    border-color: #595959;
+}
+
+.fiori .k-widget.k-notification.k-notification-warning {
+    background-color: #fef1d0;
+    color: #333;
+    border-color: #ff8b8b;
+}
+
+.fiori .k-widget.k-notification.k-notification-error {
+    background-color: #ffd7d7;
+    color: #333;
+    border-color: #666;
+}
+
+.fiori .k-gantt .k-treelist {
+    background: 0 0;
+}
+
+    .fiori .k-gantt .k-treelist .k-alt {
+        background-color: rgba(0,0,0,0);
+    }
+
+        .fiori .k-gantt .k-treelist .k-alt.k-state-selected, .fiori .k-gantt .k-treelist .k-alt.k-state-selected > td, .fiori .k-gantt .k-treelist .k-state-selected, .fiori .k-gantt .k-treelist .k-state-selected td {
+            background-color: #007cc0;
+        }
+
+.fiori .k-task-dot:after {
+    background-color: #333;
+    border-color: #333;
+}
+
+.fiori .k-task-dot:hover:after {
+    background-color: #fff;
+}
+
+.fiori .k-task-summary {
+    border-color: #ccc;
+    background: #ccc;
+}
+
+.fiori .k-task-milestone, .fiori .k-task-summary-complete {
+    border-color: #333;
+    background: #333;
+}
+
+.fiori .k-state-selected.k-task-summary {
+    border-color: #e5f3ff;
+    background: #e5f3ff;
+}
+
+.fiori .k-state-selected .k-task-summary-complete, .fiori .k-state-selected.k-task-milestone {
+    border-color: #007cc0;
+    background: #007cc0;
+}
+
+.fiori .k-task-single {
+    background-color: #0093e4;
+    border-color: #007cc0;
+    color: #fff;
+}
+
+.fiori .k-state-selected.k-task-single {
+    border-color: #007cc0;
+}
+
+.fiori .k-line {
+    background-color: #333;
+    color: #333;
+}
+
+.fiori .k-state-selected.k-line {
+    background-color: #007cc0;
+    color: #007cc0;
+}
+
+.fiori .k-resource {
+    background-color: #fff;
+}
+
+.fiori .k-i-kpi-decrease, .fiori .k-i-kpi-denied, .fiori .k-i-kpi-equal, .fiori .k-i-kpi-hold, .fiori .k-i-kpi-increase, .fiori .k-i-kpi-open {
+    background-image: url(Fiori/sprite_kpi.png);
+}
+
+.fiori .k-tool {
+    text-align: center;
+    vertical-align: middle;
+}
+
+    .fiori .k-tool.k-group-start, .fiori .k-toolbar .k-button-group .k-group-start {
+        border-radius: 0;
+    }
+
+.fiori .k-rtl .k-tool.k-group-start, .fiori .k-rtl .k-toolbar .k-button-group .k-group-start, .fiori .k-rtl .k-toolbar .k-split-button .k-button {
+    border-radius: 0;
+}
+
+.fiori .k-tool.k-group-end, .fiori .k-toolbar .k-button-group .k-group-end, .fiori .k-toolbar .k-split-button .k-split-button-arrow {
+    border-radius: 0;
+}
+
+.fiori .k-rtl .k-tool.k-group-end, .fiori .k-rtl .k-toolbar .k-button-group .k-group-end, .fiori .k-rtl .k-toolbar .k-split-button .k-split-button-arrow {
+    border-radius: 0;
+}
+
+.fiori .k-group-start.k-group-end.k-tool {
+    border-radius: 0;
+}
+
+.fiori .k-autocomplete.k-state-border-up, .fiori .k-calendar-container.k-state-border-up, .fiori .k-dropdown-wrap.k-state-border-up, .fiori .k-filter-menu, .fiori .k-list-container.k-state-border-up, .fiori .k-multiselect.k-state-border-up, .fiori .k-numeric-wrap.k-state-border-up, .fiori .k-picker-wrap.k-state-border-up, .fiori .k-window-content {
+    border-radius: 0;
+}
+
+    .fiori .k-autocomplete.k-state-border-up .k-input, .fiori .k-dropdown-wrap.k-state-border-up .k-input, .fiori .k-numeric-wrap.k-state-border-up .k-input, .fiori .k-picker-wrap.k-state-border-up .k-input, .fiori .k-picker-wrap.k-state-border-up .k-selected-color {
+        border-radius: 0;
+    }
+
+    .fiori .k-multiselect.k-state-border-up .k-multiselect-wrap {
+        border-radius: 0;
+    }
+
+.fiori .k-autocomplete.k-state-border-down, .fiori .k-block > .k-header, .fiori .k-calendar-container.k-state-border-down, .fiori .k-dropdown-wrap.k-state-border-down, .fiori .k-list-container.k-state-border-down, .fiori .k-multiselect.k-state-border-down, .fiori .k-numeric-wrap.k-state-border-down, .fiori .k-panelbar .k-tabstrip-items .k-item, .fiori .k-picker-wrap.k-state-border-down, .fiori .k-tabstrip-items .k-item, .fiori .k-tabstrip-items .k-link, .fiori .k-window-titlebar {
+    border-radius: 0;
+}
+
+.fiori .k-split-button.k-state-border-down > .k-button {
+    border-radius: 0;
+}
+
+.fiori .k-split-button.k-state-border-up > .k-button {
+    border-radius: 0;
+}
+
+.fiori .k-split-button.k-state-border-down > .k-split-button-arrow {
+    border-radius: 0;
+}
+
+.fiori .k-split-button.k-state-border-up > .k-split-button-arrow {
+    border-radius: 0;
+}
+
+.fiori .k-dropdown-wrap .k-input, .fiori .k-numeric-wrap .k-input, .fiori .k-picker-wrap .k-input {
+    border-radius: 0;
+}
+
+.fiori .k-rtl .k-dropdown-wrap .k-input, .fiori .k-rtl .k-numeric-wrap .k-input, .fiori .k-rtl .k-picker-wrap .k-input {
+    border-radius: 0;
+}
+
+.fiori .k-numeric-wrap .k-link {
+    border-radius: 0;
+}
+
+    .fiori .k-numeric-wrap .k-link + .k-link {
+        border-radius: 0;
+    }
+
+.fiori .k-colorpicker .k-selected-color {
+    border-radius: 0;
+}
+
+.fiori .k-rtl .k-colorpicker .k-selected-color {
+    border-radius: 0;
+}
+
+.fiori .k-autocomplete.k-state-border-down .k-input {
+    border-radius: 0;
+}
+
+.fiori .k-dropdown-wrap.k-state-border-down .k-input, .fiori .k-numeric-wrap.k-state-border-down .k-input, .fiori .k-picker-wrap.k-state-border-down .k-input, .fiori .k-picker-wrap.k-state-border-down .k-selected-color {
+    border-radius: 0;
+}
+
+.fiori .k-numeric-wrap .k-link.k-state-selected {
+    background-color: #eaeaea;
+}
+
+.fiori .k-multiselect.k-state-border-down .k-multiselect-wrap {
+    border-radius: 0;
+}
+
+.fiori .k-datetimepicker .k-select + .k-select, .fiori .k-dropdown-wrap .k-select, .fiori .k-list-container.k-state-border-right, .fiori .k-numeric-wrap .k-select, .fiori .k-picker-wrap .k-select {
+    border-radius: 0;
+}
+
+.fiori .k-rtl .k-datetimepicker .k-select + .k-select, .fiori .k-rtl .k-dropdown-wrap .k-select, .fiori .k-rtl .k-list-container.k-state-border-right, .fiori .k-rtl .k-numeric-wrap .k-select, .fiori .k-rtl .k-picker-wrap .k-select {
+    border-radius: 0;
+}
+
+.fiori .k-numeric-wrap.k-expand-padding .k-input {
+    border-radius: 0;
+}
+
+.fiori .k-autocomplete .k-input, .fiori .k-multiselect-wrap, .fiori .k-textbox > input {
+    border-radius: 0;
+}
+
+.fiori .k-dropzone, .fiori .k-fieldselector .k-list .k-item, .fiori .k-list .k-state-focused, .fiori .k-list .k-state-highlight, .fiori .k-list .k-state-hover, .fiori .k-list .k-state-selected, .fiori .k-list-optionlabel {
+    border-radius: 0;
+}
+
+.fiori .k-grid .k-slider .k-button, .fiori .k-slider .k-button {
+    border-radius: 0;
+}
+
+.fiori .k-draghandle {
+    border-radius: 0;
+}
+
+.fiori .k-scheduler-toolbar > ul li:first-child, .fiori .k-scheduler-toolbar > ul li:first-child .k-link, .fiori .k-scheduler-toolbar > ul.k-scheduler-views li:first-child + li, .fiori .k-scheduler-toolbar > ul.k-scheduler-views li:first-child + li .k-link {
+    border-radius: 0;
+}
+
+.fiori .k-rtl .k-scheduler-toolbar > ul li:first-child, .fiori .k-rtl .k-scheduler-toolbar > ul li:first-child .k-link, .fiori .k-rtl .k-scheduler-toolbar > ul.k-scheduler-views li:first-child + li, .fiori .k-rtl .k-scheduler-toolbar > ul.k-scheduler-views li:first-child + li .k-link, .fiori .km-view.k-popup-edit-form .k-scheduler-toolbar > ul li:last-child, .fiori .km-view.k-popup-edit-form .k-scheduler-toolbar > ul li:last-child .k-link {
+    border-radius: 0;
+}
+
+.fiori .k-edit-field > .k-scheduler-navigation, .fiori .k-scheduler-phone .k-scheduler-toolbar > ul li.k-nav-today, .fiori .k-scheduler-phone .k-scheduler-toolbar > ul li.k-nav-today .k-link {
+    border-radius: 0;
+}
+
+.fiori .k-scheduler-toolbar .k-nav-next, .fiori .k-scheduler-toolbar .k-nav-next .k-link, .fiori .k-scheduler-toolbar ul + ul li:last-child, .fiori .k-scheduler-toolbar ul + ul li:last-child .k-link {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.fiori .k-rtl .k-scheduler-toolbar .k-nav-next, .fiori .k-rtl .k-scheduler-toolbar .k-nav-next .k-link, .fiori .k-rtl .k-scheduler-toolbar ul + ul li:last-child, .fiori .k-rtl .k-scheduler-toolbar ul + ul li:last-child .k-link {
+    border-radius: 0;
+}
+
+.fiori .k-scheduler div.k-scheduler-footer .k-link, .fiori .k-scheduler div.k-scheduler-footer ul li {
+    border-radius: 0;
+}
+
+.fiori .k-event, .fiori .k-event .k-link, .fiori .k-more-events, .fiori .k-task-complete, .fiori .k-task-single {
+    border-radius: 0;
+}
+
+.fiori .k-scheduler-mobile .k-event {
+    border-radius: -1;
+}
+
+.fiori .k-grid-mobile .k-column-active + th.k-header {
+    border-left-color: #333;
+}
+
+.fiori .k-ie .km-pane-wrapper .k-content, .fiori .k-ie .km-pane-wrapper .k-group, .fiori .k-ie .km-pane-wrapper .k-header, .fiori .k-ie .km-pane-wrapper .k-popup-edit-form .k-edit-field .k-button, .fiori .k-ie .km-pane-wrapper .k-widget, .fiori .km-pane-wrapper .k-mobile-list .k-edit-field, .fiori .km-pane-wrapper .k-mobile-list .k-edit-label, .fiori .km-pane-wrapper .k-mobile-list .k-item, .fiori html .km-pane-wrapper .km-widget {
+    color: #333;
+}
+
+@media screen and (-ms-high-contrast:active) and (-ms-high-contrast:none) {
+    div.km-pane-wrapper a {
+        color: #333;
+    }
+
+    .fiori .km-pane-wrapper .k-icon {
+        background-image: url(Fiori/sprite_2x.png);
+        -webkit-background-size: 21.2em 21em;
+        background-size: 21.2em 21em;
+    }
+}
+
+.fiori .km-pane-wrapper .k-mobile-list .k-edit-field, .fiori .km-pane-wrapper .k-mobile-list .k-item, .fiori .km-pane-wrapper .k-mobile-list .k-recur-view > .k-edit-field .k-check {
+    background-color: #fff;
+    border-top: 1px solid #c9c9c9;
+}
+
+    .fiori .km-pane-wrapper .k-mobile-list .k-edit-field textarea {
+        outline-width: 0;
+    }
+
+    .fiori .km-pane-wrapper .k-mobile-list .k-item.k-state-selected {
+        background-color: #007cc0;
+        border-top-color: #007cc0;
+    }
+
+    .fiori .km-pane-wrapper .k-mobile-list .k-recur-view > .k-edit-field .k-check:first-child {
+        border-top-color: transparent;
+    }
+
+    .fiori .km-pane-wrapper .k-mobile-list .k-item:last-child {
+        -webkit-box-shadow: inset 0 -1px 0 #c9c9c9;
+        box-shadow: inset 0 -1px 0 #c9c9c9;
+    }
+
+.fiori .km-pane-wrapper #recurrence .km-scroll-container > .k-edit-label:first-child, .fiori .km-pane-wrapper .k-mobile-list .k-recur-view > .k-edit-label:nth-child(3), .fiori .km-pane-wrapper .k-mobile-list > ul > li > .k-link {
+    color: #7d7d7d;
+}
+
+.fiori .km-pane-wrapper .k-mobile-list > ul > li > .k-link {
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.fiori .km-pane-wrapper .k-mobile-list .k-edit-field {
+    -webkit-box-shadow: 0 1px 1px #c9c9c9;
+    box-shadow: 0 1px 1px #c9c9c9;
+}
+
+.fiori .km-actionsheet .k-grid-delete, .fiori .km-actionsheet .k-scheduler-delete, .fiori .km-pane-wrapper .k-filter-menu .k-button[type=reset], .fiori .km-pane-wrapper .k-scheduler-delete {
+    color: #fff;
+    border-color: #666;
+    background-color: red;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,.3)),to(rgba(255,255,255,.15)));
+    background-image: -webkit-linear-gradient(top,rgba(255,255,255,.3),rgba(255,255,255,.15));
+    background-image: linear-gradient(to bottom,rgba(255,255,255,.3),rgba(255,255,255,.15));
+}
+
+    .fiori .km-actionsheet .k-grid-delete:active, .fiori .km-actionsheet .k-scheduler-delete:active, .fiori .km-pane-wrapper .k-filter-menu .k-button[type=reset]:active, .fiori .km-pane-wrapper .k-scheduler-delete:active {
+        background-color: #900;
+    }
+
+.fiori .k-multiselect.k-header {
+    border-color: #bfbfbf;
+}
+
+    .fiori .k-multiselect.k-header.k-state-hover {
+        border-color: #007cc0;
+    }
+
+.fiori .k-list-container {
+    color: #333;
+}
+
+.fiori .k-tabstrip:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.fiori .k-panelbar > li.k-state-default > .k-link, .fiori .k-tabstrip-items .k-state-default .k-link {
+    color: #333;
+}
+
+    .fiori .k-panelbar > li.k-state-default > .k-link.k-state-hover, .fiori .k-panelbar > li.k-state-hover > .k-link, .fiori .k-tabstrip-items .k-state-hover .k-link {
+        color: #333;
+    }
+
+.fiori .k-panelbar > .k-state-focused.k-state-hover {
+    background: #eaeaea;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.fiori .k-tabstrip-items .k-state-default {
+    border-color: transparent;
+}
+
+.fiori .k-tabstrip-items .k-state-hover {
+    border-color: #eaeaea;
+}
+
+.fiori .k-panelbar .k-tabstrip-items .k-state-active, .fiori .k-tabstrip-items .k-state-active {
+    background-color: #fff;
+    background-image: none;
+    border-color: #c9c9c9;
+}
+
+.fiori .k-tabstrip .k-content.k-state-active {
+    background-color: #fff;
+    color: #333;
+}
+
+.fiori .k-menu .k-item, .fiori .k-menu.k-header {
+    border-color: transparent;
+}
+
+.fiori .k-column-menu, .fiori .k-column-menu .k-item, .fiori .k-overflow-container .k-overflow-group {
+    border-color: #c9c9c9;
+}
+
+.fiori .k-overflow-container .k-overflow-group {
+    -webkit-box-shadow: inset 0 1px 0 #fff,0 1px 0 #fff;
+    box-shadow: inset 0 1px 0 #fff,0 1px 0 #fff;
+}
+
+    .fiori .k-overflow-container .k-overflow-group + .k-overflow-group, .fiori .k-toolbar-first-visible.k-overflow-group {
+        -webkit-box-shadow: 0 1px 0 #fff;
+        box-shadow: 0 1px 0 #fff;
+    }
+
+.fiori .k-toolbar-last-visible.k-overflow-group {
+    -webkit-box-shadow: inset 0 1px 0 #fff;
+    box-shadow: inset 0 1px 0 #fff;
+}
+
+.fiori .k-column-menu .k-separator {
+    border-color: #c9c9c9;
+    background-color: transparent;
+}
+
+.fiori .k-menu .k-group {
+    border-color: rgba(0,0,0,.2);
+}
+
+.fiori .k-grid-filter.k-state-active {
+    background-color: #fff;
+}
+
+.fiori .k-grid-footer td, .fiori .k-group-footer td, .fiori .k-grouping-row td {
+    color: #333;
+    border-color: #c9c9c9;
+    font-weight: 700;
+}
+
+.fiori .k-grouping-header {
+    color: #333;
+}
+
+.fiori .k-grid td.k-state-focused {
+    -webkit-box-shadow: inset 0 0 0 1px none;
+    box-shadow: inset 0 0 0 1px none;
+}
+
+.fiori .k-overflow-container .k-primary, .fiori .k-primary {
+    color: #fff;
+    border-color: #0089d4;
+    background-image: none;
+    background-position: 50% 50%;
+    background-color: #009aee;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+    .fiori .k-primary.k-state-focused, .fiori .k-primary:focus {
+        color: #fff;
+        border-color: #005483;
+        background-image: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .fiori .k-primary:hover {
+        color: #fff;
+        border-color: #0089d4;
+        background-image: none;
+        background-color: #0089d4;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .fiori .k-primary:focus:active:not(.k-state-disabled):not([disabled]), .fiori .k-primary:focus:not(.k-state-disabled):not([disabled]) {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .fiori .k-primary:active {
+        color: #fff;
+        border-color: #0075b6;
+        background-image: none;
+        background-color: #0075b6;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .fiori .k-primary.k-state-disabled, .fiori .k-primary.k-state-disabled:active, .fiori .k-primary.k-state-disabled:hover, .fiori .k-state-disabled .k-primary, .fiori .k-state-disabled .k-primary:active, .fiori .k-state-disabled .k-primary:hover {
+        color: #fff;
+        border-color: #7ac2ff;
+        background-color: #84c7ff;
+        background-image: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+.fiori .k-pager-numbers .k-link, .fiori .k-treeview .k-in {
+    border-color: transparent;
+}
+
+.fiori .k-grid .k-hierarchy-cell .k-icon, .fiori .k-scheduler-table .k-icon, .fiori .k-treeview .k-icon {
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.fiori .k-button:focus, .fiori .k-split-button:focus {
+    outline: 0;
+}
+
+.fiori .k-split-button:focus {
+    -webkit-box-shadow: 0 0 0 1px #007cc0;
+    box-shadow: 0 0 0 1px #007cc0;
+}
+
+    .fiori .k-split-button:focus > .k-button {
+        background: 0 0;
+        border-color: transparent;
+    }
+
+        .fiori .k-split-button:focus > .k-button.k-split-button-arrow {
+            border-left-color: #007cc0;
+        }
+
+.fiori .k-editor .k-tool:focus {
+    outline: 0;
+    border-color: #007cc0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.fiori .k-checkbox-label:before {
+    border-color: #bfbfbf;
+    background: #fff;
+    border-radius: 1px;
+}
+
+.fiori .k-checkbox-label:hover:before, .fiori .k-checkbox:checked + .k-checkbox-label:hover:before {
+    border-color: #007cc0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.fiori .k-checkbox:checked + .k-checkbox-label:before {
+    background-color: #fff;
+    border-color: #bfbfbf;
+    color: #007cc0;
+}
+
+.fiori .k-checkbox-label:active:before {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #007cc0;
+}
+
+.fiori .k-checkbox:checked + .k-checkbox-label:active:before {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #007cc0;
+}
+
+.fiori .k-checkbox:disabled + .k-checkbox-label {
+    color: #bababa;
+}
+
+    .fiori .k-checkbox:disabled + .k-checkbox-label:hover:before {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .fiori .k-checkbox:checked:disabled + .k-checkbox-label:active:before, .fiori .k-checkbox:checked:disabled + .k-checkbox-label:before, .fiori .k-checkbox:checked:disabled + .k-checkbox-label:hover:before, .fiori .k-checkbox:disabled + .k-checkbox-label:before {
+        color: #bababa;
+        background: #f4f4f4;
+        border-color: #bfbfbf;
+        border-radius: 1px;
+    }
+
+.fiori .k-checkbox:focus + .k-checkbox-label:before {
+    border-color: #007cc0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.fiori .k-checkbox:indeterminate + .k-checkbox-label:after {
+    background-color: #007cc0;
+    background-image: none;
+    border-color: #007cc0;
+    border-radius: 0;
+}
+
+.fiori .k-checkbox:indeterminate:hover + .k-checkbox-label:after {
+    border-color: #007cc0;
+    background-color: #007cc0;
+}
+
+.fiori .k-radio-label:before {
+    border-color: #bfbfbf;
+    border-radius: 50%;
+    background-color: #fff;
+    border-width: 2px;
+}
+
+.fiori .k-radio-label:hover:before, .fiori .k-radio:checked + .k-radio-label:hover:before {
+    border-color: #007cc0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.fiori .k-radio:checked + .k-radio-label:after {
+    background-color: #007cc0;
+    border-radius: 50%;
+}
+
+.fiori .k-radio-label:active:before {
+    border-color: #bfbfbf;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.fiori .k-radio:checked + .k-radio-label:active:before {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #bfbfbf;
+}
+
+.fiori .k-radio:disabled + .k-radio-label {
+    color: #bfbfbf;
+}
+
+    .fiori .k-radio:disabled + .k-radio-label:active:before, .fiori .k-radio:disabled + .k-radio-label:before, .fiori .k-radio:disabled + .k-radio-label:hover:after, .fiori .k-radio:disabled + .k-radio-label:hover:before {
+        background: #fff;
+        border-color: #bfbfbf;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+.fiori .k-radio:focus + .k-radio-label:before {
+    border-color: #bfbfbf;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.fiori .k-radio:checked + .k-radio-label:active:before {
+    border-color: #007cc0;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min-device-pixel-ratio:2) {
+    .k-callout, .fiori .k-column-menu .k-sprite, .fiori .k-drop-hint, .fiori .k-grouping-dropclue, .fiori .k-icon:not(.k-loading), .fiori .k-mobile-list .k-check:checked, .fiori .k-mobile-list .k-edit-field [type=checkbox]:checked, .fiori .k-mobile-list .k-edit-field [type=radio]:checked, .fiori .k-state-active .k-tool-icon, .fiori .k-state-active.k-state-hover .k-tool-icon, .fiori .k-state-hover .k-tool-icon, .fiori .k-state-selected .k-tool-icon, .fiori .k-state-selected.k-state-hover .k-tool-icon, .fiori .k-tool-icon {
+        background-image: url(Fiori/sprite_2x.png);
+        -webkit-background-size: 340px 336px;
+        background-size: 340px 336px;
+    }
+
+    .fiori .k-dropdown-wrap .k-input, .fiori .k-numeric-wrap .k-input, .fiori .k-picker-wrap .k-input {
+        border-radius: 0;
+    }
+
+    .fiori .k-i-kpi-decrease, .fiori .k-i-kpi-denied, .fiori .k-i-kpi-equal, .fiori .k-i-kpi-hold, .fiori .k-i-kpi-increase, .fiori .k-i-kpi-open {
+        background-image: url(Fiori/sprite_kpi_2x.png);
+        -webkit-background-size: 96px 16px;
+        background-size: 96px 16px;
+    }
+}
+
+@media screen and (-ms-high-contrast:active) {
+    .k-editor-toolbar-wrap .k-button-group .k-tool:focus, .fiori .k-editor-toolbar-wrap .k-dropdown-wrap.k-state-focused {
+        border-color: #fff;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .k-ff .k-pager-numbers .k-current-page .k-link, .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view, .fiori .k-ie11 .k-pager-numbers .k-current-page .k-link, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view, .fiori .k-safari .k-pager-numbers .k-current-page .k-link, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view, .fiori .k-webkit .k-pager-numbers .k-current-page .k-link, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view {
+        background-image: none;
+        background-position: 50% 50%;
+        background-color: #fff;
+        border-color: #bfbfbf;
+    }
+
+    .fiori .k-ff .k-pager-numbers .k-current-page .k-link, .fiori .k-ie11 .k-pager-numbers .k-current-page .k-link, .fiori .k-safari .k-pager-numbers .k-current-page .k-link, .fiori .k-webkit .k-pager-numbers .k-current-page .k-link {
+        border-color: #c9c9c9;
+    }
+
+    .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view {
+        border-radius: 0;
+    }
+
+    .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded > li, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded > li, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded > li, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded > li {
+        border-radius: 0;
+    }
+
+        .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded > li.k-current-view, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded > li.k-current-view, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded > li.k-current-view, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded > li.k-current-view {
+            border-radius: 0;
+        }
+
+    .fiori .k-ff .k-scheduler-toolbar > ul li:first-child, .fiori .k-ff .k-scheduler-toolbar > ul li:first-child .k-link, .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views li, .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views li .k-link, .fiori .k-ie11 .k-scheduler-toolbar > ul li:first-child, .fiori .k-ie11 .k-scheduler-toolbar > ul li:first-child .k-link, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views li, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views li .k-link, .fiori .k-safari .k-scheduler-toolbar > ul li:first-child, .fiori .k-safari .k-scheduler-toolbar > ul li:first-child .k-link, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views li, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views li .k-link, .fiori .k-webkit .k-scheduler-toolbar > ul li:first-child, .fiori .k-webkit .k-scheduler-toolbar > ul li:first-child .k-link, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views li, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views li .k-link {
+        border-radius: 0;
+    }
+
+        .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views li:last-child, .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views li:last-child .k-link, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views li:last-child, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views li:last-child .k-link, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views li:last-child, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views li:last-child .k-link, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views li:last-child, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views li:last-child .k-link {
+            border-radius: 0;
+        }
+
+    .fiori .k-ff .k-pager-numbers .k-current-page .k-link:hover, .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view:hover, .fiori .k-ie11 .k-pager-numbers .k-current-page .k-link:hover, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view:hover, .fiori .k-safari .k-pager-numbers .k-current-page .k-link:hover, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view:hover, .fiori .k-webkit .k-pager-numbers .k-current-page .k-link:hover, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view:hover {
+        border-color: #eaeaea;
+        background-image: none;
+        background-color: #eaeaea;
+    }
+
+    .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view > .k-link, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view > .k-link, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view > .k-link, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view > .k-link {
+        color: #333;
+        min-width: 75px;
+    }
+
+    .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view:hover > .k-link, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view:hover > .k-link, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view:hover > .k-link, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view:hover > .k-link {
+        color: #333;
+    }
+
+    .fiori .k-ff .k-pager-numbers .k-current-page .k-link:after, .fiori .k-ff .k-scheduler-views > li.k-state-selected > .k-link:after, .fiori .k-ie11 .k-pager-numbers .k-current-page .k-link:after, .fiori .k-ie11 .k-scheduler-views > li.k-state-selected > .k-link:after, .fiori .k-safari .k-pager-numbers .k-current-page .k-link:after, .fiori .k-safari .k-scheduler-views > li.k-state-selected > .k-link:after, .fiori .k-webkit .k-pager-numbers .k-current-page .k-link:after, .fiori .k-webkit .k-scheduler-views > li.k-state-selected > .k-link:after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 50%;
+        margin-top: -.5em;
+        right: .333em;
+        width: 1.333em;
+        height: 1.333em;
+    }
+
+    .fiori .k-ff .k-pager-numbers.k-state-expanded, .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded, .fiori .k-ie11 .k-pager-numbers.k-state-expanded, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded, .fiori .k-safari .k-pager-numbers.k-state-expanded, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded, .fiori .k-webkit .k-pager-numbers.k-state-expanded, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded {
+        border-width: 1px 1px 0 1px;
+        border-style: solid;
+        border-color: #c9c9c9;
+        background-color: #f2f2f2;
+        border-radius: 0;
+        -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+    }
+
+    .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded {
+        border-width: 1px;
+        background-image: none;
+        border-radius: 0;
+    }
+
+    .fiori .k-ff .k-pager-numbers .k-link, .fiori .k-ff .k-pager-numbers .k-state-selected, .fiori .k-ie11 .k-pager-numbers .k-link, .fiori .k-ie11 .k-pager-numbers .k-state-selected, .fiori .k-safari .k-pager-numbers .k-link, .fiori .k-safari .k-pager-numbers .k-state-selected, .fiori .k-webkit .k-pager-numbers .k-link, .fiori .k-webkit .k-pager-numbers .k-state-selected {
+        border-radius: 0;
+    }
+}
+
+.fiori .k-button, .fiori .k-split-button {
+    border-radius: 2px;
+}
+
+.fiori .k-toolbar .k-split-button .k-button {
+    border-radius: 2px 0 0 2px;
+}
+
+.fiori .k-list > .k-state-focused {
+    border-color: #007cc0;
+}
+
+.fiori .k-menu-group > .k-state-focused, .fiori .k-menu > .k-state-focused {
+    background-color: #eaeaea;
+}
+
+.fiori .k-menu-group > .k-item > .k-state-active {
+    background-color: #e5f3ff;
+}
+
+.fiori .k-splitbar {
+    border-color: transparent;
+}
+
+.fiori .k-flatcolorpicker .k-hue-slider .k-draghandle:focus, .fiori .k-flatcolorpicker .k-hue-slider .k-draghandle:hover, .fiori .k-flatcolorpicker .k-transparency-slider .k-draghandle:focus, .fiori .k-flatcolorpicker .k-transparency-slider .k-draghandle:hover {
+    border-color: #eaeaea;
+}
+
+.fiori .k-calendar .k-header, .fiori .k-header.k-scheduler-toolbar, .fiori .k-menu.k-header, .fiori .k-scheduler-footer > .k-header, .fiori .k-tabstrip .k-tabstrip-items .k-item, .fiori .k-tabstrip.k-header {
+    background-color: #fff;
+}
+
+.fiori .k-gantt-navigation > .k-header, .fiori .k-header.k-datepicker, .fiori .k-header.k-datetimepicker, .fiori .k-header.k-dropdown, .fiori .k-header.k-gantt-views, .fiori .k-header.k-scheduler-views, .fiori .k-header.k-timepicker, .fiori .k-scheduler-navigation > .k-header {
+    background-color: transparent;
+}
+
+.fiori .k-calendar th, .fiori .k-scheduler-header th, .fiori .k-scheduler-times th {
+    color: #666;
+    font-weight: 400;
+    font-size: .8em;
+    text-transform: uppercase;
+}
+
+.fiori .k-tabstrip .k-tabstrip-items .k-state-hover {
+    border-color: transparent;
+}
+
+    .fiori .k-tabstrip .k-tabstrip-items .k-state-hover .k-link {
+        color: #6c98d4;
+    }
+
+.fiori .k-tabstrip .k-tabstrip-items .k-state-active {
+    border-color: #6c98d4;
+}
+
+    .fiori .k-tabstrip .k-tabstrip-items .k-state-active .k-link {
+        color: #6c98d4;
+        border-color: #6c98d4;
+        font-weight: bold;
+    }
+
+.fioridiv.k-window, .fiori div.k-window.k-state-focused {
+    border-color: #666;
+}
+
+.fiori .k-window-titlebar.k-header {
+    background: 0 0;
+    color: #666;
+}
+
+.fiori .k-gantt .k-treelist .k-alt.k-state-selected, .fiori .k-gantt .k-treelist .k-alt.k-state-selected > td, .fiori .k-gantt .k-treelist .k-state-selected, .fiori .k-gantt .k-treelist .k-state-selected td, .fiori .k-group > .k-item > .k-state-selected, .fiori .k-list > .k-state-selected {
+    background-color: #e5f3ff;
+    color: #333;
+}
+
+.fiori .k-grid td.k-state-focused, .fiori .k-grid-header th.k-state-focused {
+    -webkit-box-shadow: inset 0 0 0 1px #007cc0;
+    box-shadow: inset 0 0 0 1px #007cc0;
+}
+
+.fiori .k-grid td.k-state-selected, .fiori .k-grid td.k-state-selected.k-state-focused, .fiori .k-grid tr.k-state-selected {
+    color: #333;
+    background-color: #e6f3fe;
+}
+
+.fiori .k-gantt-treelist {
+    background: #f2f2f2;
+}
+
+
+.fiori .k-pager-numbers .k-link, .fiori .k-pager-numbers .k-link:hover, .fiori .k-pager-numbers .k-state-selected, .fiori .k-pager-wrap > .k-link {
+    background: 0 0;
+    border-radius: 0;
+}
+
+    .fiori .k-pager-numbers .k-link:hover, .fiori .k-pager-wrap > .k-link, .fiori .k-pager-wrap > .k-link.k-state-disabled:hover, .fiori .k-pager-wrap > .k-link:hover {
+        border-radius: 0;
+        border-color: transparent;
+    }
+
+        .fiori .k-pager-wrap > .k-link:hover {
+            border-color: #bfbfbf;
+        }
+
+.fiori .k-pager-numbers .k-link {
+    border-color: transparent;
+}
+
+.fiori .k-grid-toolbar, .fiori .k-grouping-header {
+    padding: .714em;
+}
+
+.fiori .k-window .k-edit-buttons {
+    background: #000;
+}
+
+.fiori .k-gantt .k-gantt-views .k-state-selected, .fiori .k-scheduler .k-scheduler-views .k-state-selected {
+    background: 0 0;
+}
+
+.fiori .k-gantt .k-gantt-views > li {
+    border-radius: 0;
+}
+
+.fiori .k-gantt .k-gantt-views .k-state-selected {
+    border-color: #007cc0;
+}
+
+.fiori .k-task-summary-complete {
+    border-color: #007cc0;
+    background: #007cc0;
+}
+
+.fiori .k-state-selected .k-task-summary-complete {
+    border-color: #0075b6;
+    background: #0075b6;
+}
+
+.fiori .k-task-milestone {
+    border-color: #99d101;
+    background: #99d101;
+}
+
+.fiori .k-task-dot:after {
+    background-color: #7d7d7d;
+    border-color: #7d7d7d;
+}
+
+.fiori .k-task-dot:hover:after {
+    background-color: #444;
+}
+
+.fiori .k-gantt-views .k-link:link, .fiori .k-gantt-views .k-link:visited, .fiori .k-group-indicator .k-link, .fiori .k-pager-numbers .k-link, .fiori .k-scheduler-navigation .k-nav-today .k-link, .fiori .k-scheduler-views .k-link:link, .fiori .k-scheduler-views .k-link:visited {
+    color: #333;
+}
+
+.fiori .k-calendar .k-footer .k-nav-today, .fiori .k-calendar .k-link.k-nav-fast, .fiori .k-gantt .k-gantt-views > .k-state-selected > .k-link, .fiori .k-pager-numbers .k-state-selected, .fiori .k-scheduler .k-scheduler-views > .k-state-selected > .k-link {
+    color: #007cc0;
+}
+
+.fiori .k-gantt .k-gantt-toolbar ul li.k-state-hover, .fiori .k-scheduler .k-scheduler-toolbar ul li.k-state-hover {
+    background: 0 0;
+    border-color: transparent;
+}
+
+.fiori .k-gantt .k-gantt-toolbar ul li.k-state-selected, .fiori .k-scheduler .k-scheduler-toolbar ul li.k-state-selected {
+    border-color: #007cc0;
+}
+
+.fiori .k-gantt .k-gantt-toolbar .k-state-hover .k-link, .fiori .k-scheduler .k-scheduler-toolbar .k-state-hover .k-link {
+    color: #007cc0;
+}
+
+.fiori .k-calendar td {
+    background: #f2f2f2;
+    border-color: #fff;
+}
+
+    .fiori .k-calendar td.k-state-focused {
+        -webkit-box-shadow: inset 0 0 0 1px #007cc0;
+        box-shadow: inset 0 0 0 1px #007cc0;
+    }
+
+    .fiori .k-calendar td.k-weekend {
+        background: #e5e5e5;
+    }
+
+    .fiori .k-calendar td.k-today {
+        background: #007cc0;
+    }
+
+.fiori .k-calendar .k-today .k-link {
+    color: #fff;
+}
+
+.fiori .k-calendar .k-today.k-state-hover {
+    background-color: #0086c0;
+}
+
+.fiori .k-calendar .k-today.k-state-focused, .fiori .k-calendar .k-today.k-state-selected:active, .fiori .k-calendar .k-today:active {
+    -webkit-box-shadow: inset 0 0 0 1px #005483;
+    box-shadow: inset 0 0 0 1px #005483;
+}
+
+.fiori .k-calendar td.k-other-month {
+    background: 0 0;
+}
+
+.fiori .k-calendar td.k-state-selected {
+    background: #e9f7ff;
+}
+
+    .fiori .k-calendar td.k-state-selected .k-link {
+        color: #333;
+    }
+
+.fiori .k-calendar td.k-state-hover {
+    background: #eaeaea;
+    border-color: #fff;
+}
+
+.fiori .k-calendar td.k-state-selected.k-state-hover, .fiori .k-calendar td:active {
+    background-color: #cfe6f3;
+}
+
+.fiori .k-scheduler-header th, .fiori .k-scheduler-table .k-other-month {
+    background: #fff;
+}
+
+.fiori .k-scheduler-header th, .fiori .k-scheduler-header-wrap, .fiori .k-scheduler-table td, .fiori .k-scheduler-times, .fiori .k-scheduler-times th, .fiori .k-scheduler-times tr {
+    border-color: #fff;
+}
+
+.fiori .k-scheduler-header tr + tr > th {
+    border-top-color: #c9c9c9;
+}
+
+.fiori .k-scheduler-header th {
+    height: 2.714em;
+}
+
+.fiori .k-scheduler .k-scheduler-datecolumn, .fiori .k-scheduler .k-scheduler-timecolumn {
+    width: 150px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.fiori .k-state-disabled {
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+.fiori .k-popup > .k-group-header, .fiori .k-popup > .k-virtual-wrap > .k-group-header {
+    color: #333;
+}
+
+.fiori .k-popup .k-item > .k-group {
+    color: #333;
+}
+
+@media only screen and (max-width:1024px) {
+    .k-ff .k-scheduler-toolbar > ul.k-scheduler-views, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views {
+        right: 0;
+        top: 0;
+    }
+
+    .fiori .k-ff .k-rtl .k-scheduler-toolbar > ul.k-scheduler-views, .fiori .k-ie11 .k-rtl .k-scheduler-toolbar > ul.k-scheduler-views, .fiori .k-safari .k-rtl .k-scheduler-toolbar > ul.k-scheduler-views, .fiori .k-webkit .k-rtl .k-scheduler-toolbar > ul.k-scheduler-views {
+        right: auto;
+        left: 0;
+    }
+
+    .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view, .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view:hover, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view:hover, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view:hover, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view:hover {
+        background-image: none;
+        background-position: 50% 50%;
+        background-color: transparent;
+        border-color: transparent;
+        border-radius: 0;
+        text-align: right;
+    }
+
+    .fiori .k-ff .k-rtl .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view, .fiori .k-ie11 .k-rtl .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view, .fiori .k-safari .k-rtl .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view, .fiori .k-webkit .k-rtl .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view {
+        text-align: left;
+        padding-left: 0;
+    }
+
+    .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded > li, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded > li, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded > li, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded > li {
+        border-radius: 0;
+    }
+
+        .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded > li.k-current-view, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded > li.k-current-view, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded > li.k-current-view, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded > li.k-current-view {
+            border-radius: 0;
+        }
+
+    .fiori .k-ff .k-scheduler-toolbar > ul li:first-child, .fiori .k-ff .k-scheduler-toolbar > ul li:first-child .k-link, .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views li, .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views li .k-link, .fiori .k-ie11 .k-scheduler-toolbar > ul li:first-child, .fiori .k-ie11 .k-scheduler-toolbar > ul li:first-child .k-link, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views li, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views li .k-link, .fiori .k-safari .k-scheduler-toolbar > ul li:first-child, .fiori .k-safari .k-scheduler-toolbar > ul li:first-child .k-link, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views li, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views li .k-link, .fiori .k-webkit .k-scheduler-toolbar > ul li:first-child, .fiori .k-webkit .k-scheduler-toolbar > ul li:first-child .k-link, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views li, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views li .k-link {
+        border-radius: 0;
+        padding-top: 0;
+    }
+
+        .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views li:last-child, .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views li:last-child .k-link, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views li:last-child, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views li:last-child .k-link, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views li:last-child, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views li:last-child .k-link, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views li:last-child, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views li:last-child .k-link {
+            border-radius: 0;
+        }
+
+    .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view:hover, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view:hover, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view:hover, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view:hover {
+        border-color: transparent;
+        background-image: none;
+        background-color: transparent;
+    }
+
+        .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view:hover > .k-link, .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view > .k-link, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view:hover > .k-link, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view > .k-link, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view:hover > .k-link, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view > .k-link, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view:hover > .k-link, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view > .k-link {
+            color: #333;
+            min-width: 20px;
+        }
+
+    .fiori .k-ff .k-scheduler-views > li.k-state-selected > .k-link:after, .fiori .k-ie11 .k-scheduler-views > li.k-state-selected > .k-link:after, .fiori .k-safari .k-scheduler-views > li.k-state-selected > .k-link:after, .fiori .k-webkit .k-scheduler-views > li.k-state-selected > .k-link:after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 50%;
+        margin-top: -.5em;
+        right: .333em;
+        width: 16px;
+        height: 16px;
+    }
+
+    .fiori .k-ff .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded, .fiori .k-ie11 .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded, .fiori .k-safari .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded, .fiori .k-webkit .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded {
+        border-width: 1px 1px 0 1px;
+        border-style: solid;
+        border-color: transparent;
+        background-color: #f2f2f2;
+        border-radius: 0;
+        border-width: 1px;
+        background-image: none;
+        -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+    }
+
+    .fiori .k-ff .k-rtl .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded, .fiori .k-ie11 .k-rtl .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded, .fiori .k-safari .k-rtl .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded, .fiori .k-webkit .k-rtl .k-scheduler-toolbar > ul.k-scheduler-views.k-state-expanded {
+        text-align: left;
+    }
+
+    .fiori .k-ff .k-pager-input, .fiori .k-ff .k-pager-wrap .k-pager-nav, .fiori .k-ie11 .k-pager-input, .fiori .k-ie11 .k-pager-wrap .k-pager-nav, .fiori .k-safari .k-pager-input, .fiori .k-safari .k-pager-wrap .k-pager-nav, .fiori .k-webkit .k-pager-input, .fiori .k-webkit .k-pager-wrap .k-pager-nav {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .fiori .k-ff .k-grid .k-pager-numbers, .fiori .k-ff .k-pager-numbers, .fiori .k-ie11 .k-grid .k-pager-numbers, .fiori .k-ie11 .k-pager-numbers, .fiori .k-safari .k-grid .k-pager-numbers, .fiori .k-safari .k-pager-numbers, .fiori .k-webkit .k-grid .k-pager-numbers, .fiori .k-webkit .k-pager-numbers {
+        position: absolute;
+        left: 5em;
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        margin-top: 6px;
+        overflow: visible;
+        height: auto;
+        -webkit-transform: translatey(-100%);
+        -ms-transform: translatey(-100%);
+        transform: translatey(-100%);
+    }
+
+    .fiori .k-ff .km-pane-wrapper .k-pager-numbers .k-link, .fiori .k-ff .km-pane-wrapper .k-pager-numbers .k-state-selected, .fiori .k-ff .km-pane-wrapper .k-pager-wrap > .k-link, .fiori .k-ff .km-pane-wrapper .k-pager-wrap > .k-pager-info, .fiori .k-ie11 .km-pane-wrapper .k-pager-numbers .k-link, .fiori .k-ie11 .km-pane-wrapper .k-pager-numbers .k-state-selected, .fiori .k-ie11 .km-pane-wrapper .k-pager-wrap > .k-link, .fiori .k-ie11 .km-pane-wrapper .k-pager-wrap > .k-pager-info, .fiori .k-safari .km-pane-wrapper .k-pager-numbers .k-link, .fiori .k-safari .km-pane-wrapper .k-pager-numbers .k-state-selected, .fiori .k-safari .km-pane-wrapper .k-pager-wrap > .k-link, .fiori .k-safari .km-pane-wrapper .k-pager-wrap > .k-pager-info, .fiori .k-webkit .km-pane-wrapper .k-pager-numbers .k-link, .fiori .k-webkit .km-pane-wrapper .k-pager-numbers .k-state-selected, .fiori .k-webkit .km-pane-wrapper .k-pager-wrap > .k-link, .fiori .k-webkit .km-pane-wrapper .k-pager-wrap > .k-pager-info {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .fiori .k-ff .k-rtl .k-grid .k-pager-numbers, .fiori .k-ff .k-rtl .k-pager-numbers, .fiori .k-ie11 .k-rtl .k-grid .k-pager-numbers, .fiori .k-ie11 .k-rtl .k-pager-numbers, .fiori .k-safari .k-rtl .k-grid .k-pager-numbers, .fiori .k-safari .k-rtl .k-pager-numbers, .fiori .k-webkit .k-rtl .k-grid .k-pager-numbers, .fiori .k-webkit .k-rtl .k-pager-numbers {
+        right: 5em;
+        width: 5.15em;
+    }
+
+    .fiori .k-ff .k-grid .k-pager-numbers .k-current-page, .fiori .k-ff .k-pager-numbers .k-current-page, .fiori .k-ie11 .k-grid .k-pager-numbers .k-current-page, .fiori .k-ie11 .k-pager-numbers .k-current-page, .fiori .k-safari .k-grid .k-pager-numbers .k-current-page, .fiori .k-safari .k-pager-numbers .k-current-page, .fiori .k-webkit .k-grid .k-pager-numbers .k-current-page, .fiori .k-webkit .k-pager-numbers .k-current-page {
+        display: block;
+        border-left: 0;
+        -webkit-transform: translatey(100%);
+        -ms-transform: translatey(100%);
+        transform: translatey(100%);
+    }
+
+    .fiori .k-ff .k-pager-numbers li:not(.k-current-page), .fiori .k-ie11 .k-pager-numbers li:not(.k-current-page), .fiori .k-safari .k-pager-numbers li:not(.k-current-page), .fiori .k-webkit .k-pager-numbers li:not(.k-current-page) {
+        display: none;
+    }
+
+    .fiori .k-ff .k-pager-wrap .k-pager-numbers .k-current-page .k-link, .fiori .k-ie11 .k-pager-wrap .k-pager-numbers .k-current-page .k-link, .fiori .k-safari .k-pager-wrap .k-pager-numbers .k-current-page .k-link, .fiori .k-webkit .k-pager-wrap .k-pager-numbers .k-current-page .k-link {
+        width: 3.8em;
+        line-height: 1.429em;
+        padding: .643em .429em .643em .8em;
+        border-radius: 0;
+        background-image: none;
+        background-position: 50% 50%;
+        background-color: #fff;
+        border: 1px solid #bfbfbf;
+    }
+
+    .fiori .k-ff .k-pager-numbers .k-current-page:hover .k-link, .fiori .k-ie11 .k-pager-numbers .k-current-page:hover .k-link, .fiori .k-safari .k-pager-numbers .k-current-page:hover .k-link, .fiori .k-webkit .k-pager-numbers .k-current-page:hover .k-link {
+        border-radius: 0;
+        background-color: #fff;
+        border: 1px solid #007cc0;
+    }
+
+    .fiori .k-ff .k-pager-numbers .k-current-page .k-link:after, .fiori .k-ie11 .k-pager-numbers .k-current-page .k-link:after, .fiori .k-safari .k-pager-numbers .k-current-page .k-link:after, .fiori .k-webkit .k-pager-numbers .k-current-page .k-link:after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 50%;
+        margin-top: -.6em;
+        right: .8em;
+        width: 16px;
+        height: 16px;
+    }
+
+    .fiori .k-ff .k-pager-numbers + .k-link, .fiori .k-ie11 .k-pager-numbers + .k-link, .fiori .k-safari .k-pager-numbers + .k-link, .fiori .k-webkit .k-pager-numbers + .k-link {
+        margin-left: 5.4em;
+    }
+
+    .fiori .k-ff .k-rtl .k-pager-numbers + .k-link, .fiori .k-ie11 .k-rtl .k-pager-numbers + .k-link, .fiori .k-safari .k-rtl .k-pager-numbers + .k-link, .fiori .k-webkit .k-rtl .k-pager-numbers + .k-link {
+        margin-right: 5.2em;
+        margin-left: 0;
+    }
+
+    .fiori .k-ff .k-pager-wrap .k-pager-numbers .k-link, .fiori .k-ff .k-pager-wrap .k-pager-numbers .k-state-selected, .fiori .k-ie11 .k-pager-wrap .k-pager-numbers .k-link, .fiori .k-ie11 .k-pager-wrap .k-pager-numbers .k-state-selected, .fiori .k-safari .k-pager-wrap .k-pager-numbers .k-link, .fiori .k-safari .k-pager-wrap .k-pager-numbers .k-state-selected, .fiori .k-webkit .k-pager-wrap .k-pager-numbers .k-link, .fiori .k-webkit .k-pager-wrap .k-pager-numbers .k-state-selected {
+        display: block;
+        margin-top: 0;
+        margin-right: 0;
+        padding: 1px 5px 1px .8em;
+        text-align: left;
+        border-width: 1px;
+    }
+
+    .fiori .k-ff .k-pager-wrap .k-pager-numbers .k-state-selected, .fiori .k-ie11 .k-pager-wrap .k-pager-numbers .k-state-selected, .fiori .k-safari .k-pager-wrap .k-pager-numbers .k-state-selected, .fiori .k-webkit .k-pager-wrap .k-pager-numbers .k-state-selected {
+        background-color: #e5f3ff;
+    }
+
+    .fiori .k-ff .k-pager-wrap .k-pager-numbers li:not(.k-current-page) .k-link:hover, .fiori .k-ie11 .k-pager-wrap .k-pager-numbers li:not(.k-current-page) .k-link:hover, .fiori .k-safari .k-pager-wrap .k-pager-numbers li:not(.k-current-page) .k-link:hover, .fiori .k-webkit .k-pager-wrap .k-pager-numbers li:not(.k-current-page) .k-link:hover {
+        background-color: #eaeaea;
+    }
+
+    .fiori .k-ff .k-pager-numbers.k-state-expanded, .fiori .k-ie11 .k-pager-numbers.k-state-expanded, .fiori .k-safari .k-pager-numbers.k-state-expanded, .fiori .k-webkit .k-pager-numbers.k-state-expanded {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 5px 0 0;
+        border-style: solid;
+        border-color: #bfbfbf;
+        background-color: #fff;
+        border-radius: 0;
+        -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+    }
+
+        .fiori .k-ff .k-pager-numbers.k-state-expanded .k-current-page, .fiori .k-ie11 .k-pager-numbers.k-state-expanded .k-current-page, .fiori .k-safari .k-pager-numbers.k-state-expanded .k-current-page, .fiori .k-webkit .k-pager-numbers.k-state-expanded .k-current-page {
+            margin: -2.5em -1px 0;
+            padding: 0;
+        }
+
+            .fiori .k-ff .k-pager-numbers.k-state-expanded .k-current-page .k-link, .fiori .k-ie11 .k-pager-numbers.k-state-expanded .k-current-page .k-link, .fiori .k-safari .k-pager-numbers.k-state-expanded .k-current-page .k-link, .fiori .k-webkit .k-pager-numbers.k-state-expanded .k-current-page .k-link {
+                border-radius: 0;
+                background-color: #fff;
+                border: 1px solid #007cc0;
+                border-top-color: #bfbfbf;
+            }
+
+                .fiori .k-ff .k-pager-numbers.k-state-expanded .k-current-page .k-link:after, .fiori .k-ie11 .k-pager-numbers.k-state-expanded .k-current-page .k-link:after, .fiori .k-safari .k-pager-numbers.k-state-expanded .k-current-page .k-link:after, .fiori .k-webkit .k-pager-numbers.k-state-expanded .k-current-page .k-link:after {
+                    background-position: 0 0;
+                    opacity: 1;
+                }
+
+        .fiori .k-ff .k-pager-numbers.k-state-expanded li, .fiori .k-ie11 .k-pager-numbers.k-state-expanded li, .fiori .k-safari .k-pager-numbers.k-state-expanded li, .fiori .k-webkit .k-pager-numbers.k-state-expanded li {
+            display: inline-block;
+        }
+}
+
+@media only screen and (max-width:640px) {
+    .k-ff .k-pager-info, .fiori .k-ie11 .k-pager-info, .fiori .k-safari .k-pager-info, .fiori .k-webkit .k-pager-info {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .k-ff .k-pager-sizes, .fiori .k-ie11 .k-pager-sizes, .fiori .k-safari .k-pager-sizes, .fiori .k-webkit .k-pager-sizes {
+        display: none;
+    }
+}
+
+.fiori .k-chart .k-mask {
+    background-color: #fff;
+    filter: alpha(opacity=68);
+    -moz-opacity: .68;
+    opacity: .68;
+}
+
+.fiori .k-chart .k-selection {
+    border-color: #e5e5e5;
+}
+
+.fiori .k-chart .k-handle {
+    width: 15px;
+    height: 15px;
+    background-color: #00b0ff;
+    border-radius: 10px;
+}
+
+.fiori .k-chart .k-leftHandle {
+    left: -8px;
+}
+
+.fiori .k-chart .k-rightHandle {
+    right: -8px;
+}
+
+.fiori .k-chart .k-handle:hover {
+    background-color: #00b0ff;
+    border-color: #00b0ff;
+}
+
+.fiori .k-chart .k-navigator-hint .k-tooltip {
+    border: 3px solid #fff;
+    -webkit-box-shadow: 0 0 0 3px rgba(0,0,0,.2);
+    box-shadow: 0 0 0 3px rgba(0,0,0,.2);
+    background: #fff;
+    color: #242424;
+}
+
+.fiori .k-chart .k-navigator-hint .k-scroll {
+    background: #3f51b5;
+    height: 4px;
+}
+
+.fiori .k-chart-tooltip {
+    background-image: none;
+}
+
+.fiori .k-map .k-marker {
+    background-image: url(Fiori/markers.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min-device-pixel-ratio:2) {
+    .k-map .k-marker {
+        background-image: url(Fiori/markers_2x.png);
+    }
+}
+
+.fiori .k-map .k-attribution {
+    color: #666;
+}
+
+.fiori .k-spreadsheet-column-header, .fiori .k-spreadsheet-row-header {
+    background-color: #fff;
+}
+
+.fiori .k-spreadsheet-column-header, .fiori .k-spreadsheet-row-header, .fiori .k-spreadsheet-top-corner {
+    background-color: #f2f2f2;
+    background-image: none;
+    color: #000;
+    border-color: #bfbfbf;
+}
+
+.fiori .k-spreadsheet-top-corner {
+    border-color: #bfbfbf;
+}
+
+    .fiori .k-spreadsheet-top-corner:after {
+        border-color: transparent #bfbfbf #bfbfbf transparent;
+    }
+
+.fiori .k-spreadsheet-pane {
+    border-color: #bfbfbf;
+}
+
+    .fiori .k-spreadsheet-pane .k-spreadsheet-haxis, .fiori .k-spreadsheet-pane .k-spreadsheet-vaxis {
+        border-color: #dedede;
+    }
+
+    .fiori .k-spreadsheet-pane .k-spreadsheet-column-header, .fiori .k-spreadsheet-pane .k-spreadsheet-row-header {
+        border-color: #bfbfbf;
+    }
+
+    .fiori .k-spreadsheet-pane .k-spreadsheet-merged-cell {
+        background-color: #fff;
+    }
+
+    .fiori .k-spreadsheet-pane .k-selection-full, .fiori .k-spreadsheet-pane .k-selection-partial {
+        border-color: rgba(0,124,192,.2);
+        background-color: rgba(0,124,192,.2);
+    }
+
+    .fiori .k-spreadsheet-pane .k-filter-range {
+        border-color: #007cc0;
+    }
+
+    .fiori .k-spreadsheet-pane .k-spreadsheet-column-header .k-selection-full, .fiori .k-spreadsheet-pane .k-spreadsheet-column-header .k-selection-partial {
+        border-bottom-color: #007cc0;
+    }
+
+    .fiori .k-spreadsheet-pane .k-spreadsheet-row-header .k-selection-full, .fiori .k-spreadsheet-pane .k-spreadsheet-row-header .k-selection-partial {
+        border-right-color: #007cc0;
+    }
+
+.fiori .k-auto-fill, .fiori .k-spreadsheet-selection {
+    border-color: #007cc0;
+    -webkit-box-shadow: inset 0 0 0 1px #fff,0 0 0 1px #007cc0;
+    box-shadow: inset 0 0 0 1px #fff,0 0 0 1px #007cc0;
+}
+
+.fiori .k-spreadsheet-selection {
+    background-color: rgba(0,124,192,.2);
+}
+
+.fiori .k-spreadsheet-active-cell {
+    border-color: #007cc0 !important;
+    background-color: #fff;
+}
+
+    .fiori .k-spreadsheet-active-cell.k-single {
+        background-color: #fff;
+    }
+
+.fiori .k-spreadsheet > .k-spreadsheet-formula-bar {
+    background-color: #fff;
+    border-color: #f2f2f2 #f2f2f2 #bfbfbf;
+}
+
+    .fiori .k-spreadsheet > .k-spreadsheet-formula-bar:before {
+        border-color: #bfbfbf;
+    }
+
+    .fiori .k-spreadsheet > .k-spreadsheet-formula-bar:after {
+        border-color: #f2f2f2;
+    }
+
+.fiori .k-spreadsheet .k-spreadsheet-formula-input {
+    background-color: #fff;
+    color: #333;
+}
+
+.fiori .k-spreadsheet .k-resize-handle, .fiori .k-spreadsheet .k-resize-hint-handle, .fiori .k-spreadsheet .k-resize-hint-marker {
+    background-color: #007cc0;
+}
+
+.fiori .k-spreadsheet .k-resize-hint-vertical .k-resize-hint-handle, .fiori .k-spreadsheet .k-resize-hint-vertical .k-resize-hint-marker {
+    background-color: #007cc0;
+}
+
+.fiori .k-spreadsheet .k-single-selection::after {
+    background-color: #007cc0;
+    border-color: #fff;
+}
+
+.fiori .k-spreadsheet .k-auto-fill-punch {
+    background-color: rgba(255,255,255,.5);
+}
+
+.fiori .k-spreadsheet .k-single-selection.k-dim-auto-fill-handle::after {
+    background-color: rgba(0,124,192,.5);
+}
+
+.fiori .k-spreadsheet-format-cells .k-spreadsheet-preview {
+    border-color: #bfbfbf;
+}
+
+.fiori .k-spreadsheet-filter {
+    border-radius: 0;
+    background-color: #fff;
+    -webkit-box-shadow: inset 0 0 0 1px #dedede;
+    box-shadow: inset 0 0 0 1px #dedede;
+}
+
+    .fiori .k-spreadsheet-filter.k-state-active {
+        color: #fff;
+        background-color: #007cc0;
+    }
+
+    .fiori .k-spreadsheet-filter:hover {
+        color: #333;
+        background: #eaeaea;
+        border-color: #d6d6d6;
+    }
+
+.fiori .k-action-window .k-action-buttons {
+    border-color: #bfbfbf;
+}
+
+.fiori .k-spreadsheet-sample {
+    color: grey;
+}
+
+.fiori .k-state-selected .k-spreadsheet-sample {
+    color: inherit;
+}
+
+.fiori .k-spreadsheet-window .k-list, .fiori .k-spreadsheet-window .k-list-wrapper {
+    border-color: #bfbfbf;
+    border-radius: 0;
+}
+
+.fiori .k-spreadsheet-window .export-config, .fiori .k-spreadsheet-window .k-edit-field > .k-orientation-label {
+    border-color: #bfbfbf;
+}
+
+.fiori .k-spreadsheet-window .k-edit-field > input[type=radio]:checked + .k-orientation-label {
+    background-image: none;
+    background-color: #007cc0;
+    color: #fff;
+}
+
+.fiori .k-spreadsheet-window .k-page-orientation {
+    border-color: #cecece;
+    -webkit-box-shadow: 0 5px 5px 0 rgba(0,0,0,.1);
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.1);
+}
+
+    .fiori .k-spreadsheet-window .k-page-orientation:before {
+        background: #fff;
+        border-color: transparent;
+        border-bottom-color: #cecece;
+        border-left-color: #cecece;
+    }
+
+.fiori .k-spreadsheet-window .k-margins-horizontal, .fiori .k-spreadsheet-window .k-margins-vertical {
+    background: 0 0;
+    border-color: #bfbfbf;
+}
+
+.fiori .k-spreadsheet-toolbar.k-toolbar .k-button-group .k-button {
+    border-radius: 0;
+}
+
+.fiori .k-spreadsheet-toolbar > .k-button, .fiori .k-spreadsheet-toolbar > .k-button-group, .fiori .k-spreadsheet-toolbar > .k-widget {
+    border-radius: 0;
+}
+
+.fiori .k-spreadsheet-toolbar > .k-separator {
+    border-color: #bfbfbf;
+}
+
+.fiori .k-spreadsheet-toolbar .k-overflow-anchor {
+    border-radius: 0;
+}
+
+.fiori .k-spreadsheet-popup {
+    border-radius: 0;
+}
+
+    .fiori .k-spreadsheet-popup .k-separator {
+        background-color: #bfbfbf;
+    }
+
+    .fiori .k-spreadsheet-popup .k-button {
+        background-color: transparent;
+    }
+
+        .fiori .k-spreadsheet-popup .k-button:hover {
+            background-color: #eaeaea;
+        }
+
+    .fiori .k-spreadsheet-popup .k-state-active {
+        background-color: #007cc0;
+        color: #000;
+    }
+
+        .fiori .k-spreadsheet-popup .k-state-active:hover {
+            background-color: #005b8d;
+        }
+
+.fiori .k-spreadsheet-filter-menu .k-details {
+    border-color: #bfbfbf;
+}
+
+.fiori .k-spreadsheet-filter-menu .k-details-content .k-space-right {
+    background-color: #fff;
+}
+
+.fiori .k-spreadsheet-filter-menu .k-spreadsheet-value-treeview-wrapper {
+    background-color: #fff;
+    border-color: #bfbfbf;
+    border-radius: 0;
+}
+
+.fiori .k-syntax-ref {
+    color: #f82;
+}
+
+.fiori .k-syntax-num {
+    color: #09f;
+}
+
+.fiori .k-syntax-func {
+    font-weight: 700;
+}
+
+.fiori .k-syntax-str {
+    color: #38b714;
+}
+
+.fiori .k-syntax-error {
+    color: red;
+}
+
+.fiori .k-syntax-bool {
+    color: #a9169c;
+}
+
+.fiori .k-syntax-startexp {
+    font-weight: 700;
+}
+
+.fiori .k-syntax-paren-match {
+    background-color: #caf200;
+}
+
+.fiori .k-series-a {
+    border-color: #008fd3;
+    background-color: rgba(0,143,211,.15);
+}
+
+.fiori .k-series-b {
+    border-color: #99d101;
+    background-color: rgba(153,209,1,.15);
+}
+
+.fiori .k-series-c {
+    border-color: #f39b02;
+    background-color: rgba(243,155,2,.15);
+}
+
+.fiori .k-series-d {
+    border-color: #f05662;
+    background-color: rgba(240,86,98,.15);
+}
+
+.fiori .k-series-e {
+    border-color: #c03c53;
+    background-color: rgba(192,60,83,.15);
+}
+
+.fiori .k-series-f {
+    border-color: #acacac;
+    background-color: rgba(172,172,172,.15);
+}
+
+.fiori .k-spreadsheet-sheets-remove:hover .k-icon {
+    color: #c22;
+}
+
+.fiori .k-spreadsheet-formula-list .k-state-focused {
+    background-color: #007cc0;
+    color: #fff;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:2) {
+    .k-icon.k-font-icon {
+        background-image: none;
+    }
+}
+
+.fiori .k-button:hover {
+    color: #fff;
+    border-color: #264E82;
+    background-color: #264E82;
+}

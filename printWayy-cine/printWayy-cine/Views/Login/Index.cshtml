@@ -1,0 +1,81 @@
+﻿@model cine_printWayy.Models.User
+
+@{
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+    ViewBag.Title = "Acesse o PrintWayy!";
+    string returnUrl = ViewBag.ReturnURL;
+    string cssFilePath = Server.MapPath("~/Content/login.min.css");
+    string cssCustomFilePath = Server.MapPath("~/Content/pw-custom.min.css");
+    string cssBootstrapFilePath = Server.MapPath("~/Content/bootstrap.min.css");
+    string cssHoverFilePath = Server.MapPath("~/Content/hover-min.css");
+}
+
+@section headStyles{
+    <link href="~/Content/font-awesome.4.7.0.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/hover-min.css" rel="stylesheet" />
+    <link href="~/Content/pw-custom.min.css" rel="stylesheet" />
+    <link href="~/Content/login.min.css" rel="stylesheet" />
+}
+
+<div class="printwayy-login">
+    s
+    <div class="login-field">
+        <h1 style="margin-bottom: 30px; margin-top: 15px; text-align:center;">Faça seu login</h1>
+        @using (Html.BeginForm("Authenticate", "Login", FormMethod.Post, new { id = "loginForm" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.Hidden("returnUrl", returnUrl)
+
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.Username, new { @class = "input-email", placeholder = "Username", type = "text" })
+                @Html.ValidationMessageFor(m => m.Username)
+            </div>
+
+            <div>
+                @Html.PasswordFor(m => m.Password, new { @class = "input-password", placeholder = "Senha" })
+            </div>
+            @Html.ValidationMessageFor(m => m.Password)
+
+            <button id="btnLogin" class="btn btn-round-blue light-hover hvr-shrink" type="submit">Entrar</button>
+
+            <a id="forgot" href="#">Esqueci minha senha</a>
+
+            <br />
+
+            @Html.ValidationSummary(true)
+        }
+    </div>
+</div>
+
+<div class="social-footer">
+    <a href="https://www.facebook.com/app.printwayy" target="_blank" class="social-icon link-without-decoration">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-facebook fa-stack-1x inner-icon"></i>
+        </span>
+    </a>
+    <a href="https://www.youtube.com/channel/UCjcqjRZ3mo-XRc-tz-92Dbg" target="_blank" class="social-icon link-without-decoration">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-youtube-play fa-stack-1x inner-icon"></i>
+        </span>
+    </a>
+    <a href="http://www.linkedin.com/company/printwayy" target="_blank" class="social-icon link-without-decoration">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-linkedin-square fa-stack-1x inner-icon"></i>
+        </span>
+    </a>
+    <a href="https://www.instagram.com/printwayy" target="_blank" class="social-icon link-without-decoration">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-instagram fa-stack-1x inner-icon"></i>
+        </span>
+    </a>
+</div>
+
+<div class="footer">
+    <p>&copy; @DateTime.Now.Year PrintWayy. Todos os direitos reservados.</p>
+</div>
+

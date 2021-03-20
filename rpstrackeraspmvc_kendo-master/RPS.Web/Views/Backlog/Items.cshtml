@@ -1,0 +1,94 @@
+﻿@using RPS.Web.Models.Routing;
+@model IEnumerable<RPS.Core.Models.PtItem>
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+    <h1 class="h2">Backlog</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <div class="btn-group mr-2">
+            <button onclick="location.href = '@(Url.Action("Items", "Backlog", new { preset = "My" }))'">My Items</button>
+            <button onclick="location.href = '@(Url.Action("Items", "Backlog", new { preset = "Open" }))'">Open Items</button>
+            <button onclick="location.href = '@(Url.Action("Items", "Backlog", new { preset = "Closed" }))'">Done Items</button>
+        </div>
+
+        <div class="btn-group mr-2">
+            @(Html.Kendo().Button()
+                .Name("btnAdd")
+                .Icon("plus")
+                .Content("Add")
+                .HtmlAttributes(new { @class = "k-primary", onclick = "location.href = '" + Url.Action("Create", "Backlog") + "'" })
+             )
+        </div>
+
+    </div>
+</div>
+
+
+@(Html.Kendo().Grid(Model)
+        .DataSource(source =>
+        {
+            source.Server()
+               .PageSize(6)
+               .Model(m =>
+               {
+                   m.Id(i => i.Id);
+               });
+            
+        })
+                    .Name("grid")
+                    .RowAction(row => {
+                        row.HtmlAttributes.Add("onclick", "location.href = '/Backlog/" + row.DataItem.Id + "/Details'");
+                    })
+                    .Columns(columns =>
+                    {
+                        columns.Bound(i => i.Type).Title(" ").Width(40)
+                            .Template(i =>
+                            {
+                                return "<div class='pt-indicator' data-id='"+ i.Id +"'>" + Rps.ItemTypeIndicatorImage(i.Type, "backlog-icon") + "</div>";
+                            });
+                        columns.Bound(i => i.Assignee)
+                        .Template(i =>
+                        {
+                            return Rps.UserAvatar(i.Assignee, null);
+                        });
+                        columns.Bound(i => i.Title);
+                        columns.Bound(i => i.Priority)
+                            .Template(i =>
+                            {
+                                return Rps.PriorityIndicator(i.Priority);
+                            });
+                        columns.Bound(i => i.Estimate)
+                            .Template(i =>
+                            {
+                                return "<span class=\"li-estimate\">" + i.Estimate + "</span>";
+                            });
+                        columns.Bound(i => i.DateCreated).Title("Created")
+                            .Template(i =>
+                            {
+                                return "<span class=\"li-date\">" + i.DateCreated.ToString("MMM d, yyyy") + "</span>";
+                            });
+                    })
+                            .Pageable()
+                            .Sortable()
+                            .Selectable()
+                            .Events(events =>
+                            {
+                                //events.Change("onChange");
+                            })
+
+)
+
+
+@section styles {
+    @Styles.Render("~/Content/backlogcss")
+}
+
+@section scripts {
+    <script>
+        function onChange(arg) {
+            var rows = arg.sender.select();
+            var itemId = $($(rows[0]).find('.pt-indicator')[0]).attr('data-id');
+            window.location.href = `/Backlog/${itemId}/Details`;
+        }
+    </script>
+}
+

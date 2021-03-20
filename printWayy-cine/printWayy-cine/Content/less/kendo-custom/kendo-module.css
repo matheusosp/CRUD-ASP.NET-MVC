@@ -1,0 +1,775 @@
+﻿.button-hover-base,
+.k-button:hover,
+.k-button:active,
+.k-button:focus,
+.grid-menu > li.k-state-hover,
+.grid-menu > li.k-state-hover > .k-link {
+  color: #ffffff !important;
+  background-image: none !important;
+  border-top-color: #dbdbdb !important;
+  border-right-color: #dbdbdb !important;
+  border-bottom-color: #dbdbdb !important;
+  border-left-color: #264d81 !important;
+  background-color: #3770bc !important;
+}
+.k-button {
+  background-color: #ffffff;
+  color: #264d81;
+}
+.grid-menu > li.k-state-disabled {
+  color: #a9a9a9 !important;
+  background-color: transparent !important;
+  border-color: #dbdbdb !important;
+}
+.grid-menu > li.k-state-disabled > .k-link {
+  background-color: transparent !important;
+  color: #a9a9a9 !important;
+}
+.grid-menu > .k-item:not(.k-state-disabled) {
+  background-color: #ffffff !important;
+}
+.grid-menu > .k-item {
+  background-color: transparent;
+  color: #264d81;
+  border: 1px solid #dbdbdb;
+  border-left: 3px solid #264d81 !important;
+}
+.grid-menu > .k-item:disabled {
+  background-color: transparent;
+  color: #264d81;
+  border: 1px solid #a9a9a9;
+  border-left: 3px solid #a9a9a9 !important;
+}
+.grid-menu > .k-state-disabled {
+  border-left: 3px solid #dbdbdb !important;
+  border-color: #dbdbdb;
+}
+#removeDepartmentAction__MAIN.k-state-focused,
+#removeAddressAction.k-state-focused {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+#btn-generate-report-counters-by-company,
+.buttonsResaleGeneralSettings,
+.addCompanyAction,
+#communicationFailAlertsHoursForm > .k-button,
+#ticketEmptyLinesForm > .k-button,
+#btn-generate-token,
+#btn-delete-token,
+#btn-print-ticket,
+#btn-remove-ticket,
+#addTicketPrinterBtn,
+#btnRefreshClosedManagementAlerts,
+#btn-generate-report-counters-by-printer,
+#btn-generate-report-scans-by-printer,
+#addCustomerEmailAction,
+#addAditionalCostsAction,
+#addEntryItemBtn,
+#btn-ignore-alert,
+#btn-create-ticket,
+.k-header > .k-button,
+#btn-reopen-ticket {
+  border-left: 3px solid #264d81 !important;
+}
+.k-filter-menu > button,
+.k-filter-menu > .k-primary {
+  border-left: 3px solid #264d81 !important;
+  border-color: #264d81 !important;
+  color: #264d81;
+}
+.k-filter-menu > .k-primary:hover {
+  color: #ffffff;
+}
+.k-filter-menu > .k-textbox {
+  border-color: #264d81 !important;
+  border-right: 3px solid #264d81 !important;
+}
+.k-filter-menu > .k-textbox:hover {
+  border-color: #3770bc !important;
+  border-right: 3px solid #264d81 !important;
+  background-image: none !important;
+  background-color: #3770bc !important;
+}
+.k-filter-menu > .k-textbox:hover .k-icon {
+  color: #ffffff;
+}
+#exportReportAction .k-link.k-state-active {
+  color: #264d81;
+}
+.printerFleetGrid {
+  margin-top: 3px;
+}
+#export-excel-header {
+  background-color: #ffffff;
+  height: 57px;
+  position: relative;
+  background-image: none !important;
+  border-top: 3px solid #264d81;
+}
+#export-excel-header:hover {
+  background-color: #3770bc;
+  border-top: 3px solid transparent;
+  background-image: none !important;
+  color: #ffffff;
+}
+#export-excel-header ~ .header {
+  font-weight: 400;
+}
+.k-callout-w {
+  border-right-color: #3770bc;
+}
+.exportExcelMenu_tt_active {
+  color: #264d81 !important;
+}
+#export-excel-header button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  font-weight: bold;
+  color: #264d81;
+}
+#export-excel-header button:hover {
+  background-color: #3770bc;
+  color: #ffffff;
+  background-image: none !important;
+}
+.exportExcelMenu_tt_active .header {
+  background-color: #f5f5f5;
+  font-size: 14px;
+  text-align: center;
+}
+.exportExcelMenu {
+  background-color: #ffffff;
+}
+.exportExcelMenu > button {
+  border-color: #264d81;
+  color: #264d81;
+  border-left: 3px solid #264d81;
+}
+#contractsGrid-exportExcelMenu {
+  margin-top: 3px;
+}
+.k-content .bottomButtonBar > .k-button {
+  border-left: 3px solid #264d81 !important;
+  color: #264d81;
+  border-color: #dbdbdb;
+}
+.k-window-actions .k-button {
+  color: #444444;
+}
+.k-window-actions .k-button:hover,
+.k-window-actions .k-button:focus,
+.k-window-actions .k-button:active {
+  background-color: transparent !important;
+  color: #264d81 !important;
+  border: 0;
+}
+td .btn-delete-supply {
+  margin-top: 3px !important;
+}
+.k-grid tbody .k-button {
+  min-width: 70px;
+}
+.fa-user {
+  visibility: hidden;
+}
+.fontawesome.box {
+  border: none;
+}
+.dropdown-menu > li > a > .fa {
+  margin-right: 2px !important;
+}
+.backup-printer-icon {
+  z-index: 1;
+  position: absolute;
+  margin-top: 9px;
+  margin-left: -14px;
+  font-size: .675em;
+  color: #000000;
+}
+.k-i-arrow-60-down:before {
+  content: "\e015";
+  font-weight: 100;
+}
+.k-i-arrow-60-down:before:hover {
+  background-color: #3770bc;
+}
+.k-i-arrow-60-up:before {
+  content: "\e013";
+  font-weight: 100;
+}
+.k-i-arrow-60-up:before:hover {
+  background-color: #3770bc;
+}
+.raphael {
+  color: #264d81;
+}
+.raphael.k-state-border-down {
+  background: none !important;
+}
+.k-combobox,
+.k-dropdown {
+  border-left: 3px solid #dbdbdb;
+}
+.mainDropDownListCompanyPlace .k-dropdown,
+.mainDropDownListPlaceDepartment .k-combobox {
+  width: 99% !important;
+}
+/*
+.content>form .k-dropdown {
+    //width: 160px !important;
+}
+*/
+#report-form-counters-by-printer .mvvm-container .k-dropdown {
+  width: 422px !important;
+}
+.cmbCustomers .k-select {
+  width: 21px !important;
+}
+.cmbCustomers .k-select,
+.k-dropdown-wrap.k-state-focused {
+  background-color: #3770bc;
+  background-image: none !important;
+}
+.dark-drop-down-list {
+  background-color: transparent !important;
+}
+.dark-drop-down-list.k-state-border-down,
+.dark-drop-down-list.k-state-focused,
+.dark-drop-down-list.k-state-hover {
+  color: #ffffff;
+  background-color: #3770bc !important;
+}
+.dark-drop-down-list:hover > .k-select {
+  color: #ffffff;
+  background-color: #3770bc;
+}
+.default .k-dropdown-wrap.k-state-hover,
+.default .k-dropdown-wrap.k-state-focused {
+  background-color: #3770bc;
+  background-image: none !important;
+  color: #ffffff !important;
+}
+input:hover:not(:disabled) ~ .k-select,
+.k-state-border-down ~ .k-select,
+.k-select:hover {
+  background-color: #3770bc;
+  background-image: none !important;
+  color: #ffffff !important;
+}
+.k-picker-wrap.k-state-focused {
+  color: #143345 !important;
+}
+.k-list > .k-state-focused {
+  box-shadow: none !important;
+}
+.k-list > .k-state-selected {
+  background-color: #3770bc !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+.k-list > .k-state-hover,
+.k-list > .k-state-hover:hover {
+  background-color: #e1eaf6 !important;
+  color: #444444 !important;
+}
+.cmbCustomers .k-select {
+  background-color: #ffffff;
+}
+.cmbCustomers.k-state-border-down,
+.cmbCustomers.k-state-border-down .k-select {
+  background-color: #3770bc;
+  border-color: #3770bc !important;
+  border-left-color: #dbdbdb !important;
+  border-right-color: #dbdbdb !important;
+}
+.cmbCustomers.k-state-border-down .k-select {
+  border-left-color: #3770bc !important;
+}
+.cmbCustomers > span.k-state-hover > .k-select,
+.cmbCustomers > span.k-state-hover > .k-select > .k-icon {
+  color: #ffffff !important;
+  background-color: #3770bc !important;
+  border-color: #3770bc !important;
+}
+.cmbCustomers .k-state-focused .k-select {
+  color: #444444 !important;
+}
+.cmbCustomers .k-dropdown-wrap {
+  width: 180px;
+}
+.cmbCustomers.k-state-border-down .k-icon {
+  color: #ffffff !important;
+}
+.k-dropdown-wrap.k-state-hover,
+.k-state-focused,
+.k-dropdown .k-input:hover::before,
+.k-dropdown .k-input:hover {
+  background-image: none !important;
+  background-color: #3770bc;
+  color: #ffffff;
+}
+.k-list-container .k-state-selected,
+.k-list-container .k-state-hover {
+  background-color: #3770bc;
+  border-color: #3770bc;
+  background-image: none !important;
+}
+.k-list-optionlabel {
+  color: #444444;
+}
+.k-state-disabled .k-input:hover,
+.k-state-disabled .k-select:hover {
+  background-color: transparent !important;
+  color: #dbdbdb !important;
+}
+.k-item.k-state-hover .multicolumn-dropdown-item {
+  color: #444444 !important;
+}
+.k-item.k-state-selected .multicolumn-dropdown-item {
+  color: #ffffff;
+}
+.k-item .multicolumn-dropdown-item {
+  color: #444444;
+}
+.drop-down-list-selected {
+  color: #444444;
+  background-color: #3770bc !important;
+}
+.k-calendar-container .k-state-hover,
+.k-picker-wrap.k-state-hover,
+.k-calendar .k-nav-fast.k-state-hover {
+  background-color: #3770bc;
+  background-image: none !important;
+  color: #ffffff;
+}
+#report-form-scans-by-printer .k-datepicker {
+  width: 213px;
+}
+.k-calendar-container .k-state-hove {
+  background-color: #3770bc;
+}
+.k-other-month.k-state-hover .k-link {
+  background-image: none !important;
+}
+.k-datepicker {
+  width: 200px;
+}
+.k-today {
+  background-color: #3770bc;
+  border: none !important;
+  box-shadow: none !important;
+}
+.k-today .k-link {
+  color: #ffffff !important;
+}
+.k-vertical-calendar .k-state-selected,
+.k-vertical-calendar .k-state-hover {
+  background-image: none !important;
+  background-color: #3770bc !important;
+  border-color: #3770bc !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+}
+.k-multiselect {
+  border-left: 3px solid #dbdbdb;
+}
+.k-multiselect:hover {
+  border-color: #dbdbdb;
+}
+#suppliesAndPartsTypesWithExchangesControlDiv .k-multiselect {
+  border: 1px solid #dbdbdb;
+  border-left: 3px solid #dbdbdb !important;
+}
+.k-multiselect .k-button {
+  border: 1px solid #f5f5f5;
+  background-color: #f5f5f5;
+  color: #444444;
+}
+.k-multiselect .k-button:hover,
+.k-multiselect .k-button > .k-select:hover {
+  color: #444444 !important;
+  background-color: #e1eaf6 !important;
+  border-color: #e1eaf6 !important;
+}
+.grid-td-without-padding .k-dropdown {
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+  border: 1px solid #dbdbdb;
+  border-left: 3px solid #dbdbdb !important;
+  /**/
+  /**/
+  /**/
+}
+.grid-td-without-padding .k-dropdown .k-dropdown-wrap:not(.drop-down-list-selected).k-state-hover {
+  background-color: #3770bc !important;
+}
+.grid-td-without-padding .k-dropdown .k-dropdown-wrap:not(.drop-down-list-selected).k-state-focused .k-input,
+.grid-td-without-padding .k-dropdown .k-dropdown-wrap:not(.drop-down-list-selected).k-state-focused .k-icon {
+  color: #444444 !important;
+}
+.grid-td-without-padding .k-dropdown .k-dropdown-wrap:not(.drop-down-list-selected).k-state-focused.k-state-hover .k-input,
+.grid-td-without-padding .k-dropdown .k-dropdown-wrap:not(.drop-down-list-selected).k-state-focused.k-state-hover .k-icon,
+.grid-td-without-padding .k-dropdown .k-dropdown-wrap:not(.drop-down-list-selected).k-state-focused.k-state-hover .k-state-focused {
+  color: #ffffff !important;
+}
+#newDetectedPrintersGrid table .k-dropdown-wrap.k-state-default.k-state-focused {
+  background-color: transparent;
+}
+.CustomerPlaceIdTemplate {
+  width: 150px !important;
+}
+.CustomerPlaceIdTemplate .k-dropdown {
+  width: 150px !important;
+}
+.OwnerHashCodeTemplate {
+  width: 190px !important;
+}
+.OwnerHashCodeTemplate .k-dropdown {
+  width: 190px !important;
+}
+.PlaceDepartmentIdTemplate {
+  width: 205px !important;
+}
+.PlaceDepartmentIdTemplate .k-dropdown {
+  width: 205px !important;
+}
+.ContractIdTemplate {
+  width: 170px !important;
+}
+.ContractIdTemplate .k-dropdown {
+  width: 170px !important;
+}
+.k-pager-numbers > li > .k-state-selected {
+  background-color: #3770bc !important;
+  border-color: #3770bc !important;
+}
+.k-pager-wrap .k-link:hover {
+  background-color: #3770bc !important;
+  border-color: #3770bc !important;
+  background-image: none !important;
+}
+.k-pager-refresh.k-link:hover {
+  background-color: transparent !important;
+  color: #444444 !important;
+}
+.k-pager-wrap .k-link.k-state-disabled {
+  color: #444444 !important;
+}
+.k-pager-wrap .k-link:hover.k-state-disabled {
+  color: #444444 !important;
+  background-color: transparent !important;
+  border-color: #dbdbdb !important;
+}
+.k-filter-menu {
+  min-width: 220px !important;
+}
+.k-grid-header .k-header {
+  background-color: #ffffff;
+  border-bottom: 2px solid #a9a9a9 !important;
+}
+.k-grid-header .k-header,
+.k-widget {
+  color: #444444;
+}
+.k-widget {
+  border-color: #dbdbdb;
+}
+.k-grid tr.k-state-selected {
+  color: #264d81 !important;
+}
+.k-grid tr.k-state-selected,
+.k-grid .k-state-selected {
+  background-color: #d2e0f2 !important;
+}
+.k-grid tr.k-state-selected > .contract-deadline-background,
+.k-grid .k-state-selected > .contract-deadline-background {
+  background-color: #d2e0f2;
+}
+.default .k-grid tr.k-state-selected:hover td {
+  box-shadow: none !important;
+}
+.k-alt,
+.default .k-alt {
+  background-color: #ffffff;
+}
+.k-grid td {
+  border-bottom: 1px solid #dbdbdb;
+}
+.k-dirty {
+  border-width: 0;
+}
+#ReportContentToPrint .k-alt {
+  background-color: #f5f5f5;
+}
+.contract-deadline-background {
+  background-color: #fcedcb;
+}
+#stockSettingsTab,
+#resaleGeneralSettingsTab,
+#emailSettingsTab {
+  margin-top: 10px;
+}
+#emailSettingsTab .k-content,
+#resaleGeneralSettingsTab .k-content,
+#stockSettingsTab .k-content,
+#genericReportFiltersTab .k-content {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+#emailSettingsTab .k-tabstrip-items {
+  background-color: #eeeeee;
+}
+.fiori .k-tabstrip.k-header {
+  background-color: transparent !important;
+}
+#genericReportFiltersTab .k-content {
+  background-color: #ffffff;
+  width: auto !important;
+}
+#genericReportFiltersTab .k-tabstrip-items .k-item .k-link {
+  font-size: 21px;
+  padding: 0 0 9px 0;
+}
+#genericReportFilterColumnsSelected {
+  width: 100%;
+}
+#genericReportFiltersTab-2 {
+  width: 805px;
+}
+.k-window {
+  border-radius: 0;
+  border: 0 !important;
+}
+.k-window-title {
+  padding: 0;
+  margin-left: 10px;
+}
+div.k-window-content {
+  padding-left: 10px;
+}
+.k-content {
+  color: #444444 !important;
+}
+#ticketDialog {
+  min-width: 1000px;
+}
+.k-window-titlebar {
+  background-color: #e1eaf6;
+  color: #264d81;
+  font-size: 21px;
+  border-color: #dbdbdb;
+  border-bottom: 0 !important;
+  padding-bottom: 0.4em;
+}
+.confirmation-dialog {
+  border-left-width: 2px !important;
+  border-right-width: 2px !important;
+  border-bottom-width: 2px !important;
+  border-color: #edaa0e !important;
+  color: #444444 !important;
+}
+.confirmation-dialog .k-window-titlebar {
+  background-color: #edaa0e;
+  color: #444444;
+}
+.confirmation-dialog .k-window-content {
+  border-top: 0 !important;
+  border: 1px solid #edaa0e;
+}
+.informative-box {
+  margin-bottom: 5px;
+}
+.old-lace-highlight {
+  background-color: #fdf6e6;
+}
+#removeContractConfirmationDialog > .infobox > .box-message > p:nth-child(2) {
+  color: #a9a9a9;
+}
+.k-window-content {
+  background-color: #ffffff;
+}
+.k-tabstrip .k-content.k-state-active {
+  color: #444444 !important;
+}
+.k-tabstrip-items .k-state-active,
+.k-tabstrip > .k-content {
+  border-color: #444444;
+  color: #444444;
+}
+#removeAccountWithEmailSettingsWarningDialog {
+  width: 646px;
+}
+.k-loading-color {
+  background-color: #ffffff !important;
+}
+.k-popup > .success-notification {
+  color: #ffffff;
+}
+.k-animation-container .k-widget.k-tooltip:not(.excel-tooltip) {
+  border-color: #3770bc;
+  background-color: #3770bc;
+  opacity: 0.9 !important;
+  color: #ffffff;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 8 0.25rem);
+}
+.k-callout-e {
+  border-left-color: #3770bc;
+}
+.deadline-contract-tooltip {
+  color: #edaa0e;
+  margin-left: 3px;
+}
+.yellow-tooltip-container {
+  min-width: 230px;
+  text-align: left;
+}
+.yellow-tooltip {
+  background-color: #edaa0e !important;
+}
+.yellow-tooltip > .k-callout-w {
+  border-right-color: #edaa0e;
+}
+.k-tooltip-validation[data-for="TicketCompanyId"] ~ .k-tooltip-validation[data-for="TicketTypeId"] {
+  margin-left: 542px;
+}
+.k-tooltip-validation[data-for="TicketCompanyId"]:not([style*='display']):not([style*='none']) ~ .k-tooltip-validation[data-for="TicketTypeId"] {
+  margin-left: 239px;
+}
+.k-tooltip-validation[data-for="AttendanceStartTime"] ~ .k-tooltip-validation[data-for="AttendanceEndTime"] {
+  margin-left: 305px;
+}
+.k-tooltip-validation[data-for="AttendanceStartTime"]:not([style*='display']):not([style*='none']) ~ .k-tooltip-validation[data-for="AttendanceEndTime"] {
+  margin-left: 10px;
+}
+.k-tooltip-validation[data-for="ScansStartDate"] ~ .k-tooltip-validation[data-for="ScansEndDate"] {
+  margin-left: 238px;
+}
+.k-tooltip-validation[data-for="ScansStartDate"]:not([style*='display']):not([style*='none']) ~ .k-tooltip-validation[data-for="ScansEndDate"] {
+  margin-left: 0;
+}
+.k-tooltip-validation[data-for="CountersByCompanyStartDate"] ~ .k-tooltip-validation[data-for="CountersByCompanyEndDate"],
+.k-tooltip-validation[data-for="StartDate"] ~ .k-tooltip-validation[data-for="EndDate"] {
+  margin-left: 225px;
+}
+.k-tooltip-validation[data-for="CountersByCompanyStartDate"]:not([style*='display']):not([style*='none']) ~ .k-tooltip-validation[data-for="CountersByCompanyEndDate"],
+.k-tooltip-validation[data-for="StartDate"]:not([style*='display']):not([style*='none']) ~ .k-tooltip-validation[data-for="EndDate"] {
+  margin-left: 0;
+}
+.k-tooltip-validation[data-for="daysOfToleranceForCommunicationFailure"] {
+  margin-left: 168px;
+}
+#StartTime_validationMessage ~ #EndTime_validationMessage {
+  margin-left: 257px;
+}
+#StartTime_validationMessage:not([style*='display']):not([style*='none']) ~ #EndTime_validationMessage {
+  margin-left: 5px;
+}
+#contract-endmonth-validation-container > .k-tooltip-validation[data-for="EndMonth"] {
+  margin-left: 228px;
+}
+#genericReportFilterMenu {
+  margin: 5px 10px;
+}
+.genericReportFilterMenuOptions {
+  width: 140px;
+}
+.genericReportFilterMenuOptions .k-link,
+.genericReportFilterMenuItem {
+  text-align: center;
+}
+.genericReportFilterMenuOptions .k-link {
+  padding: 2.5px 0;
+}
+.genericReportFilterMenuItem {
+  width: 150px;
+}
+.firstInput .k-picker-wrap,
+.conditionDateValueInput .k-picker-wrap,
+.conditionDateTimeValueInput .k-picker-wrap {
+  border-left: none;
+}
+.conditionBetweenDateValueInput .k-select,
+.conditionDateValueInput .k-select,
+.conditionDateTimeValueInput .k-select,
+.conditionBetweenDateTimeValueInput .k-select {
+  border-right: 1px solid #dbdbdb;
+  width: 35px !important;
+}
+.conditionBetweenDateValueInput,
+.conditionBetweenDateTimeValueInput {
+  width: 203.5px !important;
+}
+.conditionDateValueInput,
+.conditionDateTimeValueInput {
+  width: 424px !important;
+}
+.conditionDateTimeValueInput .k-select .k-link,
+.conditionBetweenDateTimeValueInput .k-select .k-link {
+  margin: 0 1px !important;
+}
+.k-ff .conditionDateTimeValueInput .k-select .k-link,
+.k-ff .conditionBetweenDateTimeValueInput .k-select .k-link {
+  margin: 0 0.25px !important;
+}
+.conditionDateTimeValueInput .k-picker-wrap .k-icon,
+.conditionBetweenDateTimeValueInput .k-picker-wrap .k-icon {
+  margin: 0 !important;
+}
+.conditionBetweenDateTimeValueInput .k-picker-wrap {
+  background-color: #ffffff !important;
+}
+.conditionMultiSelectInput .k-multiselect-wrap {
+  max-height: 30px !important;
+  overflow: auto !important;
+}
+.conditionMultiSelectInput .k-multiselect-wrap li {
+  height: 25px;
+  margin: 2px 2.5px !important;
+}
+.conditionMultiSelectInput .k-multiselect-wrap .k-input {
+  padding: 0 !important;
+  margin: 0 3px !important;
+  height: 30px !important;
+  color: #a9a9a9;
+}
+.conditionMultiSelectInput .k-multiselect-wrap li span {
+  margin-right: 0 !important;
+}
+.conditionMultiSelectInput {
+  width: 423px;
+  border: 1px solid #dbdbdb !important;
+  border-left: none !important;
+}
+.multiSelectIconSelected {
+  margin: 0 5px;
+  display: none;
+}
+.k-state-selected .multiSelectIconSelected {
+  display: inline-block !important;
+}
+.tabline-report-printers,
+.tabline-generic-reports {
+  margin-bottom: 10px !important;
+  margin-left: 15px;
+  border: 0.5px solid #d3d3d3;
+  margin: 0;
+}
+.k-ff .tabline-generic-reports {
+  border-bottom: none;
+}
+.treeview-without-selection-hover span.k-in.k-state-hover,
+.treeview-without-selection-hover span.k-in.k-state-focused,
+.treeview-without-selection-hover span.k-in.k-state-selected {
+  background-color: transparent;
+  background-image: none !important;
+  color: #444444 !important;
+  box-shadow: none;
+}
+.report-container .trv-error-message {
+  font-size: 12px;
+}

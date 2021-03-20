@@ -1,0 +1,123 @@
+﻿@model IList<printWayy_cine.Models.Filme>
+
+@{
+    ViewBag.Title = "DashBoard";
+}
+@using Kendo.Mvc
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
+    <link href="~/Content/test.css" rel="stylesheet" />
+</head>
+<body>
+
+    <h2>Dashboard</h2>
+
+    <table>
+            <tr>
+                <th>id</th>
+                <th>Titulo</th>
+                <th>Duração</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.id</td>
+                    <td>@item.titulo</td>
+                    <td>@item.duracao</td>
+                </tr>
+            }
+        </table>
+        @{Html.Kendo().Grid<printWayy_cine.Models.Filme>()
+                    .Name("grid")
+                    .Columns(columns =>
+                    {
+                        columns.Bound(c => c.id);
+                        columns.Bound(c => c.titulo);
+                        columns.Bound(c => c.descricao).Width(150);
+                        columns.Bound(c => c.duracao);
+                    })
+                    .DataSource(ds => ds
+                        .Ajax()
+                        .Read(read => read.Action("listAll", "DashBoard"))
+                    )
+                    .Render();
+        }
+    @*<h1>Pure CSS Tabs With Indicator</h1>
+    <div class="tabs">
+
+        <input type="radio" id="tab1" name="tab-control" checked>
+        <input type="radio" id="tab2" name="tab-control">
+        <input type="radio" id="tab3" name="tab-control">
+        <input type="radio" id="tab4" name="tab-control">
+        <ul>
+            <li title="Features">
+                <label for="tab1" role="button">
+                    <svg viewBox="0 0 24 24">
+                    </svg><br><span>Features</span>
+                </label>
+            </li>
+            <li title="Delivery Contents">
+                <label for="tab2" role="button">
+                    <svg viewBox="0 0 24 24">
+                    </svg><br><span>Delivery Contents</span>
+                </label>
+            </li>
+            <li title="Shipping">
+                <label for="tab3" role="button">
+                    <svg viewBox="0 0 24 24">
+
+                    </svg><br><span>Shipping</span>
+                </label>
+            </li>
+            <li title="Returns">
+                <label for="tab4" role="button">
+                    <svg viewBox="0 0 24 24">
+                    </svg><br><span>Returns</span>
+                </label>
+            </li>
+        </ul>
+
+        <div class="slider"><div class="indicator"></div></div>
+        <div class="content">
+            <section>
+                <h2>Features</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dolorem sequi, quo tempore in eum obcaecati atque quibusdam officiis est dolorum minima deleniti ratione molestias numquam. Voluptas voluptates quibusdam cum?
+            </section>
+            <section>
+                <h2>Delivery Contents</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quas adipisci a accusantium eius ut voluptatibus ad impedit nulla, ipsa qui. Quasi temporibus eos commodi aliquid impedit amet, similique nulla.
+            </section>
+            <section>
+                <h2>Shipping</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nemo ducimus eius, magnam error quisquam sunt voluptate labore, excepturi numquam! Alias libero optio sed harum debitis! Veniam, quia in eum.
+            </section>
+            <section>
+                <h2>Returns</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta vero rerum? Eaque repudiandae architecto libero reprehenderit aliquam magnam ratione quidem? Nobis doloribus molestiae enim deserunt necessitatibus eaque quidem incidunt.
+            </section>
+        </div>
+    </div>*@
+
+</body>
+</html>
+
+

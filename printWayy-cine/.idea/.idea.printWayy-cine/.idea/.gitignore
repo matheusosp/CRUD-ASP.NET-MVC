@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/contentModel.xml
+/projectSettingsUpdater.xml
+/.idea.printWayy-cine.iml
+# Datasource local storage ignored files
+/../../../../../../../../../../../:\Users\Mathe\OneDrive\Área de Trabalho\Projects\new\printWayy-cine\.idea\.idea.printWayy-cine\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

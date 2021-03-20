@@ -1,0 +1,79 @@
+﻿//@import "../../shared/shared-module.less";
+.k-window {
+    border-radius: 0;
+    border: 0 !important;
+}
+
+.k-window-title {
+    padding: 0;
+    margin-left: 10px;
+}
+
+div.k-window-content {
+    padding-left: 10px; // Centraliza conteudo do modal com o titulo do mesmo, visto que ambos precisam de um espaçamento esquerdo de 10 px
+}
+
+.k-content {
+    color: @tundora  !important;
+}
+
+// --------------- Titlebar padrão --------------//
+.k-window-titlebar {
+    background-color: @link-water;
+    color: @azure;
+    font-size: 21px;
+    border-color: @alto;
+    border-bottom: 0 !important;
+    padding-bottom: 0.4em;
+}
+
+// ----- Dialogos de Confirmação (Cor amarela) ----//
+.confirmation-dialog {
+    border-left-width: 2px !important;
+    border-right-width: 2px !important;
+    border-bottom-width: 2px !important;
+    border-color: @buttercup !important;
+    color: @tundora !important;
+
+    .k-window-titlebar {
+        background-color: @buttercup;
+        color: @tundora;
+
+        .k-window-title {
+            display: inline;
+        }
+    }
+
+    .k-window-content {
+        border-top: 0 !important;
+        .border(1px, solid, @buttercup);
+    }
+}
+
+.informative-box {
+    margin-bottom: 5px;
+}
+
+.old-lace-highlight {
+    background-color: @old-lace;
+}
+
+#removeContractConfirmationDialog>.infobox>.box-message>p:nth-child(2) {
+    color: @silver-chalice;
+}
+
+.k-window-content {
+    background-color: @white;
+}
+
+// Tabs dentro de k-window // 
+.k-tabstrip .k-content.k-state-active {
+    color: @tundora  !important;
+}
+
+.k-tabstrip-items .k-state-active,
+.k-tabstrip>.k-content {
+    border-color: @tundora;
+    color: @tundora;
+}
+

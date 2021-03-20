@@ -1,0 +1,263 @@
+﻿//@import "../../shared/shared-module.less";
+// Aumentar levemente espaçamento interno da tabela
+
+@yellow: rgb(229, 206, 0);
+@green: rgb(0, 165, 66); 
+@blue: #264d81;
+@onhovercolor: #3770bc;
+
+td {
+    padding: 2px;
+}
+
+// Regras aplicadas individualmente para cada grid, visto que há grids dentro
+// de dialogos - as seguintes regras devem ser aplicadas somentes as grids não contidas diretamente nas páginas.
+#printerFleetGrid,
+#divPrintersActionMenu,
+#DivPrintersGrid,
+#divGrid,
+#pendingExchangesGrid,
+#estimatesGrid,
+#divGridConfirmed,
+#DivgridAllStockItems,
+#DealerStockGrid,
+#TechStockGrid,
+#Grid,
+#closedTicketsGrid,
+#accountsGrid,
+#gridEmailNotifications,
+#gridReportsByEmail,
+#alertsRulesGrid,
+#stockTypesGrid,
+#brandsGrid,
+#suppliersGrid,
+#dealerServicesGrid,
+#ticketTypesGrid,
+#dealerDepartmentsGrid,
+#dealerAlertsGrid,
+#gridStockEntries,
+#dealerStockItemsGrid,
+#companiesGrid,
+#newDetectedPrintersGrid,
+#contractsGrid,
+#underReviewAlertsGrid,
+#ignoredAlertsGrid,
+#printersGrid {
+    margin-top: 10px;
+}
+
+// Grid de chamados ativos
+table.kanban {
+    border-spacing: 0;
+
+    td,
+    th {
+        border-width: 1px;
+        border-left-style: solid;
+        border-color: @alto;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    th {
+        padding-bottom: 4px;
+    }
+
+    td {
+        border-top-style: solid;
+        vertical-align: top;
+        padding-top: 4px;
+    }
+}
+
+// Grid contida no combobox (Abrir chamados na tela de cliente - adicionar impressora)
+.ajust {
+    background-color: @link-water;
+}
+
+.ajust-line {
+    overflow: hidden;
+    width: 80px;
+    float: right;
+    white-space: nowrap;
+}
+
+//Grid de novas impressoras
+.new-detected-printers-grid {
+    &.k-grid {
+        td {
+            max-width: 250px;
+            word-break: break-word;
+
+            &.min-width-large {
+                min-width: 220px;
+            }
+
+            &.min-width-medium {
+                min-width: 100px;
+            }
+
+            .span-block {
+                padding: .4em .6em;
+                display: block;
+            }
+        }
+    }
+}
+
+#newDetectedPrintersGrid table .k-dropdown-wrap.k-state-default.k-state-focused {
+    background-color: @transparent;
+}
+.grid-yellow{
+    color: @yellow;
+}
+.grid-green{
+    color: @green;
+}
+
+.dropdown-quick-action {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.dropdown-content-quick-action {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: -175px;
+    border-top: 2px solid @blue;
+    width: 200px;
+}
+.dropdown-content-quick-action a:hover {
+    background-color: @onhovercolor;
+    color: white;
+}
+.dropdown-content-quick-action:hover{
+    background-color: @onhovercolor !important;
+}
+.dropdown-content-quick-action a {
+    color: @blue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.dropdown-content-quick-action a .title {
+    font-size: 14px;
+}
+.dropdown-content-quick-action a * {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.show-quick-action {
+    display: block;
+}
+.quick-action-icon {
+    font-size: 19px;
+    width: 0px;
+    color: @blue;
+}
+
+#detail-replacement-grid {
+    max-height: 400px;
+
+    table {
+        tbody {
+            tr:not(.k-grouping-row){
+                font-size: 0.89em;
+                word-break: keep-all;
+            }
+        }
+    }
+}
+
+th {
+    &.column-header {
+        &.no-break-words {
+            white-space: normal;
+            word-break: keep-all;
+        }
+    }
+}
+.quick-action-text {
+    background-color: white !important;
+    color: black !important;
+    border-radius: 5px !important;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
+    .k-callout-s {
+        display: none;
+    }
+
+    .k-tooltip-content {
+        border-radius: 0px;
+    }
+}
+
+#prematureExchangeGrid {
+    margin-top: 10px;
+
+    .dont-break-word {
+        white-space: normal;
+        word-break: normal;
+
+        .k-link {
+            display: table-cell;
+        }
+    }
+}
+
+#new-schedule-replacement-grid {
+    //Acochambre para esconder footer intrometido do grid
+    .k-grid-norecords {
+        height: 99%;
+    }
+
+    .k-grid-footer {
+        display: none;
+    }
+    //Tentando deuixar os nomes das colunas em no máximo duas linhas
+    .k-grid-header {
+        th {
+            &.k-header {
+                font-size: 0.893em;
+            }
+        }
+    }
+}
+
+#replacement-supply-grid {
+    min-width: 1200px;
+    box-sizing: border-box;
+    height: 100%;
+
+    .k-grouping-row p {
+        span[name='sentUntil-replacement'] {
+            float: right;
+            font-weight: 300;
+            font-size: 16px;
+            margin-right: 5px;
+        }
+    }
+
+    .k-grid-content {
+        max-height: 610px;
+    }
+}
+
+#receive-supply-grid {
+    .k-grouping-row p {
+        #minimunDate-replacement {
+            float: right;
+            font-weight: 300;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+    }
+}

@@ -1,0 +1,105 @@
+﻿@{
+    string kendoGeneralCssFilePath = Server.MapPath(string.Format("~/Content/kendo/kendo.metro.min.css"));
+    string kendoDatavizCssFilePath = Server.MapPath(string.Format("~/Content/kendo/kendo.dataviz.metro.min.css"));
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Faça login na sua conta do PrintWayy." />
+    <link rel="icon" type="image/png" href="~/Content/images/icon.png">
+
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/themes/base/cssbundle" rel="stylesheet" />
+    <link href="~/Content/kendo/cssbundle" rel="stylesheet" />
+    <link href="~/Content/kendo/kendo.metro.min.css" rel="stylesheet" />
+    <link href="~/Content/kendo/kendo.dataviz.metro.min.css" rel="stylesheet" />
+
+    @Styles.Render("~/Content/themes/base/cssbundle")
+    @Styles.Render("~/Content/kendo/cssbundle")
+
+    @RenderSection("headStyles", required: false)
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/kendo")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/scripts")
+
+    @RenderSection("headScripts", required: false)
+
+</head>
+<body>
+    @{
+        string browser = Request.Browser.Browser;
+    }
+
+    @if (browser == "InternetExplorer" || browser == "IE")
+    {
+        Html.RenderPartial("_EndOfInternetExplorerSupportMessage");
+    }
+    <div class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="http://www.printwayy.com" class="navbar-brand">
+                    <img class="printwayy-logo" src="~/Content/images/Logotipo-01.png">
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://www.printwayy.com/Funcionalidades">Funcionalidades</a></li>
+                    <li><a href="http://printwayy.com/blog/">Blog</a></li>
+                    <li><a href="http://www.printwayy.com/Contato">Contato</a></li>
+                    <li><a href="http://www.printwayy.com/Trabalhe-conosco">Trabalhe Conosco</a></li>
+                    <li class="link-active"><a href="https://app.printwayy.com/">Login</a></li>
+
+                    <li class="btn-border hvr-shrink"><a href="http://www.printwayy.com/Teste-gratuito"><span class="round-border">Teste Agora!</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    @RenderBody()
+
+    @{
+        Html.Kendo().Notification()
+            .Name("notification")
+            .Position(p => p.Pinned(true).Top(30).Right(30))
+            .Stacking(NotificationStackingSettings.Down)
+            .AutoHideAfter(3500)
+            .Animation(animation => animation.Open(efx => efx.SlideIn(SlideDirection.Left)))
+            .Events(evt => evt.Show("onShowNotification"))
+            .Templates(t =>
+            {
+                t.Add().Type("sucess").ClientTemplateID("successNotificationTemplate");
+            })
+            .Render();
+    }
+
+    <script id="successNotificationTemplate" type="text/x-kendo-template">
+        <div class="success-notification">
+            <span class="fontawesome check"></span>
+            <h3>#= message #</h3>
+        </div>
+    </script>
+
+    <script type="text/javascript">
+        loadingImgContent = '<div style="min-width: 250px;"><img class="loading-image" src="' + '@Url.Content("~/Content/kendo/Metro/loading-image.gif")' + '" /></div>';
+        smallLoadingImgUrl = '@Url.Content("~/Content/kendo/Metro/loading.gif")';
+    </script>
+
+    @RenderSection("scripts", required: false)
+
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+
+</html>

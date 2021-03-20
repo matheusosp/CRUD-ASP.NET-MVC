@@ -1,0 +1,27 @@
+﻿.pw-droptitle {
+  color: @tundora;
+  text-decoration: underline;
+  font-weight: bold;
+
+  &:hover {
+    color: @tundora;
+    text-decoration: underline;
+  }
+}
+
+.pw-droplink,
+.pw-droplink:focus,
+.pw-droplink:hover {
+  &:extend(.pw-droptitle);
+  text-decoration: none;
+}
+
+.pw-dropitem {
+  margin-left: 30px;
+  font-weight: bold;
+  color: @danube;
+}
+
+.pw-droplist {
+  margin-bottom: 14px;
+}

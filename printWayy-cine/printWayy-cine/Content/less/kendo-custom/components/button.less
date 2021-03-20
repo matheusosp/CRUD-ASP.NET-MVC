@@ -1,0 +1,172 @@
+﻿//@import "../../shared/shared-module.less";
+.button-hover-base {
+    color: @white  !important;
+    background-image: none !important;
+    border-top-color: @alto  !important;
+    border-right-color: @alto  !important;
+    border-bottom-color: @alto  !important;
+    border-left-color: @azure  !important;
+    background-color: @indigo  !important;
+}
+
+.k-button {
+    background-color: @white;
+    color: @azure;
+    &:hover,
+    &:active,
+    &:focus {
+        &:extend(.button-hover-base);
+    }
+}
+
+.grid-menu>li.k-state-hover {
+    &:extend(.button-hover-base);
+}
+
+.grid-menu>li.k-state-hover>.k-link {
+    &:extend(.button-hover-base);
+}
+
+.grid-menu>li.k-state-disabled{
+    color: @silver-chalice  !important;
+    background-color: @transparent !important;
+    border-color: @alto !important;
+    &>.k-link{
+        background-color: @transparent !important;
+        color: @silver-chalice  !important;    
+    }
+}
+
+.grid-menu>.k-item:not(.k-state-disabled) {
+    background-color: @white  !important;
+}
+
+.grid-menu>.k-item {
+    background-color: @transparent;
+    color: @azure;
+    .border(1px, solid, @alto);
+    .border(3px, solid, @azure, left) !important;
+    &:disabled {
+        background-color: @transparent;
+        color: @azure;
+        .border(1px, solid, @silver-chalice);
+        .border(3px, solid, @silver-chalice, left) !important;
+    }
+}
+
+.grid-menu>.k-state-disabled {
+    .border(3px, solid, @alto, left) !important;
+    border-color: @alto;
+}
+
+// Mesmo quando estes botões estão desativados o kendo mantem o estilo de box-shadow com a cor azul,
+// então é preciso remover. Por alguma razão nestes botões o kendo também mantem a classe de k-state-focused mesmo não estando mais focado
+#removeDepartmentAction__MAIN.k-state-focused, 
+#removeAddressAction.k-state-focused{
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+
+// ---------------- Botões que não pegaram borda ------------------- //
+#btn-generate-report-counters-by-company,
+.buttonsResaleGeneralSettings,
+.addCompanyAction,
+#communicationFailAlertsHoursForm>.k-button,
+#ticketEmptyLinesForm>.k-button,
+#btn-generate-token,
+#btn-delete-token,
+#btn-print-ticket,
+#btn-remove-ticket,
+#addTicketPrinterBtn,
+#btnRefreshClosedManagementAlerts,
+#btn-generate-report-counters-by-printer,
+#btn-generate-report-scans-by-printer,
+#addCustomerEmailAction,
+#addAditionalCostsAction,
+#addEntryItemBtn,
+#btn-ignore-alert,
+#btn-create-ticket,
+.k-header>.k-button,
+#btn-reopen-ticket {
+    .border(3px, solid, @azure, left) !important;
+}
+
+// --------------------- Botão Filter menu ---------------------- // 
+.k-filter-menu>button,
+.k-filter-menu>.k-primary {
+    .border(3px, solid, @azure, left) !important;
+    border-color: @azure  !important;
+    color: @azure;
+}
+
+.k-filter-menu>.k-primary:hover {
+    color: @white;
+}
+
+// Botão de pesquisa dentro dos fiters menu (Parque completo)
+.k-filter-menu>.k-textbox {
+    border-color: @azure  !important;
+    .border(3px, solid, @azure, right) !important;
+    &:hover {
+        border-color: @indigo  !important;
+        .border(3px, solid, @azure, right) !important;
+        background-image: none !important;
+        background-color: @indigo  !important;
+        .k-icon {
+            color: @white;
+        }
+    }
+}
+
+// --------------------- Botões de Exportação ---------------------- //
+
+// detalhes de fechamentos congelados - por padrão o texto e o icone de export ficavam preto
+#exportReportAction .k-link.k-state-active{
+    color: @azure;
+}
+
+// Ícone de exportação ERP possui um tooltip, e quando mesmo é exibido, a cor da fonte é mesma do backgroud, por isso é aplicada essa propriedade
+#exportERP .k-link.k-state-active {
+    color: @white;
+}
+
+.printerFleetGrid {
+    margin-top: 3px;
+}
+
+// ---------------- Botão na barra inferior do modal -------------- //
+.k-content .bottomButtonBar>.k-button {
+    .border(3px, solid, @azure, left) !important;
+    color: @azure;
+    border-color: @alto;
+}
+
+// ---- Botão de fechar do modal (K-window) - Famoso xizinho ---- //
+.k-window-actions .k-button {
+    color: @tundora;
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: @transparent  !important;
+        color: @azure  !important;
+        border: 0;
+    }
+}
+
+// Botão de excluir suprimento dentro de detalhes de impressora na box de suprimento e peças 
+// Quando há o botão 'Avaliar confirmação pendente' o botão de exclusão ficava "colado" com o mesmo.
+td .btn-delete-supply {
+    margin-top: 3px !important;
+}
+
+// Botão dentro das grids, como na tela de componentes e versões (Gerenciamento)
+.k-grid tbody .k-button {
+    min-width: 70px;
+}
+
+.disabled-grid-menu:hover {
+    background-color: #fff !important;
+    border-left-color: rgb(219, 219, 219) !important;
+    color: #000 !important;
+}

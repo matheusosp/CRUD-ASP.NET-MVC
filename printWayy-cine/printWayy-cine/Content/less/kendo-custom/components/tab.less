@@ -1,0 +1,101 @@
+﻿@import "../../shared/shared-module.less";
+
+#stockSettingsTab,
+#resaleGeneralSettingsTab,
+#emailSettingsTab {
+    margin-top: 10px;
+}
+
+#emailSettingsTab .k-content,
+#resaleGeneralSettingsTab .k-content,
+#stockSettingsTab .k-content,
+#genericReportFiltersTab .k-content,
+#scheduleReplacementWizardTabs  .k-content{
+    border: none;
+    background-color: @transparent;
+    padding: 0;
+}
+
+#emailSettingsTab .k-tabstrip-items {
+    background-color: @gallery;
+}
+
+// valor default: branco. Como o background-color do body não é mais branco é preciso alterar este comportamente
+.fiori .k-tabstrip.k-header {
+    background-color: @transparent !important;
+}
+
+/*
+==============================================
+-------- Generic Reports Custom Tabs ---------
+==============================================
+*/
+
+#genericReportFiltersTab .k-content {
+    background-color: @white;
+    width: auto !important;
+}
+
+#genericReportFiltersTab .k-tabstrip-items .k-item .k-link {
+    font-size: 21px;
+    padding: 0 0 9px 0;
+}
+
+#genericReportFilterColumnsSelected {
+    width: 100%;
+}
+
+#genericReportFiltersTab-2 {
+    width: 805px;
+}
+
+/*
+==============================================
+------ Schedule Replacement Custom Tabs ------
+==============================================
+*/
+
+#scheduleReplacementWizardTabs .k-content {
+    background-color: @white;
+}
+
+#scheduleReplacementWizardTabs .k-tabstrip-items{
+    display: none;
+}
+
+#scheduleReplacementWizardTabs {
+    width: 100%;
+}
+
+
+/*
+==============================================
+------ Details Replacement Custom Tabs ------
+==============================================
+*/
+
+#detailsAndPackingListTabs {
+    padding: 15px 0 0 15px;
+
+    #replacementDetailsTab {
+        border: none;
+        border-bottom: 3px solid @picton-blue;
+    }
+
+    .k-tabstrip-items .k-loading {
+        display: none;
+    }
+
+    .k-tabstrip-items {
+        border-bottom: 1px solid @picton-blue;
+        width: 95%;
+    }
+
+    .k-tabstrip-items .k-item .k-link {
+        font-size: 21px;
+        padding: 0 0 9px 0;
+        color: @picton-blue;
+        border-color: @picton-blue;
+        font-weight: bold;
+    }
+}

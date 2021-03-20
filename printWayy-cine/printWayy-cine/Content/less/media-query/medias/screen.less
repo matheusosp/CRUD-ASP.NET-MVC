@@ -1,0 +1,80 @@
+﻿//@import "../../shared/shared-module.less";
+@media (max-width: 767px) {
+    .main-header .logo {
+        display: none;
+    }
+
+    .sidebar-menu {
+        margin-top: -40px;
+    }
+
+    #user-menu {
+        min-width: 56px;
+    }
+
+    .fa-user {
+        visibility: visible;
+    }
+
+    #user-menu-options,
+    .navbar-custom-menu > .navbar-nav > li > .dropdown-menu {
+        right: 0;
+        background-color: #F5F5F5;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-custom-menu > .navbar-nav > li > .dropdown-menu {
+        background: @wild-sand !important;
+        right: 0 !important;
+        left: auto !important;
+    }
+}
+
+@media (max-width: 1800px) {
+    #account-status-view {
+        line-height: 25px;
+        font-size: 11px;
+        max-width: 655px;
+    }
+}
+
+@media (max-width: 1475px) {
+    #account-status-view {
+        font-size: 10px;
+        max-width: 600px;        
+    }
+}
+
+@media (max-width: 1300px) {
+    #account-status-view {
+        display: none;
+    }
+}
+
+@media (max-width: 1480px) {
+    #unknownSupplyLevelHiddenMessage {
+        margin: 0px 10px;
+    }
+}
+
+@media (max-width: 1366px){
+    #scheduleReplacementGrid {
+        #main-grid {
+            height: 550px;
+            margin-bottom: -50px;
+
+            .k-grid-content {
+                max-height: 500px;
+            }
+        }
+    }
+}
+// ============================================================= //
+// ----------- Baseado nas larguras do Bootstrap --------------- //
+// ============================================================= //
+@media only screen and (max-width: @screen-xs-max) {
+    .timmy-title {
+        padding: 0;
+    }
+}

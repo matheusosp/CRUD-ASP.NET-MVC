@@ -1,0 +1,43 @@
+﻿.sceduleReplacement-days-radioButton {
+    color: @indigo;
+    border-width: 2px;
+    font-weight: bold;
+    align-items: center;
+
+    input[type="radio"] {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        opacity: 0;
+        margin: auto;
+        z-index: 3;
+
+        &:checked + label .circle-radioButton:before {
+            background-color: @indigo;
+        }
+    }
+
+    .circle-radioButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        border-radius: 50px;
+        width: 15px;
+        height: 15px;
+        border: solid 3px @indigo;
+        margin: auto;
+        margin-bottom: 10px;
+        z-index: 2;
+        background-color: #FFF;
+
+        &:before {
+            height: 9px;
+            width: 9px;
+            background-color: @transparent;
+            content: '';
+            border-radius: 50px;
+        }
+    }
+}

@@ -1,0 +1,1409 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E5CC73D7-EC6C-4002-8849-F277A33F639F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>printWayy_cine</RootNamespace>
+    <AssemblyName>printWayy-cine</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44354</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Kendo.Mvc, Version=2019.1.115.0, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Kendo\2020.1.219\Kendo.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.Common.1.3.0\lib\net45\Microsoft.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.CSharp.1.3.0\lib\net45\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.DotNet.InternalAbstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.DotNet.InternalAbstractions.1.0.0\lib\net451\Microsoft.DotNet.InternalAbstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Abstractions.1.0.0\lib\netstandard1.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Memory.1.0.0\lib\net451\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.1.0.0\lib\netstandard1.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.1.0.0\lib\netstandard1.1\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.1.0.0\lib\netstandard1.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyModel.1.0.0\lib\net451\Microsoft.Extensions.DependencyModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Abstractions.1.0.0\lib\netstandard1.0\Microsoft.Extensions.FileProviders.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Composite, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Composite.1.0.0\lib\netstandard1.0\Microsoft.Extensions.FileProviders.Composite.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Physical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Physical.1.0.0\lib\net451\Microsoft.Extensions.FileProviders.Physical.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileSystemGlobbing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileSystemGlobbing.1.0.0\lib\net451\Microsoft.Extensions.FileSystemGlobbing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Globalization.CultureInfoCache, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Globalization.CultureInfoCache.1.0.0\lib\netstandard1.1\Microsoft.Extensions.Globalization.CultureInfoCache.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Localization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Localization.1.0.0\lib\net451\Microsoft.Extensions.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Localization.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Localization.Abstractions.1.0.0\lib\netstandard1.0\Microsoft.Extensions.Localization.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.1.0.0\lib\netstandard1.1\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.ObjectPool, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.ObjectPool.1.0.0\lib\net451\Microsoft.Extensions.ObjectPool.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.1.0.0\lib\netstandard1.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.PlatformAbstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.PlatformAbstractions.1.0.0\lib\net451\Microsoft.Extensions.PlatformAbstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.1.0.0\lib\netstandard1.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.WebEncoders, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.WebEncoders.1.0.0\lib\netstandard1.0\Microsoft.Extensions.WebEncoders.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Net.Http.Headers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.Headers.1.0.0\lib\netstandard1.1\Microsoft.Net.Http.Headers.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.AppContext.4.1.0\lib\net46\System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.0.0\lib\netstandard1.1\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.Primitives, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Primitives.4.1.0\lib\net45\System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.TypeConverter.4.1.0\lib\net45\System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Console.4.0.0\lib\net46\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.Common.4.1.0\lib\net451\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.0.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.FileVersionInfo.4.0.0\lib\net46\System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.StackTrace.4.0.1\lib\net46\System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.4.0.1\lib\net46\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.0.1\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Reflection.Metadata, Version=1.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.Metadata.1.3.0\lib\portable-net45+win8\System.Reflection.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Primitives, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.Serialization.Primitives.4.1.1\lib\net46\System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.2.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.0.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.0.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.1.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encoding.CodePages.4.0.1\lib\net46\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.0.0\lib\netstandard1.0\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Thread.4.0.0\lib\net46\System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.XmlDocument, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.XmlDocument.4.0.1\lib\net46\System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.XPath.4.0.1\lib\net46\System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.XPath.XDocument.4.0.1\lib\net46\System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\content.css" />
+    <Content Include="Content\font-awesome-5\css\fa-brands.css" />
+    <Content Include="Content\font-awesome-5\css\fa-brands.min.css" />
+    <Content Include="Content\font-awesome-5\css\fa-regular.css" />
+    <Content Include="Content\font-awesome-5\css\fa-regular.min.css" />
+    <Content Include="Content\font-awesome-5\css\fa-solid.css" />
+    <Content Include="Content\font-awesome-5\css\fa-solid.min.css" />
+    <Content Include="Content\font-awesome-5\css\fontawesome-all.css" />
+    <Content Include="Content\font-awesome-5\css\fontawesome-all.min.css" />
+    <Content Include="Content\font-awesome-5\css\fontawesome.css" />
+    <Content Include="Content\font-awesome-5\css\fontawesome.min.css" />
+    <Content Include="Content\font-awesome-5\LICENSE.txt" />
+    <Content Include="Content\font-awesome-5\webfonts\fa-brands-400.svg" />
+    <Content Include="Content\font-awesome-5\webfonts\fa-regular-400.svg" />
+    <Content Include="Content\font-awesome-5\webfonts\fa-solid-900.svg" />
+    <Content Include="Content\font-awesome.3.2.1.min.css" />
+    <Content Include="Content\font-awesome.4.7.0.min.css" />
+    <Content Include="Content\font.css" />
+    <Content Include="Content\fonts\entypo.svg" />
+    <Content Include="Content\fonts\fontawesome.svg" />
+    <Content Include="Content\fonts\icomoon-custom.svg" />
+    <Content Include="Content\fonts\iconic_fill.svg" />
+    <Content Include="Content\fonts\modernpics.svg" />
+    <Content Include="Content\fonts\raphael.svg" />
+    <Content Include="Content\fonts\weblysleekuisb.svg" />
+    <Content Include="Content\header-backgroud.png" />
+    <Content Include="Content\hover-min.css" />
+    <Content Include="Content\images\account.png" />
+    <Content Include="Content\images\arrow.png" />
+    <Content Include="Content\images\attention.png" />
+    <Content Include="Content\images\Chave.png" />
+    <Content Include="Content\images\excel.png" />
+    <Content Include="Content\images\header-bg.png" />
+    <Content Include="Content\images\help\add-counter-dialog-date.png" />
+    <Content Include="Content\images\help\add-counter-dialog.png" />
+    <Content Include="Content\images\help\address-settings.png" />
+    <Content Include="Content\images\help\alert-dialog.png" />
+    <Content Include="Content\images\help\chart-tooltip.png" />
+    <Content Include="Content\images\help\chart.png" />
+    <Content Include="Content\images\help\customer-account-dialog.png" />
+    <Content Include="Content\images\help\customer-alert-details.png" />
+    <Content Include="Content\images\help\customer-dashboard.png" />
+    <Content Include="Content\images\help\customer-invoice.png" />
+    <Content Include="Content\images\help\customer-new-ticket-dialog.PNG" />
+    <Content Include="Content\images\help\customer-prints-report-filter.png" />
+    <Content Include="Content\images\help\customer-scan-report-filter.png" />
+    <Content Include="Content\images\help\customer-supplies-timeline.png" />
+    <Content Include="Content\images\help\customer-ticket-dashboard.png" />
+    <Content Include="Content\images\help\customer_billingGrid.png" />
+    <Content Include="Content\images\help\dealer\account-dialog.png" />
+    <Content Include="Content\images\help\dealer\action-confirm-dialog.PNG" />
+    <Content Include="Content\images\help\dealer\add-entry-dialog.png" />
+    <Content Include="Content\images\help\dealer\add-entry-supplier.png" />
+    <Content Include="Content\images\help\dealer\add-entry.png" />
+    <Content Include="Content\images\help\dealer\add-item-brand.png" />
+    <Content Include="Content\images\help\dealer\add-item-type.png" />
+    <Content Include="Content\images\help\dealer\add-notification-dialog.png" />
+    <Content Include="Content\images\help\dealer\add-printer-dialog.png" />
+    <Content Include="Content\images\help\dealer\add-subtype.png" />
+    <Content Include="Content\images\help\dealer\add-supplier.png" />
+    <Content Include="Content\images\help\dealer\add-ticket-service.png" />
+    <Content Include="Content\images\help\dealer\add-ticket-type.png" />
+    <Content Include="Content\images\help\dealer\add-type.png" />
+    <Content Include="Content\images\help\dealer\aditional-lines-config.png" />
+    <Content Include="Content\images\help\dealer\alert-categories.png" />
+    <Content Include="Content\images\help\dealer\alert-category-details.png" />
+    <Content Include="Content\images\help\dealer\alert-comment.png" />
+    <Content Include="Content\images\help\dealer\alert-details.png" />
+    <Content Include="Content\images\help\dealer\alerts-module-config.png" />
+    <Content Include="Content\images\help\dealer\auto-supply-exchange.png" />
+    <Content Include="Content\images\help\dealer\autom_freezing.PNG" />
+    <Content Include="Content\images\help\dealer\billing-report-columns-config.png" />
+    <Content Include="Content\images\help\dealer\billing-report-filter.png" />
+    <Content Include="Content\images\help\dealer\billing-report.png" />
+    <Content Include="Content\images\help\dealer\change-cost-confirmation.png" />
+    <Content Include="Content\images\help\dealer\client-installer1.png" />
+    <Content Include="Content\images\help\dealer\client-installer2.png" />
+    <Content Include="Content\images\help\dealer\client-installer3.png" />
+    <Content Include="Content\images\help\dealer\client-installer4.png" />
+    <Content Include="Content\images\help\dealer\client-installer5.png" />
+    <Content Include="Content\images\help\dealer\client-installer6.png" />
+    <Content Include="Content\images\help\dealer\client-installer7.png" />
+    <Content Include="Content\images\help\dealer\client-installer8.png" />
+    <Content Include="Content\images\help\dealer\client-installer9.png" />
+    <Content Include="Content\images\help\dealer\closed-tickets.png" />
+    <Content Include="Content\images\help\dealer\confirmed-exchanges.PNG" />
+    <Content Include="Content\images\help\dealer\contract-removal-confirm.png" />
+    <Content Include="Content\images\help\dealer\contract-settings.png" />
+    <Content Include="Content\images\help\dealer\contract.PNG" />
+    <Content Include="Content\images\help\dealer\contractCosts.png" />
+    <Content Include="Content\images\help\dealer\contractHistory_1.PNG" />
+    <Content Include="Content\images\help\dealer\contractHistory_2.PNG" />
+    <Content Include="Content\images\help\dealer\contractInvoiceGraphic.PNG" />
+    <Content Include="Content\images\help\dealer\contractPrinters.png" />
+    <Content Include="Content\images\help\dealer\cost-details-dialog.png" />
+    <Content Include="Content\images\help\dealer\custom-alert-dialog.png" />
+    <Content Include="Content\images\help\dealer\custom-alert-manual-details.png" />
+    <Content Include="Content\images\help\dealer\custom-alert-manual.png" />
+    <Content Include="Content\images\help\dealer\custom-alert-printers.png" />
+    <Content Include="Content\images\help\dealer\custom-alert-type.png" />
+    <Content Include="Content\images\help\dealer\customer-address-details.png" />
+    <Content Include="Content\images\help\dealer\customer-address-settings.png" />
+    <Content Include="Content\images\help\dealer\customer-address-settings2.png" />
+    <Content Include="Content\images\help\dealer\customer-general-data.png" />
+    <Content Include="Content\images\help\dealer\customer-itens.png" />
+    <Content Include="Content\images\help\dealer\customer-sla-settings.png" />
+    <Content Include="Content\images\help\dealer\customer-working-hours.png" />
+    <Content Include="Content\images\help\dealer\dealer-alert.png" />
+    <Content Include="Content\images\help\dealer\dealer-customer-dashboard.png" />
+    <Content Include="Content\images\help\dealer\dealer-customers.png" />
+    <Content Include="Content\images\help\dealer\dealer-dashboard.png" />
+    <Content Include="Content\images\help\dealer\dealer-department-config.png" />
+    <Content Include="Content\images\help\dealer\dealer-report-filters.png" />
+    <Content Include="Content\images\help\dealer\dealer-report-periods.png" />
+    <Content Include="Content\images\help\dealer\dealer-supplies-timeline.png" />
+    <Content Include="Content\images\help\dealer\dealer-tiles.png" />
+    <Content Include="Content\images\help\dealer\dealer-working-hours.png" />
+    <Content Include="Content\images\help\dealer\dealerEmailAnswer.png" />
+    <Content Include="Content\images\help\dealer\dealerGeneralData.png" />
+    <Content Include="Content\images\help\dealer\default-modules-settings.png" />
+    <Content Include="Content\images\help\dealer\delete-cost-error.png" />
+    <Content Include="Content\images\help\dealer\disable_printer_dialog.png" />
+    <Content Include="Content\images\help\dealer\email-settings.png" />
+    <Content Include="Content\images\help\dealer\exchange-details.PNG" />
+    <Content Include="Content\images\help\dealer\excluded-exchange-details.png" />
+    <Content Include="Content\images\help\dealer\excluded-exchanges.png" />
+    <Content Include="Content\images\help\dealer\failure-alerts-settings.png" />
+    <Content Include="Content\images\help\dealer\financial-changes-1.PNG" />
+    <Content Include="Content\images\help\dealer\financial-changes-10.PNG" />
+    <Content Include="Content\images\help\dealer\financial-changes-11.PNG" />
+    <Content Include="Content\images\help\dealer\financial-changes-12.PNG" />
+    <Content Include="Content\images\help\dealer\financial-changes-13.PNG" />
+    <Content Include="Content\images\help\dealer\financial-changes-14.PNG" />
+    <Content Include="Content\images\help\dealer\financial-changes-2.PNG" />
+    <Content Include="Content\images\help\dealer\financial-changes-3.PNG" />
+    <Content Include="Content\images\help\dealer\financial-changes-4.PNG" />
+    <Content Include="Content\images\help\dealer\financial-changes-5.PNG" />
+    <Content Include="Content\images\help\dealer\financial-changes-6.PNG" />
+    <Content Include="Content\images\help\dealer\financial-changes-9.PNG" />
+    <Content Include="Content\images\help\dealer\freezing.PNG" />
+    <Content Include="Content\images\help\dealer\generalContractData.png" />
+    <Content Include="Content\images\help\dealer\grey-alert.png" />
+    <Content Include="Content\images\help\dealer\historical-action-detail.png" />
+    <Content Include="Content\images\help\dealer\historical-action.png" />
+    <Content Include="Content\images\help\dealer\installation-key.png" />
+    <Content Include="Content\images\help\dealer\invoice.png" />
+    <Content Include="Content\images\help\dealer\invoice_grid.png" />
+    <Content Include="Content\images\help\dealer\ip-range.png" />
+    <Content Include="Content\images\help\dealer\item-history.png" />
+    <Content Include="Content\images\help\dealer\item-technician-dialog.png" />
+    <Content Include="Content\images\help\dealer\logo-settings.png" />
+    <Content Include="Content\images\help\dealer\month-chart.png" />
+    <Content Include="Content\images\help\dealer\month_filter.PNG" />
+    <Content Include="Content\images\help\dealer\nav-bar.png" />
+    <Content Include="Content\images\help\dealer\network-search1.png" />
+    <Content Include="Content\images\help\dealer\network-search2.png" />
+    <Content Include="Content\images\help\dealer\new-dealer-ticket-dialog.PNG" />
+    <Content Include="Content\images\help\dealer\new-ticket-dialog.png" />
+    <Content Include="Content\images\help\dealer\new-tickets-dashboard.PNG" />
+    <Content Include="Content\images\help\dealer\notification-ex.png" />
+    <Content Include="Content\images\help\dealer\notification-ex2.png" />
+    <Content Include="Content\images\help\dealer\notifications.png" />
+    <Content Include="Content\images\help\dealer\notmonitored-printer-icon.png" />
+    <Content Include="Content\images\help\dealer\orange-alert.png" />
+    <Content Include="Content\images\help\dealer\overview-filter.png" />
+    <Content Include="Content\images\help\dealer\overview-printer-detail.png" />
+    <Content Include="Content\images\help\dealer\overview-printer-history.png" />
+    <Content Include="Content\images\help\dealer\pending-exchange-dialog.png" />
+    <Content Include="Content\images\help\dealer\print-ticket.png" />
+    <Content Include="Content\images\help\dealer\printer-alert.png" />
+    <Content Include="Content\images\help\dealer\printer-comments.png" />
+    <Content Include="Content\images\help\dealer\printer-cost-confirmation%282%29.png" />
+    <Content Include="Content\images\help\dealer\printer-cost-confirmation.png" />
+    <Content Include="Content\images\help\dealer\printer-costs-settings.png" />
+    <Content Include="Content\images\help\dealer\printer-in-resale.png" />
+    <Content Include="Content\images\help\dealer\printer-not-in-fleet.png" />
+    <Content Include="Content\images\help\dealer\printer-sla-settings.png" />
+    <Content Include="Content\images\help\dealer\printer-sla-settings2.png" />
+    <Content Include="Content\images\help\dealer\printer-supplies.png" />
+    <Content Include="Content\images\help\dealer\printers-by-cliente-search.png" />
+    <Content Include="Content\images\help\dealer\printer_com_fail.PNG" />
+    <Content Include="Content\images\help\dealer\printer_custom_alert_config.png" />
+    <Content Include="Content\images\help\dealer\printer_manual_counter.png" />
+    <Content Include="Content\images\help\dealer\printer_without_contract.png" />
+    <Content Include="Content\images\help\dealer\printer_without_cost.png" />
+    <Content Include="Content\images\help\dealer\prints-client-report.png" />
+    <Content Include="Content\images\help\dealer\prints-report-columns-report.png" />
+    <Content Include="Content\images\help\dealer\prints-report-filter.png" />
+    <Content Include="Content\images\help\dealer\prints-report.png" />
+    <Content Include="Content\images\help\dealer\printwayy-alert.png" />
+    <Content Include="Content\images\help\dealer\printwayy-services.png" />
+    <Content Include="Content\images\help\dealer\reactivate_printer_dialog.png" />
+    <Content Include="Content\images\help\dealer\red-alert.png" />
+    <Content Include="Content\images\help\dealer\reopen-ticket.png" />
+    <Content Include="Content\images\help\dealer\report-by-email.png" />
+    <Content Include="Content\images\help\dealer\ReportAdditionaltext.PNG" />
+    <Content Include="Content\images\help\dealer\scan-report-filter.png" />
+    <Content Include="Content\images\help\dealer\scan-report.png" />
+    <Content Include="Content\images\help\dealer\sendByEmail.png" />
+    <Content Include="Content\images\help\dealer\stock-entry.png" />
+    <Content Include="Content\images\help\dealer\stock-item-details.png" />
+    <Content Include="Content\images\help\dealer\stock.png" />
+    <Content Include="Content\images\help\dealer\supplies-estimates.png" />
+    <Content Include="Content\images\help\dealer\supplies-types.png" />
+    <Content Include="Content\images\help\dealer\supply-estimates.png" />
+    <Content Include="Content\images\help\dealer\technician-itens.png" />
+    <Content Include="Content\images\help\dealer\ticket-comments.png" />
+    <Content Include="Content\images\help\dealer\ticket-lifecycle.png" />
+    <Content Include="Content\images\help\dealer\ticket.png" />
+    <Content Include="Content\images\help\dealer\tickets-dashboard.png" />
+    <Content Include="Content\images\help\dealer\tool-add-printer.png" />
+    <Content Include="Content\images\help\dealer\tool-printer-details.png" />
+    <Content Include="Content\images\help\dealer\typeCosts.png" />
+    <Content Include="Content\images\help\dealer\use-indicators-detailed.png" />
+    <Content Include="Content\images\help\dealer\use-indicators.png" />
+    <Content Include="Content\images\help\dealer\user-alert.png" />
+    <Content Include="Content\images\help\dealer\user-menu.png" />
+    <Content Include="Content\images\help\dealer\visibile-columns.png" />
+    <Content Include="Content\images\help\dealer\windows-services.png" />
+    <Content Include="Content\images\help\dealer\yellow-alert.png" />
+    <Content Include="Content\images\help\manual-printer-icon.png" />
+    <Content Include="Content\images\help\menus.png" />
+    <Content Include="Content\images\help\monitoringconfiguration.PNG" />
+    <Content Include="Content\images\help\notmonitored-printer-icon.png" />
+    <Content Include="Content\images\help\offline-printer-icon.png" />
+    <Content Include="Content\images\help\online-printer-icon.png" />
+    <Content Include="Content\images\help\printer-details.png" />
+    <Content Include="Content\images\help\printerbackup-monitoredicon.png" />
+    <Content Include="Content\images\help\printerbackupoffline-monitoredicon.PNG" />
+    <Content Include="Content\images\help\report-billing-periods.png" />
+    <Content Include="Content\images\help\report-filters.png" />
+    <Content Include="Content\images\help\report-viewer-header.png" />
+    <Content Include="Content\images\help\report.png" />
+    <Content Include="Content\images\help\search-help.png" />
+    <Content Include="Content\images\icon.png" />
+    <Content Include="Content\images\Icone eml.png" />
+    <Content Include="Content\images\login-bg.jpg" />
+    <Content Include="Content\images\Logo Fundo.png" />
+    <Content Include="Content\images\logo-dark.png" />
+    <Content Include="Content\images\logo-lg.png" />
+    <Content Include="Content\images\logo-mini.png" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\Logotipo-01.png" />
+    <Content Include="Content\images\logo_southwayy.png" />
+    <Content Include="Content\images\printwayy-white.png" />
+    <Content Include="Content\images\printwayy.png" />
+    <Content Include="Content\images\ScheduleReplacement\confirmacao-transparent.png" />
+    <Content Include="Content\images\ScheduleReplacement\confirmacao.png" />
+    <Content Include="Content\images\ScheduleReplacement\enviado.png" />
+    <Content Include="Content\images\ScheduleReplacement\gerar-reposicao-transparent.png" />
+    <Content Include="Content\images\ScheduleReplacement\gerar-reposicao.png" />
+    <Content Include="Content\images\ScheduleReplacement\receber-reposicao-transparent.png" />
+    <Content Include="Content\images\ScheduleReplacement\receber-reposicao.png" />
+    <Content Include="Content\images\ScheduleReplacement\sem-dados-reposicao.png" />
+    <Content Include="Content\images\tab-bg.png" />
+    <Content Include="Content\images\Timmy\Alerta.png" />
+    <Content Include="Content\images\Timmy\Alertasassociados_reta.jpg" />
+    <Content Include="Content\images\Timmy\Alertasativos_dialogo.png" />
+    <Content Include="Content\images\Timmy\Barra-1.png" />
+    <Content Include="Content\images\Timmy\Barra-2.png" />
+    <Content Include="Content\images\Timmy\Caixa.png" />
+    <Content Include="Content\images\Timmy\Chamado.png" />
+    <Content Include="Content\images\Timmy\chamadosativos_dialogo.png" />
+    <Content Include="Content\images\Timmy\chamadossemrespon_dialogo.png" />
+    <Content Include="Content\images\Timmy\Cliente.png" />
+    <Content Include="Content\images\Timmy\Cliente2.png" />
+    <Content Include="Content\images\Timmy\Contrato.png" />
+    <Content Include="Content\images\Timmy\icone-refresh.png" />
+    <Content Include="Content\images\Timmy\Notific.png" />
+    <Content Include="Content\images\Timmy\Timmy-Tonner-1.png" />
+    <Content Include="Content\images\Timmy\Timmy-Tonner-2.png" />
+    <Content Include="Content\images\Timmy\Timmy-Tonner-3.png" />
+    <Content Include="Content\images\x-error-content.png" />
+    <Content Include="Content\jcrop\Jcrop.gif" />
+    <Content Include="Content\jcrop\jquery.Jcrop.css" />
+    <Content Include="Content\jcrop\jquery.Jcrop.min.css" />
+    <Content Include="Content\jqueryui.custom.css" />
+    <Content Include="Content\kendo-fiori-custom.css" />
+    <Content Include="Content\kendo-metro-custom.css" />
+    <Content Include="Content\kendo.common-fiori-custom.css" />
+    <Content Include="Content\kendo.custom.css" />
+    <Content Include="Content\kendo\Black\editor.png" />
+    <Content Include="Content\kendo\Black\imagebrowser.png" />
+    <Content Include="Content\kendo\Black\indeterminate.gif" />
+    <Content Include="Content\kendo\Black\loading-image.gif" />
+    <Content Include="Content\kendo\Black\loading.gif" />
+    <Content Include="Content\kendo\Black\loading_2x.gif" />
+    <Content Include="Content\kendo\Black\markers.png" />
+    <Content Include="Content\kendo\Black\markers_2x.png" />
+    <Content Include="Content\kendo\Black\slider-h.gif" />
+    <Content Include="Content\kendo\Black\slider-v.gif" />
+    <Content Include="Content\kendo\Black\sprite.png" />
+    <Content Include="Content\kendo\Black\sprite_2x.png" />
+    <Content Include="Content\kendo\Black\sprite_kpi.png" />
+    <Content Include="Content\kendo\Black\sprite_kpi_2x.png" />
+    <Content Include="Content\kendo\BlueOpal\editor.png" />
+    <Content Include="Content\kendo\BlueOpal\imagebrowser.png" />
+    <Content Include="Content\kendo\BlueOpal\indeterminate.gif" />
+    <Content Include="Content\kendo\BlueOpal\loading-image.gif" />
+    <Content Include="Content\kendo\BlueOpal\loading.gif" />
+    <Content Include="Content\kendo\BlueOpal\loading_2x.gif" />
+    <Content Include="Content\kendo\BlueOpal\markers.png" />
+    <Content Include="Content\kendo\BlueOpal\markers_2x.png" />
+    <Content Include="Content\kendo\BlueOpal\slider-h.gif" />
+    <Content Include="Content\kendo\BlueOpal\slider-v.gif" />
+    <Content Include="Content\kendo\BlueOpal\sprite.png" />
+    <Content Include="Content\kendo\BlueOpal\sprite_2x.png" />
+    <Content Include="Content\kendo\BlueOpal\sprite_kpi.png" />
+    <Content Include="Content\kendo\BlueOpal\sprite_kpi_2x.png" />
+    <Content Include="Content\kendo\Bootstrap\editor.png" />
+    <Content Include="Content\kendo\Bootstrap\imagebrowser.png" />
+    <Content Include="Content\kendo\Bootstrap\indeterminate.gif" />
+    <Content Include="Content\kendo\Bootstrap\loading-image.gif" />
+    <Content Include="Content\kendo\Bootstrap\loading.gif" />
+    <Content Include="Content\kendo\Bootstrap\loading_2x.gif" />
+    <Content Include="Content\kendo\Bootstrap\markers.png" />
+    <Content Include="Content\kendo\Bootstrap\markers_2x.png" />
+    <Content Include="Content\kendo\Bootstrap\slider-h.gif" />
+    <Content Include="Content\kendo\Bootstrap\slider-v.gif" />
+    <Content Include="Content\kendo\Bootstrap\sprite.png" />
+    <Content Include="Content\kendo\Bootstrap\sprite_2x.png" />
+    <Content Include="Content\kendo\Bootstrap\sprite_kpi.png" />
+    <Content Include="Content\kendo\Bootstrap\sprite_kpi_2x.png" />
+    <Content Include="Content\kendo\Default\editor.png" />
+    <Content Include="Content\kendo\Default\imagebrowser.png" />
+    <Content Include="Content\kendo\Default\indeterminate.gif" />
+    <Content Include="Content\kendo\Default\loading-image.gif" />
+    <Content Include="Content\kendo\Default\loading.gif" />
+    <Content Include="Content\kendo\Default\loading_2x.gif" />
+    <Content Include="Content\kendo\Default\markers.png" />
+    <Content Include="Content\kendo\Default\markers_2x.png" />
+    <Content Include="Content\kendo\Default\slider-h.gif" />
+    <Content Include="Content\kendo\Default\slider-v.gif" />
+    <Content Include="Content\kendo\Default\sprite.png" />
+    <Content Include="Content\kendo\Default\sprite_2x.png" />
+    <Content Include="Content\kendo\Default\sprite_kpi.png" />
+    <Content Include="Content\kendo\Default\sprite_kpi_2x.png" />
+    <Content Include="Content\kendo\Fiori\editor.png" />
+    <Content Include="Content\kendo\Fiori\imagebrowser.png" />
+    <Content Include="Content\kendo\Fiori\indeterminate.gif" />
+    <Content Include="Content\kendo\Fiori\loading-image.gif" />
+    <Content Include="Content\kendo\Fiori\loading.gif" />
+    <Content Include="Content\kendo\Fiori\loading_2x.gif" />
+    <Content Include="Content\kendo\Fiori\markers.png" />
+    <Content Include="Content\kendo\Fiori\markers_2x.png" />
+    <Content Include="Content\kendo\Fiori\slider-h.gif" />
+    <Content Include="Content\kendo\Fiori\slider-v.gif" />
+    <Content Include="Content\kendo\Fiori\sprite.png" />
+    <Content Include="Content\kendo\Fiori\sprite_2x.png" />
+    <Content Include="Content\kendo\Fiori\sprite_kpi.png" />
+    <Content Include="Content\kendo\Fiori\sprite_kpi_2x.png" />
+    <Content Include="Content\kendo\Flat\editor.png" />
+    <Content Include="Content\kendo\Flat\imagebrowser.png" />
+    <Content Include="Content\kendo\Flat\indeterminate.gif" />
+    <Content Include="Content\kendo\Flat\loading-image.gif" />
+    <Content Include="Content\kendo\Flat\loading.gif" />
+    <Content Include="Content\kendo\Flat\loading_2x.gif" />
+    <Content Include="Content\kendo\Flat\markers.png" />
+    <Content Include="Content\kendo\Flat\markers_2x.png" />
+    <Content Include="Content\kendo\Flat\slider-h.gif" />
+    <Content Include="Content\kendo\Flat\slider-v.gif" />
+    <Content Include="Content\kendo\Flat\sprite.png" />
+    <Content Include="Content\kendo\Flat\sprite_2x.png" />
+    <Content Include="Content\kendo\Flat\sprite_kpi.png" />
+    <Content Include="Content\kendo\Flat\sprite_kpi_2x.png" />
+    <Content Include="Content\kendo\fonts\DejaVu\LICENSE.txt" />
+    <Content Include="Content\kendo\fonts\glyphs\KendoUIGlyphs.svg" />
+    <Content Include="Content\kendo\fonts\glyphs\WebComponentsIcons.svg" />
+    <Content Include="Content\kendo\HighContrast\editor.png" />
+    <Content Include="Content\kendo\HighContrast\imagebrowser.png" />
+    <Content Include="Content\kendo\HighContrast\indeterminate.gif" />
+    <Content Include="Content\kendo\HighContrast\loading-image.gif" />
+    <Content Include="Content\kendo\HighContrast\loading.gif" />
+    <Content Include="Content\kendo\HighContrast\loading_2x.gif" />
+    <Content Include="Content\kendo\HighContrast\markers.png" />
+    <Content Include="Content\kendo\HighContrast\markers_2x.png" />
+    <Content Include="Content\kendo\HighContrast\slider-h.gif" />
+    <Content Include="Content\kendo\HighContrast\slider-v.gif" />
+    <Content Include="Content\kendo\HighContrast\sprite.png" />
+    <Content Include="Content\kendo\HighContrast\sprite_2x.png" />
+    <Content Include="Content\kendo\HighContrast\sprite_kpi.png" />
+    <Content Include="Content\kendo\HighContrast\sprite_kpi_2x.png" />
+    <Content Include="Content\kendo\images\android-sprite.png" />
+    <Content Include="Content\kendo\images\back.png" />
+    <Content Include="Content\kendo\images\iconmasks.svg" />
+    <Content Include="Content\kendo\images\icons.png" />
+    <Content Include="Content\kendo\images\ios-sprite.png" />
+    <Content Include="Content\kendo\images\kendoui.svg" />
+    <Content Include="Content\kendo\images\wp8_icons.png" />
+    <Content Include="Content\kendo\images\wp8_inverseicons.png" />
+    <Content Include="Content\kendo\kendo.black.min.css" />
+    <Content Include="Content\kendo\kendo.black.mobile.min.css" />
+    <Content Include="Content\kendo\kendo.blueopal.min.css" />
+    <Content Include="Content\kendo\kendo.blueopal.mobile.min.css" />
+    <Content Include="Content\kendo\kendo.bootstrap-v4.min.css" />
+    <Content Include="Content\kendo\kendo.bootstrap.min.css" />
+    <Content Include="Content\kendo\kendo.bootstrap.mobile.min.css" />
+    <Content Include="Content\kendo\kendo.common-bootstrap.core.min.css" />
+    <Content Include="Content\kendo\kendo.common-bootstrap.min.css" />
+    <Content Include="Content\kendo\kendo.common-fiori.core.min.css" />
+    <Content Include="Content\kendo\kendo.common-fiori.min.css" />
+    <Content Include="Content\kendo\kendo.common-material.core.min.css" />
+    <Content Include="Content\kendo\kendo.common-material.min.css" />
+    <Content Include="Content\kendo\kendo.common-nova.core.min.css" />
+    <Content Include="Content\kendo\kendo.common-nova.min.css" />
+    <Content Include="Content\kendo\kendo.common-office365.min.css" />
+    <Content Include="Content\kendo\kendo.common.core.min.css" />
+    <Content Include="Content\kendo\kendo.common.min.css" />
+    <Content Include="Content\kendo\kendo.dataviz.black.css" />
+    <Content Include="Content\kendo\kendo.dataviz.black.min.css" />
+    <Content Include="Content\kendo\kendo.dataviz.blueopal.min.css" />
+    <Content Include="Content\kendo\kendo.dataviz.bootstrap.min.css" />
+    <Content Include="Content\kendo\kendo.dataviz.default.min.css" />
+    <Content Include="Content\kendo\kendo.dataviz.fiori.min.css" />
+    <Content Include="Content\kendo\kendo.dataviz.flat.min.css" />
+    <Content Include="Content\kendo\kendo.dataviz.highcontrast.min.css" />
+    <Content Include="Content\kendo\kendo.dataviz.material.min.css" />
+    <Content Include="Content\kendo\kendo.dataviz.materialblack.min.css" />
+    <Content Include="Content\kendo\kendo.dataviz.metro.min.css" />
+    <Content Include="Content\kendo\kendo.dataviz.metroblack.min.css" />
+    <Content Include="Content\kendo\kendo.dataviz.min.css" />
+    <Content Include="Content\kendo\kendo.dataviz.mobile.min.css" />
+    <Content Include="Content\kendo\kendo.dataviz.moonlight.min.css" />
+    <Content Include="Content\kendo\kendo.dataviz.nova.min.css" />
+    <Content Include="Content\kendo\kendo.dataviz.office365.min.css" />
+    <Content Include="Content\kendo\kendo.dataviz.silver.min.css" />
+    <Content Include="Content\kendo\kendo.dataviz.uniform.min.css" />
+    <Content Include="Content\kendo\kendo.default-v2.min.css" />
+    <Content Include="Content\kendo\kendo.default.min.css" />
+    <Content Include="Content\kendo\kendo.default.mobile.min.css" />
+    <Content Include="Content\kendo\kendo.fiori.min.css" />
+    <Content Include="Content\kendo\kendo.fiori.mobile.min.css" />
+    <Content Include="Content\kendo\kendo.flat.min.css" />
+    <Content Include="Content\kendo\kendo.flat.mobile.min.css" />
+    <Content Include="Content\kendo\kendo.highcontrast.min.css" />
+    <Content Include="Content\kendo\kendo.highcontrast.mobile.min.css" />
+    <Content Include="Content\kendo\kendo.icenium.min.css" />
+    <Content Include="Content\kendo\kendo.material-v2.min.css" />
+    <Content Include="Content\kendo\kendo.material.min.css" />
+    <Content Include="Content\kendo\kendo.material.mobile.min.css" />
+    <Content Include="Content\kendo\kendo.materialblack.min.css" />
+    <Content Include="Content\kendo\kendo.materialblack.mobile.min.css" />
+    <Content Include="Content\kendo\kendo.metro.min.css" />
+    <Content Include="Content\kendo\kendo.metro.mobile.min.css" />
+    <Content Include="Content\kendo\kendo.metroblack.min.css" />
+    <Content Include="Content\kendo\kendo.metroblack.mobile.min.css" />
+    <Content Include="Content\kendo\kendo.mobile.all.min.css" />
+    <Content Include="Content\kendo\kendo.mobile.android.dark.min.css" />
+    <Content Include="Content\kendo\kendo.mobile.android.light.min.css" />
+    <Content Include="Content\kendo\kendo.mobile.android4.min.css" />
+    <Content Include="Content\kendo\kendo.mobile.blackberry.min.css" />
+    <Content Include="Content\kendo\kendo.mobile.common.min.css" />
+    <Content Include="Content\kendo\kendo.mobile.fiori.min.css" />
+    <Content Include="Content\kendo\kendo.mobile.flat.min.css" />
+    <Content Include="Content\kendo\kendo.mobile.icenium.min.css" />
+    <Content Include="Content\kendo\kendo.mobile.ios.min.css" />
+    <Content Include="Content\kendo\kendo.mobile.material.min.css" />
+    <Content Include="Content\kendo\kendo.mobile.meego.min.css" />
+    <Content Include="Content\kendo\kendo.mobile.nova.min.css" />
+    <Content Include="Content\kendo\kendo.mobile.office365.min.css" />
+    <Content Include="Content\kendo\kendo.mobile.wp8.min.css" />
+    <Content Include="Content\kendo\kendo.moonlight.min.css" />
+    <Content Include="Content\kendo\kendo.moonlight.mobile.min.css" />
+    <Content Include="Content\kendo\kendo.nova.min.css" />
+    <Content Include="Content\kendo\kendo.nova.mobile.min.css" />
+    <Content Include="Content\kendo\kendo.office365.min.css" />
+    <Content Include="Content\kendo\kendo.office365.mobile.min.css" />
+    <Content Include="Content\kendo\kendo.rtl.css" />
+    <Content Include="Content\kendo\kendo.rtl.min.css" />
+    <Content Include="Content\kendo\kendo.silver.min.css" />
+    <Content Include="Content\kendo\kendo.silver.mobile.min.css" />
+    <Content Include="Content\kendo\kendo.uniform.min.css" />
+    <Content Include="Content\kendo\kendo.uniform.mobile.min.css" />
+    <Content Include="Content\kendo\MaterialBlack\editor.png" />
+    <Content Include="Content\kendo\MaterialBlack\imagebrowser.png" />
+    <Content Include="Content\kendo\MaterialBlack\indeterminate.gif" />
+    <Content Include="Content\kendo\MaterialBlack\loading-image.gif" />
+    <Content Include="Content\kendo\MaterialBlack\loading.gif" />
+    <Content Include="Content\kendo\MaterialBlack\loading_2x.gif" />
+    <Content Include="Content\kendo\MaterialBlack\markers.png" />
+    <Content Include="Content\kendo\MaterialBlack\markers_2x.png" />
+    <Content Include="Content\kendo\MaterialBlack\slider-h.gif" />
+    <Content Include="Content\kendo\MaterialBlack\slider-v.gif" />
+    <Content Include="Content\kendo\MaterialBlack\sprite.png" />
+    <Content Include="Content\kendo\MaterialBlack\sprite_2x.png" />
+    <Content Include="Content\kendo\MaterialBlack\sprite_kpi.png" />
+    <Content Include="Content\kendo\MaterialBlack\sprite_kpi_2x.png" />
+    <Content Include="Content\kendo\Material\editor.png" />
+    <Content Include="Content\kendo\Material\imagebrowser.png" />
+    <Content Include="Content\kendo\Material\indeterminate.gif" />
+    <Content Include="Content\kendo\Material\loading-image.gif" />
+    <Content Include="Content\kendo\Material\loading.gif" />
+    <Content Include="Content\kendo\Material\loading_2x.gif" />
+    <Content Include="Content\kendo\Material\markers.png" />
+    <Content Include="Content\kendo\Material\markers_2x.png" />
+    <Content Include="Content\kendo\Material\slider-h.gif" />
+    <Content Include="Content\kendo\Material\slider-v.gif" />
+    <Content Include="Content\kendo\Material\sprite.png" />
+    <Content Include="Content\kendo\Material\sprite_2x.png" />
+    <Content Include="Content\kendo\Material\sprite_kpi.png" />
+    <Content Include="Content\kendo\Material\sprite_kpi_2x.png" />
+    <Content Include="Content\kendo\MetroBlack\editor.png" />
+    <Content Include="Content\kendo\MetroBlack\imagebrowser.png" />
+    <Content Include="Content\kendo\MetroBlack\indeterminate.gif" />
+    <Content Include="Content\kendo\MetroBlack\loading-image.gif" />
+    <Content Include="Content\kendo\MetroBlack\loading.gif" />
+    <Content Include="Content\kendo\MetroBlack\loading_2x.gif" />
+    <Content Include="Content\kendo\MetroBlack\markers.png" />
+    <Content Include="Content\kendo\MetroBlack\markers_2x.png" />
+    <Content Include="Content\kendo\MetroBlack\slider-h.gif" />
+    <Content Include="Content\kendo\MetroBlack\slider-v.gif" />
+    <Content Include="Content\kendo\MetroBlack\sprite.png" />
+    <Content Include="Content\kendo\MetroBlack\sprite_2x.png" />
+    <Content Include="Content\kendo\MetroBlack\sprite_kpi.png" />
+    <Content Include="Content\kendo\MetroBlack\sprite_kpi_2x.png" />
+    <Content Include="Content\kendo\Metro\editor.png" />
+    <Content Include="Content\kendo\Metro\imagebrowser.png" />
+    <Content Include="Content\kendo\Metro\indeterminate.gif" />
+    <Content Include="Content\kendo\Metro\loading-image.gif" />
+    <Content Include="Content\kendo\Metro\loading.gif" />
+    <Content Include="Content\kendo\Metro\loading_2x.gif" />
+    <Content Include="Content\kendo\Metro\markers.png" />
+    <Content Include="Content\kendo\Metro\markers_2x.png" />
+    <Content Include="Content\kendo\Metro\slider-h.gif" />
+    <Content Include="Content\kendo\Metro\slider-v.gif" />
+    <Content Include="Content\kendo\Metro\sprite.png" />
+    <Content Include="Content\kendo\Metro\sprite_2x.png" />
+    <Content Include="Content\kendo\Metro\sprite_kpi.png" />
+    <Content Include="Content\kendo\Metro\sprite_kpi_2x.png" />
+    <Content Include="Content\kendo\Moonlight\editor.png" />
+    <Content Include="Content\kendo\Moonlight\imagebrowser.png" />
+    <Content Include="Content\kendo\Moonlight\indeterminate.gif" />
+    <Content Include="Content\kendo\Moonlight\loading-image.gif" />
+    <Content Include="Content\kendo\Moonlight\loading.gif" />
+    <Content Include="Content\kendo\Moonlight\loading_2x.gif" />
+    <Content Include="Content\kendo\Moonlight\markers.png" />
+    <Content Include="Content\kendo\Moonlight\markers_2x.png" />
+    <Content Include="Content\kendo\Moonlight\slider-h.gif" />
+    <Content Include="Content\kendo\Moonlight\slider-v.gif" />
+    <Content Include="Content\kendo\Moonlight\sprite.png" />
+    <Content Include="Content\kendo\Moonlight\sprite_2x.png" />
+    <Content Include="Content\kendo\Moonlight\sprite_kpi.png" />
+    <Content Include="Content\kendo\Moonlight\sprite_kpi_2x.png" />
+    <Content Include="Content\kendo\Nova\editor.png" />
+    <Content Include="Content\kendo\Nova\imagebrowser.png" />
+    <Content Include="Content\kendo\Nova\indeterminate.gif" />
+    <Content Include="Content\kendo\Nova\loading-image.gif" />
+    <Content Include="Content\kendo\Nova\loading.gif" />
+    <Content Include="Content\kendo\Nova\loading_2x.gif" />
+    <Content Include="Content\kendo\Nova\markers.png" />
+    <Content Include="Content\kendo\Nova\markers_2x.png" />
+    <Content Include="Content\kendo\Nova\slider-h.gif" />
+    <Content Include="Content\kendo\Nova\slider-v.gif" />
+    <Content Include="Content\kendo\Nova\sprite.png" />
+    <Content Include="Content\kendo\Nova\sprite_2x.png" />
+    <Content Include="Content\kendo\Nova\sprite_kpi.png" />
+    <Content Include="Content\kendo\Nova\sprite_kpi_2x.png" />
+    <Content Include="Content\kendo\Office365\editor.png" />
+    <Content Include="Content\kendo\Office365\imagebrowser.png" />
+    <Content Include="Content\kendo\Office365\indeterminate.gif" />
+    <Content Include="Content\kendo\Office365\loading-image.gif" />
+    <Content Include="Content\kendo\Office365\loading.gif" />
+    <Content Include="Content\kendo\Office365\loading_2x.gif" />
+    <Content Include="Content\kendo\Office365\markers.png" />
+    <Content Include="Content\kendo\Office365\markers_2x.png" />
+    <Content Include="Content\kendo\Office365\slider-h.gif" />
+    <Content Include="Content\kendo\Office365\slider-v.gif" />
+    <Content Include="Content\kendo\Office365\sprite.png" />
+    <Content Include="Content\kendo\Office365\sprite_2x.png" />
+    <Content Include="Content\kendo\Office365\sprite_kpi.png" />
+    <Content Include="Content\kendo\Office365\sprite_kpi_2x.png" />
+    <Content Include="Content\kendo\Silver\editor.png" />
+    <Content Include="Content\kendo\Silver\imagebrowser.png" />
+    <Content Include="Content\kendo\Silver\indeterminate.gif" />
+    <Content Include="Content\kendo\Silver\loading-image.gif" />
+    <Content Include="Content\kendo\Silver\loading.gif" />
+    <Content Include="Content\kendo\Silver\loading_2x.gif" />
+    <Content Include="Content\kendo\Silver\markers.png" />
+    <Content Include="Content\kendo\Silver\markers_2x.png" />
+    <Content Include="Content\kendo\Silver\slider-h.gif" />
+    <Content Include="Content\kendo\Silver\slider-v.gif" />
+    <Content Include="Content\kendo\Silver\sprite.png" />
+    <Content Include="Content\kendo\Silver\sprite_2x.png" />
+    <Content Include="Content\kendo\Silver\sprite_kpi.png" />
+    <Content Include="Content\kendo\Silver\sprite_kpi_2x.png" />
+    <Content Include="Content\kendo\textures\brushed-metal.png" />
+    <Content Include="Content\kendo\textures\dots1.png" />
+    <Content Include="Content\kendo\textures\dots10.png" />
+    <Content Include="Content\kendo\textures\dots11.png" />
+    <Content Include="Content\kendo\textures\dots12.png" />
+    <Content Include="Content\kendo\textures\dots13.png" />
+    <Content Include="Content\kendo\textures\dots2.png" />
+    <Content Include="Content\kendo\textures\dots3.png" />
+    <Content Include="Content\kendo\textures\dots4.png" />
+    <Content Include="Content\kendo\textures\dots5.png" />
+    <Content Include="Content\kendo\textures\dots6.png" />
+    <Content Include="Content\kendo\textures\dots7.png" />
+    <Content Include="Content\kendo\textures\dots8.png" />
+    <Content Include="Content\kendo\textures\dots9.png" />
+    <Content Include="Content\kendo\textures\glass-lighter.png" />
+    <Content Include="Content\kendo\textures\glass.png" />
+    <Content Include="Content\kendo\textures\highlight.png" />
+    <Content Include="Content\kendo\textures\hsv-gradient.png" />
+    <Content Include="Content\kendo\textures\hue.png" />
+    <Content Include="Content\kendo\textures\image-default.png" />
+    <Content Include="Content\kendo\textures\leather1.png" />
+    <Content Include="Content\kendo\textures\leather2.png" />
+    <Content Include="Content\kendo\textures\noise.png" />
+    <Content Include="Content\kendo\textures\stripe1.png" />
+    <Content Include="Content\kendo\textures\stripe2.png" />
+    <Content Include="Content\kendo\textures\stripe3.png" />
+    <Content Include="Content\kendo\textures\stripe4.png" />
+    <Content Include="Content\kendo\textures\stripe5.png" />
+    <Content Include="Content\kendo\textures\stripe6.png" />
+    <Content Include="Content\kendo\textures\transparency-reversed.png" />
+    <Content Include="Content\kendo\textures\transparency.png" />
+    <Content Include="Content\kendo\textures\transtexture.png" />
+    <Content Include="Content\kendo\Uniform\editor.png" />
+    <Content Include="Content\kendo\Uniform\imagebrowser.png" />
+    <Content Include="Content\kendo\Uniform\indeterminate.gif" />
+    <Content Include="Content\kendo\Uniform\loading-image.gif" />
+    <Content Include="Content\kendo\Uniform\loading.gif" />
+    <Content Include="Content\kendo\Uniform\loading_2x.gif" />
+    <Content Include="Content\kendo\Uniform\markers.png" />
+    <Content Include="Content\kendo\Uniform\markers_2x.png" />
+    <Content Include="Content\kendo\Uniform\slider-h.gif" />
+    <Content Include="Content\kendo\Uniform\slider-v.gif" />
+    <Content Include="Content\kendo\Uniform\sprite.png" />
+    <Content Include="Content\kendo\Uniform\sprite_2x.png" />
+    <Content Include="Content\kendo\Uniform\sprite_kpi.png" />
+    <Content Include="Content\kendo\Uniform\sprite_kpi_2x.png" />
+    <Content Include="Content\layout.css" />
+    <Content Include="Content\less\cross-browser\browsers\chrome.css" />
+    <Content Include="Content\less\cross-browser\browsers\chrome.min.css" />
+    <Content Include="Content\less\cross-browser\browsers\edge.css" />
+    <Content Include="Content\less\cross-browser\browsers\edge.min.css" />
+    <Content Include="Content\less\cross-browser\browsers\ie.css" />
+    <Content Include="Content\less\cross-browser\browsers\ie.min.css" />
+    <Content Include="Content\less\cross-browser\cross-browser-module.css" />
+    <Content Include="Content\less\cross-browser\cross-browser-module.min.css" />
+    <Content Include="Content\less\kendo-custom\components\combobox.css" />
+    <Content Include="Content\less\kendo-custom\components\combobox.min.css" />
+    <Content Include="Content\less\kendo-custom\components\datepicker.css" />
+    <Content Include="Content\less\kendo-custom\components\datepicker.min.css" />
+    <Content Include="Content\less\kendo-custom\components\hr.css" />
+    <Content Include="Content\less\kendo-custom\components\hr.min.css" />
+    <Content Include="Content\less\kendo-custom\components\menu.css" />
+    <Content Include="Content\less\kendo-custom\components\menu.min.css" />
+    <Content Include="Content\less\kendo-custom\components\multiselect.css" />
+    <Content Include="Content\less\kendo-custom\components\multiselect.min.css" />
+    <Content Include="Content\less\kendo-custom\components\report.css" />
+    <Content Include="Content\less\kendo-custom\components\report.min.css" />
+    <Content Include="Content\less\kendo-custom\components\tab.css" />
+    <Content Include="Content\less\kendo-custom\components\tab.min.css" />
+    <Content Include="Content\less\kendo-custom\components\treeview.css" />
+    <Content Include="Content\less\kendo-custom\components\treeview.min.css" />
+    <Content Include="Content\less\kendo-custom\kendo-module.css" />
+    <Content Include="Content\less\kendo-custom\kendo-module.min.css" />
+    <Content Include="Content\less\main.css" />
+    <Content Include="Content\less\main.min.css" />
+    <Content Include="Content\less\media-query\media-query-module.css" />
+    <Content Include="Content\less\media-query\media-query-module.min.css" />
+    <Content Include="Content\less\printwayy\pw-module.css" />
+    <Content Include="Content\less\printwayy\pw-module.min.css" />
+    <Content Include="Content\less\shared\mixins\alignment.css" />
+    <Content Include="Content\less\shared\mixins\alignment.min.css" />
+    <Content Include="Content\less\shared\mixins\border.css" />
+    <Content Include="Content\less\shared\mixins\border.min.css" />
+    <Content Include="Content\less\shared\shared-module.css" />
+    <Content Include="Content\less\shared\shared-module.min.css" />
+    <Content Include="Content\less\shared\variables\color.css" />
+    <Content Include="Content\less\shared\variables\color.min.css" />
+    <Content Include="Content\less\shared\variables\sizing.css" />
+    <Content Include="Content\less\shared\variables\sizing.min.css" />
+    <Content Include="Content\less\vendor\adminlte\AdminLTE.css" />
+    <Content Include="Content\less\vendor\adminlte\AdminLTE.min.css" />
+    <Content Include="Content\less\vendor\bootstrap\bootstrap.css" />
+    <Content Include="Content\less\vendor\bootstrap\bootstrap.min.css" />
+    <Content Include="Content\less\vendor\bootstrap\normalize.css" />
+    <Content Include="Content\less\vendor\bootstrap\normalize.min.css" />
+    <Content Include="Content\less\vendor\vendor-module.css" />
+    <Content Include="Content\less\vendor\vendor-module.min.css" />
+    <Content Include="Content\login.css" />
+    <Content Include="Content\login.min.css" />
+    <Content Include="Content\pw-custom.css" />
+    <Content Include="Content\pw-custom.min.css" />
+    <Content Include="Content\report-style.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\system-warnings\customer-day.png" />
+    <Content Include="Content\tab-backgroud.png" />
+    <Content Include="Content\tab-dis-backgroud.png" />
+    <Content Include="Content\test.css" />
+    <Content Include="Content\themes\base\images\animated-overlay.gif" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.menu.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.spinner.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\jquery.ui.tooltip.css" />
+    <Content Include="Content\themes\base\minified\images\animated-overlay.gif" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.menu.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.spinner.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
+    <Content Include="Content\timeline.css" />
+    <Content Include="Content\timeline.min.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DashBoardController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="DAO\UsersDAO.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Filme.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\UserRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="Content\font-awesome-5\README.md" />
+    <Content Include="Content\font-awesome-5\webfonts\fa-brands-400.eot" />
+    <Content Include="Content\font-awesome-5\webfonts\fa-brands-400.ttf" />
+    <Content Include="Content\font-awesome-5\webfonts\fa-brands-400.woff" />
+    <Content Include="Content\font-awesome-5\webfonts\fa-brands-400.woff2" />
+    <Content Include="Content\font-awesome-5\webfonts\fa-regular-400.eot" />
+    <Content Include="Content\font-awesome-5\webfonts\fa-regular-400.ttf" />
+    <Content Include="Content\font-awesome-5\webfonts\fa-regular-400.woff" />
+    <Content Include="Content\font-awesome-5\webfonts\fa-regular-400.woff2" />
+    <Content Include="Content\font-awesome-5\webfonts\fa-solid-900.eot" />
+    <Content Include="Content\font-awesome-5\webfonts\fa-solid-900.ttf" />
+    <Content Include="Content\font-awesome-5\webfonts\fa-solid-900.woff" />
+    <Content Include="Content\font-awesome-5\webfonts\fa-solid-900.woff2" />
+    <Content Include="Content\fonts\entypo.eot" />
+    <Content Include="Content\fonts\entypo.ttf" />
+    <Content Include="Content\fonts\entypo.woff" />
+    <Content Include="Content\fonts\fontawesome.eot" />
+    <Content Include="Content\fonts\fontawesome.ttf" />
+    <Content Include="Content\fonts\fontawesome.woff" />
+    <Content Include="Content\fonts\icomoon-custom.eot" />
+    <Content Include="Content\fonts\icomoon-custom.ttf" />
+    <Content Include="Content\fonts\iconic_fill.eot" />
+    <Content Include="Content\fonts\iconic_fill.ttf" />
+    <Content Include="Content\fonts\modernpics.eot" />
+    <Content Include="Content\fonts\modernpics.ttf" />
+    <Content Include="Content\fonts\Raleway-Bold.ttf" />
+    <Content Include="Content\fonts\raphael.eot" />
+    <Content Include="Content\fonts\raphael.ttf" />
+    <Content Include="Content\fonts\Roboto-Bold.ttf" />
+    <Content Include="Content\fonts\Roboto-Regular.ttf" />
+    <Content Include="Content\fonts\weblysleekuisb.eot" />
+    <Content Include="Content\fonts\weblysleekuisb.ttf" />
+    <Content Include="Content\fonts\weblysleekuisb.woff" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSans-Bold.ttf" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSans-BoldOblique.ttf" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSans-ExtraLight.ttf" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSans-Oblique.ttf" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSans.ttf" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSansMono-Bold.ttf" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSansMono-BoldOblique.ttf" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSansMono-Oblique.ttf" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSansMono.ttf" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSerif-Bold.ttf" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSerif-BoldItalic.ttf" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSerif-Italic.ttf" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSerif.ttf" />
+    <Content Include="Content\kendo\fonts\glyphs\KendoUIGlyphs.eot" />
+    <Content Include="Content\kendo\fonts\glyphs\KendoUIGlyphs.ttf" />
+    <Content Include="Content\kendo\fonts\glyphs\KendoUIGlyphs.woff" />
+    <Content Include="Content\kendo\fonts\glyphs\WebComponentsIcons.eot" />
+    <Content Include="Content\kendo\fonts\glyphs\WebComponentsIcons.ttf" />
+    <Content Include="Content\kendo\fonts\glyphs\WebComponentsIcons.woff" />
+    <Content Include="Content\kendo\images\KendoUI.ttf" />
+    <Content Include="Content\kendo\images\KendoUI.woff" />
+    <Content Include="Content\kendo\kendo.black.min.css.map" />
+    <Content Include="Content\kendo\kendo.black.mobile.min.css.map" />
+    <Content Include="Content\kendo\kendo.blueopal.min.css.map" />
+    <Content Include="Content\kendo\kendo.blueopal.mobile.min.css.map" />
+    <Content Include="Content\kendo\kendo.bootstrap-v4.min.css.map" />
+    <Content Include="Content\kendo\kendo.bootstrap.min.css.map" />
+    <Content Include="Content\kendo\kendo.bootstrap.mobile.min.css.map" />
+    <Content Include="Content\kendo\kendo.common-bootstrap.min.css.map" />
+    <Content Include="Content\kendo\kendo.common-fiori.min.css.map" />
+    <Content Include="Content\kendo\kendo.common-material.min.css.map" />
+    <Content Include="Content\kendo\kendo.common-nova.min.css.map" />
+    <Content Include="Content\kendo\kendo.common-office365.min.css.map" />
+    <Content Include="Content\kendo\kendo.common.min.css.map" />
+    <Content Include="Content\kendo\kendo.dataviz.black.min.css.map" />
+    <Content Include="Content\kendo\kendo.dataviz.blueopal.min.css.map" />
+    <Content Include="Content\kendo\kendo.dataviz.bootstrap.min.css.map" />
+    <Content Include="Content\kendo\kendo.dataviz.default.min.css.map" />
+    <Content Include="Content\kendo\kendo.dataviz.fiori.min.css.map" />
+    <Content Include="Content\kendo\kendo.dataviz.flat.min.css.map" />
+    <Content Include="Content\kendo\kendo.dataviz.highcontrast.min.css.map" />
+    <Content Include="Content\kendo\kendo.dataviz.material.min.css.map" />
+    <Content Include="Content\kendo\kendo.dataviz.materialblack.min.css.map" />
+    <Content Include="Content\kendo\kendo.dataviz.metro.min.css.map" />
+    <Content Include="Content\kendo\kendo.dataviz.metroblack.min.css.map" />
+    <Content Include="Content\kendo\kendo.dataviz.min.css.map" />
+    <Content Include="Content\kendo\kendo.dataviz.mobile.min.css.map" />
+    <Content Include="Content\kendo\kendo.dataviz.moonlight.min.css.map" />
+    <Content Include="Content\kendo\kendo.dataviz.nova.min.css.map" />
+    <Content Include="Content\kendo\kendo.dataviz.office365.min.css.map" />
+    <Content Include="Content\kendo\kendo.dataviz.silver.min.css.map" />
+    <Content Include="Content\kendo\kendo.dataviz.uniform.min.css.map" />
+    <Content Include="Content\kendo\kendo.default-v2.min.css.map" />
+    <Content Include="Content\kendo\kendo.default.min.css.map" />
+    <Content Include="Content\kendo\kendo.default.mobile.min.css.map" />
+    <Content Include="Content\kendo\kendo.fiori.min.css.map" />
+    <Content Include="Content\kendo\kendo.fiori.mobile.min.css.map" />
+    <Content Include="Content\kendo\kendo.flat.min.css.map" />
+    <Content Include="Content\kendo\kendo.flat.mobile.min.css.map" />
+    <Content Include="Content\kendo\kendo.highcontrast.min.css.map" />
+    <Content Include="Content\kendo\kendo.highcontrast.mobile.min.css.map" />
+    <Content Include="Content\kendo\kendo.material-v2.min.css.map" />
+    <Content Include="Content\kendo\kendo.material.min.css.map" />
+    <Content Include="Content\kendo\kendo.material.mobile.min.css.map" />
+    <Content Include="Content\kendo\kendo.materialblack.min.css.map" />
+    <Content Include="Content\kendo\kendo.materialblack.mobile.min.css.map" />
+    <Content Include="Content\kendo\kendo.metro.min.css.map" />
+    <Content Include="Content\kendo\kendo.metro.mobile.min.css.map" />
+    <Content Include="Content\kendo\kendo.metroblack.min.css.map" />
+    <Content Include="Content\kendo\kendo.metroblack.mobile.min.css.map" />
+    <Content Include="Content\kendo\kendo.mobile.all.min.css.map" />
+    <Content Include="Content\kendo\kendo.mobile.android.dark.min.css.map" />
+    <Content Include="Content\kendo\kendo.mobile.android.light.min.css.map" />
+    <Content Include="Content\kendo\kendo.mobile.blackberry.min.css.map" />
+    <Content Include="Content\kendo\kendo.mobile.common.min.css.map" />
+    <Content Include="Content\kendo\kendo.mobile.fiori.min.css.map" />
+    <Content Include="Content\kendo\kendo.mobile.flat.min.css.map" />
+    <Content Include="Content\kendo\kendo.mobile.ios.min.css.map" />
+    <Content Include="Content\kendo\kendo.mobile.material.min.css.map" />
+    <Content Include="Content\kendo\kendo.mobile.meego.min.css.map" />
+    <Content Include="Content\kendo\kendo.mobile.nova.min.css.map" />
+    <Content Include="Content\kendo\kendo.mobile.office365.min.css.map" />
+    <Content Include="Content\kendo\kendo.mobile.wp8.min.css.map" />
+    <Content Include="Content\kendo\kendo.moonlight.min.css.map" />
+    <Content Include="Content\kendo\kendo.moonlight.mobile.min.css.map" />
+    <Content Include="Content\kendo\kendo.nova.min.css.map" />
+    <Content Include="Content\kendo\kendo.nova.mobile.min.css.map" />
+    <Content Include="Content\kendo\kendo.office365.min.css.map" />
+    <Content Include="Content\kendo\kendo.office365.mobile.min.css.map" />
+    <Content Include="Content\kendo\kendo.rtl.min.css.map" />
+    <Content Include="Content\kendo\kendo.silver.min.css.map" />
+    <Content Include="Content\kendo\kendo.silver.mobile.min.css.map" />
+    <Content Include="Content\kendo\kendo.uniform.min.css.map" />
+    <Content Include="Content\kendo\kendo.uniform.mobile.min.css.map" />
+    <Content Include="Content\less\cross-browser\browsers\chrome.less" />
+    <Content Include="Content\less\cross-browser\browsers\edge.less" />
+    <Content Include="Content\less\cross-browser\browsers\ie.less" />
+    <Content Include="Content\less\cross-browser\cross-browser-module.less" />
+    <Content Include="Content\less\kendo-custom\components\button.less" />
+    <Content Include="Content\less\kendo-custom\components\combobox.less" />
+    <Content Include="Content\less\kendo-custom\components\datepicker.less" />
+    <Content Include="Content\less\kendo-custom\components\form.less" />
+    <Content Include="Content\less\kendo-custom\components\grid.less" />
+    <Content Include="Content\less\kendo-custom\components\hr.less" />
+    <Content Include="Content\less\kendo-custom\components\k-loading.less" />
+    <Content Include="Content\less\kendo-custom\components\k-popup.less" />
+    <Content Include="Content\less\kendo-custom\components\k-window.less" />
+    <Content Include="Content\less\kendo-custom\components\list.less" />
+    <Content Include="Content\less\kendo-custom\components\menu.less" />
+    <Content Include="Content\less\kendo-custom\components\multiselect.less" />
+    <Content Include="Content\less\kendo-custom\components\report.less" />
+    <Content Include="Content\less\kendo-custom\components\tab.less" />
+    <Content Include="Content\less\kendo-custom\components\tooltip.less" />
+    <Content Include="Content\less\kendo-custom\components\treeview.less" />
+    <Content Include="Content\less\kendo-custom\kendo-module.css.map" />
+    <Content Include="Content\less\kendo-custom\kendo-module.less" />
+    <Content Include="Content\less\main.css.map" />
+    <Content Include="Content\less\main.less" />
+    <Content Include="Content\less\media-query\media-query-module.less" />
+    <Content Include="Content\less\media-query\medias\screen.less" />
+    <Content Include="Content\less\printwayy\components\account-status.less" />
+    <Content Include="Content\less\printwayy\components\box.less" />
+    <Content Include="Content\less\printwayy\components\button.less" />
+    <Content Include="Content\less\printwayy\components\checkbox.less" />
+    <Content Include="Content\less\printwayy\components\combobox.less" />
+    <Content Include="Content\less\printwayy\components\container.less" />
+    <Content Include="Content\less\printwayy\components\contract-report-emails.less" />
+    <Content Include="Content\less\printwayy\components\display.less" />
+    <Content Include="Content\less\printwayy\components\div.less" />
+    <Content Include="Content\less\printwayy\components\dropdown.less" />
+    <Content Include="Content\less\printwayy\components\droplist.less" />
+    <Content Include="Content\less\printwayy\components\export-excel-menu.less" />
+    <Content Include="Content\less\printwayy\components\form.less" />
+    <Content Include="Content\less\printwayy\components\genericReportFiltersColumnSelectionComponents.less" />
+    <Content Include="Content\less\printwayy\components\genericReportsConditionFiltersComponents.less" />
+    <Content Include="Content\less\printwayy\components\global.less" />
+    <Content Include="Content\less\printwayy\components\grid.less" />
+    <Content Include="Content\less\printwayy\components\header.less" />
+    <Content Include="Content\less\printwayy\components\headway.less" />
+    <Content Include="Content\less\printwayy\components\input.less" />
+    <Content Include="Content\less\printwayy\components\invoice-calendar.less" />
+    <Content Include="Content\less\printwayy\components\k-window.less" />
+    <Content Include="Content\less\printwayy\components\label.less" />
+    <Content Include="Content\less\printwayy\components\messages.less" />
+    <Content Include="Content\less\printwayy\components\nav.less" />
+    <Content Include="Content\less\printwayy\components\paragraph.less" />
+    <Content Include="Content\less\printwayy\components\printwayy-generic-grid.less" />
+    <Content Include="Content\less\printwayy\components\radiobutton.less" />
+    <Content Include="Content\less\printwayy\components\sidebar.less" />
+    <Content Include="Content\less\printwayy\components\span.less" />
+    <Content Include="Content\less\printwayy\components\spinner.less" />
+    <Content Include="Content\less\printwayy\components\system-warning-messages.less" />
+    <Content Include="Content\less\printwayy\components\table.less" />
+    <Content Include="Content\less\printwayy\components\tile.less" />
+    <Content Include="Content\less\printwayy\components\timmy.less" />
+    <Content Include="Content\less\printwayy\components\tree-view.less" />
+    <Content Include="Content\less\printwayy\components\ul.less" />
+    <Content Include="Content\less\printwayy\components\validationMessage.less" />
+    <Content Include="Content\less\printwayy\pw-module.css.map" />
+    <Content Include="Content\less\printwayy\pw-module.less" />
+    <Content Include="Content\less\shared\icons\icon.less" />
+    <Content Include="Content\less\shared\mixins\alignment.less" />
+    <Content Include="Content\less\shared\mixins\border.less" />
+    <Content Include="Content\less\shared\shared-module.less" />
+    <Content Include="Content\less\shared\sub-modules\icon-module.less" />
+    <Content Include="Content\less\shared\sub-modules\mixins-module.less" />
+    <Content Include="Content\less\shared\sub-modules\variables-module.less" />
+    <Content Include="Content\less\shared\variables\color.less" />
+    <Content Include="Content\less\shared\variables\icon.less" />
+    <Content Include="Content\less\shared\variables\sizing.css.map" />
+    <Content Include="Content\less\shared\variables\sizing.less" />
+    <Content Include="Content\less\shared\variables\spacing.less" />
+    <Content Include="Content\less\shared\variables\text.less" />
+    <Content Include="Content\less\vendor\adminlte\404_500_errors.less" />
+    <Content Include="Content\less\vendor\adminlte\AdminLTE-without-plugins.less" />
+    <Content Include="Content\less\vendor\adminlte\AdminLTE.less" />
+    <Content Include="Content\less\vendor\adminlte\alerts.less" />
+    <Content Include="Content\less\vendor\adminlte\bootstrap-social.less" />
+    <Content Include="Content\less\vendor\adminlte\boxes.less" />
+    <Content Include="Content\less\vendor\adminlte\buttons.less" />
+    <Content Include="Content\less\vendor\adminlte\callout.less" />
+    <Content Include="Content\less\vendor\adminlte\carousel.less" />
+    <Content Include="Content\less\vendor\adminlte\control-sidebar.less" />
+    <Content Include="Content\less\vendor\adminlte\core.less" />
+    <Content Include="Content\less\vendor\adminlte\datepicker.less" />
+    <Content Include="Content\less\vendor\adminlte\direct-chat.less" />
+    <Content Include="Content\less\vendor\adminlte\dropdown.less" />
+    <Content Include="Content\less\vendor\adminlte\forms.less" />
+    <Content Include="Content\less\vendor\adminlte\fullcalendar.less" />
+    <Content Include="Content\less\vendor\adminlte\header.less" />
+    <Content Include="Content\less\vendor\adminlte\info-box.less" />
+    <Content Include="Content\less\vendor\adminlte\invoice.less" />
+    <Content Include="Content\less\vendor\adminlte\labels.less" />
+    <Content Include="Content\less\vendor\adminlte\lockscreen.less" />
+    <Content Include="Content\less\vendor\adminlte\login_and_register.less" />
+    <Content Include="Content\less\vendor\adminlte\mailbox.less" />
+    <Content Include="Content\less\vendor\adminlte\miscellaneous.less" />
+    <Content Include="Content\less\vendor\adminlte\mixins.less" />
+    <Content Include="Content\less\vendor\adminlte\modal.less" />
+    <Content Include="Content\less\vendor\adminlte\navs.less" />
+    <Content Include="Content\less\vendor\adminlte\plugins.less" />
+    <Content Include="Content\less\vendor\adminlte\print.less" />
+    <Content Include="Content\less\vendor\adminlte\products.less" />
+    <Content Include="Content\less\vendor\adminlte\profile.less" />
+    <Content Include="Content\less\vendor\adminlte\progress-bars.less" />
+    <Content Include="Content\less\vendor\adminlte\select2.less" />
+    <Content Include="Content\less\vendor\adminlte\sidebar-mini.less" />
+    <Content Include="Content\less\vendor\adminlte\sidebar.less" />
+    <Content Include="Content\less\vendor\adminlte\small-box.less" />
+    <Content Include="Content\less\vendor\adminlte\social-widgets.less" />
+    <Content Include="Content\less\vendor\adminlte\table.less" />
+    <Content Include="Content\less\vendor\adminlte\timeline.less" />
+    <Content Include="Content\less\vendor\adminlte\treeview.less" />
+    <Content Include="Content\less\vendor\adminlte\users-list.less" />
+    <Content Include="Content\less\vendor\adminlte\variables.less" />
+    <Content Include="Content\less\vendor\bootstrap\alerts.less" />
+    <Content Include="Content\less\vendor\bootstrap\badges.less" />
+    <Content Include="Content\less\vendor\bootstrap\bootstrap.less" />
+    <Content Include="Content\less\vendor\bootstrap\breadcrumbs.less" />
+    <Content Include="Content\less\vendor\bootstrap\button-groups.less" />
+    <Content Include="Content\less\vendor\bootstrap\buttons.less" />
+    <Content Include="Content\less\vendor\bootstrap\carousel.less" />
+    <Content Include="Content\less\vendor\bootstrap\close.less" />
+    <Content Include="Content\less\vendor\bootstrap\code.less" />
+    <Content Include="Content\less\vendor\bootstrap\component-animations.less" />
+    <Content Include="Content\less\vendor\bootstrap\dropdowns.less" />
+    <Content Include="Content\less\vendor\bootstrap\forms.less" />
+    <Content Include="Content\less\vendor\bootstrap\glyphicons.less" />
+    <Content Include="Content\less\vendor\bootstrap\grid.less" />
+    <Content Include="Content\less\vendor\bootstrap\input-groups.less" />
+    <Content Include="Content\less\vendor\bootstrap\jumbotron.less" />
+    <Content Include="Content\less\vendor\bootstrap\labels.less" />
+    <Content Include="Content\less\vendor\bootstrap\list-group.less" />
+    <Content Include="Content\less\vendor\bootstrap\media.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\alerts.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\background-variant.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\border-radius.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\buttons.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\center-block.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\clearfix.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\forms.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\gradients.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\grid-framework.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\grid.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\hide-text.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\image.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\labels.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\list-group.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\nav-divider.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\nav-vertical-align.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\opacity.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\pagination.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\panels.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\progress-bar.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\reset-filter.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\reset-text.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\resize.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\responsive-visibility.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\size.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\tab-focus.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\table-row.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\text-emphasis.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\text-overflow.less" />
+    <Content Include="Content\less\vendor\bootstrap\mixins\vendor-prefixes.less" />
+    <Content Include="Content\less\vendor\bootstrap\modals.less" />
+    <Content Include="Content\less\vendor\bootstrap\navbar.less" />
+    <Content Include="Content\less\vendor\bootstrap\navs.less" />
+    <Content Include="Content\less\vendor\bootstrap\normalize.less" />
+    <Content Include="Content\less\vendor\bootstrap\pager.less" />
+    <Content Include="Content\less\vendor\bootstrap\pagination.less" />
+    <Content Include="Content\less\vendor\bootstrap\panels.less" />
+    <Content Include="Content\less\vendor\bootstrap\popovers.less" />
+    <Content Include="Content\less\vendor\bootstrap\print.less" />
+    <Content Include="Content\less\vendor\bootstrap\progress-bars.less" />
+    <Content Include="Content\less\vendor\bootstrap\responsive-embed.less" />
+    <Content Include="Content\less\vendor\bootstrap\responsive-utilities.less" />
+    <Content Include="Content\less\vendor\bootstrap\scaffolding.less" />
+    <Content Include="Content\less\vendor\bootstrap\tables.less" />
+    <Content Include="Content\less\vendor\bootstrap\theme.less" />
+    <Content Include="Content\less\vendor\bootstrap\thumbnails.less" />
+    <Content Include="Content\less\vendor\bootstrap\tooltip.less" />
+    <Content Include="Content\less\vendor\bootstrap\type.less" />
+    <Content Include="Content\less\vendor\bootstrap\utilities.less" />
+    <Content Include="Content\less\vendor\bootstrap\variables.less" />
+    <Content Include="Content\less\vendor\bootstrap\wells.less" />
+    <Content Include="Content\less\vendor\vendor-module.less" />
+    <None Include="packages.config" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutLogin.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\DashBoard\Index.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Views\Grid\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59408</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44354/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

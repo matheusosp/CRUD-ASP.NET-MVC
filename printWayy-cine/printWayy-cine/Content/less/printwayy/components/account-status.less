@@ -1,0 +1,49 @@
+﻿//@import "../../shared/shared-module.less";
+#account-status-view {
+    color: @white;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    position: absolute;
+    min-height: 1px;
+    font-size: 12px;
+    margin-left: 55px;
+}
+
+.circle-status {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin-top: 5px;
+    margin-left: 3px;
+    display: inline-flex;
+}
+
+.red-circle {
+    &:extend(.circle-status);
+    background-color: red;
+}
+
+.green-circle {
+    &:extend(.circle-status);
+    background-color: green;
+}
+
+.client-status-col {
+    margin-right: 22px;
+    float:left;
+}
+
+.acess-status-col {
+    margin-right: 22px;
+    float:left;
+}
+
+.modules-pattern-col {
+    margin-right: 22px;
+    float:left;
+}
+
+.modules-contracted-col {
+    float:left;
+}

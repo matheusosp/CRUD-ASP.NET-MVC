@@ -1,0 +1,509 @@
+﻿@import "../../shared/shared-module.less";
+
+//=============================================================
+//------------------------ Dropdown ---------------------------
+//=============================================================
+
+//Para conseguir abrir a lista de seleção com nomes muito grandes:
+
+.k-list.k-reset {
+    word-break: break-word;
+}
+
+#user-menu {
+    min-width: 220px;
+
+    a:first-child {
+        text-align: center;
+    }
+}
+
+#user-menu-options {
+    right: unset;
+    font-family: 'Segoe UI';
+    background-color: @white !important;
+}
+
+
+#user-menu-options > li a {
+    color: @tundora !important;
+}
+
+#user-menu-options i{
+    width: 14px;
+    height: 14px;
+}
+.user-padding-option {
+    margin: 0 0 0 14px;
+    border-bottom: 1px solid @tundora !important;
+    padding-bottom: 8px;
+}
+
+#user-menu-option a {
+    padding: 3px 0 !important;
+}
+
+#user-email {
+    margin-right: 14px;
+    font-family: Segoe UI;
+}
+
+#user-arrow {
+    margin-right: unset;
+    margin-top: 3px;
+}
+
+.dropdown-menu > li > a {
+    color: @tundora;
+    border-bottom: 1px solid @tundora;
+    padding-bottom: 8px;
+    padding-left: 0;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li:hover {
+    background-color: @mercury;
+}
+
+#logout {
+    border-bottom: unset;
+}
+
+/* ------------------------------ Hovers menu ------------------------------*/
+
+#pending-trades-hover,
+#alerts-notifications-hover,
+#printers-notifications-hover {
+    height: 10px;
+}
+
+#logout-div-hover,
+#download-printwayy-hover,
+#change-password-hover,
+#my-settings-hover,
+#suggest-to-printwayy-hover{
+    height: 8px;
+    margin-right: 16px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#logout-div,
+#download-printwayy,
+#change-password,
+#my-settings,
+#suggest-to-printwayy{
+    margin-right: 16px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#suggest-to-printwayy i{
+    font-size: 17px;
+}
+
+.dropdown-hover-base {
+    cursor: pointer;
+    background-color: @wild-sand !important;
+}
+
+// Espaçamento entre os menus do dropdown de usuário
+#logout-div-hover:hover,
+#download-printwayy-hover:hover,
+#change-password-hover:hover,
+#my-settings-hover:hover {
+    &:extend(.dropdown-hover-base);
+}
+
+// Atualiza background-color das opções de menu quando um espaçamento de usuário estiver em hover effect
+#logout-div-hover:hover ~ #logout-div,
+#download-printwayy-hover:hover ~ #download-printwayy,
+#change-password-hover:hover ~ #change-password,
+#my-settings-hover:hover ~ #my-settings,
+#suggest-to-printwayy-hover:hover ~ #suggest-to-printwayy{
+    &:extend(.dropdown-hover-base);
+}
+
+// Espaçamento entre os menus do dropdown de notificações
+#printers-notifications-hover:hover,
+#alerts-notifications-hover:hover,
+#pending-trades-hover:hover {
+    &:extend(.dropdown-hover-base);
+}
+
+// Atualiza background-color das opções de menu quando um espaçamento de notificações estiver em hover effect
+#printers-notifications-hover:hover ~ #printers-notifications,
+#alerts-notifications-hover:hover ~ #alerts-notifications,
+#pending-trades-hover:hover ~ #pending-trades {
+    &:extend(.dropdown-hover-base);
+}
+
+/* ---------------------------- Notificações menu -----------------------------*/
+
+#web-notifications-wrapper {
+    font-family: @font-family;
+    font-size: 13.4px;
+}
+
+.web-notification {
+    background-color: @white;
+    padding-left: @web-notification-side-margin !important;
+    padding-right: @web-notification-side-margin !important;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    position: relative;
+
+    &:hover {
+        background-color: @mercury;
+        color: @tundora;
+    }
+}
+
+.web-notification-icon {
+    position: absolute;
+
+    &.fa-print {
+        margin-top: 20px;
+    }
+
+    &.fa-exclamation-triangle {
+        margin-top: 36px;
+    }
+
+    &.fa-align-left {
+        margin-top: 20px;
+    }
+}
+
+.web-notification:last-child {
+    margin-bottom: 0;
+}
+
+.web-notification-text {
+    margin-left: 20px;
+    padding: 8px 0 8px 0;
+}
+
+.web-notification-text ul {
+    padding-left: 18px;
+}
+
+.border-notification {
+    height: 1px;
+    .border(1px, solid, @tundora, bottom);
+    margin-left: @web-notification-side-margin;
+    margin-right: @web-notification-side-margin;
+}
+
+#notification-amount {
+    font-weight: bold;
+}
+
+.notification-item > p {
+    line-height: 16px;
+}
+
+.notification-item {
+    border-bottom: 1px solid @tundora !important;
+    padding-left: 15px !important;
+}
+
+.notification-ul > li:hover {
+    background-color: @mercury !important;
+    cursor: pointer;
+}
+
+#notification-amount,
+.notification-item {
+    padding-bottom: 2px;
+    margin-left: 15px !important;
+    margin-right: 10px !important;
+}
+
+.print-notification > li {
+    margin-left: -24px !important;
+}
+
+.print-notification {
+    padding-bottom: 8px;
+
+    li {
+        padding-top: 10px;
+
+        &:first-child {
+            padding-top: 0;
+        }
+    }
+}
+
+.notification-ul {
+    background-color: white;
+    font-size: 13.4px;
+}
+
+li.header {
+    margin-top: 10px;
+}
+
+.navbar-nav .user:before {
+    content: '' !important;
+}
+
+.dropdown-header > span {
+    background-color: @transparent;
+}
+
+.comparatorConditionsDropDown, .comparatorConditionsDropDown .k-dropdown-wrap, .columnConditionsDropDown {
+    border-left: none !important;
+}
+
+.columnConditionsDropDown, .customFilterDropDown {
+    width: 250px;
+}
+
+.comparatorConditionsDropDown {
+    width: 200px;
+}
+
+.customFilterDropDown {
+    margin: 2px 0 0 10px;
+    height: 36px;
+}
+
+.customFilterDropDown .k-dropdown-wrap {
+    height: 34px;
+}
+
+.customFilterDropDown .k-dropdown-wrap .k-input {
+    padding: 5px 0;
+}
+
+.customFilterDropDown .k-dropdown-wrap .k-select .k-icon {
+    margin-top: 4px;
+}
+
+.columnToOrderReportColumns {
+    width: 327px;
+}
+
+.columnToOrderReportColumns, .orderTypeToReportColumns,
+.orderTypeToReportColumns .k-dropdown-wrap {
+    border-left: none !important;
+}
+
+.orderTypeToReportColumns {
+    width: 180px;
+}
+
+.exchange-notification-width {
+    min-width: 365px;
+    width: auto;
+}
+
+// --------------------------------------
+// -------- Novas impressoras -----------
+// --------------------------------------
+
+.drop-down-list-grid-cell {
+    width: 100%;
+    min-width: 100px;
+
+    .k-dropdown-wrap.k-state-default, .drop-down-list-grid-cell .k-dropdown-wrap.k-state-disabled {
+        border: none;
+        height: 33px;
+    }
+
+    .k-dropdown-wrap {
+        display: flex;
+        border: none;
+    }
+}
+
+.k-state-selected .drop-down-list-grid-cell .k-i-arrow-s {
+    background-position: 0 -32px;
+}
+
+.grid-td-without-padding {
+    padding: unset !important;
+    line-height: unset !important;
+    border-top: 2px solid transparent !important;
+    padding-bottom: 2px !important;
+
+    .k-dropdown-wrap .k-input {
+        padding: .4em .1em;
+    }
+
+    .k-select .k-icon {
+        top: 3px;
+    }
+}
+
+.grid-td-without-padding .k-dropdown {
+    /**/
+    // Há uma regra para que a row fique com fundo amarelito quando uma impressora é detectada em mais de um cliente nos novas impressoras (combobox de cliente)
+    // Em função disso é preciso sobrescritar a regra para que em estado de hover o combobox volte a aplicar o estado de background azul
+    .k-dropdown-wrap:not(.drop-down-list-selected).k-state-hover {
+        background-color: @indigo !important;
+    }
+    /**/
+    // Reescreve regra de cor pois caso o combobox esteja focado, isto é,  após uma escolha ter sido feita,
+    // a cor vigente será branco, entretanto, como nesta caso o fundo é amarelo modificamos para que a cor seja tundora.
+    .k-dropdown-wrap:not(.drop-down-list-selected).k-state-focused {
+        .k-input,
+        .k-icon {
+            color: @tundora !important;
+        }
+    }
+    /**/
+    // Quando o usuário escolher a opção no combobox e não clicar em nenhum local da tela
+    // O combobox estará tanto em estado de hover quanto de focused, logo é precisa resetar a cor para branco novamente
+    // Caso contrário, o texto e a flecha ficarão na cor tundora + bg azul.
+    .k-dropdown-wrap:not(.drop-down-list-selected).k-state-focused.k-state-hover {
+        .k-input,
+        .k-icon,
+        .k-state-focused {
+            color: @white !important;
+        }
+    }
+}
+
+.orange-border {
+    border: 2px solid @alert-yellow !important;
+    background-color: @white !important;
+
+    .k-dropdown-wrap.k-state-hover, .orange-border .k-dropdown-wrap.k-state-focused {
+        background-color: @white !important;
+        background-image: none !important;
+        border: none !important;
+    }
+
+    .drop-down-list-selected {
+        background-color: @white !important;
+
+        .k-input {
+            color: @blue-whale !important;
+        }
+
+        span.k-icon {
+            color: @blue-whale !important;
+        }
+    }
+
+    .dark-drop-down-list.drop-down-list-selected {
+        background-color: @white !important;
+
+        k-state-hover span.k-input {
+            color: @blue-whale !important;
+        }
+
+        .k-state-active span.k-input {
+            color: @blue-whale !important;
+        }
+    }
+}
+
+.gray-placeholder {
+    color: @label-gray;
+}
+
+.kendo-data-row.k-state-selected .orange-border .drop-down-list-grid-cell {
+    & .gray-placeholder {
+        .gray-placeholder
+    }
+
+    & .k-list-optionlabel.k-state-hover .gray-placeholder {
+        .gray-placeholder
+    }
+
+    & .k-list-optionlabel.k-state-focused .gray-placeholder {
+        .gray-placeholder
+    }
+}
+
+.drop-down-list-grid-cell .k-dropdown-wrap.k-state-hover .gray-placeholder,
+.k-list-optionlabel.k-state-hover .gray-placeholder,
+.k-list-optionlabel.k-state-focused .gray-placeholder {
+    color: @white !important;
+}
+
+.drop-down-fake-disabeld {
+    .k-state-disabled {
+        opacity: 1 !important;
+    }
+
+    .k-input {
+        color: @blue-whale;
+    }
+
+    .k-icon {
+        display: none;
+    }
+}
+
+.grid-highlighted-line {
+    &:not(.drop-down-list-selected), & .dark-drop-down-list:not(.drop-down-list-selected), & span.k-dropdown-wrap:not(.drop-down-list-selected) {
+        background-color: @light-yellow !important;
+    }
+}
+
+.k-dropdown-wrap:hover .tooltip-container .help-message {
+    color: #B5C8D7;
+}
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.k-grid tr.k-state-selected:hover td, .k-grid tr:hover .k-state-focused {
+    box-shadow: none;
+}
+
+.SelectedCustomerIdTemplate {
+    .k-dropdown {
+        width: auto !important;
+        display: block;
+    }
+}
+
+.CustomerPlaceIdTemplate {
+    width: 150px !important;
+
+    .k-dropdown {
+        width: 150px !important;
+    }
+}
+
+.OwnerHashCodeTemplate {
+    width: 190px !important;
+
+    .k-dropdown {
+        width: 190px !important;
+    }
+}
+
+.PlaceDepartmentIdTemplate {
+    width: 205px !important;
+
+    .k-dropdown {
+        width: 205px !important;
+    }
+}
+
+.ContractIdTemplate {
+    width: 170px !important;
+
+    .k-dropdown {
+        width: 170px !important;
+    }
+}
+
+.scheduleReplacementDropDown{
+    width: 350px;
+    margin-left: 10px;
+}

@@ -1,0 +1,430 @@
+﻿@import "../../shared/shared-module.less";
+/*==================== Definição de classes comuns a vários elementos ====================*/
+@common-margin-size: 24px;
+
+/*
+    Este mixins altera a cor de fundo dos compoenetes de subcoluna, 
+    pode ser utilizado para definir a cor de fundo padrão ou quando o elelmento muda de estado, 
+    como hover, por exemplo
+*/
+.printwayy-sub-column-backgroud-color(@color) {
+    background-color: @color;
+
+    .k-multiselect-wrap {
+        background-color: @color;
+
+        .k-input, .k-input[readonly] {
+            background-color: @color;
+        }
+    }
+}
+
+/*
+    Em algumns casos, o componente .k-button pode precisdar receber uma cor diferente da passada para o componente inteiro
+*/
+.printwayy-sub-column-backgroud-color(@color, @button-backgroud-color) {
+    .printwayy-sub-column-backgroud-color(@color);
+
+    .k-button {
+        background-color: @button-backgroud-color !important;
+        border-color: @button-backgroud-color !important;
+        border-left: 3px solid @silver-chalice !important;
+    }
+}
+
+.printwayy-generic-1pMp1-hover {
+    background-color: @link-water;
+    border-color: @link-water;
+    color: @tundora !important;
+}
+
+.printwayy-generic-column-hover {
+    border-right: dashed 1px @tundora;
+}
+
+.empty-style {
+    color: @silver-chalice;
+}
+
+.column-header-icon {
+    font-size: 15px;
+    vertical-align: unset;
+    margin-left: 5px;
+    display: table-cell;
+}
+
+/*==================== Fim da definição de classes comuns a vários elementos ====================*/
+
+/*==================== Definição das classes do grid genérico ====================*/
+.printwayy-generic-grid {
+    background-color: @white;
+
+    &.k-grid.k-grid-display-block {
+        display: block;
+    }
+    /*========== Definição das classes do header do grid genérico ==========*/
+    .k-grid-header {
+        border-color: @white;
+        border-bottom-color: @black;
+        padding-right: 0 !important;
+        margin: @common-margin-size 28px 0;
+
+        .k-grid-header-wrap {
+            border-color: @white;
+        }
+
+        .printwayy-generic-column {
+            background-color: @white !important;
+            border-color: @white;
+            border-right: solid 1px @tundora;
+
+            &:hover {
+                .printwayy-generic-column-hover;
+            }
+
+            .k-link {
+                display: table-cell;
+                white-space: normal;
+            }
+
+            .printwayy-column-header-popup {
+                .column-header-icon;
+                color: @indigo;
+            }
+
+            .printwayy-column-header-sort {
+                .column-header-icon;
+                color: @indigo;
+                padding-right: 4px;
+            }
+
+            &.k-header {
+                text-align: left !important;
+                border-bottom: unset !important;
+            }
+
+            .printwayy-header-group-1pmp1-tag {
+                font-weight: 400;
+                background-color: @wild-sand;
+                padding: 0 0.3em;
+
+                &.k-state-hover {
+                    .printwayy-generic-1pMp1-hover;
+                    background-image: unset;
+                }
+            }
+        }
+    }
+    /*========== Fim da definição das classes do header do grid genérico ==========*/
+    .printwayy-generic-cell {
+        border-color: @white;
+        border-bottom-color: @alto;
+        border-width: 0;
+        border-bottom-width: 1px;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        -ms-word-break: keep-all;
+        word-break: keep-all;
+        white-space: nowrap;
+
+        &.printwayy-generic-column-hover {
+            .printwayy-generic-column-hover;
+        }
+
+        span {
+            br {
+                content: ' ';
+
+                &:after {
+                    content: ' ';
+                }
+            }
+        }
+    }
+
+    .printwayy-generic-cell .progressbar {
+        height: .8em;
+    }
+
+    .printwayy-generic-cell .progressbarcell {
+        font-size: .85em;
+    }
+
+    tbody {
+        tr {
+            background-color: @white;
+
+            &.k-alt {
+                background-color: @white;
+            }
+
+            &.k-state-selected, &.k-alt.k-state-selected, &:hover {
+                background-color: @alto !important;
+                color: @tundora !important;
+
+                .printwayy-sub-column {
+                    .printwayy-sub-column-backgroud-color(@alto, @white);
+                }
+
+                .printwayy-generic-1pMp1 {
+                    .k-dropdown-wrap {
+                        &.k-state-default:not(.k-state-hover) {
+                            background-color: @white;
+                        }
+                    }
+                }
+            }
+
+            td {
+                padding: 0.2em 0.6em;
+            }
+        }
+    }
+
+    .k-grid-content {
+        &.k-auto-scrollable {
+            overflow-y: hidden;
+        }
+
+        width: initial;
+        margin-right: @common-margin-size;
+        margin-left: @common-margin-size;
+    }
+}
+
+/*==================== Fim da definição das classes do grid genérico ====================*/
+
+/*==================== Definição das classes do elemento 1pMp1 genérico ====================*/
+
+.label-combo-wayy {
+    background-color: @silver-chalice;
+    padding: .3em .3em .3em .3em !important;
+    min-width: 10px;
+}
+
+.printwayy-generic-1pMp1 {
+    width: 100%;
+
+    &.k-widget {
+        border-color: @white;
+    }
+
+    &.k-dropdown {
+        border-left: none;
+
+        & .k-dropdown-wrap {
+            &.k-state-hover, &.k-state-focused {
+                & .k-input, & .k-select {
+                    color: @tundora !important;
+                }
+            }
+        }
+    }
+
+    .k-dropdown-wrap {
+
+        &.k-state-default {
+            border-color: @white;
+            background-color: @wild-sand;
+
+            &.k-state-hover, & .k-input:hover, & .k-select:hover {
+                .printwayy-generic-1pMp1-hover;
+
+                .k-input {
+                    .label-combo-wayy {
+                        background-color: @danube;
+                    }
+                }
+            }
+        }
+
+        .k-input {
+            line-height: unset;
+            white-space: normal;
+            display: flex;
+
+            span {
+                -ms-text-overflow: ellipsis;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        }
+
+        .k-select {
+            .k-icon {
+                position: initial;
+            }
+        }
+    }
+
+    label.label-combo-wayy {
+        text-indent: 0;
+        float: right;
+        margin-top: 2px;
+        margin-left: auto;
+    }
+}
+
+.k-list-optionlabel {
+    .label-combo-wayy {
+        display: none;
+    }
+}
+
+/*==================== Fim da definição das classes do elemento 1pMp1 genérico ====================*/
+
+/*==================== Definição das classes do elemento SubColumn genérico ====================*/
+
+.printwayy-sub-column {
+    &.k-multiselect {
+        border-color: @white;
+        border-left: unset;
+
+        .k-button {
+            &:hover {
+                border-color: @wild-sand !important;
+                border-left: 3px solid @silver-chalice !important;
+                background-color: @wild-sand !important;
+            }
+        }
+    }
+
+    .k-multiselect-wrap {
+        border-style: unset;
+        display: inline-flex;
+
+        .k-button {
+            border-left: 3px solid @silver-chalice;
+
+            .k-select {
+                display: none;
+            }
+
+            span {
+                &:not(.k-select) {
+                    -ms-text-overflow: ellipsis;
+                    -o-text-overflow: ellipsis;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+            }
+        }
+
+        .k-reset {
+            display: inline-flex;
+        }
+
+        li {
+            padding-right: 0.4em;
+        }
+    }
+}
+
+/*==================== Fim da definição das classes do elemento SubColumn genérico ====================*/
+
+/*==================== Definição das classes dos popos e tooltips que aparecem no grid genérico ====================*/
+.k-animation-container {
+    .printwayy-genric-popup {
+        visibility: hidden;
+
+        .printwayy-popup-style {
+            background-color: @wild-sand;
+            border-color: @wild-sand;
+            border-radius: unset;
+            color: @tundora;
+            min-width: 200px;
+            opacity: unset !important;
+        }
+
+        &.k-widget.k-tooltip {
+            .printwayy-popup-style;
+
+            &:not(.excel-tooltip) {
+                .printwayy-popup-style;
+            }
+
+            & .k-tooltip-content {
+                text-align: left;
+                -ms-word-wrap: break-word;
+                word-wrap: break-word;
+            }
+
+            .printwayy-sub-column {
+                .printwayy-sub-column-backgroud-color(transparent, @white);
+
+                .k-multiselect-wrap {
+                    display: list-item;
+                    padding-right: unset;
+
+                    .k-button {
+                        margin-right: .3em;
+                        margin-bottom: .2em;
+
+                        span {
+                            &:not(.k-select) {
+                                -ms-text-overflow: initial;
+                                -o-text-overflow: initial;
+                                text-overflow: initial;
+                                white-space: initial;
+                                overflow: hidden;
+                                -ms-word-wrap: break-word;
+                                word-wrap: break-word;
+                                overflow-wrap: break-word;
+                                -ms-word-break: break-all;
+                                word-break: break-all;
+                            }
+                        }
+                    }
+
+                    .k-reset {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        &.printwayy-genric-header-tooltip {
+            margin-left: 10px;
+        }
+
+        .printwayy-genric-header-popup {
+            text-align: left;
+            white-space: nowrap;
+        }
+    }
+}
+/*==================== Fim da definição das classes dos popos e tooltips que aparecem no grid genérico ====================*/
+
+/*==================== Definição das classes do label contador de rows do grid genérico ====================*/
+.printwayy-grid-rows-count-label {
+    font-family: @font-family;
+    font-size: @font-size;
+    color: @silver-chalice;
+    margin-left: 10px;
+    display: inline-block;
+}
+/*==================== Fim da definição das classes do label contador de rows do grid genérico ====================*/
+
+/*==================== Definição de classes úteis ====================*/
+.not-excluded {
+    li {
+        -ms-word-break: break-word;
+        word-break: break-word;
+    }
+}
+/*==================== Fim da definição de classes úteis ====================*/
+
+/*==================== Definição de classes para celulas do tipo texto  ====================*/
+.printwayy-text-cell .simple-data-cell {
+    white-space: pre;
+}
+/*==================== Fim da definição de classes para celulas do tipo texto ====================*/
+
+.printwayy-generic-header-menu-span{
+    margin-bottom: 50px;
+    display: block;
+}

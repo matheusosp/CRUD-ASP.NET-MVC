@@ -1,0 +1,72 @@
+﻿//@import "../../shared/shared-module.less";
+//=============================================================
+//------------------------ Combobox ---------------------------
+//=============================================================
+/**/
+
+// Combobox dentro do header
+.combobox-wayy {
+    position: absolute;
+    margin-top: -42px;
+    margin-left: @combobox-header-margin-left;
+}
+
+#select-customer-dashboard, #select-customer {
+    display: inline-block;
+    position: relative;
+    .border(1px, solid, @alto);
+    .border(3px, solid, @alto, left);
+    cursor: pointer;
+    background-color: @transparent;
+    color: @azure;
+    padding: 2px 20px 4px 8px;
+    &:hover {
+        color: @indigo;
+    }
+    #customer-label {
+        .border(1px, solid, @alto, right);
+        padding: 3.5px 15px 3.5px 0;
+    }
+    .k-combobox {
+        margin-top: 2px;
+        border-left-width: 1px;
+        .k-select{
+            .border(1px, solid, @alto, right);
+        }
+    }
+}
+
+// Quando expandir subir um pouco já que sua altura ficará maior
+#select-customer-dashboard:not(.collapsed), #select-customer:not(.collapsed) {
+    margin-top: -7px;
+}
+
+.cmb-customers-printers {
+    margin-left: 100px;
+}
+
+// Combobox dentro do header na View Printers/Index
+#customer-printer-header~.combobox-wayy {
+    margin-left: @combobox-header-margin-left + 10px;
+}
+
+/*
+#customers-list {
+    position: relative;
+    bottom: 7px;
+    width: 250px;
+}
+*/
+
+.cmbCustomers {
+    // min-width: @combobox-width !important;
+    font-size: 14px;
+}
+
+#customers-list>span>span>span>span {
+    color: @white;
+}
+
+#customers-list>span>span>span>span {
+    color: @tundora;
+}

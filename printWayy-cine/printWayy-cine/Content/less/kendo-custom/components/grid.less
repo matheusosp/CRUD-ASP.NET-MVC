@@ -1,0 +1,80 @@
+﻿//@import "../../shared/shared-module.less";
+.k-grid-header .k-header {
+    background-color: @white;
+    border-bottom: 2px solid @silver-chalice  !important;
+}
+
+.k-grid-header .k-header,
+.k-widget {
+    color: @tundora;
+}
+
+.k-widget {
+    border-color: @alto
+}
+
+.default .k-grid tr.k-state-selected:hover td {
+    box-shadow: none !important;
+}
+
+.k-alt, .default .k-alt {
+    background-color: @white;
+}
+
+// Quando realiza alguma alteração em um custo dentro do detalhes do contrato é criado por padrão do kendo
+// uma faixa vermelha no canto superior esquerdo. Essa regra remove esse faixa que não queremos ver
+.k-dirty {
+    border-width:0;
+}
+
+// Grid de impressoras detalhes de relatório
+#ReportContentToPrint .k-alt{
+    background-color: @wild-sand;
+}
+
+// Regra especifica para coluna de contrato na grid de fechamentos, a qual ocorre quando estiver faltando menos de 60 dias para um contrato expirar 
+.contract-deadline-background{
+    background-color: @light-yellow;
+}
+
+.k-grid {
+
+    td {
+        border-bottom: 1px solid @alto;
+    }
+
+    tr.k-state-selected {
+        color: @azure !important;
+    }
+
+    tr.k-state-selected, .k-state-selected {
+        background-color: @light-link-water !important;
+        // Por padrão as colunas com esta classe ficam com background amarelito
+        // portanto é preciso adicionar mais uma regra aqui para quando a linha
+        // do grid estiver selecionada o background desta coluna mudar para azulito
+        & > .contract-deadline-background {
+            background-color: @light-link-water;
+        }
+    }
+
+    .k-pager-wrap {
+
+        &.k-pager-lg, &.k-pager-md, &.k-pager-sm {
+
+            .k-pager-numbers-wrap {
+                height: 1.89em;
+                width: 4em;
+                left: -1px;
+                top: 1px;
+
+                .k-pager-numbers {
+
+                    .k-pager-nav {
+                        height: 1.89em;
+                    }
+                }
+            }
+        }
+    }
+}
+    

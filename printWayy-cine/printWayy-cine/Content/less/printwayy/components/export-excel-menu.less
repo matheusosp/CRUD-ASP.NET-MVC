@@ -1,0 +1,182 @@
+﻿.exportExcelMenu {
+    background-color: @gray-ice;
+    border-color: @gray-ice;
+    padding: 5px 5px 5px 5px;
+
+    .content {
+        text-align: left;
+        padding: 2px 0 2px 0;
+    }
+
+    .k-widget .k-item .k-content {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .k-button {
+        margin-bottom: 10px;
+    }
+
+    .k-button img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .item {
+        margin-left: 5px;
+        display: list-item;
+
+        input[type=checkbox]:checked:after {
+            margin-top: 0;
+        }
+
+        input[type=checkbox]:after {
+            margin-bottom: 0;
+        }
+
+        .check-label {
+            padding-left: 8px;
+        }
+    }
+
+    .export-category {
+        margin: 15px 0 5px 0;
+
+        &:first-child {
+            margin: 5px 0;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .save-columns-button {
+        width: 100%;
+        margin-bottom: 5px;
+        margin-top: 15px;
+    }
+
+    .export-to-excel-button {
+        width: 100%;
+        border: none;
+    }
+}
+
+.exportExcelMenu_tt_active {
+
+    .export-excel-menu-header {
+        background-color: @wild-sand;
+        border-color: @blue-ice;
+        color: @blue-whale;
+        line-height: 18px;
+        font-weight: bold;
+        font-size: 14px;
+        .text-align(center);
+        padding: 2px 2px 2px 5px;
+    }
+
+    &.k-widget {
+        &.k-tooltip {
+            background-color: @blue-ice;
+            border-color: @blue-ice;
+            color: @azure;
+            padding: 0;
+        }
+    }
+
+    .k-tooltip-content {
+        padding: 0;
+
+        #export-excel-header {
+            background-color: @white;
+            height: 57px;
+            position: relative;
+            background-image: none;
+            .border(3px, solid, @azure, top);
+
+            &:hover {
+                background-color: @indigo;
+                .border(3px, solid, @transparent, top);
+                background-image: none;
+                color: @white;
+            }
+
+            button {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 100%;
+                font-weight: bold;
+                color: @azure;
+
+                &:hover {
+                    background-color: @indigo;
+                    color: @white;
+                    background-image: none;
+                }
+            }
+
+            .k-callout-w {
+                border-right-color: @indigo;
+            }
+
+            & ~ .export-excel-menu-header {
+                font-weight: @font-weight;
+            }
+        }
+
+        .suppliesGrid-content-button,
+        .suppliesGrid-content,
+        .estimatesGrid-content-button,
+        .estimatesGrid-content {
+            width: 220px;
+        }
+    }
+
+    .k-tooltip-button {
+        display: none;
+    }
+}
+
+.exportExcelMenu {
+    background-color: @white;
+
+    & > button {
+        border-color: @azure;
+        color: @azure;
+        .border(3px, solid, @azure, left);
+    }
+}
+
+#contractsGrid-exportExcelMenu {
+    margin-top: 3px;
+}
+
+@media all and (-ms-high-contrast:none), all and (-ms-high-contrast:active){
+
+    .exportExcelMenu {
+
+        .item {
+
+            input[type='checkbox'] {
+
+                &:not(:checked) + input + label,
+                &:checked + input + label {
+
+                    &::after {
+                        top: 0.7em;
+                        left: -1em;
+                    }
+
+                    &::before {
+                        top: 5px;
+                        left: -10px;
+                    }
+                }
+            }
+        }
+    } 
+}
+

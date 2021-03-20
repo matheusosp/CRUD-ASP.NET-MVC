@@ -1,0 +1,282 @@
+﻿//@import "../../shared/shared-module.less";
+// ------------------ Sidebar ------------------------- //
+.main-header .sidebar-toggle:before {
+    content: '';
+}
+
+.sidebar-menu {
+    white-space: unset !important;
+    font-family: @font-family;
+}
+
+.skin-wayy .sidebar-menu>li.header {
+    color: @blue-bayoux;
+}
+
+.skin-wayy .sidebar-menu>li>a {
+    border-left: 3px solid transparent;
+    font-size: 14px;
+}
+
+.skin-wayy .sidebar-menu>li.menu-open>a,
+.skin-wayy .sidebar-menu>li:hover>a,
+.skin-wayy .sidebar-menu>li.menu-open>.treeview-menu {
+    background: @mercury;
+}
+
+.skin-wayy .sidebar-menu>li.menu-open>.treeview-menu>li a:hover {
+    background: @wild-sand;
+}
+
+.skin-wayy .main-sidebar,
+.skin-wayy .left-side {
+    background-color: @white;
+}
+
+.current-selected {
+    background-color: @light-link-water;
+}
+
+// Menu pai 
+.skin-wayy .sidebar-menu>li.current-selected>a {
+    color: @azure;
+    border-left-color: @azure;
+}
+
+.skin-wayy .sidebar-menu>li.current-selected>.treeview-menu {
+    background-color: @light-link-water  !important;
+    &>li a:hover {
+        // Hover nos link do submenus do menu atualmente selecionado
+        background-color: @link-water;
+    }
+}
+
+.sidebar-mini.sidebar-collapse .current-selected a {
+    background-color: @light-link-water  !important;
+}
+
+.skin-wayy .sidebar-menu>li.current-selected>a {
+    background-color: @light-link-water  !important;
+}
+
+.skin-wayy .sidebar a {
+    color: @tundora;
+}
+
+.skin-wayy .sidebar a:hover {
+    text-decoration: none;
+}
+
+.skin-wayy .sidebar-menu .treeview-menu>li>a {
+    color: @tundora;
+}
+
+// Joga menu um pouco mais para esquerda, pois o valor padrão é 15
+.treeview > a,
+.sidebar-menu > li > a {
+    padding-left: 10px !important;
+}
+
+.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.logo-lg,
+.logo-mini {
+    max-height: 50px;
+    position: relative;
+    top: 25%;
+}
+
+.logo-mini .sidebar-toggle {
+    float: unset;
+    color: @white;
+    font-size: 14px;
+}
+
+// ------------------ Sidebar-Collapse ------------------------- //
+.sidebar-mini.sidebar-collapse .sidebar-menu .treeview-menu>li>a,
+.sidebar-mini.sidebar-collapse .sidebar-menu>li>.treeview-menu {
+    background-color: @mercury;
+}
+
+.sidebar-mini.sidebar-collapse #alert-amount {
+    margin-left: -25px;
+    position: absolute;
+    margin-top: -1px;
+}
+
+.sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu>li:hover>.treeview-menu {
+    width: 220px !important;
+}
+
+.sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu>li:hover>a>.pull-right-container {
+    left: 220px !important;
+}
+
+.sidebar-mini.sidebar-collapse .sidebar-menu>li>a>span {
+    width: 220px !important;
+}
+
+.sidebar-mini.sidebar-collapse .treeview-menu>li>a {
+    padding: 5px 5px 5px 15px !important;
+}
+
+// Quando a sidebar estiver em collpse state atribui-se padding padrão para que os icones fique centralizados 
+.sidebar-mini.sidebar-collapse .sidebar-menu>li>a {
+    padding-left: 15px !important;
+}
+
+.sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu>li.current-selected>.treeview-menu {
+    // Quando em hover
+    &>li a:hover {
+        background-color: @link-water  !important;
+    } // Quando ativo
+    &>li.active>a {
+        background-color: @link-water  !important;
+        font-weight: 600;
+    }
+}
+
+// Hover dos itens do menu quando estiver em collpase
+.sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu>li>.treeview-menu >li a:hover {
+    background-color: @wild-sand  !important;
+}
+
+.sidebar-mini.sidebar-collapse .sidebar-menu .treeview>a>.pull-right-container {
+    color: @transparent;
+}
+
+// ------------------ Fim Sidebar-Collapse ------------------------- //
+// submenu ativo
+// link ativo
+.skin-wayy .sidebar-menu .treeview-menu>li.active>a {
+    font-weight: 600;
+    background-color: @link-water;
+}
+
+#alert-amount {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#logo-dealer {
+    max-width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+// Assegura que quando a sidebar estiver collapse-state o logo na tela "configurações gerais da sua empresa" não suma,
+// já que somente o logo dentro da sidebar deve ficar invisível neste caso. 
+#resale-logo #logo-dealer {
+    display: block !important;
+    background-color: @alto;
+}
+
+.treeview-menu>li>a {
+    padding: 5px 5px 5px 32px !important;
+}
+
+.label-wayy {
+    background-color: @danube;
+    padding: .3em .3em .3em .3em !important;
+    min-width: 18px;
+}
+
+.label-leaf {
+    margin-top: 2.4px;
+    margin-right: 0 !important; // Centraliza com a flexinha do menu pai
+}
+
+.label-leaf-with-labelFeature {
+    margin-top: 2.4px;
+    margin-right: 1px !important; //Vai com imporant mesmo, culpem a lib
+}
+
+// Labels filhos
+.treeview-menu>.label-wayy {
+    margin-top: 8px;
+}
+
+// Container de labels para o menus pais (Quando há vários quantificadores)
+.label-wayy-container>.label-wayy:last-of-type {
+    margin-right: 4px;
+}
+
+#SupportTicketsWithoutResponsibleLabelAmountRoot,
+#SupportTicketsWithoutResponsibleLabelAmountLeaf {
+    background-color: @whiskey;
+}
+
+// Remove "labels quantificadores" do menu pai quando o mesmo estiver aberto.
+.treeview.menu-open > a .label-wayy-container .label-wayy {
+    display: none;
+}
+
+.sidebar-mini.sidebar-collapse .label-wayy {
+    display: block;
+}
+
+// Label amarelo
+.new-feature {
+    margin-top: 2px;
+    margin-right: 0 !important;
+    background-color: @whiskey;
+    height: 17px;
+    line-height: 13px;
+    font-size: 8px;
+}
+
+.beta-feature {
+    .new-feature;
+    font-size: 9px;
+    margin-left: 3px;
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+        margin-left: 1px;
+    }
+}
+
+.new-feature-with-submenu {
+    background-color: @whiskey;
+    height: 17px;
+    line-height: 13px;
+    font-size: 8px;
+}
+
+
+.beta-feature-with-submenu {
+    .new-feature-with-submenu;
+    font-size: 9px;
+}
+
+.sidebar-menu > li > ul > .label {
+    margin-right: 21px;
+    margin-top: 6px;
+}
+
+.sidebar-menu li> a > .submenu-right {
+    margin-right: 0px;
+}
+
+.sidebar-menu > li > label {
+    margin-right: 21px;
+}
+
+.treeview-menu > .amount-icon-right {
+    margin-top: 6px;
+}
+
+.treeview-menu {
+
+    .treeview-menu-multi-level {
+        padding-left: 0;
+
+        .multi-level-label{
+            margin-left: 20px;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+﻿@import "../../shared/shared-module.less";
+//=============================================================
+//------------------------- Global ----------------------------
+//=============================================================
+body {
+  line-height: unset;
+  font-family: Segoe UI;
+  color: @tundora;
+  font-size: @font-size !important;
+  font-weight: @font-weight !important;
+}
+
+.content-wrapper {
+  background-color: @gallery;
+  padding-right: @padding-base !important;
+  padding-bottom: 50px;
+  overflow-x: auto;
+}
+
+.content-header {
+  padding: 0 !important;
+  margin-top: @padding-base + 5px;
+  margin-bottom: @padding-base - 15px;
+  padding-left: @padding-base + 10px !important;
+}
+
+.content-wrapper > .container-fluid {
+  padding-left: 35px !important;
+  padding-right: 0 !important;
+}
+
+// Bootstrap zueirinho embassa com o alinhamento se usar row dentro do container-wrapper
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+// Quebra linha quando um texto qualquer atingir a largura máxima. 
+// Porém, nunca irá quebrar uma palavra ao meio. Deste modo a palavra será jogada para a próxima linha.
+// | Esse texto irá exemplificar como essa regra   |
+// | funciona
+.line-break {
+  overflow-wrap: break-word;
+}
+
+// Quebra linha quando um texto qualquer atingir a largura máxima. 
+// No entanto, irá quebrar uma palavra se necessário. 
+// | Esse texto irá exemplificar como essa regra fu|
+// | nciona
+.word-break {
+  word-break: break-all;
+}
+
+.no-display {
+  display: none;
+}
+
+.hidden-visibility {
+  visibility: hidden;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.horizontal-align {
+  display: flex;
+  justify-content: center;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap; // quebrar linha quando ocupar 12 colunas
+}
+
+.silver-chalice{
+  color: @silver-chalice;
+}
+
+.red{
+    color: red;
+}
+
+#newPrinterDialog,
+#printerCadastreConfirmationDialog {
+  max-width: 815px !important;
+}
+
+#messageNoCustomersAddAcount {
+  background-color: @light-yellow;
+  border-color: @buttercup;
+  border-left: 3px solid;
+  padding: 0 0 0 20px;
+}
+
+#messageValidationLogonName > span {
+  float: left;
+}

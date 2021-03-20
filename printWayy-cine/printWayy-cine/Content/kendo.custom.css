@@ -1,0 +1,676 @@
+﻿.k-grid-header .k-header {
+    font-weight: bold !important;
+    background-color: #B5C8D7;
+    vertical-align: middle !important;
+}
+
+.gray-header .k-grid-header .k-header {
+    background-color: #f5f5f5;
+}
+
+.gray-header.white-grid .k-grid-header .k-header {
+    background-color: #f5f5f5 !important;
+}
+
+.k-footer-template td {
+    font-weight: bold;
+    background-color: #0d4f6f;
+    color: white;
+}
+
+.k-state-selected {
+    color: #fff !important;
+}
+
+.k-grid tr.k-state-selected {
+    background-color: #264E82 !important;
+}
+
+.k-link .icon {
+    margin-right: 10px;
+    margin-top: 2px;
+    font-size: 1.5em;
+}
+
+    .k-link .icon.icomoon {
+        font-size: 1.2em;
+    }
+
+.k-button .icon {
+    margin-right: 5px;
+    font-size: 1.5em;
+}
+
+    .k-button .icon.entypo {
+        font-size: 2.6em;
+        position: relative;
+        top: -8px;
+        line-height: 1px;
+    }
+
+#myAccountMenu .k-button .icon.fontawesome {
+    font-size: 1.2em;
+}
+
+.k-button.small-button {
+    padding: 0 5px;
+}
+
+    .k-button.small-button .icon {
+        font-size: 1.1em;
+    }
+
+.k-button:focus {
+    color: rgb(20, 51, 69) !important;
+    border-color: #dbdbdb !important;
+}
+
+    .k-button:focus:hover {
+        color: white !important;
+    }
+
+.k-button.button-icon:active, .k-button.button-icon:focus {
+    box-shadow: none !important;
+    color: rgb(20, 51, 69) !important;
+}
+
+.smallgrid .k-header {
+    padding: .1em .6em !important;
+}
+
+.smallgrid .k-grid-pager {
+    font-size: .9em;
+}
+
+.smallgridbody tbody {
+    font-size: .9em;
+}
+
+.k-window {
+    border: 3px solid #DCE5EC !important;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    max-width: 96%;
+}
+
+.k-window-title {
+    font-size: inherit;
+}
+
+.k-window-titlebar {
+    background-color: #B5C8D7;
+    color: #143345;
+    font-weight: bold;
+    border-color: #DCE5EC;
+    padding: .4em 0;
+}
+
+.k-window-content {
+    background-color: #eeeeee;
+}
+
+.smallmenu .k-item > .k-link {
+    padding: .1em .8em .2em;
+}
+
+.k-menu.timeline-menu {
+    background-color: transparent;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    border: none;
+}
+
+.timeline-menu .k-item {
+    border: none !important;
+}
+
+    .timeline-menu .k-item .icon {
+        margin-right: 3px;
+    }
+
+.formAlignTable .k-numerictextbox, .formAlignTable .k-datepicker {
+    padding: 0;
+}
+
+.k-tabstrip {
+    border: none;
+    background-color: transparent;
+}
+
+.k-tabstrip-items .k-item.k-state-default:not(.k-state-hover) {
+    background-color: white;
+}
+
+.k-tabstrip-scrollable .k-tabstrip-items {
+    overflow: visible;
+}
+
+.grid-menu > .k-item {
+    border-width: 1px !important;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+    .grid-menu > .k-item.k-last {
+        margin-right: 0px;
+    }
+
+.right .k-menu:after {
+    display: none;
+}
+
+.k-widget.k-tabstrip.tabstrip-vertical {
+    padding-left: 260px;
+    position: static;
+}
+
+    .k-widget.k-tabstrip.tabstrip-vertical > ul.k-tabstrip-items {
+        left: 108px;
+        position: absolute;
+    }
+
+        .k-widget.k-tabstrip.tabstrip-vertical > ul.k-tabstrip-items > li.k-item {
+            display: block;
+            background: transparent;
+        }
+
+            .k-widget.k-tabstrip.tabstrip-vertical > ul.k-tabstrip-items > li.k-item.k-state-active {
+                border-right-color: #fff;
+                border-right-width: 1px;
+            }
+
+.k-tabstrip.tabstrip-vertical > .k-content {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 15px 15px 15px 38px;
+}
+
+.k-tabstrip.tabstrip-vertical > .k-tabstrip-items {
+    padding: 0;
+}
+
+.tabstrip-vertical > .k-tabstrip-items .k-item {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tabstrip-vertical > .k-tabstrip-items .k-link {
+    padding: 16px 10px;
+    border: none;
+    border-bottom: 1px solid #b5c8d7;
+    width: 238px;
+    background: #b5c8d7;
+    background: -moz-linear-gradient(top, #b5c8d7 0%, #bacad6 0%, #dce5ec 18%, #dce5ec 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b5c8d7), color-stop(0%,#bacad6), color-stop(18%,#dce5ec), color-stop(100%,#dce5ec));
+    background: -webkit-linear-gradient(top, #b5c8d7 0%,#bacad6 0%,#dce5ec 18%,#dce5ec 100%);
+    background: -o-linear-gradient(top, #b5c8d7 0%,#bacad6 0%,#dce5ec 18%,#dce5ec 100%);
+    background: -ms-linear-gradient(top, #b5c8d7 0%,#bacad6 0%,#dce5ec 18%,#dce5ec 100%);
+    background: linear-gradient(to bottom, #b5c8d7 0%,#bacad6 0%,#dce5ec 18%,#dce5ec 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5c8d7', endColorstr='#dce5ec',GradientType=0 );
+    -moz-transition: all linear .1s;
+    -o-transition: all linear .1s;
+    -webkit-transition: all linear .1s;
+    transition: all linear .1s;
+}
+
+    .tabstrip-vertical > .k-tabstrip-items .k-link:hover {
+        background: #b5c8d7;
+    }
+
+.tabstrip-vertical > .k-tabstrip-items .k-item:hover {
+    background: none;
+}
+
+.tabstrip-vertical > .k-tabstrip-items .k-item.k-state-active .k-link {
+    background: url(images/tab-bg.png) no-repeat;
+    width: 263px;
+    border: none;
+}
+
+.tabstrip-vertical > .k-tabstrip-items .k-loading {
+    display: none;
+}
+
+.k-popup .k-item:nth-child(2n+1):not(.k-state-hover):not(.k-state-selected) {
+    background: #f5f5f5;
+    color: #444;
+}
+
+.k-grid {
+    -ms-word-break: break-all;
+    word-break: break-word;
+}
+
+    .k-grid.k-grid-display-block {
+        display: table;
+        width: 100%;
+    }
+
+.k-dropdown .k-state-focused .k-input, .k-button:focus, .k-dropzone .k-state-focused {
+    color: white;
+}
+
+.dropdown-header > span {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    border: none;
+    padding: .3em .8em .3em .4em;
+    background-color: #b5c8d7;
+    font-weight: bold;
+}
+
+.k-item > .multicolumn-dropdown-item > span {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    padding: .2em 0 0 .4em;
+    -ms-word-break: break-all;
+    word-break: break-word;
+}
+
+span.k-tooltip {
+    position: relative;
+}
+
+.k-grid .input-validation-error {
+    border-color: #dadada;
+    background-color: white;
+}
+
+    .k-grid .input-validation-error.k-textbox:hover {
+        border-color: #264E82;
+    }
+
+.k-chart-tooltip {
+    z-index: 100000;
+}
+
+.dontclear-grid-pager .k-grid-pager {
+    clear: inherit;
+}
+
+.k-notification-sucess {
+    background: rgba(0%,60%,0%,.9) !important;
+    color: #fff;
+    border: none;
+}
+
+.k-menu:after {
+    overflow: hidden;
+    clear: none;
+}
+
+#ticketTabs .k-content {
+    overflow: hidden;
+}
+
+/*bug 900 para o IE*/
+#ticketTabs > div {
+    width: 635px;
+}
+
+form.k-filter-menu {
+    min-width: 184px;
+    font-weight: normal !important;
+}
+
+.k-grid.white-grid .k-alt {
+    background-color: transparent !important;
+}
+
+.k-grid.white-grid td {
+    border-width: 1px 0 0 1px;
+}
+
+.k-grid.custom-footer .k-footer-template td {
+    padding: 0;
+    background-color: #F5F5F5 !important;
+    color: inherit;
+}
+
+.k-grid.custom-footer .k-footer-template div {
+    padding: .4em .6em;
+    border-top: 1px solid #DBDBDB;
+}
+
+.k-grid .k-footer-template td.no-left-border {
+    border-left-width: 0;
+}
+
+.k-grid .k-footer-template div.left-border {
+    border-left: 1px solid #DBDBDB;
+}
+
+.k-grid .k-footer-template div.thicker-top-border {
+    border-top: 2px solid #a5a5a5;
+}
+
+.k-vertical-calendar {
+    display: flex;
+    width: 700px;
+    height: 28px;
+}
+
+    .k-vertical-calendar .k-calendar .k-meta-view .k-link {
+        padding: 0 !important;
+    }
+
+    .k-vertical-calendar .k-header {
+        height: 28px;
+        width: 100px;
+        background-color: #DBDBDB;
+    }
+
+    .k-vertical-calendar .k-header .k-nav-fast {
+        pointer-events: none;
+        margin: 3px 0 0 0;
+    }
+
+    .k-vertical-calendar table {
+        height: 32px !important;
+        width: 600px !important;
+    }
+
+        .k-vertical-calendar table tbody {
+            display: flex;
+        }
+
+            .k-vertical-calendar table tbody tr {
+                display: table-cell;
+            }
+
+                .k-vertical-calendar table tbody tr td {
+                    width: 50px;
+                    border: 1px solid #D3D3D3;
+                }
+
+                    .k-vertical-calendar table tbody tr td a {
+                        padding: 0;
+                    }
+
+.k-calendar .k-calendar-view{
+    height: auto;
+}
+
+textarea.k-input {
+    padding-left: .571em;
+    padding-right: .571em;
+}
+
+/*#region Configurações da caixa de filtro dos grids*/
+.txt-filter:hover .k-icon {
+    color: white;
+}
+
+.txt-filter input {
+    padding-bottom: 0.2em;
+}
+
+/*#region Configurações para k-maskedtextbox utilizado junto com o money*/
+
+.k-maskedtextbox.money, .k-maskedtextbox.money2 {
+    border-width: 1px;
+    padding: unset;
+}
+
+/*Cofigurações específicas do IE*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .k-maskedtextbox.money, .k-maskedtextbox.money2 {
+        padding: 0;
+    }
+
+    .k-ie input.k-textbox.FixedCost {
+        height: 2em;
+    }
+
+    .k-button.button-icon {
+        min-width: 0 !important;
+    }
+}
+
+/*#region Estilos customizados para o Report Viewer Telerik Html5 */
+
+.trv-side-menu {
+    background-color: #eee;
+}
+
+.trv-content-wrapper {
+    background-color: #eeeeee;
+}
+
+.trv-menu-large {
+    border-radius: 5px 5px 0 0;
+    background-color: #eeeeee;
+}
+
+.trv-menu-small {
+    border-radius: 5px 5px 0 0;
+    background-color: #eeeeee;
+}
+
+.trv-side-menu li a:hover {
+    color: white !important;
+}
+
+.trv-document-map, .trv-parameters-area {
+    display: none !important;
+}
+
+.trv-pages-area {
+    left: .1em !important;
+}
+
+/*#endregion */
+
+/* Reescreve estilo padrão do kendozinho */
+
+
+.k-checkbox-label {
+    display: inline-block;
+    width: 100%;
+    line-height: 10px; /* Centraliza label com o checkbox */
+}
+
+
+.k-checkbox + label:before {
+    content: "\2714" !important;
+    font-size: 8px !important;
+    line-height: 8.3px !important;
+    font-weight: bold !important;
+    text-indent: -0.05px !important;
+    font-family: FontAwesome !important;
+    border: 2px solid #264d81 !important;
+    color: transparent !important;
+    display: inline-block !important;
+    width: 7px !important;
+    height: 7px !important;
+    margin-right: 0.9em !important;
+    margin-bottom: 2.2px !important;
+    vertical-align: bottom !important;
+    -moz-transition: .2s;
+    -o-transition: .2s;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+.k-checkbox + label:active:before {
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.k-checkbox:disabled + label:before {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    border-color: #dbdbdb !important;
+}
+
+.k-checkbox:checked:disabled + label:before {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    border-color: #dbdbdb !important;
+    background-color: transparent !important;
+}
+
+.k-checkbox:checked + .k-checkbox-label:before {
+    text-indent: -0.1px;
+    line-height: 8px;
+    height: 8px;
+    width: 8px;
+    content: "\2714" !important;
+    border: 2px solid #dbdbdb !important;
+    background-color: #264d81 !important;
+    border-color: #264d81 !important;
+    color: #ffffff !important;
+    vertical-align: bottom;
+}
+
+.k-checkbox:disabled + .k-checkbox-label:before {
+    border: 2px solid #dbdbdb !important;
+    border-color: #264d81 !important;
+    content: '';
+}
+
+@supports (-ms-ime-align: auto) {
+    .k-checkbox:not(:checked) + .k-checkbox-label:before {
+        font-size: 0;
+        height: 0;
+        width: 0;
+        content: "" !important;
+        color: transparent !important;
+    }
+
+    .k-checkbox:checked + .k-checkbox-label:before {
+        line-height: 8px;
+        height: 8px;
+        width: 8px;
+        content: "\2713" !important;
+        border: 2px solid #dbdbdb !important;
+        background-color: #264d81 !important;
+        border-color: #264d81 !important;
+        color: #ffffff !important;
+        vertical-align: bottom;
+    }
+    /* ------------------ Parque completo de Impressoras (Grid checkboxes) ------------------ */
+    .grid-checkbox-div {
+        margin-left: 5px;
+    }
+
+        .grid-checkbox-div:first-of-type {
+            margin-left: 0;
+        }
+
+    .label-always-visible {
+        display: unset !important;
+        visibility: visible !important;
+    }
+    /*Edge*/
+    @supports (-ms-ime-align:auto) {
+        .label-always-visible {
+            margin-bottom: 10px;
+            display: inline-block !important;
+        }
+    }
+
+    .grid-checkbox-div > input[type='checkbox']:not(:checked), .grid-checkbox-div > input[type='checkbox']:checked {
+        margin-left: -15px !important;
+    }
+
+    .grid-checkbox-span {
+        position: relative;
+        bottom: 4px;
+        right: 6px;
+    }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+    /* ------------------ Parque completo de Impressoras (Grid checkboxes) ------------------ */
+    .grid-checkbox-div {
+        margin-left: 5px;
+    }
+
+        .grid-checkbox-div:first-of-type {
+            margin-left: 0;
+        }
+
+    .label-always-visible {
+        display: inline !important;
+        visibility: visible !important;
+    }
+
+    .grid-checkbox-div > input[type='checkbox']:not(:checked), .grid-checkbox-div > input[type='checkbox']:checked {
+        margin-left: -15px;
+    }
+
+    .grid-checkbox-span {
+        position: relative;
+        bottom: 4px;
+        right: 6px;
+    }
+}
+
+li.k-state-disabled .k-link {
+    color: #a9a9a9 !important;
+}
+/*Deve refletir as configurarações da classe k-i-warning, 
+    onde a classe k-i-warning é aplicada em validações do lado do client
+    e a classe k-warning em validações que retornaram do servidor*/
+.k-warning {
+    vertical-align: text-top;
+    margin-right: 3px;
+}
+
+/* Regras para os elementos de Upload */
+div.k-upload .k-warning::before {
+    content: "\e403";
+}
+
+div.k-upload .k-file-invalid .k-file-name-invalid {
+    color: #ed3b0e !important;
+}
+
+div.k-upload .k-file-success .k-file-name, .k-file-success .k-upload-pct {
+    color: #70bc37 !important;
+}
+
+div.k-upload .k-i-x:before {
+    color: black;
+    content: '\e11b' !important;
+}
+
+div.k-upload .k-file-validation-message {
+    color: black;
+}
+
+div.k-upload .k-upload-files .k-upload-status {
+    opacity: 1;
+}
+
+div.k-upload .k-upload-action {
+    opacity: 1;
+}
+
+    div.k-upload .k-upload-action:hover {
+        border-color: black;
+    }
+
+div.k-upload .k-button.k-upload-action:hover {
+    border: 1px solid black;
+}

@@ -1,0 +1,70 @@
+﻿.fa-user {
+  visibility: hidden;
+}
+.fontawesome.box {
+  border: none;
+}
+.dropdown-menu > li > a > .fa {
+  margin-right: 2px !important;
+}
+.backup-printer-icon {
+  z-index: 1;
+  position: absolute;
+  margin-top: 9px;
+  margin-left: -14px;
+  font-size: .675em;
+  color: #000000;
+}
+.k-i-arrow-60-down:before {
+  content: "\e015";
+  font-weight: 100;
+}
+.k-i-arrow-60-down:before:hover {
+  background-color: #3770bc;
+}
+.k-i-arrow-60-up:before {
+  content: "\e013";
+  font-weight: 100;
+}
+.k-i-arrow-60-up:before:hover {
+  background-color: #3770bc;
+}
+.raphael {
+  color: #264d81;
+}
+.raphael.k-state-border-down {
+  background: none !important;
+}
+#stockSettingsTab,
+#resaleGeneralSettingsTab,
+#emailSettingsTab {
+  margin-top: 10px;
+}
+#emailSettingsTab .k-content,
+#resaleGeneralSettingsTab .k-content,
+#stockSettingsTab .k-content,
+#genericReportFiltersTab .k-content {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+#emailSettingsTab .k-tabstrip-items {
+  background-color: #eeeeee;
+}
+.fiori .k-tabstrip.k-header {
+  background-color: transparent !important;
+}
+#genericReportFiltersTab .k-content {
+  background-color: #ffffff;
+  width: auto !important;
+}
+#genericReportFiltersTab .k-tabstrip-items .k-item .k-link {
+  font-size: 21px;
+  padding: 0 0 9px 0;
+}
+#genericReportFilterColumnsSelected {
+  width: 100%;
+}
+#genericReportFiltersTab-2 {
+  width: 805px;
+}

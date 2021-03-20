@@ -1,0 +1,81 @@
+﻿//@import "../../shared/shared-module.less";
+
+//=============================================================
+//----------------------- Nav-Header --------------------------
+//=============================================================
+
+.skin-wayy .main-header .navbar {
+    background-color: @azure;
+    max-height: 50px;
+
+    &.no-printwayy-logo {
+        margin-left: 0;
+    }
+
+    .nav > li {
+
+        &.navbar-separator {
+            background-color: @white;
+            width: 1px;
+            height: 36px;
+            margin-top: 7px;
+            margin-left: 15px;
+        }
+
+        > a {
+            color: @white;
+        }
+    }
+}
+
+.skin-wayy .main-header .navbar .nav > li > a:hover,
+.skin-wayy .main-header .navbar .nav > li > a:active,
+.skin-wayy .main-header .navbar .nav > li > a:focus,
+.skin-wayy .main-header .navbar .nav .open > a,
+.skin-wayy .main-header .navbar .nav .open > a:hover,
+.skin-wayy .main-header .navbar .nav .open > a:focus,
+.skin-wayy .main-header .navbar .nav > .active > a {
+    background: @indigo;
+    color: @white;
+}
+
+.skin-wayy .main-header .navbar .sidebar-toggle {
+    color: @white;
+    padding: 16px;
+    transition-duration: 0.3s;
+
+    &:hover{
+        color: @wild-sand;        
+    }
+}
+
+.skin-wayy.sidebar-collapse .main-header .navbar .sidebar-toggle {
+    transform: rotate(90deg);
+}
+
+.skin-wayy .main-header .logo {
+    color: @white;
+    .border(0, solid, @transparent, bottom);
+    background-color: @indigo;
+    &:hover{
+        background-color: @indigo;
+    }
+}
+
+.skin-wayy .content-header {
+    background: @transparent;
+}
+
+.skin-wayy .wrapper{
+    background-color: @gallery;
+    overflow-y: hidden;
+}
+
+.skin-wayy .user-panel > .info,
+.skin-wayy .user-panel > .info > a {
+    color: @white;
+}
+
+.skin-wayy > .navbar-nav>li>a{
+    padding-top: unset !important;
+}

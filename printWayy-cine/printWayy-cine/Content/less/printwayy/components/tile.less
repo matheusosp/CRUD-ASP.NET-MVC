@@ -1,0 +1,203 @@
+﻿.tile {
+    background-color: @white;
+    color: @tundora;
+    width: 110px;
+    height: 100px;
+    position: relative;
+    display: inline-table;
+    padding: 0 9px 10px 9px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px @silver;
+    border-left: 4px solid @wild-sand;
+}
+
+.tile-number {
+    font-size: 2.7em;
+}
+
+.tile-description {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+.tile-chart {
+    display: inline-block;
+    height: 100px;
+    vertical-align: top;
+    background-color: white;
+    padding: 5px 3px 5px 0;
+    box-shadow: 1px 1px 1px @silver;
+}
+
+.dashboard-tiles>a:hover {
+    color: @tundora;
+}
+
+.dashboard-tiles .tile {
+    margin-bottom: 15px;
+}
+
+.dashboard-tiles .tile .tile-description {
+    left: 9px;
+    right: 9px;
+}
+
+.big-tile {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.big-tile .tile {
+    margin-right: 0 !important;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 2px 0 0 @white, 1px 1px 1px @silver;
+}
+
+.big-tile .tile-chart:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.dashboard-tiles a:last-child {
+    margin-right: 0;
+}
+
+.supply-tile {
+    background-color: @azure;
+    color: @white;
+    width: 162px;
+    height: 45px;
+    position: relative;
+    display: inline-table;
+    padding: 5px;
+    margin-right: 5px;
+    margin-bottom: 4px;
+}
+
+.exchange-timeline-tile {
+    background-color: @azure;
+    color: @white;
+    width: 114px;
+    height: 45px;
+    position: relative;
+    display: inline-table;
+    padding: 5px;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+.supply-tile-number {
+    font-size: 1.7em;
+}
+
+.supply-tile-description {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    font-size: 11px;
+}
+
+// -----------------------------------------------------------------
+// --------------- "Cards/Tiles" da tela de chamados ---------------
+// -----------------------------------------------------------------
+.ticket-link:hover {
+    color: @tundora;
+}
+
+.ticket-box {
+    background-color: @white;
+    box-shadow: 0 0 1px @silver;
+    margin: 2px 2px 5px 2px;
+    position: relative;
+    height: 75px;
+    border-radius: 5px;
+}
+
+.ticket-color-bar {
+    width: 6px;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px 0 0 5px;
+}
+
+.ticket-box-content {
+    padding: 2px 4px 4px 11px;
+    position: relative;
+}
+
+.ticket-box-title,
+.ticket-box-customer,
+.ticket-box-responsible {
+    position: absolute;
+    left: 10px;
+    right: 4px;
+}
+
+.ticket-box-title {
+    top: 3px;
+}
+
+.ticket-box-customer {
+    top: 21px;
+}
+
+.ticket-box-sla {
+    position: absolute;
+    top: 39px;
+    left: 10px;
+    right: 4px;
+    display: table-row;
+}
+
+.ticket-box-sla.ticket-box-sla-timedout {
+    background-color: @pippin;
+    border: 1px solid @cosmos;
+    border-radius: 3px;
+}
+
+.ticket-box-sla-clock {
+    display: table-cell;
+    padding-right: 4px;
+    font-size: 1.2em;
+}
+
+.ticket-box-sla-bar-wrapper {
+    display: table-cell;
+    width: 100%;
+}
+
+.ticket-box-sla-bar {
+    height: 8px;
+    border: 1px solid @silver;
+}
+
+.ticket-box-sla-text {
+    display: table-cell;
+    padding-left: 4px;
+}
+
+.ticket-box-sla-timedout .ticket-box-sla-text {
+    color: red;
+    font-weight: bold;
+}
+
+.ticket-box-no-sla .ticket-box-sla-text {
+    color: @dusty-gray;
+}
+
+.ticket-box-responsible {
+    top: 57px;
+    text-align: right;
+    color: @dusty-gray;
+}
+
+// -----------------------------------------------------------------
+// --------------- "Cards/Tiles" da tela de alertas ----------------
+// -----------------------------------------------------------------
+.alert-group-items>a:hover {
+    color: @tundora;
+}

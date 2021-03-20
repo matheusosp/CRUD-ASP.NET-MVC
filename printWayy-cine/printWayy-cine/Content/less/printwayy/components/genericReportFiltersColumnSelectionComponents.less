@@ -1,0 +1,109 @@
+﻿@import "../../shared/shared-module.less";
+
+.reportColumnsContent, .subColumnRow {
+    display: flex;
+}
+
+.reportColumnsContent .contentBox {
+    width: 450px;
+    height: 500px;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.reportColumnsContent .lineSeparator {
+    border: 0.5px solid @black;
+}
+
+.k-ff .reportColumnsContent .lineSeparator {
+    border-left: none;
+}
+
+.reportColumnsContent .contentBox, .reportColumnsContent .lineSeparator {
+    margin: 0 5px;
+}
+
+.reportColumnsSelectionTitle {
+    font-weight: bold;
+    font-size: 12px;
+    padding: 2.5px;
+}
+
+.availableColumnsTitle {
+    background-color: @alto;
+    color: @tundora;
+    border-bottom: 1px solid @black;
+}
+
+.reportColumnsTitle {
+    background-color: @light-link-water;
+    color: @azure;
+    border-bottom: 1px solid @azure;
+}
+
+.columnsSelected, .noColumnsSelected, .columnCategory {
+    margin: 10px 0;
+}
+
+.categoryContent {
+    display: none;
+}
+
+.columnCategoryItem {
+    border: 1px solid @tundora;
+    width: 120px;
+    min-width: 120px;
+    text-align: center;
+    padding: 5px 0;
+    margin: 5px;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.columnCategoryItem:active, .columnCategoryItemSelected {
+    color: @indigo;
+    background-color: @link-water;
+    font-weight: bold;
+    border: 1px solid @indigo;
+}
+
+.desactivatedIcons {
+    color: @alto;
+}
+
+.categoryDisplayName, .activadedIcons, .noColumnsSelected {
+    color: @silver-chalice;
+}
+
+.columnSelectedRow {
+    margin: 5px 0;
+}
+
+.subColumnsOfColumnSelected, .subColumnsGrouped {
+    margin: 5px 0 10px 22.5px;
+}
+
+.subColumnGroup span, .subColumnGroupSelected span {
+    margin-right: 5px;
+}
+
+.subColumnRowGroup {
+    margin-left: 15px;
+}
+
+.subColumnRowInputDiv {
+    width: 20px;
+}
+
+.subColumnRowInputDivDescription {
+    width: 200px;
+}
+
+.subColumnsGroupsDivSelected {
+    margin: 5px 0 10px 0;
+}

@@ -1,0 +1,72 @@
+﻿.fa-user {
+  visibility: hidden;
+}
+.fontawesome.box {
+  border: none;
+}
+.dropdown-menu > li > a > .fa {
+  margin-right: 2px !important;
+}
+.backup-printer-icon {
+  z-index: 1;
+  position: absolute;
+  margin-top: 9px;
+  margin-left: -14px;
+  font-size: .675em;
+  color: #000000;
+}
+.k-i-arrow-60-down:before {
+  content: "\e015";
+  font-weight: 100;
+}
+.k-i-arrow-60-down:before:hover {
+  background-color: #3770bc;
+}
+.k-i-arrow-60-up:before {
+  content: "\e013";
+  font-weight: 100;
+}
+.k-i-arrow-60-up:before:hover {
+  background-color: #3770bc;
+}
+.raphael {
+  color: #264d81;
+}
+.raphael.k-state-border-down {
+  background: none !important;
+}
+.firstInput .k-picker-wrap,
+.conditionDateValueInput .k-picker-wrap,
+.conditionDateTimeValueInput .k-picker-wrap {
+  border-left: none;
+}
+.conditionBetweenDateValueInput .k-select,
+.conditionDateValueInput .k-select,
+.conditionDateTimeValueInput .k-select,
+.conditionBetweenDateTimeValueInput .k-select {
+  border-right: 1px solid #dbdbdb;
+  width: 35px !important;
+}
+.conditionBetweenDateValueInput,
+.conditionBetweenDateTimeValueInput {
+  width: 203.5px !important;
+}
+.conditionDateValueInput,
+.conditionDateTimeValueInput {
+  width: 424px !important;
+}
+.conditionDateTimeValueInput .k-select .k-link,
+.conditionBetweenDateTimeValueInput .k-select .k-link {
+  margin: 0 1px !important;
+}
+.k-ff .conditionDateTimeValueInput .k-select .k-link,
+.k-ff .conditionBetweenDateTimeValueInput .k-select .k-link {
+  margin: 0 0.25px !important;
+}
+.conditionDateTimeValueInput .k-picker-wrap .k-icon,
+.conditionBetweenDateTimeValueInput .k-picker-wrap .k-icon {
+  margin: 0 !important;
+}
+.conditionBetweenDateTimeValueInput .k-picker-wrap {
+  background-color: #ffffff !important;
+}

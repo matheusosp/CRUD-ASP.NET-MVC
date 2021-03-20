@@ -1,0 +1,35 @@
+﻿//@import "../../shared/shared-module.less";
+// --------------------- Botão de pesquisa ---------------------- // 
+.search-container {
+    margin-top: 3px;
+    display: inline-block;
+}
+
+.search-container>span.txt-filter {
+    margin-bottom: 2px;
+}
+
+.txt-filter {
+    border-color: @azure  !important;
+    .border(1px, solid, @azure, bottom) !important;
+    .border(1px, solid, @azure, top);
+    .border(1px, solid, @azure, right);
+    .border(3px, solid, @azure, left);
+    &:hover {
+        background: @indigo;
+        border-color: @indigo;
+    }
+    input.txt-filter {
+        cursor: default;
+        background: @white  !important;
+        height: 26px !important;
+        border-bottom: none !important;
+    }
+}
+.quick-action-button{
+    background-color:#fff;
+    border: none;
+}
+.quick-action-button:focus {
+    outline: none;
+}

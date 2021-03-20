@@ -1,0 +1,19 @@
+﻿.border (@size, @type, @color, @side: all) when (@side = all) {
+   border: @size @type @color;
+}
+
+.border (@size, @type, @color, @side: all) when (@side = top) {
+   border-top: @size @type @color;
+}
+
+.border (@size, @type, @color, @side: all) when (@side = left) {
+   border-left: @size @type @color;
+}
+
+.border (@size, @type, @color, @side: all) when (@side = bottom) {
+   border-bottom: @size @type @color;
+}
+
+.border (@size, @type, @color, @side: all) when (@side = right) {
+   border-right: @size @type @color;
+}

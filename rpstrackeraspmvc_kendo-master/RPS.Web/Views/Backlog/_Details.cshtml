@@ -1,0 +1,99 @@
+﻿@model RPS.Web.Models.ViewModels.PtItemDetailsVm
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    @Html.HiddenFor(model => model.Id)
+
+    <div class="form-group row">
+        @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-6">
+            @Html.Kendo().TextBoxFor(model => model.Title).HtmlAttributes(new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group row">
+        @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-6">
+            @Html.TextAreaFor(model => model.Description, new { @class = "k-textbox", style = "width: 100%; height: 60px;" })
+            @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group row">
+        @Html.LabelFor(model => model.Estimate, htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-6">
+            @Html.Kendo().SliderFor(model => model.Estimate).Min(0).Max(20).LargeStep(1).HtmlAttributes(new { style="width: 100%;" })
+
+            @Html.ValidationMessageFor(model => model.Estimate, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group row">
+        @Html.LabelFor(model => model.SelectedItemType, htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-6">
+
+            @(Html.Kendo().DropDownListFor(m => m.SelectedItemType)
+                      .BindTo(Model.ItemTypes)
+                      .Value(Model.SelectedItemType.ToString())
+                      .HtmlAttributes(new { style = "width: 100%" })
+                      .Template("<img src='" + Url.Content("~/Content/images/icon_#:data.Text#.png") + "' class='backlog-icon' />" +
+                                "<span>#: data.Text #</span>")
+            )
+
+
+            @Html.ValidationMessageFor(model => model.SelectedItemType, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group row">
+        @Html.LabelFor(model => model.SelectedStatus, htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-6">
+
+            @(Html.Kendo().DropDownListFor(m => m.SelectedStatus)
+                .BindTo(Model.Statuses)
+                .Value(Model.SelectedStatus.ToString())
+                .HtmlAttributes(new { style = "width: 100%" })
+            )
+            @Html.ValidationMessageFor(model => model.SelectedStatus, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group row">
+        @Html.LabelFor(model => model.SelectedPriority, htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-6">
+
+            @(Html.Kendo().DropDownListFor(m => m.SelectedPriority)
+                .BindTo(Model.Priorities)
+                .Value(Model.SelectedPriority.ToString())
+                .HtmlAttributes(new { style = "width: 100%" })
+                .Template("<span class='badge priority-#:data.Text.toLowerCase()#'>#: data.Text #</span>")
+            )
+
+            @Html.ValidationMessageFor(model => model.SelectedPriority, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group row">
+        @Html.LabelFor(model => model.SelectedAssigneeId, htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+        <div class="col-sm-6">
+            @(Html.Kendo().DropDownListFor(m => m.SelectedAssigneeId)
+            .BindTo(Model.Users)
+            .HtmlAttributes(new { style = "width: 100%" })
+            )
+            @Html.ValidationMessageFor(model => model.SelectedAssigneeId, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <div class="offset-sm-2 col-sm-10">
+            <input type="submit" value="Save" class="btn btn-primary" />
+        </div>
+    </div>
+
+}

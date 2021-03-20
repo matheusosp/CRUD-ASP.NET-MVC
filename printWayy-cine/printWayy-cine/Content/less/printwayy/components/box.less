@@ -1,0 +1,232 @@
+﻿//@import "../../shared/shared-module.less";
+.dashboardBox {
+    .box-title {
+        .border(1px, solid, @alto, bottom);
+        background-color: @wild-sand !important;
+        border-radius: unset;
+        color: @tundora !important;
+        font-weight: bold;
+        padding: 5px 10px;
+    }
+
+    .box-content {
+        padding: 5px;
+        background-color: @white;
+        border-top: none;
+    }
+}
+
+.box {
+    .border(1px, solid, @alto);
+
+    .box-title {
+        color: @azure;
+        font-weight: bold;
+        background-color: @link-water;
+        border-radius: 0;
+        padding: 10px;
+    }
+
+    .box-content {
+        background-color: @white;
+        border-color: @alto;
+        padding: 10px;
+    }
+}
+
+// A box de configuração da log pode variar o tamanho portanto a borda deve ficar no box-content
+.resaleGeneralSettingsTab .box {
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+
+    .box-content {
+        .border(1px, solid, @alto, bottom);
+        .border(1px, solid, @alto, left);
+        .border(1px, solid, @alto, right);
+    }
+}
+
+.info-message {
+    color: @white;
+    background-color: @indigo;
+    .border(3px, solid, @azure, left); // Espaçamento com o icone de informação (span contém somente a mensagem, o icone fica na tag "i")
+    span {
+        margin-left: 3px;
+    }
+    // Mudar cor do link já que fundo da box é azul
+    a {
+        color: @white;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
+
+.supply-level-chart-info {
+    width: @info-message-width;
+}
+
+.infobox {
+    background-color: @white;
+    border: none;
+    color: @tundora;
+
+    .box-message {
+        div label {
+            color: @tundora;
+        }
+    }
+    // Box informativas (Azuis)
+    .informative-header {
+        min-height: @header-line-height;
+        background-color: @indigo;
+        color: @white;
+        font-weight: bold;
+
+        p {
+            line-height: @header-line-height;
+            margin-left: 5px;
+            margin-right: 10px;
+            margin-bottom: 0;
+        }
+    }
+    // Box informativas (Azuis)
+    .informative-message {
+        .border(1px, solid, @indigo);
+        padding: 5px;
+    }
+}
+
+// Informative-box por dialog. 
+#newPrinterDialog .informative-box {
+    width: 800px;
+}
+
+// box vermelhas
+.warning-box {
+    background-color: @bizarre;
+
+    .box-message {
+        color: @apple-blossom;
+        .border(3px, solid, @apple-blossom, left);
+        padding: 15px 30px 15px 65px;
+    }
+
+    span {
+        // Icon
+        color: @apple-blossom;
+        top: 10px;
+    }
+}
+
+// Box vermelha (Ex: Pendência de fechamento)
+.errorbox {
+    .box-message {
+        margin-left: 75px;
+        padding-bottom: 8px;
+
+        p {
+            margin-top: 5px;
+        }
+    }
+
+    i {
+        font-size: 18px;
+        top: 18px;
+        left: 15px;
+        position: relative;
+    }
+}
+
+#selectContractPrintersDialog .errorbox .small-box-message {
+    padding-top: 14px;
+}
+
+.simple-dialog-box {
+    max-width: 700px;
+
+    .simple-dialog-box-content {
+        position: relative;
+
+        div{
+            margin-top: 10px;
+        }
+    }
+}
+
+.info-message-yellow {
+    color: @tundora;
+    background-color: @light-yellow;
+    .border(3px, solid, @buttercup, left); // Espaçamento com o icone de informação (span contém somente a mensagem, o icone fica na tag "i")
+    
+    i.fa-exclamation-circle{
+        padding: 0 2px 0 4px;
+    }
+
+    // Mudar cor do link já que fundo da box é azul
+    a {
+        color: @tundora;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
+
+.supply-transaction-messagebox {
+    //border: 1px solid #5A5A5A;
+    border: 1px solid @tundora;
+    padding-right: 15px;
+    border-left: 3px solid @tundora;
+    margin-top: 6px;
+    display: flex;
+
+    .timeline-message-icon {
+        position: relative;
+        top: 10px;
+        margin-left: 15px;
+        color: @light-azure;
+    }
+
+    .exchange-confirmation-message-icon {
+        font-size: 24px;
+        top: auto;
+        margin: 5px;
+        margin-left: 15px;
+        color:@light-azure;
+    }
+
+    .x-small-box-message {
+        padding-left: 20px;
+    }
+}
+
+.add-printer-option-box {
+    width: 735px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #dce5ec;
+    border: 1px solid #b5c8d7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    .radio-button-add-printer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        label{
+            margin-left: 5px;
+        }
+    }
+
+    .help-message {
+        margin-right: 15px;
+    }
+
+    #automaticMonitoringFields {
+        margin: 15px 15px 0px 0px;
+    }
+}

@@ -1,0 +1,577 @@
+﻿.counterDetails {
+    width: 530px;
+}
+
+.counterDetailsInputDiv {
+    display: flex;
+    margin: 10px 0;
+}
+
+.removeInvoices {
+    position: relative;
+}
+
+.removeInvoices .itensFromCustomerDiv {
+    width: 600px;
+    margin: 15px 0;
+}
+
+#unknownSupplyLevelHiddenMessage {
+    margin: 10px;
+    padding: 3px 5px;
+    max-height: 45px;
+}
+
+.columnCategorised {
+    width: 220px;
+}
+
+.columnUncategorised {
+    width: 395px;
+}
+
+.categoryDisplayName {
+    width: 175px;
+}
+
+.columnOrderFilterInfo {
+    width: 45px;
+}
+
+.sceduleReplacement-content-days-radioButton {
+    width: 98%;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 50px;
+
+    .line-radioButtons {
+        width: 90%;
+        height: 3px;
+        position: absolute;
+        background-color: @indigo;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+
+.newScheduleReplacement-msg1-content{
+    display:flex;
+    align-items:center;
+    margin:30px 0px;    
+
+    p{
+        margin: 0;
+    }
+}
+
+.sceduleReplacement-content-supplyType-radioButton{
+    width:30%;
+    justify-content:space-around;
+    margin-bottom: 60px;
+}
+
+#gridNewScheduleReplacementContent {
+    overflow:hidden;
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0px;
+        margin-top: 15px;
+
+        #removeItem {
+            margin-left: 15px;
+        }
+    }
+
+    .grid-content {
+        padding:5px;
+        overflow:hidden;    
+        height:500px;
+    }
+}
+
+.addItem-scheduleReplacement-msg-content{
+    margin: 10px;
+}
+
+.addItem-scheduleReplacement-content {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 8px;
+
+    .align-row-content {
+        margin: 5px;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        padding-right: 50px;
+        padding-left: 10px;
+        height: 40px;
+
+        p {
+            margin: 0;
+        }
+
+        .stockItem-quantity-content {
+            display: flex;
+            width: 250px;
+            justify-content: center;
+        }
+    }
+}
+
+.removeItem-scheduleReplacement-msgs-content{
+    padding: 15px 30px;
+
+    p{
+        margin-bottom: 10px;
+    }
+}
+
+#confirmScheduleReplacement {
+    padding: 0px;
+}
+
+.confirmation-scheduleReplacement-content {
+    height: 87%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+    .img-scheduleReplacement-content {
+        position: absolute;
+
+        img {
+            width: 700px;
+        }
+
+        @media all and (-ms-high-contrast:none), all and (-ms-high-contrast:active) {
+            top: -15px;
+        }
+    }
+
+    .confirm-supply-replacement {
+        position: absolute;
+    }
+
+    .message-top {
+        z-index: 5;
+
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            color: @indigo
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .message-bottom {
+        z-index: 5;
+
+        p {
+            font-size: 18px;
+        }
+    }
+}
+.confirm-supply-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 15px 0px 15px;
+
+
+    .img-scheduleReplacement-content {
+        position: absolute;
+        text-align: center;
+    }
+
+    img {
+        text-align: center;
+        display: block;
+        width: 350px;
+        padding-left: 60px;
+
+        &.confirmed {
+            width: 325px;
+        }
+    }
+
+    .confirm-supply-replacement {
+        position: absolute;
+    }
+
+    .message-top {
+        z-index: 5;
+        text-align: center;
+
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            color: @indigo
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .message-bottom {
+        z-index: 5;
+        text-align: center;
+
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+.confirmation-scheduleReplacement-bottom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.newScheduleReplacement-confirmed-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .img-newScheduleReplacement-confirmed-content {
+        img {
+            margin-top: 50px;
+            width: 500px;
+        }
+    }
+
+    h1{
+        color: @indigo;
+        font-weight: bold;
+    }
+
+    span{
+        font-size: 16px;
+    }
+}
+
+.newScheduleReplacement-error-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .img-newScheduleReplacement-error-content {
+        img {
+            width: 600px;
+        }
+    }
+
+    h1 {
+        color: @tundora;
+        font-weight: bold;
+        font-size: 32px;
+    }
+
+    span {
+        font-size: 16px;
+    }
+}
+
+.confirmed-content-wizard{
+    height: 425px;
+    width: 700px;
+}
+
+.receipt-confirmed {
+    z-index: 5;
+
+    h1 {
+        font-size: 32px;
+        font-weight: bold;
+        color: @indigo;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+.large-content-wizard{
+    height: 600px;
+    width: 1200px;
+}
+
+#scheduleReplacementGrid {
+    #main-grid {
+        height: 650px;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+}
+
+#loading-gif-settings-content {
+    margin-top: 150px;
+    width: 700px;
+
+    #message-loading {
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+    }
+}
+
+.icon-grig-cell {
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+
+    &.color {
+        .icon-cell-1 {
+            color: @yellow;
+        }
+
+        .icon-cell-2 {
+            color: @indigo;
+        }
+
+        .icon-cell-3 {
+            color: @magenta;
+        }
+    }
+
+    &.mono {
+        .icon-cell-1 {
+            color: @black;
+        }
+
+        .icon-cell-2 {
+            color: @medium-gray;
+        }
+
+        .icon-cell-3 {
+            color: @light-gray;
+        }
+    }
+
+    &.unknown {
+        .icon-cell-1, .icon-cell-2, .icon-cell-3 {
+            text-shadow: -1px 0 @medium-gray, 0 1px @medium-gray, 1px 0 @medium-gray, 0 -1px @medium-gray;
+            color: white;
+            font-size: 0.89em;
+        }
+    }
+}
+
+#replacementDetails {
+    padding: 0px;
+
+    #detailsAndPackingListTabs-1 {
+        overflow: hidden;
+        border: none;
+    }
+
+    #replacementDetailsInfo {
+        height: 175px;
+        margin-top: 10px;
+
+        p {
+            display: inline-block;
+        }
+
+        @media screen and (max-width: 1366px) {
+            height: 110px;
+            line-height: 10px;
+            margin-bottom: 12px;
+        }
+    }
+
+    #detailReplacementGrid {
+        height: 100%;
+
+        #main-grid {
+            height: 100%;
+        }
+    }
+}
+
+.replacementDetails-bottom{
+    margin-top: 8px;
+}
+
+.supply-received-menu{
+    margin-top: 15px;
+}
+
+.multi-select-with-border {
+    .k-multiselect {
+        border: 1px solid @alto;
+        border-left: 3.5px solid @alto;
+        width: 579px
+    }
+}
+
+#percentageLevelToConsiderPrematureLabel {
+    width: 102px;
+    display: inline-block;
+    text-align: right;
+}
+
+.end-ie-support-message-content {
+    background-color: @yellow-attention;
+    display: none;
+
+    .end-ie-img {
+        height: 53px;
+        width: 56px;
+        margin: auto;
+        margin-left: 8px;
+    }
+
+    &.end-ie-absolute {
+        position: absolute;
+        z-index: 10000;
+        width: 100%;
+    }
+
+    .end-ie-message {
+        font-size: 1.3em;
+        margin: 10px;
+        width: 100%;
+    }
+
+    .end-ie-x-button {
+        background: none;
+        border: none;
+        margin: 10px 25px 10px 10px;
+        padding: 0;
+        cursor: pointer;
+        font-size: 1.3em;
+    }
+}
+
+
+
+.sent-replacement-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    img {
+        position: absolute;
+        width: 100%;
+    }
+
+    .sent-replacement-top, .sent-replacement-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+    }
+
+    .sent-replacement-top {
+        margin-top: 20px;
+
+        strong {
+            color: @indigo;
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .sent-replacement-bottom {
+        p {
+            font-size: 16px;
+        }
+
+        li {
+            width: 160px;
+            margin: 10px;
+        }
+    }
+}
+
+.sent-confirmed-replacement-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+    img {
+        margin-top: 50px;
+        position: absolute;
+        width: 80%;
+    }
+
+    .sent-confirmed-bottom {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+
+        strong {
+            font-size: 36px;
+            text-align: center;
+            color: @indigo;
+            margin-bottom: 15px;
+        }
+
+        ul{
+            align-self: flex-end;
+            margin-right: 30px;
+        }
+    }
+}
+
+.already-sent-items-content, .not-sent-items-content {
+    margin-bottom: 20px;
+
+    .toLeft {
+        padding-left: 19px;
+    }
+
+    .spanText {
+        display: inline-block;
+        padding-top: 10px;
+    }
+
+    .iconToChange {
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+    }
+
+    .content {
+        max-height: 150px;
+        overflow: auto;
+
+        .ulStyle {
+            list-style-type: none;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.allow-modules-container {
+    display: flex;
+
+    .column-modules {
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

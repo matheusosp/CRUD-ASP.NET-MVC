@@ -1,0 +1,847 @@
+﻿@import "../../shared/shared-module.less";
+
+// Caixa branca do timmy - container principal
+.timmy-box {
+    background-color: @white;
+    height: @timmy-box-height;
+    &:extend(.horizontal-align); // herda regras de alinhamento vertical
+}
+
+// Mensagem "principal" do timmy. Exemplo: "Parabéns! Você encaminhou todos os seus chamados para a equipe técnica".
+.timmy-title {
+    color: @indigo;
+    font-size: @timmy-title-font-size;
+    font-weight: 700;
+    padding-left: 45px;
+    margin-bottom: -10px;
+}
+
+// Mensagem abaixo da timmy-line: geralmente a qual contém um link de redirecionamento
+.timmy-bottom-message {
+    color: @silver-chalice;
+    font-size: @timmy-message-font-size;
+    font-family: @font-family;
+}
+
+.timmy-face, .timmy-line, .timmy-title, .timmy-bottom-message {
+    .text-align(center);
+}
+
+.GrayBehind {
+    opacity: 0.1;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.clip-wrap {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.clip-each {
+    position: relative;
+}
+
+.clip-each:after {
+    content: "";
+    position: absolute;
+    background-color: @white;
+    z-index: -1;
+}
+
+.clip-each,
+.clip-each:after {
+    -webkit-clip-path: polygon(5% 75%, 5% 0, 100% 0, 100% 100%, 5% 100%, 5% 78%, 0 70%);
+    clip-path: polygon(5% 75%, 5% 0, 100% 0, 100% 100%, 5% 100%, 5% 78%, 0 70%);
+}
+
+.border-style-thin {
+    background-color: @indigo;
+}
+
+.border-style-thin:after {
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+}
+
+.bottonTxt {
+    color: @silver-chalice;
+    font-size: 16px;
+    font-family: 'Segoe UI';
+    text-align: center;
+    margin-top: 170px;
+    position: absolute;
+}
+
+.OnTheLeft {
+    font-weight: 500;
+    text-align: left;
+    padding-bottom: 8px;
+    font-family: 'Segoe UI';
+    font-size: 15px;
+    padding-left: 41px;
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+    background-color: @indigo;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+/*=============================REMOVER ESSA CLASSE DAQUI ========================*/
+#receive-supply-grid{
+    margin-top: 0px;
+}
+#main-grid, .flex-centralized {
+    background-color: @white;
+    padding-top: 0px;
+    width: 100%;
+    height: 400px;
+}
+/*==============================================================================*/
+main, .flex-centralized {
+    background-color: @white;
+    padding-top: 150px;
+    width: 100%;
+    height: 400px;
+}
+
+.flex-centralized {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.midText {
+    color: @indigo;
+    font-size: 24px;
+    font-family: 'Segoe UI';
+    padding-left: 60px;
+}
+
+.linkText {
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: @danube;
+}
+
+.dialogTile {
+    color: @indigo;
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+}
+
+.TimmyButton {
+    border: 1px solid transparent;
+    background-color: @danube;
+    border-color: @danube;
+    color: @white;
+    display: block;
+    margin: 5px auto;
+    border-radius: 25px;
+    font-size: 14px;
+    border-width: 3px;
+    outline: none;
+    width: 210px;
+    height: 25px;
+    -moz-transition: all .3s !important;
+    -o-transition: all .3s !important;
+    -webkit-transition: all .3s !important;
+    transition: all .3s !important;
+}
+
+.TimmyButton:hover {
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+.wrapper {
+    position: relative;
+}
+
+.front {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+.behind {
+    -webkit-filter: opacity(0.2) blur(5px);
+    filter: opacity(0.2) blur(5px);
+}
+
+.GrayBehind {
+    -webkit-filter: blur(3px) grayscale(1);
+    -moz-filter: blur(3px) grayscale(1);
+    -ms-filter: blur(3px) grayscale(1);
+    filter: blur(3px) grayscale(1);
+}
+
+.TimmyDialogs {
+    border: 4px solid;
+    border-color: @indigo;
+}
+
+.center {
+    text-align: center;
+}
+
+.MidText {
+    letter-spacing: 0;
+    color: @black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.TimmyDashboard {
+    margin-bottom: 25px;
+    margin-left: 145px;
+    color: @azure;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#secondTxtTimmyDashboard {
+    color: @indigo;
+    font-size: 16px;
+    font-family: 'Segoe UI';
+    font-weight: 700;
+    margin-top: 18px;
+}
+
+#ThirdTxtTimmyDashboard {
+    font-size: 14px;
+    font-family: 'Segoe UI';
+    font-weight: 500;
+    margin-top: 100px;
+}
+
+#ButtonsTimmyDashboard {
+    margin-top: 15px;
+}
+
+.greenTxt {
+    height: 50px;
+    width: 280px;
+    display: inline-block;
+    line-height: 25px;
+    color: @light-green;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.DashButton {
+    width: 240px;
+    height: 30px;
+}
+
+.leftButton {
+    float: left;
+}
+
+.rightButton {
+    float: right;
+}
+
+#disableButton {
+    background-color: @light-gray;
+    border-color:  @light-gray;
+}
+
+.TxtTimmySelect {
+    color: @indigo;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.noUndedrline {
+    text-decoration: none;
+}
+
+/*
+==============================================
+------- Timmy Tickets Without Clients --------
+==============================================
+*/
+
+#timmy-tickets-without-clients-container {
+    height: 550px;
+}
+
+#timmy-tickets-without-clients-container .clip-each {
+    height: 278px;
+    width: 520px;
+    margin-top: 100px;
+}
+
+#timmy-tickets-without-clients-container .timmy-image {
+    margin-top: 180px;
+}
+
+#timmy-tickets-without-clients-container .bottonTxt {
+    margin-top: 385px;
+    margin-left: 70px;
+}
+
+/*
+==============================================
+-------- Timmy Without Open Tickets ----------
+==============================================
+*/
+
+#timmy-without-open-tickets-container .timmy-mid-message {
+    margin-top: 105px;
+    margin-left: 70px;
+    font-weight: 500;
+    color: @black;
+}
+
+#timmy-without-open-tickets-container .timmy-bottom-message {
+    margin-top: 135px;
+    margin-left: 70px;
+}
+
+#timmy-without-open-tickets-container .timmy-title {
+    margin-top: 60px;
+}
+
+#timmy-without-open-tickets-container .timmy-title .dialogTile {
+    padding: 0;
+    margin-bottom: -10px;
+    margin-left: 40px;
+}
+
+#timmy-without-open-tickets-container .timmy-title .timmy-line {
+    width: 550px;
+    height: 15px;
+}
+
+/*
+==============================================
+-------- Timmy Without Customer ----------
+==============================================
+*/
+
+#timmy-without-customer-container .clip-each {
+    height: 165px;
+    width: 376px;
+}
+
+/*
+==============================================
+------------- Timmy Printer Fleet ------------
+==============================================
+*/
+
+#timmy-printer-fleet-container {
+    height: 550px;
+}
+
+#timmy-printer-fleet-container .timmy-image {
+    margin-top: 45px;
+}
+
+#timmy-printer-fleet-container .clip-each {
+    height: 250px;
+    width: 560px;
+}
+
+#timmy-printer-fleet-container .bottonTxt {
+    margin-top: 260px;
+    margin-left: 70px;
+}
+
+/*
+==============================================
+-------- Timmy New Printers Fleet ------------
+==============================================
+*/
+
+#timmy-printer-new-printers-detected .dialogTile {
+    padding-top: 70px;
+    padding-bottom: 0;
+    margin-bottom: -10px;
+}
+
+#timmy-printer-new-printers-detected .timmy-line {
+    width: 655px;
+    height: 15px;
+}
+
+#timmy-printer-new-printers-detected .bottonTxt {
+    margin-top: 110px;
+    margin-left: 70px;
+}
+
+/*
+==============================================
+------ Timmy Supply No Pending Exchange ------
+==============================================
+*/
+
+#timmy-supply-no-pending-exchange-container .dialogTile {
+    padding: 0;
+    margin-bottom: -10px;
+    margin-left: 50px;
+}
+
+#timmy-supply-no-pending-exchange-container .bottonTxt {
+    margin-top: 105px;
+    margin-left: 80px;
+}
+
+#timmy-supply-no-pending-exchange-container .timmy-title {
+    margin-top: 60px;
+}
+
+#timmy-supply-no-pending-exchange-container .timmy-line {
+    width: 540px;
+    height: 15px;
+}
+
+/*
+==============================================
+------------ Timmy Stock All Items -----------
+==============================================
+*/
+
+#timmy-stock-all-items-container .clip-each {
+    height: 207px;
+    width: 440px;
+}
+
+#timmy-stock-all-items-container .timmy-image {
+    margin-top: 45px;
+}
+
+#timmy-stock-all-items-container .bottonTxt {
+    margin-top: 215px;
+    margin-left: 70px;
+}
+
+/*
+==============================================
+------------- Timmy Stock Entries ------------
+==============================================
+*/
+
+#timmy-stock-entries-container .clip-each {
+    height: 175px;
+    width: 465px;
+}
+
+#timmy-stock-entries-container .bottonTxt {
+    margin-top: 185px;
+    margin-left: 70px;
+}
+
+/*
+==============================================
+--- Timmy Printer Clients Without Printers ---
+==============================================
+*/
+
+#timmy-printer-clients-without-printers-container {
+    height: 550px;
+}
+
+#timmy-printer-clients-without-printers-container .clip-each {
+    height: 300px;
+    width: 540px;
+}
+
+#timmy-printer-clients-without-printers-container .timmy-image {
+    margin-top: 90px;
+}
+
+#timmy-printer-clients-without-printers-container .bottonTxt {
+    margin-top: 300px;
+    margin-left: 70px;
+}
+
+/*
+==============================================
+-------- Timmy Stock Customers Items ---------
+==============================================
+*/
+
+#timmy-stock-customer-items-container .clip-each {
+    height: 155px;
+    width: 675px;
+    padding-left: 18px;
+}
+
+#timmy-stock-customer-items-container .bottonTxt {
+    margin-top: 160px;
+    margin-left: 70px;
+}
+
+/*
+==============================================
+-------- Timmy Stock Technical Items ---------
+==============================================
+*/
+
+#timmy-stock-technical-items .clip-each {
+    height: 155px;
+    width: 675px;
+    padding-left: 18px;
+}
+
+#timmy-stock-technical-items .bottonTxt {
+    margin-top: 160px;
+    margin-left: 70px;
+}
+
+/*
+==============================================
+-------- Timmy Stock Dealer Items ---------
+==============================================
+*/
+
+#timmy-stock-dealer-itens-container .clip-each {
+    height: 155px;
+    width: 675px;
+    padding-left: 18px;
+}
+
+#timmy-stock-dealer-itens-container .bottonTxt {
+    margin-top: 160px;
+    margin-left: 70px;
+}
+
+/*Garante que o icone do timmy não seja atualizado para o font-awesome 5*/
+
+.linkText > .fontawesome {
+    font-family: Fontawesome !important;
+    display: inline-block;
+}
+
+/*
+==============================================
+-------- Timmy Generic Report Filters ---------
+==============================================
+*/
+
+#timmyGenericReports .flex-centralized {
+    padding-top: 0;
+    height: 600px;
+}
+
+#timmyGenericReports .flex-centralized .timmy-image {
+    margin-top: 250px;
+}
+
+#timmyGenericReports .flex-centralized .clip-each {
+    height: 240px;
+    margin-top: 190px;
+    padding: 30px;
+}
+
+/**Regras específicas para IE e Edge*/
+
+.k-edge .border-style-thin,
+.k-ie .border-style-thin {
+    background-color: @white;
+    margin-left: 20px;
+}
+
+.k-edge .clip-wrap,
+.k-ie .clip-wrap {
+    border: 2.5px solid @indigo;
+}
+
+/*
+=========================================================================
+-------- Timmy Schedule Replacement & Timmy Premature Exchanges ---------
+=========================================================================
+*/
+
+#timmy-schedule-replacement-container,
+#timmy-premature-exchanges-container {
+    height: 500px;
+
+    .dialogTile {
+        margin-bottom: 10px;
+    }
+
+    .clip-each {
+        height: 200px;
+        width: 420px;
+    }
+
+    .timmy-image {
+        margin-top: 30px;
+    }
+
+    .bottonTxt {
+        margin-top: 210px;
+    }
+}
+#timmy-receive-replacement-container {
+    height: 500px;
+
+    .dialogTile {
+        margin-bottom: 10px;
+    }
+
+    .clip-each {
+        height: 200px;
+        width: 530px;
+    }
+
+    .timmy-image {
+        margin-top: 30px;
+    }
+
+    .bottonTxt {
+        margin-top: 210px;
+    }
+}
+
+/*
+==============================================
+------- Timmy New Schedule Replacement -------
+==============================================
+*/
+
+#new-schedule-replacement-wizard-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 500px;
+
+    .content-image {
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+
+        img {
+            width: 700px;
+            margin-top: 150px;
+        }
+    }
+
+    .content-messages {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 10;
+        width: 800px;
+        height: 500px;
+        text-align: center;
+
+        .first-message {
+            margin-top: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            color: @indigo;
+        }
+
+        .second-message {
+            font-size: 14px;
+        }
+
+        .third-message{
+
+            a{
+                cursor: pointer;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+/*
+==============================================
+-------------- Internet Explorer -------------
+==============================================
+*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    #timmy-tickets-without-clients-container .bottonTxt {
+        margin-left: -510px;
+    }
+
+    #timmy-without-open-tickets-container .bottonTxt {
+        margin-left: -490px;
+    }
+
+    #timmy-without-open-tickets-container .timmy-bottom-message {
+        margin-left: -490px;
+    }
+
+    #timmy-without-customer-container .bottonTxt {
+        margin-top: 150px;
+        margin-left: -490px;
+    }
+
+    #timmy-printer-fleet-container .bottonTxt {
+        margin-top: 250px;
+        margin-left: -515px;
+    }
+
+    #timmy-supply-no-pending-exchange-container .bottonTxt {
+        margin-left: -490px;
+    }
+
+    #timmy-stock-all-items-container .bottonTxt {
+        margin-top: 195px;
+        margin-left: -400px;
+    }
+
+    #timmy-stock-entries-container .bottonTxt {
+        margin-top: 175px;
+        margin-left: -460px;
+    }
+
+    #timmy-printer-clients-without-printers-container .bottonTxt {
+        margin-top: 245px;
+        margin-left: -515px;
+    }
+
+    #timmy-stock-customer-items-container .bottonTxt {
+        margin-top: 150px;
+        margin-left: -535px;
+    }
+
+    #timmy-stock-technical-items .bottonTxt {
+        margin-left: -535px;
+    }
+
+    #timmy-printer-new-printers-detected .bottonTxt {
+        margin-top: 110px;
+        margin-left: -540px;
+    }
+
+    .GrayBehind {
+        opacity: 0.03 !important;
+    }
+
+    #timmyUseIndicator .bottonTxt {
+        margin-left: 80px;
+    }
+
+    #divTimmyExcluded .bottonTxt {
+        margin-left: 50px;
+    }
+
+    #timmyReportsByEmail .bottonTxt {
+        margin-left: 110px;
+    }
+}
+
+/*
+==============================================
+--------------- Microsfot Edge ---------------
+==============================================
+*/
+
+@supports
+
+(-ms-ime-align: auto) {
+    #timmy-tickets-without-clients-container {
+    }
+
+    #timmy-printer-fleet-container .bottonTxt {
+        margin-left: 135px;
+    }
+
+    #timmy-stock-entries-container .bottonTxt {
+        margin-top: 195px;
+        margin-left: 130px;
+    }
+
+    #alertsGroups #EspecificBottonTxt.bottonTxt {
+        margin-left: 150px;
+    }
+
+    #timmy-supply-no-pending-exchange-container .bottonTxt {
+        margin-left: 150px;
+    }
+
+    #timmy-stock-all-items-container .bottonTxt {
+        margin-left: 150px;
+    }
+
+    #timmy-tickets-without-clients-container .bottonTxt {
+        margin-left: 140px;
+    }
+
+    #timmy-printer-clients-without-printers-container .bottonTxt {
+        margin-top: 270px;
+        margin-left: 140px;
+    }
+}
+
+/*
+==============================================
+------------- Consagrado Firefox -------------
+==============================================
+*/
+
+@-moz-document url-prefix() {
+    #timmy-printer-fleet-container .bottonTxt {
+        margin-left: 135px;
+    }
+
+    #timmy-tickets-without-clients-container .bottonTxt {
+        margin-left: 140px;
+    }
+
+    #timmy-without-open-tickets-container .timmy-mid-message {
+        margin-left: 130px;
+    }
+
+    #timmy-without-open-tickets-container .timmy-bottom-message {
+        margin-left: 130px;
+    }
+
+    #timmy-supply-no-pending-exchange-container .bottonTxt {
+        margin-left: 140px;
+    }
+
+    #timmy-stock-all-items-container .bottonTxt {
+        margin-left: 140px;
+    }
+
+    #timmy-stock-entries-container .bottonTxt {
+        margin-left: 140px;
+    }
+
+    #alertsGroups #EspecificBottonTxt.bottonTxt {
+        margin-left: 150px;
+        margin-top: 110px;
+    }
+
+    #EspecificBottonTxtEstimate.bottonTxt {
+        margin-left: 55px;
+    }
+
+    #divTimmyExcluded #EspecificBottonTxtExcluded.bottonTxt {
+        margin-left: 50px;
+    }
+
+    #timmyReportsByEmail #EspecificBottonTxtEmailReports.bottonTxt {
+        margin-left: 110px;
+    }
+}

@@ -1,0 +1,129 @@
+﻿@import "../../shared/shared-module.less";
+
+.firstInput .k-picker-wrap, .conditionDateValueInput .k-picker-wrap, .conditionDateTimeValueInput .k-picker-wrap {
+    border-left: none;
+}
+
+.conditionBetweenDateValueInput .k-select, .conditionDateValueInput .k-select,
+.conditionDateTimeValueInput .k-select, .conditionBetweenDateTimeValueInput .k-select {
+    border-right: 1px solid @alto;
+    width: 35px !important;
+}
+
+.conditionBetweenDateValueInput, .conditionBetweenDateTimeValueInput {
+    width: 203.5px !important;
+}
+
+.conditionDateValueInput, .conditionDateTimeValueInput {
+    width: 424px !important;
+}
+
+.conditionDateTimeValueInput .k-select .k-link,
+.conditionBetweenDateTimeValueInput .k-select .k-link {
+    margin: 0 1px !important;
+}
+
+.k-ff .conditionDateTimeValueInput .k-select .k-link,
+.k-ff .conditionBetweenDateTimeValueInput .k-select .k-link {
+    margin: 0 0.25px !important;
+}
+
+.conditionDateTimeValueInput .k-picker-wrap .k-icon,
+.conditionBetweenDateTimeValueInput .k-picker-wrap .k-icon {
+    margin: 0 !important;
+}
+
+.conditionBetweenDateTimeValueInput .k-picker-wrap {
+    background-color: @white !important;
+}
+
+// --------------------------------------
+// ------------ Calendário --------------
+// --------------------------------------
+.k-calendar-container .k-state-hover,
+.k-picker-wrap.k-state-hover,
+.k-calendar .k-nav-fast.k-state-hover {
+    background-color: @indigo;
+    background-image: none !important;
+    color: @white;
+}
+
+#report-form-scans-by-printer .k-datepicker {
+    width: 213px;
+}
+
+.k-calendar-container .k-state-hove {
+    background-color: @indigo;
+}
+
+.k-other-month.k-state-hover .k-link {
+    background-image: none !important;
+}
+
+.k-datepicker {
+    width: @combobox-width;
+}
+
+
+
+.k-vertical-calendar {
+    .k-state-selected, .k-state-hover {
+        background-image: none !important;
+        background-color: @indigo !important;
+        border-color: @indigo !important;
+        color: @white !important;
+        box-shadow: none !important;
+    }
+}
+
+.k-calendar {
+    td {
+        &.k-state-selected, &.k-state-hover {
+            .k-link {
+                background-color: @indigo;
+                border-color: @indigo;
+            }
+        }
+
+        &.k-state-focused {
+            .k-link {
+                box-shadow: none;
+            }
+        }
+
+        &.k-state-hover {
+            .k-link {
+                background-image: none;
+            }
+        }
+
+        &.k-today {
+            background-color: @indigo;
+            border: none;
+            box-shadow: none;
+
+            .k-link {
+                color: @white;
+            }
+        }
+    }
+}
+
+.k-calendar-container {
+    &.k-popup {
+        .k-calendar {
+            td {
+
+                &.k-state-focused.k-state-selected {
+                    .k-link {
+                        box-shadow: inset 0 0 0 1px @blue-whale;
+                    }
+                }
+
+                .k-link {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}

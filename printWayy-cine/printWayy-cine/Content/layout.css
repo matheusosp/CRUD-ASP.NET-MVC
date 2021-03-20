@@ -1,0 +1,1533 @@
+﻿body {
+    font-size: .81em;
+    font-family: "Segoe UI", "WeblySleek UI Semibold", Verdana, Helvetica, Sans-Serif;
+    color: #143345;
+    background-color: #eeeeee;
+    margin: 0;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.validation-summary-errors {
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+/*********************************************************************************************************************************************/
+
+a > img {
+    border: 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#header {
+    padding: 15px 10px 6px 15px;
+    background: url(images/header-bg.png) repeat-x;
+    height: 80px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: white;
+    border-bottom: 1px solid #143345;
+}
+
+#help-link {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    background-color: #264e82;
+    height: 38px;
+    width: 38px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 25px;
+    margin-right: 15px;
+    position: relative;
+    top: 4px;
+    border: 1px solid #365d6e;
+    border-radius: 6px;
+}
+
+    #help-link:hover {
+        /*background-color: #143345 !important;*/
+        color: #B5C8D7;
+        -moz-transition: all linear .1s;
+        -o-transition: all linear .1s;
+        -webkit-transition: all linear .1s;
+        transition: all linear .1s;
+    }
+
+#content {
+    margin-left: 108px;
+    margin-bottom: 45px;
+}
+
+#content-header {
+    min-height: 45px;
+    background-color: #264E82;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1.4em;
+}
+
+    #content-header > span, #content-header > a {
+        margin-left: 10px;
+    }
+
+    #content-header a {
+        text-decoration: none;
+        color: white;
+    }
+
+        #content-header a:hover {
+            text-decoration: underline;
+        }
+
+.menu {
+    list-style-type: none;
+    padding: 4px 4px 20px 4px;
+    position: absolute;
+    margin: 0;
+    z-index: 1;
+}
+
+    .menu li {
+        padding: 18px 8px 8px 8px;
+        border: 1px solid #365D6E;
+        border-radius: 12px;
+        margin-bottom: 2px;
+        width: 82px;
+        height: 68px;
+        font-size: .9em;
+        background: #264e82;
+        background: -moz-radial-gradient(center, ellipse cover, #264e82 35%, #143345 100%);
+        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(35%,#264e82), color-stop(100%,#143345));
+        background: -webkit-radial-gradient(center, ellipse cover, #264e82 35%,#143345 100%);
+        background: -o-radial-gradient(center, ellipse cover, #264e82 35%,#143345 100%);
+        background: -ms-radial-gradient(center, ellipse cover, #264e82 35%,#143345 100%);
+        background: radial-gradient(ellipse at center, #264e82 35%,#143345 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#264e82', endColorstr='#143345',GradientType=1 );
+    }
+
+        .menu li:hover {
+            background: #143345 !important;
+            -moz-transition: all linear .1s;
+            -o-transition: all linear .1s;
+            -webkit-transition: all linear .1s;
+            transition: all linear .1s;
+        }
+
+            .menu li:hover span {
+                color: #B5C8D7;
+            }
+
+    .menu .iconic {
+        font-size: 40px;
+        line-height: 30px;
+    }
+
+    .menu .entypo {
+        font-size: 60px;
+        margin-top: -30px;
+    }
+
+    .menu .fontawesome {
+        font-size: 30px;
+    }
+
+    .menu .icomoon {
+        font-size: 32px;
+    }
+
+    .menu .raphael {
+        font-size: 40px;
+    }
+
+    .menu .modernpics {
+        font-size: 40px;
+        line-height: 30px;
+    }
+
+        .menu .modernpics.squares12 {
+            font-size: 44px;
+        }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        -moz-transition: all linear .1s;
+        -o-transition: all linear .1s;
+        -webkit-transition: all linear .1s;
+        transition: all linear .1s;
+    }
+
+    .menu .selectedItem span {
+        color: #FFCC00 !important;
+    }
+
+.selectedItem {
+    background: #143345 !important;
+}
+
+.menu-icon {
+    margin-bottom: 7px;
+}
+
+.menu-label {
+    line-height: 12px;
+}
+
+.menu-icon, .menu-label {
+    text-align: center;
+    display: block;
+}
+
+#menu-background {
+    position: fixed;
+    background-color: #264E82;
+    width: 106px;
+    bottom: 0px;
+    z-index: -1;
+    top: 0px;
+    border: 1px solid #143345;
+    border-top: none;
+    border-bottom: none;
+}
+
+#sub-menu-background {
+    position: fixed;
+    background-color: #DCE5EC;
+    width: 258px;
+    bottom: 0px;
+    top: 0px;
+    z-index: -2;
+    border: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#errorDialog {
+    color: red;
+}
+
+.messageDialogIcon.iconic {
+    font-size: 50px;
+}
+
+.messageDialogIcon.fontawesome {
+    font-size: 43px;
+}
+
+.dialogMessage {
+    margin: 10px;
+}
+
+
+input[disabled] {
+    background-color: #dddddd;
+}
+
+
+/* Novo estilo padronizado para os checkbox das paginas que não possuem a opção de atualizar de modo automático */
+input[type=checkbox] + label {
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+    cursor: pointer;
+    line-height: 10px;
+}
+
+    input[type=checkbox]:after {
+        display: inline-block;
+        content: "";
+        top: 0;
+        right: 0;
+        visibility: visible;
+        height: 7px;
+        width: 7px;
+        text-align: center;
+        background-color: transparent;
+        border: 2px solid #264d81;
+        color: #fff;
+        font-size: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        margin-bottom: -5px;
+    }
+
+    input[type=checkbox]:checked:after {
+        content: "\2714";
+        margin-top: 3px;
+        background-color: #264d81;
+    }
+
+/*----- Checkbox Confirmação Stock (Chamados) -------*/
+.ckhStockItemConfirm:checked:after {
+    color: #143345 !important;
+    background: white !important;
+    border: 2px solid #fff !important;
+}
+
+.ckhStockItemConfirm:after {
+    background-color: #FFFFFF !important;
+    border: 2px solid #264d81 !important;
+    color: #d4d4d4 !important;
+}
+
+
+/* Famoso tracinho */
+input[type=checkbox]:indeterminate:after {
+    content: "\2013";
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    text-indent: -1px;
+    text-shadow: 0 1px, 1px 0, 1px 1px #ffffff;
+    line-height: 6px;
+    background-color: #264d81;
+}
+
+
+input[type=checkbox]:disabled:after {
+    background-color: #FFFFFF;
+    border: 2px solid #d4d4d4;
+    color: #d4d4d4;
+}
+
+
+/* Estilo de checkbox para as views que possuem a opção de atualizar de modo automático*/
+input[type=checkbox].white-checkbox:after {
+    display: inline-block;
+    content: "";
+    top: 0;
+    right: 0;
+    visibility: visible;
+    height: 7px;
+    width: 7px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    color: #444444;
+    font-size: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input[type=checkbox].white-checkbox:checked:after {
+    content: "\2714";
+    background-color: #FFFFFF;
+}
+
+input[type=checkbox].white-checkbox:disabled:after {
+    background-color: #FFFFFF;
+    border: 2px solid #d4d4d4;
+    color: #d4d4d4;
+}
+
+
+span[disabled], label[disabled] {
+    color: #dddddd;
+}
+
+div[disabled] {
+    color: #bebebe;
+}
+
+h4[disabled] {
+    color: #dddddd !important;
+    border-top-color: #dddddd !important;
+}
+
+#notifications-icon {
+    margin-top: 13px;
+    margin-right: 50px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+    #notifications-icon .bell {
+        font-size: 2em;
+    }
+
+    #notifications-icon #notifications-count {
+        background-color: #dc0d17;
+        border-radius: 35%;
+        padding: 2px 6px 2px 4px;
+        font-size: .85em;
+        position: absolute;
+        left: 15px;
+        top: -10px;
+        min-width: 7px;
+    }
+
+        #notifications-icon #notifications-count.fx-bounce-in-1 {
+            visibility: visible;
+            -webkit-animation: fx-bounce-in-1 0.6s;
+            -moz-animation: fx-bounce-in-1 0.6s;
+            -o-animation: fx-bounce-in-1 0.6s;
+            animation: fx-bounce-in-1 0.6s;
+        }
+
+
+#notifications-icon_tt_active {
+    background-color: #B5C8D7;
+    border-color: #B5C8D7;
+    margin-left: 10px;
+    text-align: left;
+    color: #143345;
+    min-height: 40px;
+    padding: 0;
+}
+
+    #notifications-icon_tt_active .k-tooltip-content {
+        padding: 0;
+    }
+
+    #notifications-icon_tt_active .k-callout-n {
+        border-bottom-color: #B5C8D7;
+    }
+
+    #notifications-icon_tt_active .k-tooltip-button {
+        display: none;
+    }
+
+@-webkit-keyframes fx-bounce-in-1 {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.5);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@-moz-keyframes fx-bounce-in-1 {
+    0% {
+        opacity: 0;
+        -moz-transform: scale(0.5);
+    }
+
+    60% {
+        opacity: 1;
+        -moz-transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+    }
+}
+
+@keyframes fx-bounce-in-1 {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+        -o-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+#accountMenu {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+    #accountMenu .k-item {
+        border: none;
+    }
+
+    #accountMenu .k-i-arrow-s {
+        background-position-x: -16px;
+        margin-left: 5px;
+    }
+
+    #accountMenu li.k-state-border-down:not(.k-state-hover) .k-i-arrow-s {
+        background-position-x: 0px;
+    }
+
+#accountMenuLink {
+    padding: 0px 11px 4px 4px;
+}
+
+#accountMenu .icon {
+    position: relative;
+    top: 3px;
+    font-size: 2.1em;
+}
+
+#accountMenu .k-popup .k-link {
+    padding: 6px 12px;
+}
+
+.grid-menu {
+    padding: 2px 0px 0px 0px;
+    border: none;
+    background-color: transparent;
+}
+
+#close-customers-list {
+    position: absolute;
+    right: 3px;
+    top: 11px;
+}
+
+.header-separator {
+    font-size: .6em;
+    position: relative;
+    bottom: 3px;
+}
+
+#accountDiv {
+    padding-top: 4px;
+    cursor: pointer;
+}
+
+#accountDiv_tt_active {
+    background-color: #B5C8D7;
+    border-color: #B5C8D7;
+    width: 183px;
+}
+
+    #accountDiv_tt_active .k-callout-n {
+        border-bottom-color: #B5C8D7;
+    }
+
+    #accountDiv_tt_active .k-button {
+        display: block;
+        width: 183px;
+    }
+
+    #accountDiv_tt_active .k-tooltip-button {
+        display: none;
+    }
+
+    #accountDiv_tt_active .k-tooltip-content {
+        padding: 0;
+    }
+
+    #accountDiv_tt_active #changePasswordLink, #accountDiv_tt_active #mySettingsLink, #accountDiv_tt_active #downloadLink {
+        margin-bottom: 7px;
+    }
+
+.ui-tooltip {
+    z-index: 99999;
+}
+
+.bottomButtonBar {
+    margin-top: 10px;
+    float: right;
+}
+
+.bottomLeftButtonBar {
+    margin-top: 10px;
+    float: left;
+}
+
+#footer {
+    background-color: #264e82;
+    text-align: center;
+    padding-bottom: 3px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+    #footer a {
+        color: white;
+        font-size: .85em;
+        text-decoration: none;
+    }
+
+        #footer a:hover {
+            text-decoration: underline;
+        }
+
+
+.show-create-new-item ~ .k-select {
+    border-left: none !important;
+}
+
+.smallInfoBoxIcon {
+    font-size: 28px;
+    margin: 8px;
+    color: #264E82;
+    position: absolute;
+}
+
+.mediumInfoBoxIcon {
+    font-size: 40px;
+    margin: 15px;
+    color: #264E82;
+    position: absolute;
+}
+
+.alertBoxIcon {
+    font-size: 70px;
+    margin-left: 12px;
+    position: absolute;
+    top: -21px;
+}
+
+.bluebox {
+    background-color: #264e82;
+    border-radius: 5px;
+    border: 1px solid #b5c8d7;
+    padding-right: 15px;
+    color: white;
+}
+
+    .bluebox .fontawesome {
+        color: #fc0;
+    }
+
+.errorbox {
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    padding-right: 15px;
+    color: #a94442;
+    border-left: 3px solid #a94442;
+}
+
+.smallInfoBoxErrorIcon {
+    font-size: 35px;
+    margin: 7px;
+    position: absolute;
+}
+
+.smallInfoBoxAlertIcon {
+    font-size: 50px;
+    margin-left: 5px;
+    position: absolute;
+    top: -7px;
+}
+
+.x-small-box .smallInfoBoxErrorIcon {
+    font-size: 2.2em;
+    margin: 2px 7px;
+}
+
+.x-small-box .alertBoxIcon {
+    font-size: 38px;
+    margin-left: 6px;
+    top: -9px;
+}
+
+.small-box-message {
+    padding-left: 40px;
+}
+
+.x-small-box-message {
+    padding-left: 35px;
+}
+
+    .x-small-box-message p {
+        margin: 7px 0;
+    }
+
+.centerbox {
+    max-width: 800px;
+    display: table;
+    margin: 0 auto;
+}
+
+.create-new-item-box {
+    background: white;
+    padding: 5px;
+    border: 1px solid #dadada;
+    position: absolute;
+    z-index: 99999;
+    display: none;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
+}
+
+.create-new-item-text {
+    font-weight: bold;
+    -ms-word-break: break-all;
+    word-break: break-all;
+}
+
+.create-new-item-link {
+    color: #264e82;
+}
+
+.noheader > table > thead th {
+    display: none;
+}
+
+.breakword {
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -ms-word-wrap: break-all;
+    word-wrap: break-word;
+}
+
+.nobreakword {
+    -ms-word-break: normal !important;
+    word-break: normal !important;
+}
+
+.bluelink {
+    color: #264e82;
+    font-weight: bold;
+}
+
+.redlink {
+    color: #a94442;
+    font-weight: bold;
+}
+
+.print-detail-icon {
+    font-size: 18px;
+    padding: 3px;
+    color: #264d81;
+}
+
+    .print-detail-icon:hover {
+        color: #143345;
+        cursor: pointer;
+    }
+
+.ui-progressbar .ui-progressbar-value {
+    margin: 0 !important;
+}
+
+#hideNoMonitoredPrintersDiv {
+    display: inline-block;
+    margin: 10px;
+}
+
+/*----------- Css especifico de cada exportção ---------------*/
+.printersGrid,
+.allStockItemsGrid,
+.allEntriesInStockGrid {
+    margin-top: 4px;
+}
+
+.companiesGrid,
+.estimatesGrid,
+.useIndicatorsGrid,
+.newPrinterGrid {
+    margin-bottom: 1px;
+}
+
+.printerFleetGrid,
+.underReviewAlertsGrid,
+.ignoredAlertsGrid,
+.closedAlertsGrid,
+.closedTicketsGrid,
+.confirmedExchangesGrid,
+.contractPrintersGrid {
+    margin-top: 5px;
+}
+/*----------- Fim - Css especifico de cada exportção ---------------*/
+
+
+.white-background {
+    background-color: white !important;
+}
+
+/*----------- FireFox ---------------*/
+@-moz-document url-prefix() {
+    input[type="checkbox"] {
+        -moz-appearance: none !important;
+        line-height: 6px;
+        text-indent: 0.02px !important;
+    }
+
+    input[type=checkbox]:indeterminate:after {
+        font-size: 9px;
+        line-height: 4px;
+        margin-bottom: 1px;
+    }
+
+    input[type=checkbox]:after {
+        margin-bottom: -1px;
+    }
+
+    .exportExcelMenu .item {
+        display: block;
+    }
+
+        .exportExcelMenu .item:first-child {
+            margin-top: 15px;
+        }
+
+    #hideNoMonitoredPrintersDiv {
+        margin: 10px 0 10px 0;
+    }
+}
+
+
+/*----------- IE ---------------*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    input[type="checkbox"]:not(:checked),
+    input[type="checkbox"]:checked {
+        margin-left: -20px;
+        margin-top: 5px;
+    }
+
+        input[type="checkbox"]:not(:checked) + input + label,
+        input[type="checkbox"]:checked + input + label {
+            position: relative;
+            padding-left: 15px;
+            vertical-align: top;
+            margin-bottom: -10px;
+            cursor: pointer;
+        }
+
+            /*------------------ Not checked ----------------------*/
+            input[type="checkbox"]:not(:checked) + input + label:before,
+            input[type="checkbox"]:checked + input + label:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 7px;
+                height: 7px;
+                border: 2px solid #264d81;
+                background-color: transparent;
+            }
+
+            /*------------------ Checked ----------------------*/
+            input[type="checkbox"]:not(:checked) + input + label:after,
+            input[type="checkbox"]:checked + input + label:after {
+                content: "\2714";
+                position: absolute;
+                text-align: center;
+                text-indent: -0.05px;
+                line-height: 0.8;
+                color: #ffffff;
+                top: .2em;
+                left: .110em;
+                font-size: 9px;
+                background: #264d81;
+                height: 7.2px;
+                width: 9px;
+                transition: all .2s;
+            }
+
+        input[type="checkbox"]:checked + input {
+            background: #264d81;
+        }
+
+    /*------------------ Indeterminate ----------------------*/
+    input[type="checkbox"]:not(:indeterminate) label,
+    input[type="checkbox"]:indeterminate + label:after {
+        content: "\2014" !important;
+        position: absolute;
+        font-size: 12px;
+        height: 7.2px;
+        width: 9px;
+        text-indent: 3px;
+        font-weight: bold;
+        color: #ffffff;
+        line-height: 6px;
+        background-color: #264d81;
+    }
+
+    /*------------------ Animação de Marcação ----------------------*/
+    @supports (-ms-ime-align: auto) {
+        input[type="checkbox"]:not(:checked) + input + label:after {
+            opacity: 0;
+            transform: none;
+        }
+    }
+
+    input[type="checkbox"]:not(:checked) + input + label:after {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+
+
+    input[type="checkbox"]:checked + input + label:after {
+        opacity: 1;
+        transform: scale(1);
+        transform: none;
+    }
+
+    /*------------------ Checkbox Desativado ----------------------*/
+    input[type="checkbox"]:disabled:not(:checked) + input + label:before,
+    input[type="checkbox"]:disabled:checked + input + label:before {
+        border: 2px solid #d4d4d4;
+        background-color: transparent;
+    }
+
+
+    input[type="checkbox"]:disabled:checked + input + label:after {
+        color: #d4d4d4;
+        background-color: transparent;
+    }
+
+    /*Caso específico do checkbox CostDetailing*/
+    label[for=CostDetailing] {
+        padding-top: 5px;
+        top: 10px;
+    }
+
+    /*========================================================================
+           ------------------ Checkboxes Brancos ----------------------
+     ========================================================================*/
+    input[type="checkbox"].white-checkbox:not(:checked) + input + label,
+    input[type="checkbox"].white-checkbox:checked + input + label {
+        position: relative;
+        padding-left: 1.95em;
+        cursor: pointer;
+    }
+
+        /*------------------ Not checked ----------------------*/
+        input[type="checkbox"].white-checkbox:not(:checked) + input + label:before,
+        input[type="checkbox"].white-checkbox:checked + input + label:before,
+        input[type="checkbox"].white-checkbox:not(:checked) + label:before,
+        input[type="checkbox"].white-checkbox:checked + label:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 7px;
+            height: 7px;
+            border: 2px solid #FFFFFF;
+            background-color: #FFFFFF;
+        }
+
+        /*------------------ Checked ----------------------*/
+        input[type="checkbox"].white-checkbox:not(:checked) + input + label:after,
+        input[type="checkbox"].white-checkbox:checked + input + label:after,
+        input[type="checkbox"].white-checkbox:not(:checked) + label:after,
+        input[type="checkbox"].white-checkbox:checked + label:after {
+            content: "\2714";
+            position: absolute;
+            text-align: center;
+            text-indent: -0.05px;
+            line-height: 0.8;
+            color: #444444;
+            top: .2em;
+            left: .110em;
+            font-size: 9px;
+            background: #FFFFFF;
+            height: 7.2px;
+            width: 9px;
+            transition: all .2s;
+        }
+
+    input[type="checkbox"].white-checkbox:checked + input {
+        background: #FFFFFF;
+    }
+    /*------------------ Animação de Marcação ----------------------*/
+
+    input[type="checkbox"].white-checkbox:not(:checked) + input + label:after {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    input[type="checkbox"].white-checkbox:checked + input + label:after {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    /*------------------ Checkbox Desativado ----------------------*/
+    input[type="checkbox"].white-checkbox:disabled:not(:checked) + input + label:before,
+    input[type="checkbox"].white-checkbox:disabled:checked + input + label:before {
+        border: 2px solid #d4d4d4;
+        background-color: transparent;
+    }
+
+
+    input[type="checkbox"].white-checkbox:disabled:checked + input + label:after {
+        color: #d4d4d4;
+        background-color: transparent;
+    }
+
+
+
+    /*========================================================================
+           ------------------ HTML checkbox ----------------------
+     ========================================================================*/
+    input[type="checkbox"]:not(:checked) + label,
+    input[type="checkbox"]:checked + label {
+        position: relative;
+        padding-left: 1.95em;
+        cursor: pointer;
+    }
+
+        /*------------------ Not checked ----------------------*/
+        input[type="checkbox"]:not(:checked) + label:before,
+        input[type="checkbox"]:checked + label:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 7px;
+            height: 7px;
+            border: 2px solid #264d81;
+            background-color: transparent;
+        }
+
+        /*------------------ Checked ----------------------*/
+        input[type="checkbox"]:not(:checked) + label:after,
+        input[type="checkbox"]:checked + label:after {
+            content: "\2714";
+            position: absolute;
+            text-align: center;
+            text-indent: 0.5px;
+            top: .2em;
+            left: .110em;
+            font-size: 8px;
+            line-height: 1;
+            color: #ffffff;
+            background: #264d81;
+            height: 8px;
+            width: 9px;
+            transition: all .2s;
+        }
+
+    /*------ Configuração espoecífica do grid newDetectedPrintersGrid -------*/
+    #newDetectedPrintersGrid input[type="checkbox"]:not(:checked) + label,
+    #newDetectedPrintersGrid input[type="checkbox"]:checked + label {
+        padding-left: 1.2em;
+    }
+
+    /*----- Checkbox Confirmação Stock (Chamados) -------*/
+    .ckhStockItemConfirm:not(:checked) + label:after,
+    .ckhStockItemConfirm:checked + label:after {
+        color: #143345 !important;
+        background: white !important;
+        border: 2px solid #fff !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 8px !important;
+    }
+
+    .ckhStockItemConfirm:not(:checked) + label:before,
+    .ckhStockItemConfirm:checked + label:before {
+        background-color: #FFFFFF !important;
+        border: 2px solid #264d81 !important;
+        color: #d4d4d4 !important;
+    }
+
+    /*------------------ Animação de Marcação ----------------------*/
+    input[type="checkbox"]:not(:checked) + label:after {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    input[type="checkbox"]:checked + label:after {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    /*------------------ Checkbox Desativado ----------------------*/
+    input[type="checkbox"]:disabled:not(:checked) + label:before,
+    input[type="checkbox"]:disabled:checked + label:before {
+        border: 2px solid #d4d4d4;
+        background-color: transparent;
+    }
+
+
+    input[type="checkbox"]:disabled:checked + label:after {
+        color: #d4d4d4;
+        background-color: transparent;
+    }
+
+
+    /*------------------ Alinhamentos por página ----------------------*/
+    .show-monitored-printers-checkbox:not(:checked),
+    .show-monitored-printers-checkbox:checked {
+        display: normal;
+        margin-top: 10px;
+    }
+
+    .printer-detail-setting-label {
+        margin-bottom: 15px;
+        line-height: 24px;
+    }
+
+    /*Checkbox contratos - impressora */
+    #show-monitored-printers-label {
+        line-height: 30.26px;
+        vertical-align: 4px;
+        position: relative;
+        top: 4px;
+    }
+
+    #open-ticket-label {
+        position: relative;
+        top: 4px;
+        line-height: 30.26px;
+        vertical-align: 4px;
+    }
+
+    .account-details-checkbox-label {
+        line-height: 22px;
+    }
+
+    .undefined-end-label-margin {
+        vertical-align: 4px;
+        position: relative;
+        top: 5px;
+        left: 10px;
+    }
+
+    input[type="checkbox"]#UndefinedEnd + label {
+        position: relative;
+        top: 4px;
+    }
+
+    /* Checkbox da coluna - selecionar pessoa por contrato */
+    input[type="checkbox"]#chkSelectAllContractPrinters:not(:checked) + label,
+    input[type="checkbox"]#chkSelectAllContractPrinters:checked + label {
+        margin-left: 2px;
+    }
+
+    /* Checkbox da coluna - selecionar todas a impressoras */
+    input[type="checkbox"]#chkSelectAllNewDetectedPrinters:not(:checked) + label,
+    input[type="checkbox"]#chkSelectAllNewDetectedPrinters:checked + label {
+        margin-left: 10px;
+        top: 2px;
+    }
+
+    /* Checkbox linha - selecionar pessoa por contrato */
+    input[type="checkbox"].check_row:not(:checked) + label,
+    input[type="checkbox"].check_row:checked + label {
+        margin-left: 9px;
+    }
+
+    /* Label dos checkboxes da página de alertas ativos */
+    .alerts-awaiting-review-label {
+        line-height: 24.5px;
+    }
+
+    /* Configuração dos dropDownLists em forma de célula nos grids */
+    .grid-td-without-padding {
+        padding: 0 !important;
+        line-height: 0 !important;
+    }
+}
+
+
+
+
+/*----------- Edge ---------------*/
+@supports (-ms-ime-align: auto) {
+
+    input[type="checkbox"]:not(:checked),
+    input[type="checkbox"]:checked {
+        margin-left: -20px;
+    }
+
+        input[type="checkbox"]:not(:checked) + input + label,
+        input[type="checkbox"]:checked + input + label {
+            position: relative;
+            padding-left: 15px;
+            vertical-align: top;
+            margin-bottom: -10px;
+            cursor: pointer;
+        }
+            /*------------------ Not checked ----------------------*/
+            input[type="checkbox"]:not(:checked) + input + label:before,
+            input[type="checkbox"]:checked + input + label:before {
+                content: "" !important;
+                position: absolute;
+                left: 0;
+                top: 4px;
+                width: 7px;
+                height: 7px;
+                border: 2px solid #264d81;
+                background-color: transparent;
+            }
+            /*------------------ Checked ----------------------*/
+            input[type="checkbox"]:not(:checked) + input + label:after,
+            input[type="checkbox"]:checked + input + label:after {
+                content: "\2713";
+                position: absolute;
+                text-align: center;
+                text-indent: -0.05px;
+                line-height: 0.8;
+                color: #ffffff;
+                top: 6px;
+                left: .110em;
+                font-size: 9px;
+                background: #264d81;
+                height: 7.2px;
+                width: 9px;
+                transition: all .2s;
+            }
+            /*------------------ Animação de Marcação ----------------------*/
+            input[type="checkbox"]:not(:checked) + input + label:after {
+                opacity: 0;
+                transform: scale(0);
+            }
+    /*------------------ Checkbox Desativado ----------------------*/
+    input[type="checkbox"]:disabled:not(:checked) + input + label:before,
+    input[type="checkbox"]:disabled:checked + input + label:before {
+        border: 2px solid #d4d4d4;
+        background-color: transparent;
+    }
+
+
+    input[type="checkbox"]:disabled:checked + input + label:after {
+        color: #d4d4d4;
+        background-color: transparent;
+    }
+    /*Caso específico do checkbox CostDetailing*/
+    label[for=CostDetailing] {
+        top: 8px;
+    }
+    /*========================================================================
+           ------------------ Checkboxes Brancos ----------------------
+     ========================================================================*/
+    input[type="checkbox"].white-checkbox:not(:checked) + input + label,
+    input[type="checkbox"].white-checkbox:checked + input + label {
+        position: relative;
+        padding-left: 1.95em;
+        cursor: pointer;
+    }
+        /*------------------ Not checked ----------------------*/
+        input[type="checkbox"].white-checkbox:not(:checked) + input + label:before,
+        input[type="checkbox"].white-checkbox:checked + input + label:before,
+        input[type="checkbox"].white-checkbox:not(:checked) + label:before,
+        input[type="checkbox"].white-checkbox:checked + label:before {
+            content: "" !important;
+            position: absolute;
+            left: 0;
+            width: 7px;
+            height: 7px;
+            border: 2px solid #FFFFFF;
+            background-color: #FFFFFF;
+        }
+
+        input[type="checkbox"].white-checkbox:not(:checked) + input + label:before,
+        input[type="checkbox"].white-checkbox:checked + input + label:before {
+            top: 4px;
+        }
+        /*------------------ Checked ----------------------*/
+        input[type="checkbox"].white-checkbox:not(:checked) + input + label:after,
+        input[type="checkbox"].white-checkbox:checked + input + label:after,
+        input[type="checkbox"].white-checkbox:not(:checked) + label:after,
+        input[type="checkbox"].white-checkbox:checked + label:after {
+            content: "\2713";
+            position: absolute;
+            text-align: center;
+            text-indent: -0.05px;
+            line-height: 0.8;
+            color: #444444 !important;
+            left: .110em;
+            font-size: 9px;
+            background: #FFFFFF;
+            height: 7.2px;
+            width: 9px;
+            transition: all .2s;
+        }
+
+        input[type="checkbox"].white-checkbox:not(:checked) + input + label:after,
+        input[type="checkbox"].white-checkbox:checked + input + label:after {
+            top: 5px;
+        }
+
+    input[type="checkbox"].white-checkbox:checked + input {
+        background: #FFFFFF;
+    }
+    /*------------------ Animação de Marcação ----------------------*/
+    input[type="checkbox"].white-checkbox:not(:checked) + input + label:after {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    input[type="checkbox"].white-checkbox:checked + input + label:after {
+        opacity: 1;
+        transform: scale(1);
+    }
+    /*------------------ Checkbox Desativado ----------------------*/
+    input[type="checkbox"].white-checkbox:disabled:not(:checked) + input + label:before,
+    input[type="checkbox"].white-checkbox:disabled:checked + input + label:before {
+        border: 2px solid #d4d4d4;
+        background-color: transparent;
+    }
+
+
+    input[type="checkbox"].white-checkbox:disabled:checked + input + label:after {
+        color: #d4d4d4;
+        background-color: transparent;
+    }
+    /*========================================================================
+           ------------------ HTML checkbox ----------------------
+     ========================================================================*/
+    input[type="checkbox"].checkbox-itens:not(:checked) + label,
+    input[type="checkbox"].checkbox-itens:checked + label,
+    input[type="checkbox"].checkbox-location:not(:checked) + label,
+    input[type="checkbox"].checkbox-location:checked + label,
+    input[type="checkbox"].checkbox-replacement:not(:checked) + label,
+    input[type="checkbox"].checkbox-replacement:checked + label {
+        position: relative;
+        padding-left: 1.00em;
+        cursor: pointer;
+    }
+
+
+    input[type="checkbox"]:not(:checked) + label,
+    input[type="checkbox"]:checked + label {
+        position: relative;
+        padding-left: 1.96em;
+        cursor: pointer;
+    }
+        /*------------------ Not checked ----------------------*/
+        input[type="checkbox"]:not(:checked) + label:before,
+        input[type="checkbox"]:checked + label:before {
+            content: "" !important;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 7px;
+            height: 7px;
+            border: 2px solid #264d81;
+            background-color: transparent;
+        }
+        /*------------------ Checked ----------------------*/
+        input[type="checkbox"]:not(:checked) + label:after,
+        input[type="checkbox"]:checked + label:after {
+            content: "\2713" !important;
+            position: absolute;
+            text-align: center;
+            text-indent: 0.5px;
+            top: .2em;
+            left: .110em;
+            font-size: 8px;
+            line-height: 1;
+            color: #ffffff;
+            background: #264d81;
+            height: 8px;
+            width: 9px;
+        }
+    /*------ Configuração espoecífica do grid newDetectedPrintersGrid -------*/
+    #newDetectedPrintersGrid input[type="checkbox"]:not(:checked) + label,
+    #newDetectedPrintersGrid input[type="checkbox"]:checked + label {
+        padding-left: 1.2em;
+    }
+    /*----- Checkbox Confirmação Stock (Chamados) -------*/
+    .ckhStockItemConfirm:not(:checked) + label:before {
+        border: 2px solid #264d81 !important;
+        background: white !important;
+        color: #143345 !important;
+    }
+
+    .ckhStockItemConfirm:checked + label:before {
+        border: unset !important;
+    }
+
+    .ckhStockItemConfirm:not(:checked) + label:after,
+    .ckhStockItemConfirm:checked + label:after {
+        color: #143345 !important;
+        background: white !important;
+        border: 1px solid #fff;
+    }
+    /*------------------ Indeterminate (Antes de algum filho ser selecionado) ----------------------*/
+    /*--------------------------- Checkboxes Select contract printers ------------------------------*/
+    .check_row:not(:indeterminate) + label, #chkSelectAllContractPrinters:not(:indeterminate) + label {
+        /* Ajustes de alinhamento */
+        content: "" !important;
+        display: flex;
+        position: relative;
+        margin-top: -15px;
+        margin-bottom: 15px;
+        margin-right: 10px;
+        /*Conteudo do checker*/
+        font-size: 0;
+        height: 0;
+        width: 0;
+        color: transparent !important;
+        background-color: transparent;
+    }
+    /*------------------ Indeterminate (selecionado)----------------------*/
+    .check_row:indeterminate + label:after, #chkSelectAllContractPrinters:indeterminate + label:after {
+        content: "" !important;
+        position: absolute;
+        text-align: center;
+        text-indent: 1px;
+        font-size: 12px;
+        height: 7.2px;
+        width: 9px;
+        color: #ffffff !important;
+        font-weight: bold;
+        background-color: #264d81;
+    }
+    /*------------------ Animação de Marcação ----------------------*/
+    @supports (-ms-ime-align: auto) {
+        input[type="checkbox"].checkbox-itens:not(:checked) + label:after,
+        input[type="checkbox"].checkbox-location:not(:checked) + label:after,
+        input[type="checkbox"].checkbox-replacement:not(:checked) + label:after {
+            opacity: 0;
+            transform: none;
+        }
+    }
+
+    input[type="checkbox"]:not(:checked) + label:after {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    input[type="checkbox"]:checked + label:after {
+        opacity: 1;
+        transform: scale(1);
+    }
+    /*------------------ Checkbox Desativado ----------------------*/
+    input[type="checkbox"]:disabled:not(:checked) + label:before,
+    input[type="checkbox"]:disabled:checked + label:before {
+        border: 2px solid #d4d4d4;
+        background-color: transparent;
+    }
+
+
+    input[type="checkbox"]:disabled:checked + label:after {
+        color: #d4d4d4;
+        background-color: transparent;
+    }
+    /*------------------ Alinhamentos por página ----------------------*/
+    .printer-detail-setting-label {
+        margin-bottom: 15px;
+        line-height: 24px;
+    }
+
+    #show-monitored-printers-label {
+        line-height: 30.26px;
+    }
+    /* Checkbox da coluna - selecionar pessoa por contrato */
+    input[type="checkbox"]#chkSelectAllContractPrinters:not(:checked) + label,
+    input[type="checkbox"]#chkSelectAllContractPrinters:checked + label {
+        margin-left: 5px;
+    }
+    /* Checkbox da coluna - selecionar todas a impressoras */
+    input[type="checkbox"]#chkSelectAllNewDetectedPrinters:not(:checked) + label,
+    input[type="checkbox"]#chkSelectAllNewDetectedPrinters:checked + label {
+        margin-left: 10px;
+        top: 2px;
+    }
+    /* Checkbox linha - selecionar pessoa por contrato */
+    input[type="checkbox"].check_row:not(:checked) + label,
+    input[type="checkbox"].check_row:checked + label {
+        margin-left: 5px;
+    }
+    /* Label dos checkboxes da página de alertas ativos */
+    .alerts-awaiting-review-label {
+        line-height: 24.5px;
+        position: relative;
+        top: 5px;
+    }
+    /* Label dos checkboxes da página de chamados ativos */
+    #open-ticket-label {
+        position: relative;
+        top: 10px;
+    }
+
+    #white-checkbox-label {
+        line-height: 20px;
+    }
+
+    input[type="checkbox"]#UndefinedEnd {
+        margin-right: 15px;
+    }
+
+        input[type="checkbox"]#UndefinedEnd + input + label {
+            vertical-align: -4px;
+        }
+
+    input[type="checkbox"]#ShowNotMonitoredPrinters + input + label {
+        vertical-align: -0.5px;
+    }
+}
+
+#settingsTabs .k-tabstrip-items {
+    white-space: nowrap;
+}

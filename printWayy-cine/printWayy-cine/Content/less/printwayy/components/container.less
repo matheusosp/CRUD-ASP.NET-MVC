@@ -1,0 +1,133 @@
+//@import "../../shared/shared-module.less";
+.api-token-container {
+    width: 1130px;
+}
+
+// Container da flecha e labels de submenus
+.pull-right-container {
+    right: 0 !important;
+}
+
+.small-label-container {
+    width: 60px;
+    padding-left: 0 !important;
+    .text-center-vertically {
+        line-height: 30px;
+    }
+}
+
+.default-datepicker-container {
+    width: 220px;
+    .text-center-vertically {
+        line-height: 30px;
+    }
+}
+
+.small-button-container {
+    width: 200px;
+    .text-center-vertically {
+        line-height: 30px;
+    }
+}
+
+.pretty-small-label-container {
+    width: 10px;
+    .text-center-vertically {
+        line-height: 30px;
+    }
+}
+
+// ------- Button Container ------------ //
+.email-general-settings-button-container {
+    margin-top: 15px;
+}
+
+#no-notification-container {
+    text-align: center;
+    h4 {
+        span {
+            font-size: @font-size;
+            font-family: @font-family;
+        }
+    }
+}
+
+// Container do combobox para atualizar página automaticamente
+.automatic-refresh-container {
+    float: right;
+    margin-top: -40px;
+    &>* {
+        // Joga todos os filhos para direta.
+        float: right;
+    }
+    #automaticRefreshHelpMessage {
+        margin: -2px 5px 0 0;
+    }
+    .combobox-refresh-container {
+        margin-right: 10px;
+    }
+}
+
+.label-container {
+    margin-right: 10px;
+}
+
+.label-between-dates {
+    margin: 0 9px 0 9px;
+}
+
+// Alinha verticalmente
+.date-validation-message,
+.label-between-dates,
+.customer-label-container, .label-container {
+    .set-line-height(30px);
+}
+
+#scan-by-printer-container {
+    .customer-label-container {
+        margin-right: 14px;
+    }
+    .period-container {
+        margin-top: 5px;
+    }
+}
+
+#invoice-report-setting-container{
+    margin-top: 15px;
+}
+
+#invoice-title-container{
+    width: 370px;
+    float: left;
+
+    & .form-control{
+        height: 14px;
+        padding-right: 0; // Cagadas do bootstrap
+        padding-left: 5px; // Cagadas do bootstrap
+    }
+}
+
+#character-counter-container{
+    margin: 4px  0  0  15px; 
+    float: left;
+}
+
+// qubra o conteudo de popus que precisam mostrar textos muito grandes
+.k-animation-container {
+    word-break: break-word;
+}
+
+.newScheduleReplacement-content {
+    min-width: 600px;
+    height: 450px;
+}
+
+.align-row-content{
+    display: flex;
+    align-items: center;
+}
+
+.align-column-content{
+    display: flex;
+    flex-direction: column;    
+}
